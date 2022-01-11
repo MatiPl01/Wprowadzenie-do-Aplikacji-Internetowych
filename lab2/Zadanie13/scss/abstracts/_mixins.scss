@@ -1,0 +1,67 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == l-phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == l-tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content }; 
+    }
+    @if $breakpoint == l-tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };   
+    }
+    @if $breakpoint == g-phone {       // >= 600px
+        @media only screen and (min-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == g-tab-port {    // >= 900px
+        @media only screen and (min-width: 56.25em) { @content }; 
+    }
+    @if $breakpoint == g-tab-land {    // >= 1200px
+        @media only screen and (min-width: 75em) { @content };   
+    }
+    @if $breakpoint == g-big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };    
+    }
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin abs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin bg-gradient($color-light, $color-dark) {
+    background: linear-gradient(
+        45deg, 
+        $color-dark, 
+        $color-light)
+        mix($color-light, $color-dark); // Fallback when linear-gradient doesn't work
+}
+
+@mixin set-svg-gradient($gradient-num, $color1, $color2) {
+    #gradient#{$gradient-num} .stop-color {
+        &--1 { stop-color: $color1; }
+        &--2 { stop-color: $color2; }
+    }
+}

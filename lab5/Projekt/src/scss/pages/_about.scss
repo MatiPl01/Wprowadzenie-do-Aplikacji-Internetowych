@@ -1,0 +1,20 @@
+@use '../helpers/mixins' as *;
+
+.section-about {
+    height: 100vh;
+    width: 100vw;
+    @include flex-center;
+}
+
+.about {
+    max-width: 90vw;
+
+    &__heading {
+
+    }
+
+    &__text {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+    }
+}

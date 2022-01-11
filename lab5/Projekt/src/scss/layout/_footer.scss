@@ -1,0 +1,149 @@
+@use '../helpers/colors' as c;
+@use '../helpers/sizes' as s;
+@use '../helpers/mixins' as *;
+
+.footer {
+    background-color: c.$gray-dark-1;
+    color: c.$gray-light-1;
+    padding: 10rem 10rem 5rem 10rem;
+    position: relative;
+
+    &__content {
+        width: s.$content-width;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+            "location logo   hours"
+            "contact  logo   hours"
+            ".        social .";
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        margin-bottom: 1.5rem;
+    }
+
+    &__location {
+        grid-area: location;
+    }
+
+    &__contact {
+        grid-area: contact;
+    }   
+
+    &__logo {
+        grid-area: logo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-icon {
+            fill: c.$white;
+            width: 20rem;
+            height: 20rem;
+            margin-bottom: 2rem;
+        }
+
+        &-text {
+            text-align: center;
+        }
+
+        &-heading {
+            font-family: Pacifico, Arial, Helvetica, sans-serif;
+            font-weight: 500;
+
+            &--primary {
+                font-size: 4rem;
+            }
+
+            &--secondary {
+                font-size: 2rem;
+                color: c.$gray-light-4;
+            }
+        }
+    }
+
+    &__location,
+    &__contact,
+    &__hours {
+        @include flex-center;
+        flex-direction: column;
+
+        &-list {
+            list-style: none;
+        }
+
+        &-item {
+            font-size: 1.6rem;
+            color: c.$gray-light-2;
+            line-height: 2;
+        }
+    }
+
+    &__contact-item {
+        text-align: center;
+    }
+
+    &__hours {
+        grid-area: hours;
+        
+        &-day {
+            display: inline-block;
+            min-width: 14rem;
+            color: c.$gray-light-1;
+        }
+
+        &-time {
+            color: c.$gray-light-2;
+        }
+    }
+
+    &__policy {
+        padding-top: 4rem;
+        margin: 0 auto;
+        width: s.$content-width;
+
+        &-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+        }
+    }
+
+    &__policy &__item {
+        &:last-child {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: c.$gray-light-3;
+        text-decoration: none;
+    }
+
+    &__social {
+        grid-area: social;
+        margin: 0 auto;
+
+        &-list {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        &-item {
+
+        }
+
+        &-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: url(#gradient1);
+        }
+    }
+}

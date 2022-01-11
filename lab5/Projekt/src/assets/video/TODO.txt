@@ -1,0 +1,2 @@
+Dodanie ładowania wideo odpowiedniego do rozmiaru ekranu urządzenia
+(coś w stylu responsywnych obrazków)

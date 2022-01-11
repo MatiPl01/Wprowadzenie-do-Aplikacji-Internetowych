@@ -1,0 +1,6 @@
+@use '../helpers/mixins' as *;
+
+.img-resp {
+    @include abs-center;
+    @include img-cover;
+}

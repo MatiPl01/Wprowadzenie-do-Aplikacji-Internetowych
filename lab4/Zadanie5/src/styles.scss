@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Mixins */
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Styles */
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    @include flex-center;
+}

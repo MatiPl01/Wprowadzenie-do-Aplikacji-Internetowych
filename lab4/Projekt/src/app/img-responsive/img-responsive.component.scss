@@ -1,0 +1,6 @@
+@use '../../styles.scss' as *;
+
+img {
+    @include abs-center;
+    @include img-cover;
+}

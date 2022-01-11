@@ -1,0 +1,10 @@
+<ng-multiselect-dropdown
+  [placeholder]="'filtruj ' + filterName"
+  [settings]="settings"
+  [data]="dropDownList"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  (onDeSelect)="onItemDeSelect($event)"
+  (onDeSelectAll)="onDeSelectAll($event)"
+></ng-multiselect-dropdown>

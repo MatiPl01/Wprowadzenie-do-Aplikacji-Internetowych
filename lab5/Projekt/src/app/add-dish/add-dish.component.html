@@ -1,0 +1,48 @@
+<section class="add-dish">
+  <h3 class="add-dish__heading heading-primary u-text-center u-margin-bottom-small">Dodaj potrawę</h3>
+  <div class="add-dish__info">
+    <h4 class="add-dish__info-heading">Jak dodawać zdjęcia?</h4>
+    <p class="add-dish__info-text">Formularz umożliwia dodawanie zdjęć wraz ze wskazaniem ich szerokości. Pozwala to na
+      lepsze dopasowywanie rozdzielczości zdjęć do urządzeń, na których są wyświetlane. Po dodaniu zdjęcia, zostanie
+      wyświetlona informacja w znajdującej się pod formularzem tabeli. W przypadku nieprawidłowo dodanego zdjęcia, możliwe jest jego
+      usunięcie, poprzez naciśnięcie krzyżyka, znajdującego się przy informacji o danym zdjęciu w tabeli. Wyświetlane
+      informacje o zdjęciach są sortowane według grup oraz rozdzielczości, w celu ułatwienia znalezienia odpowiedniej
+      pozycji.</p>
+    <h4 class="add-dish__info-heading">Co wpisać w formularzu?</h4>
+    <ul class="add-dish__tips">
+      <li class="add-dish__tip">
+        <p class="add-dish__tip-text">W komórce <b>url do zdjęcia</b> wprowadź adres url zdjęcia,</p>
+      </li>
+      <li class="add-dish__tip">
+        <p class="add-dish__tip-text">W komórce <b>szerokość zdjęcia</b> wprowadź szerokość zdjęcia w pikselach.
+          Akceptowane szerokości od 20px do 4000px,</p>
+      </li>
+      <li class="add-dish__tip">
+        <p class="add-dish__tip-text">W komórce <b>nr grupy</b> wprowadź numer grupy, do której należy zdjęcie. Zdjęcia o
+          tym samym numerze grupy powinny przedstawiać identyczne danie, a jedyną różnicą między nimi powinny być wymiary
+          zdjęcia (wysokość i szerokość). Zdjęcia z takim samym numerem grupy zostaną odpowiednio użyte, w zależności od
+          rozmiarów i rozdzielczości ekranu, na którym są wyświetlane.</p>
+      </li>
+    </ul>
+    <h4 class="add-dish__info-heading">Uwaga!</h4>
+    <p class="add-dish__info-text add-dish__info-text--important">
+      Dodawane danie musi mieć przynajmniej jedno zdjęcie. W przypadku braku zdjęć, zapisanie formularza jest niemożliwe
+    </p>
+  </div>
+  
+  <app-add-dish-form [images]="images" (imagesChangedEvent)="onImagesChange($event)"></app-add-dish-form>
+
+  <ul class="add-dish__table">
+    <li class="add-dish__column">
+      <p class="add-dish__column-text">Szerokość</p>
+    </li>
+    <li class="add-dish__column">
+      <p class="add-dish__column-text">Grupa</p>
+    </li>
+    <li class="add-dish__column">
+      <p class="add-dish__column-text">Url</p>
+    </li>
+  </ul>
+
+  <app-added-images [images]="images" (imagesChangedEvent)="onImagesChange($event)"></app-added-images>
+</section>

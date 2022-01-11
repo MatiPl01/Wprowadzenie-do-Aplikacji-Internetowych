@@ -1,0 +1,139 @@
+@use '../../styles.scss' as *;
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    pointer-events: none;
+    background: transparent;
+    transition: all .3s;
+    @include flex-center;
+}
+
+.basket {
+    background-color: $color-gray-light-1;
+    border-radius: .5rem;
+    padding-top: 6rem;
+    position: relative;
+    width: 90rem;
+    transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    transform: scale(.2);
+    opacity: 0;
+
+    &__button--close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 5rem;
+        height: 5rem;
+        @include bg-gradient-primary;
+        @include flex-center;
+        box-shadow: 0 0 .5rem rgba($color-black, .3);
+        border-radius: 50%;
+
+        .basket__button-icon {
+            width: 3rem;
+            height: 3rem;
+            fill: $color-white;
+            filter: drop-shadow(0 0 .3rem rgba($color-black, .4));
+        }
+    }
+
+    &__heading {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        color: $color-white;
+        display: block;
+        width: max-content;
+        font-size: 2.4rem;
+        padding: 1rem 2rem;
+        text-shadow: 0 0 1.5rem rgba($color-black, .6);
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -3rem;
+        @include bg-gradient-primary;
+    }
+
+    &__contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        padding: 1rem 4rem 4rem 4rem;
+        height: 45rem;
+        grid-gap: 2rem;
+        overflow-y: scroll;
+  
+        &::-webkit-scrollbar {
+            width: 1rem;
+
+            &-track {
+                background-color: transparent !important;
+            }
+
+            &-thumb {
+                border-radius: 5rem;
+                background: $color-gray-dark-3 !important;
+            }
+        }
+    }
+
+    &__footer {
+        @include bg-gradient-primary;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button--checkout {
+        padding: .75rem 1.5rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: $color-gray-dark-1;
+        border-radius: 10rem;
+        background-color: $color-white;
+        box-shadow: 0 0 .5rem rgba($color-black, .3);
+    }
+
+    .popup {
+        @include abs-center;
+
+        &__content {
+            @include flex-center;
+            flex-direction: column;
+        }
+
+        &__heading {
+            font-size: 3rem;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            color: $color-gray-dark-1;
+        }
+
+        &__icon {
+            height: 15rem;
+            width: 15rem;
+            fill: url(#gradient1);
+            filter: drop-shadow(0 0 1rem rgba($color-black, .2));
+        }
+    }
+}
+
+.wrapper.open {
+    background-color: rgba($color-black, .8);
+    pointer-events: all;
+
+    .basket {
+        box-shadow: 0 0 3rem rgba($color-black, .5);
+        transform: scale(1);
+        opacity: 1;
+    }
+}

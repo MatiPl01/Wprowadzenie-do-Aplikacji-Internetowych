@@ -1,0 +1,84 @@
+@use '../../../styles.scss' as *;
+
+.section-preview {
+    min-height: calc(100vh - 7rem);
+    background-color: $color-gray-dark-1;
+    @include flex-center;
+}
+
+.preview {
+    position: relative;
+    width: 60rem;
+    max-width: 90vw;
+    
+    &::before {
+        content: '';
+        padding-bottom: 100%;
+        display: block;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+
+        animation: zoom-in .75s .25s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards;
+        
+        &--close {
+            height: 5rem;
+            width: 5rem;
+            transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            
+            &:hover {
+                transform: rotate(270deg);
+            }
+        }
+    }
+
+    &__icon {
+        height: 100%;
+        width: 100%;
+        fill: $color-white;
+        filter: drop-shadow(0 0 .5rem rgba($color-black, .5));
+    }
+
+    &__figure {
+        position: absolute;
+        inset: 0;
+
+        animation: zoom-in .75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &__image {
+        @include img-cover;
+    }
+
+    &__caption {
+        position: absolute;
+        z-index: 1;
+        bottom: 2rem;
+        left: -15%;
+    }
+
+    &__heading {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-size: 2.4rem;
+        width: max-content;
+        width: 60rem;
+        max-width: 90vw;
+        color: $color-white;
+        text-shadow: 0 0 .5rem rgba($color-black, .5);
+        
+        animation: fade-in-right .75s .5s ease-out backwards;
+
+        &::first-letter {
+            text-transform: uppercase;
+            font-size: 1.25em;
+            color: $color-primary-light;
+        }
+    }
+}

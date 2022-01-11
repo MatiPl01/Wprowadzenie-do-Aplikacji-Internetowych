@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 5</title>
+</head>
+<body>
+  <section class="section-propagation">
+    <article class="propagation">
+      <div class="propagation__boxes">
+        <div class="propagation__box propagation__box--1" data-points="5" data-color="gray">
+          <div class="propagation__box propagation__box--2" data-points="2" data-color="red" data-threshold="30">
+            <div class="propagation__box propagation__box--3" data-points="1" data-color="yellow" data-threshold="50">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="jellos__menu">
+        <li class="jellos__menu-item">
+          <button class="jellos__btn jellos__btn--propagation">
+            <span>Start propagation</span>
+          </button>
+        </li>
+        <li class="jellos__menu-item">
+          <button class="jellos__btn jellos__btn--reset">
+            <span>Reset</span>
+          </button>
+        </li>
+      </ul>
+
+      <section class="propagation__messages">
+        <header class="propagation__messages-header">
+          <h2 class="propagation__heading">Messages</h2>
+
+          <div class="propagation__counter">
+            <p class="propagation__points">0</p>
+          </div>
+        </header>
+
+        <div class="propagation__messages-wrapper">
+          <ul class="propagation__messages-list propagation__messages-list--initial">
+            <li class="propagation__message">Click on a box to get points</li>
+            <li class="propagation__message">The bigger box, the more points you get</li>
+            <li class="propagation__message">The <span class="yellow">yellow</span> box will give you <strong>1 point</strong></li>
+            <li class="propagation__message">The <span class="red">red</span> box will give you <strong>2 points</strong></li>
+            <li class="propagation__message">The <span class="gray">gray</span> box will give you <strong>5 points</strong></li>
+            <li class="propagation__message">Press the Start/Stop propagation button to enable/disable propagation</li>
+            <li class="propagation__message">Press the reset button to reset event listeners and points counter</li>
+            <hr>
+          </ul>
+
+          <ul class="propagation__messages-list propagation__messages-list--added">
+          </ul>
+        </div>
+      </section>
+    </article>
+  </section>  
+</body>
+</html>

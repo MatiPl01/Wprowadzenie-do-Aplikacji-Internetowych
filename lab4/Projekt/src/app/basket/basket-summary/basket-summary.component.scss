@@ -1,0 +1,31 @@
+@use '../../../styles.scss' as *;
+
+.summary {
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__text {
+        min-width: 20rem;
+        font-size: 1.8rem;
+        color: $color-gray-dark-1;
+    }
+
+    &__value {
+        line-height: 1;
+        font-size: 2.4rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: $color-gray-dark-2;
+    }
+}

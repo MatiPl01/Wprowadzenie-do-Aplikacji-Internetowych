@@ -1,0 +1,81 @@
+<div class="popup-wrapper">
+  <div class="popup">
+    <article class="write-review">
+      <button class="write-review__button write-review__button--close" title="Close post form" (click)="onClose()">
+        <svg class="write-review__button-icon">
+          <use href="assets/svg/icons.svg#times"></use>
+        </svg>
+      </button>
+
+      <header class="write-review__header">
+        <h2 class="write-review__heading">Napisz recenzję</h2>
+      </header>
+
+      <form class="from" (ngSubmit)="onSubmit(f)" #f="ngForm" (reset)="onReset()">
+        <ul class="form__list">
+          <li class="form__item">
+            <div class="form__column form__column--left">
+              <label for="username" class="form__label">Twoja nazwa</label>
+            </div>
+            <div class="form__column form__column--right">
+              <input class="form__input" type="text" name="username" id="username" minlength="3" maxlength="20"
+                placeholder="Nazwa użytkownika" required ngModel #username="ngModel">
+              <p class="form__help" *ngIf="!username.valid && username.touched">
+                Podaj twoją nazwę (od 3 do 20 znaków)
+              </p>
+            </div>
+          </li>
+          <li class="form__item">
+            <div class="form__column form__column--left">
+              <label for="title" class="form__label">Tytuł recenzji</label>
+            </div>
+            <div class="form__column form__column--right">
+              <input class="form__input" type="text" name="title" id="title" minlength="5" maxlength="40"
+                placeholder="Tytuł recenzji" required ngModel #title="ngModel">
+              <p class="form__help" *ngIf="!title.valid && title.touched">
+                Podaj tytuł recenzji (od 5 do 40 znaków)
+              </p>
+            </div>
+          </li>
+          <li class="form__item">
+            <div class="form__column form__column--left">
+              <label for="body" class="form__label">Treść</label>
+            </div>
+            <div class="form__column form__column--right">
+              <textarea class="form__textarea" type="text" name="body" id="body" placeholder="Treść recenzji" minlength="50" maxlength="500"
+                required ngModel #body="ngModel"></textarea>
+              <p class="form__help" *ngIf="!body.valid && body.touched">
+                Treść recenzji powinna liczyć od 50 do 500 znaków
+              </p>
+            </div>
+          </li>
+          <li class="form__item">
+            <div class="form__column form__column--left">
+              <label for="date" class="form__label">Data zakupu</label>
+            </div>
+            <div class="form__column form__column--right">
+              <input class="form__date" type="date" name="date" id="date" placeholder="Data zakupu" min="2018-01-01" [max]="getCurrentDate()" ngModel #date="ngModel">
+            </div>
+          </li>
+          <li class="form__item">
+            <p class="form__info">Zostaw ocenę</p>
+          </li>
+          <li class="form__item">
+            <div class="form__column form__column--span">
+              <app-rating 
+                class="form__rating"
+                [(value)]="ratingValue"
+                [allowUserRating]="true"
+              ></app-rating>
+            </div>
+          </li>
+        </ul>
+
+        <div class="form__buttons">
+          <input type="submit" class="form__button form__button--save" value="Zapisz" [disabled]="!f.valid">
+          <input type="reset" class="form__button form__button--reset" value="Wyczyść">
+        </div>
+      </form>
+    </article>
+  </div>
+</div>

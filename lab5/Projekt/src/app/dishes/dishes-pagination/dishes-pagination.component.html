@@ -1,0 +1,47 @@
+<div class="pagination" *ngIf="pagesCount > 1">
+  <button class="pagination__button pagination__button--prev"
+    *ngIf="currentPage > 1"
+    (click)="changeCurrentPage(currentPage - 1)">
+    <svg class="pagination__icon">
+      <use href="assets/svg/icons.svg#angle-left"></use>
+    </svg>
+    <span class="pagination__text">Poprzednia</span>
+  </button>
+
+  <ul class="pagination__list">
+    <li class="pagination__item pagination__item--dots-1"
+        *ngIf="currentPage > 2 && pagesNumbers[0] > 2">
+      <span class="pagination__dots">...</span>
+    </li>
+    <li class="pagination__item pagination__item--dots-2"
+        *ngIf="currentPage < pagesCount - 1 && pagesNumbers[pagesNumbers.length - 1] < pagesCount - 1">
+      <span class="pagination__dots">...</span>
+    </li>
+    <li class="pagination__item pagination__item--number pagination__item--number-1">
+      <span class="pagination__number"
+        [ngClass]="{active: 1 === currentPage}"
+        (click)="changeCurrentPage(1)">1</span>
+    </li>
+    <li class="pagination__item pagination__item--number"
+        *ngFor="let number of pagesNumbers">
+      <span class="pagination__number"
+        [ngClass]="{active: number === currentPage}"
+        (click)="changeCurrentPage(number)">{{ number }}</span>
+    </li>
+    <li class="pagination__item pagination__item--number" 
+       *ngIf="pagesCount > 1">
+      <span class="pagination__number"
+        [ngClass]="{active: pagesCount === currentPage}"
+        (click)="changeCurrentPage(pagesCount)">{{ pagesCount }}</span>
+    </li>
+  </ul>
+
+  <button class="pagination__button pagination__button--next"
+    *ngIf="currentPage < pagesCount"
+    (click)="changeCurrentPage(currentPage + 1)">
+    <span class="pagination__text">Następna</span>
+    <svg class="pagination__icon">
+      <use href="assets/svg/icons.svg#angle-right"></use>
+    </svg>
+  </button>
+</div>

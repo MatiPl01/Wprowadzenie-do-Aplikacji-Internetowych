@@ -1,0 +1,18 @@
+<ul class="dishes__list">
+  <li class="dishes__item" 
+      *ngFor="let dish of dishes
+          | filter:  'category' : filteringTrigger
+          | filter:  'cuisine'  : filteringTrigger
+          | filter:  'unitPrice': filteringTrigger
+          | filter:  'rating'   : filteringTrigger
+          | paginate: pageIdx   : dishesPerPage : paginationTrigger
+  ">
+    <app-dish 
+      [dish]="dish"
+      [classObj]="getClassObj(dish)"
+      (removeDish)="onRemoveDish($event)">
+    </app-dish>
+  </li>
+</ul>
+
+<app-dishes-pagination class="dishes__pagination"></app-dishes-pagination>

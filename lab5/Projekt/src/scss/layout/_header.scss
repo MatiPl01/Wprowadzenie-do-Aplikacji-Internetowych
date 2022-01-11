@@ -1,0 +1,120 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/animations' as *;
+@use '../helpers/colors' as c;
+
+.header {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(to bottom, transparent 70%, c.$black);
+        pointer-events: none;
+    }
+
+    &__logo-wrapper {
+        @include abs-center;
+    }
+
+    &__logo {
+        @include abs-center;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    &__icon {
+        width: 20rem;
+        height: 20rem;
+        fill: c.$white;
+        filter: drop-shadow(0 0 1rem rgba(c.$black, .3));
+        animation: fade-in-top .5s .5s ease-out backwards;
+    }
+
+    &__heading {
+        font-family: Pacifico;
+        text-shadow: 0 0 1rem rgba(c.$black, .3);
+
+        &--primary {
+            font-size: 6rem;
+            font-weight: 300;
+            color: c.$white;
+            animation: fade-in-top .5s .6s ease-in-out backwards;
+        }
+
+        &--secondary {
+            font-size: 3rem;
+            color: c.$gray-light-4;
+            margin-top: -1.5rem;
+            font-weight: 100;
+            animation: fade-in-top .5s .7s ease-in-out backwards;
+        }
+    }
+
+    &__video-wrapper {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        z-index: -1;
+
+        &::before {
+            content: '';
+            z-index: 1;
+            inset: 0;
+            position: absolute;
+            background: radial-gradient(transparent 60%, rgba(c.$black, .75));
+        }
+    }
+
+    &__video {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__scroll-wrapper {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__scroll {
+        @include abs-center;
+        width: 3rem;
+        height: 9rem;
+        cursor: pointer;
+
+        span {
+            display: block;
+            border-radius: 10rem;
+            border: .3rem solid c.$white;
+            width: 100%;
+            height: 6rem;
+            padding: .5rem;
+            animation: animate-scroll 2s infinite;
+            box-shadow: 0 0 .5rem rgba(c.$black, .35);
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: c.$white;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                width: 1.5rem;
+                height: 1.5rem;
+                animation: animate-scroll-dot 2s infinite;
+                box-shadow: 0 0 .5rem rgba(c.$black, .35);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use '../helpers/mixins' as *;
+
+.section-not-found {
+    width: 100vw;
+    height: 100vh;
+    @include flex-center;
+}
+
+.not-found {
+    max-width: 90vw;
+
+    &__heading {
+        &--primary {
+            font-size: 5rem;
+        }
+        
+        &--secondary {
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+}

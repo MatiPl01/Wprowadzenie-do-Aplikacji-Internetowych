@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 5</title>
+</head>
+<body>
+  <section class="section-jellos">
+
+    <article class="jellos">
+      <header class="jellos__header">
+        <h2 class="jellos__heading jellos__heading--primary">
+          Propagation
+        </h2>
+        <h3 class="jellos__heading jellos__heading--secondary">
+          Press jellos to see how propagation works
+        </h3>
+
+        <div class="jellos__counter">
+          <p class="jellos__points">0</p>
+        </div>
+      </header>
+
+      <section class="jellos__container">
+        <div class="jellos__jello jellos__jello--1" data-points="5" data-color="yellow">
+          <p class="jellos__number">1</p>
+
+          <div class="jellos__wrapper jellos__wrapper--2" >
+            <div class="jellos__jello jellos__jello--2" data-points="2" data-color="red">
+              <p class="jellos__number">2</p>
+
+              <div class="jellos__wrapper jellos__wrapper--3">
+                <div class="jellos__jello jellos__jello--3" data-points="1" data-color="blue">
+                  <p class="jellos__number">3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ul class="jellos__menu">
+        <li class="jellos__menu-item">
+          <button class="jellos__btn jellos__btn--propagation">
+            <span>Start propagation</span>
+          </button>
+        </li>
+        <li class="jellos__menu-item">
+          <button class="jellos__btn jellos__btn--reset">
+            <span>Reset</span>
+          </button>
+        </li>
+      </ul>
+    </article>
+
+    <input type="checkbox" name="messages-toggle" class="messages__checkbox" id="mess-toggle" checked>
+
+    <article class="messages">
+      <header class="messages__header">
+        <label for="mess-toggle" class="messages__toggle">
+          <div class="messages__btn messages__btn--open">
+            <span></span>
+          </div>
+        </label>
+        <h2 class="messages__heading">
+          Messages
+        </h2>
+      </header>
+
+      <section class="messages__wrapper">
+        <ul class="messages__list messages__list--initial">
+          <li class="messages__item">Click on a jello to get points</li>
+          <li class="messages__item">The bigger jello, the more points you get</li>
+          <li class="messages__item">The <span class="blue">blue</span> jello will give you <strong>1 point</strong></li>
+          <li class="messages__item">The <span class="red">red</span> jello will give you <strong>2 points</strong></li>
+          <li class="messages__item">The <span class="yellow">yellow</span> jello will give you <strong>5 points</strong></li>
+          <li class="messages__item">Press the Start/Stop propagation button to enable/disable propagation</li>
+          <li class="messages__item">Press the reset button to reset event listeners and points counter</li>
+        </ul>
+
+        <ul class="messages__list messages__list--added"></ul>
+      </section>
+    </article>
+    
+  </section>
+</body>
+</html>

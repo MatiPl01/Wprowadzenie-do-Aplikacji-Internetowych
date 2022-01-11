@@ -1,0 +1,192 @@
+@use '../../styles.scss' as *;
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    pointer-events: none;
+    background: transparent;
+    transition: all .3s;
+    @include flex-center;
+}
+
+.popup {
+    background-color: $color-gray-light-1;
+    border-radius: .5rem;
+    padding: 6rem 3rem 2rem 3rem;
+    position: relative;
+    width: 70rem;
+    transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    transform: scale(.2);
+    opacity: 0;
+
+    &__heading {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        color: $color-white;
+        display: block;
+        width: max-content;
+        font-size: 2.4rem;
+        padding: 1rem 2rem;
+        text-shadow: 0 0 1.5rem rgba($color-black, .6);
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -3rem;
+        @include bg-gradient-primary;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 100%;
+
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+        }
+
+        &__column {
+            position: relative;
+
+            &--left {
+                text-align: right;
+                width: 37.5%;
+            }
+
+            &--right {
+                text-align: left;
+                width: 62.5%;
+            }
+        }
+
+        &__label {
+            font-size: 1.4rem;
+            padding: .5rem 3rem .5rem 1rem;
+            border-radius: 10rem;
+            color: $color-gray-dark-1;
+            @include bg-gradient-primary;
+        }
+
+        &__help {
+            font-size: 1.2rem;
+            color: $color-red;
+            position: absolute;
+            z-index: 1;
+            top: -.75rem;
+            padding: 0 .5rem;
+            background-color: $color-white;
+            border-radius: 5rem;
+            left: -.5rem;
+            max-width: 95%;
+        }
+
+        &__wrapper {
+            padding-right: 2rem;
+            display: flex;
+            gap: 1rem
+        }
+
+        &__textarea,
+        &__input {
+            border-radius: 10rem;
+            border: 2px solid transparent;
+            outline: none;
+            font-size: 1.6rem;
+            padding: .6rem 1.5rem;
+            margin-left: -2rem;
+            width: 100%;
+            font-family: Lato, Arial, Helvetica, sans-serif;
+            box-shadow: 0 0 .5rem rgba($color-black, .3);
+        }
+
+        &__textarea {
+            border-radius: 1rem;
+        }
+
+        &__buttons {
+            padding-top: 3rem;
+            display: flex;
+            width: max-content;
+            margin: 0 auto;
+            gap: 3rem;   
+        }
+
+        &__button {
+            border: none;
+            outline: none;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &-icon {
+                fill: $color-white;
+                filter: drop-shadow(0 0 .5rem rgba($color-black, .3));
+                height: 3rem;
+                width: 3rem;
+            }
+
+            &--close {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                z-index: 1;
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                @include flex-center;
+                @include bg-gradient-primary;
+            }
+
+            &--save,
+            &--reset {
+                descent-override: 1.8rem;
+                padding: 1rem 1.5rem;
+                font-weight: 700;
+                color: $color-white;
+                border-radius: 10rem
+            }
+
+            &--save {
+                @include bg-gradient-green;
+            }
+
+            &--reset {
+                @include bg-gradient-red;
+            }
+
+            &[disabled] {
+                @include bg-gradient-gray;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+    border: 2px solid $color-red !important;
+}
+
+.wrapper.open {
+    background-color: rgba($color-black, .8);
+    pointer-events: all;
+
+    .popup {
+        box-shadow: 0 0 3rem rgba($color-black, .5);
+        transform: scale(1);
+        opacity: 1;
+    }
+}

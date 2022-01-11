@@ -1,0 +1,16 @@
+<form class="order" [ngClass]="{hidden: !dish.stock}">
+  <button class="order__button order__button--minus" (click)="onDecrement($event)"
+    [ngClass]="{hidden: !quantity}">
+    <svg class="order__icon">
+      <use href="assets/svg/icons.svg#minus"></use>
+    </svg>
+  </button>
+  <input class="order__quantity" type="number" name="price" min="0" [max]="dish.stock" [value]="quantity"
+    (change)="onInput($event)">
+  <button class="order__button order__button--plus" (click)="onIncrement($event)"
+    [ngClass]="{hidden: !dish.stock || dish.stock === quantity}">
+    <svg class="order__icon">
+      <use href="assets/svg/icons.svg#plus"></use>
+    </svg>
+  </button>
+</form>

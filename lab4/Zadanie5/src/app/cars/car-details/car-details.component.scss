@@ -1,0 +1,42 @@
+@use '../cars.component.scss' as *;
+
+.details {
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__name {
+            font-size: 1.6rem;
+            color: $color-gray-dark-2;
+            margin-bottom: .5rem;
+        }
+
+        &__value {
+            font-size: 1.4rem;
+            color: $color-gray-dark-3;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        &__color {
+            @include colorBox;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+    }
+}

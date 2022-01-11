@@ -1,0 +1,50 @@
+@use '../../../styles.scss' as *;
+
+.post {
+    background-color: $color-gray-light-1;
+    padding: 2rem;
+    box-shadow: 0 0 .5rem rgba($color-black, .15);
+    height: 100%;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        margin-bottom: 1rem;
+        text-shadow: 0 0 .2rem rgba($color-black, .25);
+        width: 100%;
+        border-bottom: 1px solid $color-gray-light-3;
+        padding-bottom: 1rem;
+        
+        &::first-letter {
+            text-transform: uppercase;
+            font-size: 1.25em;
+            color: $color-primary;
+        }
+    }
+
+    &__body {
+        flex: 1 1 0;
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        color: $color-gray-dark-1;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        color: $color-gray-dark-2;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__group {
+        font-size: 1.2rem;
+        color: $color-gray-dark-1;
+    }
+}

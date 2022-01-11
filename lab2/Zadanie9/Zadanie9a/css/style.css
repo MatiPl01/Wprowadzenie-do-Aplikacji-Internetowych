@@ -1,0 +1,486 @@
+@charset "UTF-8";
+/* Global reset */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Variables*/
+/* Mixins */
+/* Animations */
+@keyframes hamburger-1 {
+  50% {
+    transform: translate(8rem, -1rem) rotate(-10deg);
+  }
+  51% {
+    transform: translate(8rem, -8rem) rotate(-40deg);
+  }
+  to {
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+}
+@keyframes hamburger-2 {
+  to {
+    transform: rotate(180deg) scale(1.15);
+    background-color: transparent;
+  }
+}
+@keyframes hamburger-3 {
+  50% {
+    transform: translate(-8rem, 1rem) rotate(10deg);
+  }
+  51% {
+    transform: translate(-8rem, -8rem) rotate(40deg);
+  }
+  to {
+    transform: rotate(45deg);
+    background-color: white;
+  }
+}
+@keyframes fade-in-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes move-down {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  25% {
+    top: 25%;
+    opacity: 1;
+  }
+  75% {
+    top: 75%;
+    opacity: 1;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}
+/* Styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.section-nav {
+  height: 100vh;
+  position: relative;
+}
+
+.main {
+  background-color: #eee;
+}
+
+.nav-bar {
+  z-index: 9999;
+}
+
+/*
+ * First nav-bar
+ */
+.nav-bar--1 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid #d3616a;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar--1 .nav-bar__list {
+  height: 6rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar--1 .nav-bar__list--left {
+  flex-basis: 40%;
+}
+.nav-bar--1 .nav-bar__item {
+  background-color: #ef0b0c;
+  padding: 1rem;
+  border: 1px solid #5432bc;
+}
+.nav-bar--1 .nav-bar__link:link, .nav-bar--1 .nav-bar__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar--1 .nav-bar__text {
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+.nav-bar--1 .nav-bar__icon {
+  margin-right: 1rem;
+}
+.nav-bar--1 .nav-bar__icon--exit {
+  width: 2rem;
+  height: 2rem;
+}
+.nav-bar--1 .nav-bar__icon--trolley {
+  width: 3rem;
+  height: 3rem;
+}
+.nav-bar--1 .nav-bar__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+@media only screen and (max-width: 37.5em) {
+  .nav-bar--1 .nav-bar__list {
+    flex-basis: 100%;
+  }
+  .nav-bar--1 .nav-bar__item {
+    flex: 1 1 0;
+  }
+}
+
+/*
+ * Second nav-bar
+ */
+.nav-bar__checkbox {
+  display: none;
+}
+
+.nav-bar--2 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background-color: white;
+  box-shadow: 0.5rem 0 1.5rem rgba(0, 0, 0, 0.3);
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.5s;
+  /* Enabling mobile nav-bar */
+}
+.nav-bar--2 .nav-bar__logo {
+  position: relative;
+  font-size: 2rem;
+}
+.nav-bar--2 .nav-bar__logo-icon {
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  width: 0.4rem;
+  height: 1.4em;
+  background-color: #94e4cf;
+}
+.nav-bar--2 .nav-bar__logo-icon::before, .nav-bar--2 .nav-bar__logo-icon::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+.nav-bar--2 .nav-bar__logo-icon, .nav-bar--2 .nav-bar__logo-icon::before, .nav-bar--2 .nav-bar__logo-icon::after {
+  position: absolute;
+  display: inline-block;
+  border-radius: 10rem;
+}
+.nav-bar--2 .nav-bar__logo-icon::before {
+  background-color: #28c498;
+  transform: translate(-0.6rem, 0.2rem);
+}
+.nav-bar--2 .nav-bar__logo-icon::after {
+  background-color: #dff4ed;
+  transform: translate(0.6rem, -0.2rem);
+}
+.nav-bar--2 .nav-bar__logo-text {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: #2f2d43;
+}
+.nav-bar--2 .nav-bar__button {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(30deg, #2fd161, #26badd) #2bc796;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 1rem 1.4rem;
+  border-radius: 10rem;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  position: relative;
+  transition: transform 0.2s;
+}
+.nav-bar--2 .nav-bar__button::before {
+  content: "";
+  position: absolute;
+  border-radius: 10rem;
+  background: linear-gradient(30deg, #2fd161, #26badd) #2bc796;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.nav-bar--2 .nav-bar__button:hover {
+  transform: translateY(-1px);
+}
+.nav-bar--2 .nav-bar__button:hover::before {
+  transform: scale(1.2, 1.6);
+  opacity: 0;
+}
+.nav-bar--2 .nav-bar__button:active {
+  transform: translateY(1px) scale(0.99);
+}
+.nav-bar--2 .nav-bar__toggle {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.5s 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.nav-bar--2 .nav-bar__toggle-icon {
+  height: 2px;
+  width: 4rem;
+}
+.nav-bar--2 .nav-bar__toggle-icon::before, .nav-bar--2 .nav-bar__toggle-icon::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+.nav-bar--2 .nav-bar__toggle-icon, .nav-bar--2 .nav-bar__toggle-icon::before, .nav-bar--2 .nav-bar__toggle-icon::after {
+  position: absolute;
+  display: inline-block;
+  border-radius: 10rem;
+}
+.nav-bar--2 .nav-bar__toggle-icon, .nav-bar--2 .nav-bar__toggle-icon::before, .nav-bar--2 .nav-bar__toggle-icon::after {
+  background-color: black;
+  animation-fill-mode: both !important;
+}
+.nav-bar--2 .nav-bar__toggle-icon::before, .nav-bar--2 .nav-bar__toggle-icon::after {
+  transition: all 0.2s;
+}
+.nav-bar--2 .nav-bar__toggle-icon::before {
+  transform: translateY(-1rem);
+}
+.nav-bar--2 .nav-bar__toggle-icon::after {
+  transform: translateY(1rem);
+}
+.nav-bar--2 .nav-bar__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 60rem;
+}
+.nav-bar--2 .nav-bar__link:link, .nav-bar--2 .nav-bar__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #b2b1b6;
+  pointer-events: all;
+  position: relative;
+  padding: 1rem 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .nav-bar--2 .nav-bar__link:link, .nav-bar--2 .nav-bar__link:visited {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .nav-bar--2 {
+    height: 6rem;
+  }
+  .nav-bar--2 .nav-bar {
+    /* Mobile nav-bar styles */
+  }
+  .nav-bar--2 .nav-bar__toggle {
+    display: flex;
+  }
+  .nav-bar--2 .nav-bar__logo {
+    align-self: flex-start;
+    margin-top: -0.5rem;
+  }
+  .nav-bar--2 .nav-bar__button {
+    font-size: 2.5rem;
+    margin-top: 6rem;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .nav-bar--2 .nav-bar__links {
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    max-height: 48rem;
+  }
+  .nav-bar--2 .nav-bar__link:link, .nav-bar--2 .nav-bar__link:visited {
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, black 50%);
+    background-size: 240%;
+    transition: all 0.4s;
+    background-position: 0%;
+    color: black;
+    font-size: 3rem;
+    transition: background-position 0.5s ease;
+  }
+  .nav-bar--2 .nav-bar__link:hover {
+    background-position: 100%;
+    color: white;
+  }
+  .nav-bar--2 .nav-bar__toggle:hover > .nav-bar__toggle-icon::before {
+    transform: translateY(-0.8rem);
+  }
+  .nav-bar--2 .nav-bar__toggle:hover > .nav-bar__toggle-icon::after {
+    transform: translateY(0.8rem);
+  }
+}
+
+/* 
+Animacja otwierania paska nawigacji znajduje się w Zadanie9b. Nie dodawałem jej
+w tyn pliku, ponieważ, w celu umieszczenia dwóch pasków nawigacji, wykorzystuję
+position: sticky;, więc po otwarciu paska, przesuwa się zawartość strony, co daje
+niepożądany efekt
+*/
+/*
+ * Sections text
+ */
+.header-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__heading {
+  font-size: 6rem;
+  font-family: "Poppins";
+  text-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+@media only screen and (max-width: 37.5em) {
+  .header__heading {
+    font-size: 4rem;
+  }
+}
+.header__link {
+  margin: 0 auto;
+  width: 4rem;
+  height: 6rem;
+  display: block;
+  position: relative;
+}
+.header__link span {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header__link span:nth-child(2) {
+  animation-delay: 0.6666666667s;
+}
+.header__link span:nth-child(3) {
+  animation-delay: 1.3333333333s;
+}
+.header__link span::before, .header__link span::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  border-radius: 10rem;
+  height: 0.5rem;
+  width: 50%;
+  box-shadow: 0 -2px 0.75rem rgba(0, 0, 0, 0.5);
+}
+.header__link span::before {
+  left: 3%;
+  transform-origin: right;
+}
+.header__link span::after {
+  right: 3%;
+  transform-origin: left;
+}
+@media only screen and (max-width: 37.5em) {
+  .header__link {
+    width: 2.5rem;
+    height: 4rem;
+  }
+  .header__link span::before,
+.header__link span::after {
+    height: 0.35rem;
+  }
+}
+.header__link--down span {
+  animation: move-down 2s linear infinite both;
+}
+.header__link--down span::before {
+  transform: rotate(30deg);
+}
+.header__link--down span::after {
+  transform: rotate(-30deg);
+}
+.header__link--up span {
+  animation: move-down 2s reverse linear infinite both;
+}
+.header__link--up span::before {
+  transform: rotate(-30deg);
+}
+.header__link--up span::after {
+  transform: rotate(30deg);
+}
+
+/*# sourceMappingURL=style.css.map */

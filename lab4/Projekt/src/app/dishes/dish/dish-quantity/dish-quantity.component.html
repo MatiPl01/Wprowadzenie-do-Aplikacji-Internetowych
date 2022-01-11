@@ -1,0 +1,12 @@
+<div class="quantity">
+  <div class="quantity__stock"
+       [ngClass]="{'low-quantity': dish.stock && dish.stock <= 3, 'sold-out': !dish.stock}">
+    <div *ngIf="dish.stock; else notInStock">
+      <span class="quantity__stock-text">Pozostało</span>
+      <span class="quantity__stock-units">{{ dish.stock - quantity }}</span>
+      <span class="quantity__stock-text">szt.</span>
+    </div>
+    <ng-template #notInStock>
+      <span class="quantity__stock-text">Brak towaru</span>
+    </ng-template>
+</div>

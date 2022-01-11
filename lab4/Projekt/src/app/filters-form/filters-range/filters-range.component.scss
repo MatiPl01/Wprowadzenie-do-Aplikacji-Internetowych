@@ -1,0 +1,44 @@
+@use '../../../styles.scss' as *;
+
+::ng-deep {
+    .ngx-slider {
+        margin-top: 0 !important;
+        width: calc(100% - 1rem) !important;
+    }
+
+    .ngx-slider-span {
+        &.ngx-slider {
+            &-bar {
+                margin-left: 1rem !important;
+                width: 98% !important;
+            }
+
+            &-selection {
+                background: $gradient-primary !important;
+            }
+
+            &-pointer {
+                background: $gradient-primary !important;
+                transform: scale(.5);
+
+                &::after {
+                    width: .75rem !important;
+                    height: .75rem !important;
+                    left: 50% !important;
+                    top: 50% !important;
+                    transform: translate(-50%, -50%) !important;
+                }
+            }
+
+            &-bubble {
+                font-size: 1.6rem !important;
+                top: 1.5rem !important;
+
+                &.ngx-slider-model-high,
+                &.ngx-slider-ceil {
+                    margin-left: 1.25rem !important;
+                }
+            }
+        }
+    }
+}

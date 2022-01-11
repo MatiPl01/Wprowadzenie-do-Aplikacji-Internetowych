@@ -1,0 +1,14 @@
+<app-header 
+  [heading]="'Photos'"
+></app-header>
+
+<section class="section-photos">
+  <div class="photos">
+    <ul class="photos__list">
+      <app-photo
+        *ngFor="let photo of photos"
+        [photo]="photo"
+      ></app-photo>
+    </ul>
+  </div>
+</section>

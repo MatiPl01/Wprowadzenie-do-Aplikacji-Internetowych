@@ -1,0 +1,55 @@
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+@use '../helpers/mixins' as *;
+
+.order {
+    user-select: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: inherit; // Use font-size to change size of this component
+    
+    &__quantity {
+        outline: none;
+        border: 1px solid c.$gray-light-3;
+        border-radius: 10em;
+        height: 1.75em;
+        margin: 0 .35em;
+        width: 2.5em;
+        text-align: center;
+        color: c.$gray-dark-3;
+
+        &::-webkit-inner-spin-button {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+        }
+    }
+
+    &__button {
+        padding: .25em;
+        line-height: 1;
+        border-radius: 50%;
+        box-shadow: 0 0 .25em rgba(c.$black, .2);
+        background: g.$primary;
+        @include flex-center;
+    }
+
+    &__icon {
+        width: .7em;
+        height: .7em;
+        fill: c.$white;
+    }
+}
+
+.order--white {
+    .order {
+        &__button {
+            background: c.$white;
+        }
+
+        &__icon {
+            fill: c.$gray-dark-1;
+        }
+    }
+}

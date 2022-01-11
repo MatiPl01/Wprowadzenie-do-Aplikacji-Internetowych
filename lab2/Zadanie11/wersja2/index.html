@@ -1,0 +1,104 @@
+<!-- 
+  To rozwiązanie jest nieco łatwiejsze i potrzebuje mniej linijek CSS, w celu prawidłowego
+  działania. Rozwiązanie opiera się na stworzeniu przycisków jako linków do elementów na
+  stronie, a następnie, skorzystaniu z pseudo selektora :target dla znaczników, które
+  posiadają odpowiednie id wskazane w linku.
+
+  Rozwiązanie różni się także tym od wersji pierwszej, że naciśnięcie na link z podlisty
+  powoduje zamknięcie się głównej listy, ponieważ zmieniany jest target. Wydaj mi się,
+  że jest to rozwiązanie gorsze, ponieważ implementacja rozwijającego się menu nie jest
+  ukryta przed użytkownikiem (zmiana w adresie strony), przez co jest podatna na wystąpienie
+  błędów.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 11</title>
+</head>
+<body>
+  <main class="main">
+    <menu class="menu">
+
+      <li class="menu__item" id="menu-account">
+        <a href="#menu-account" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-user-circle"></use>
+          </svg>
+          <span class="menu__text">My account</span>
+        </a>
+        <ul class="sub-menu">
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-1</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-2</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-3</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__item" id="menu-about">
+        <a href="#menu-about" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-address-card"></use>
+          </svg>
+          <span class="menu__text">About</span>
+        </a>
+        <ul class="sub-menu">
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-1</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-2</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__item" id="menu-support">
+        <a href="#menu-support" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-info"></use>
+          </svg>
+          <span class="menu__text">Support</span>
+        </a>
+        <ul class="sub-menu">
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-1</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="menu__item">
+        <a href="#" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-log-out"></use>
+          </svg>
+          <span class="menu__text">Log out</span>
+        </a>
+      </li>
+
+    </menu>
+  </main>
+</body>
+</html>

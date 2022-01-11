@@ -1,0 +1,20 @@
+{
+    "symbols": [        
+        {
+            "currency": "USD",
+            "symbol": "$"
+        },
+        {
+            "currency": "EUR",
+            "symbol": "€"
+        }
+    ],
+    "mainCurrency": "USD",
+    "exchangeRates": [
+        {
+            "from": "USD",
+            "to": "EUR",
+            "ratio": 0.88
+        }
+    ]
+}

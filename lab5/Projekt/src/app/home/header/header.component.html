@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="header__logo-wrapper">
+    <div class="header__logo" parallax [ratio]="-.25">
+      <svg class="header__icon">
+        <use href="assets/svg/logo.svg#logo"></use>
+      </svg>
+      <h1 class="header__heading header__heading--primary">
+        YummyFood
+      </h1>
+      <h2 class="header__heading header__heading--secondary">
+        Tanio, Szybko, Smacznie
+      </h2>
+    </div>
+  </div>
+
+  <div class="header__scroll-wrapper">
+    <div class="header__scroll" (click)="onScroll()" parallax [ratio]="-.25">
+      <span></span>
+    </div>
+  </div>
+
+  <div class="header__video-wrapper">
+    <video class="header__video" src="assets/video/header-video-1920.m4v" autoplay loop muted oncanplay="play()" onloadedmetadata="muted = true"></video>
+  </div>
+</header>

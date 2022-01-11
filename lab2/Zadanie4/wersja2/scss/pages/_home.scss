@@ -1,0 +1,7 @@
+@use '../abstracts/colors' as c;
+
+
+.section-cities {
+    background-color: c.$gray-light-1;
+    padding: 10rem 0;
+}

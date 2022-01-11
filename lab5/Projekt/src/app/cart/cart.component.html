@@ -1,0 +1,18 @@
+<section class="section-cart">
+  <article class="cart">
+    <section class="cart__contents">
+      <h3 class="cart__heading heading-primary">
+        Koszyk
+      </h3>
+
+      <a class="cart__button cart__button--back" routerLink="/dishes"
+        [queryParams]="paginationService.getCurrentQueryParams()">&larr; Powrót do listy dań</a>
+  
+      <app-cart-items-list></app-cart-items-list>
+    </section>
+  
+    <section class="cart__summary">
+      <app-cart-summary></app-cart-summary>
+    </section>
+  </article>
+</section>

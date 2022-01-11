@@ -1,0 +1,6 @@
+<div class="buttons">
+  <button class="button" (click)="onClick()" 
+          [disabled]="isDisabled"
+          [ngStyle]=" { cursor: isDisabled ? 'not-allowed' : 'pointer' }">Click</button>
+  <button class="button" (click)="onReset()">Reset</button>
+</div>

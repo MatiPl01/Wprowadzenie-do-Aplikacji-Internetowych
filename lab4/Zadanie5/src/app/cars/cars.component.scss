@@ -1,0 +1,137 @@
+@use '../app.component.scss' as *;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-gray-light-1: #fafafa;
+$color-gray-light-2: #dfdfdf;
+$color-gray-light-3: #ccc;
+
+$color-gray-dark-1: #111;
+$color-gray-dark-2: #333;
+$color-gray-dark-3: #555;
+$color-gray-dark-4: #767676;
+
+@mixin colorBox {
+    display: inline-block ;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid $color-gray-dark-1;
+}
+
+.cars {
+    background-color: $color-gray-light-1;
+    box-shadow: 0 0 1.5rem rgba($color-black, .2);
+    border-radius: 1rem;
+    padding: 3rem 4rem;
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+        font-family: Poppins, Lato, Arial, Helvetica, sans-serif;
+
+        &--primary {
+            color: $color-gray-dark-2;
+            font-size: 2.6rem;
+        }
+
+        &--secondary {
+            color: $color-gray-dark-3;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__picker {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__select {
+         -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    &__select,
+    &__dropdown--main {
+        width: 15rem;        
+        padding: .75rem 1rem;
+        border-radius: 10rem;
+        outline: none;
+    }
+
+    &__group {
+        position: absolute;
+        inset: 0;
+        padding: .75rem 1rem;
+        border-radius: 10rem;
+    }
+
+    &__dropdown {
+        font-size: 1.4rem;
+        user-select: none;
+
+        &--main {
+            border: 1px solid $color-gray-dark-4;
+            position: relative;
+        }
+
+        &--sub {
+            position: absolute;
+            list-style: none;
+            display: none;
+            width: 100%;
+            left: 0;
+            top: calc(100% + .6rem);
+            background-color: $color-white;
+            box-shadow: 0 0 1.5rem rgba($color-black, .3);
+
+            .cars {
+                &__color-item {
+                    font-size: 1.4rem;
+                    padding: .75rem 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    position: relative;
+
+                    &:first-child {
+                        &::before {
+                            content: '';
+                            width: calc(100% - 2rem);
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 1px;
+                            background-color: $color-black;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $color-gray-dark-4;
+                        color: $color-white;
+                    }
+                }
+
+                &__color {
+                    @include colorBox;
+                }
+            }
+        }
+    }
+
+    &__dropdown {
+        &--main.open &--sub {
+            display: block;
+        }
+    }
+
+    &__details {
+        margin-top: 3rem;
+        border-top: 1px solid $color-gray-dark-3;
+        padding-top: 1rem;
+    }
+}

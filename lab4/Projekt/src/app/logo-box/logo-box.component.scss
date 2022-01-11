@@ -1,0 +1,44 @@
+@use '../../styles.scss' as *;
+
+.logo {
+    font-family: 'Pacifico', 'Poppins', Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    margin-top: -1rem;
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        filter: drop-shadow(0 0 .5rem rgba($color-black, .3));
+        fill: url(#gradient2);
+    }
+
+    &__headings {
+        position: relative;
+        margin-left: 1rem;
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &__heading {
+        text-shadow: 0 1px .3rem rgba($color-black, .15);
+
+        &--main {
+            font-size: 3rem;
+            color: $color-gray-dark-2;
+            line-height: 1;
+        }
+
+        &--sub {
+            position: absolute;
+            bottom: -.75rem;
+            left: 1rem;
+            width: max-content;
+            z-index: 1;
+            font-size: 1.4rem;
+            color: $color-gray-dark-3;
+        }
+    }
+}

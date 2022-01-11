@@ -1,0 +1,59 @@
+<article class="cars">
+  <header class="cars__header">
+    <h2 class="cars__heading cars__heading--primary">
+      Cars picker
+    </h2>
+    <h3 class="cars__heading cars__heading--secondary">
+      Choose your desired car
+    </h3>
+  </header>
+  
+  <form class="cars__picker">
+    <select class="cars__select" (change)="onBrandChange($event)">
+      <option value="">Choose brand</option>
+      <hr>
+      <option *ngFor="let brand of getBrands()">
+        {{ brand }}
+      </option>
+    </select>
+
+    <select class="cars__select" (change)="onModelChange($event)">
+      <option value="" *ngIf="!choice.brand; else chooseModel">-</option>
+      <ng-template #chooseModel>
+        <option value="">Choose model</option>
+      </ng-template>
+      <hr>
+      <option *ngFor="let model of getModels()">
+        {{ model }}
+      </option>
+    </select>
+
+    <div class="cars__dropdown cars__dropdown--main" appDropdown>
+      <div for="colors" class="cars__group">
+        <div *ngIf="!choice.model; else chooseColor">-</div>
+        <ng-template #chooseColor>
+          <div *ngIf="!choice.color; else showColor">Choose color</div>
+        </ng-template>
+        <ng-template #showColor>
+          <div>{{ choice.color }}</div>
+        </ng-template>
+      </div>
+      <div for="colors" class="cars__dropdown cars__dropdown--sub">
+        <li class="cars__color-item" *ngIf="choice.model">Choose color</li>
+        <li *ngFor="let color of getColors()" (click)="onColorChange(color)" class="cars__color-item">
+          <span class="cars__color" [ngStyle]="{ backgroundColor: getColor(color) }"></span>
+          {{ color }}
+        </li>
+      </div>
+    </div>
+  </form>
+
+  <section class="cars__details">
+    <app-car-details
+      [brand]="choice.brand"
+      [model]="choice.model"
+      [colorName]="choice.color"
+      [colorValue]="getColor(choice.color)"
+    ></app-car-details>
+  </section>
+</article>

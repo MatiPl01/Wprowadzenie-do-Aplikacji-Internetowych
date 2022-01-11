@@ -1,0 +1,139 @@
+@use '../../../styles.scss' as *;
+
+.dish {
+    background-color: $color-gray-light-1;
+    border-radius: .3rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 0 0 1rem rgba($color-black, .2);
+    position: relative;
+
+    &.cheap,
+    &.expensive {
+        &::after {
+            content: '';
+            @include abs-center;
+            width: calc(100% + 1.5rem);
+            height: calc(100% + 1.5rem);
+            z-index: -1;
+            box-shadow: 0 0 1rem rgba($color-black, .35);
+            border-radius: .5rem;
+        }
+    }
+
+    &.cheap::after { @include bg-gradient-red; }
+    &.expensive::after { @include bg-gradient-green; }
+
+    &__figure {
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+        
+        // Use a trick with ::before pseudo element to ensure that all
+        // images keep the same aspect ratio
+        &::before {
+            content: '';
+            display: block;
+            padding-bottom: 50%; // Aspect ratio: 2 / 1
+
+            @include respond(tab-port) {
+                padding-bottom: 60%; // Aspect ratio: 5 / 3
+            }
+
+            @include respond(big-desktop) {
+                padding-bottom: 60%; // Aspect ratio: 5 / 3
+            }
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 0rem;
+        z-index: 1;
+        padding: .5rem 1rem .5rem 2rem;
+        text-shadow: 0 0 1rem rgba($color-black, .35);
+        max-width: 90%;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            @include bg-gradient-primary;
+            border-top-right-radius: 10rem;
+            border-bottom-right-radius: 10rem;
+            z-index: -1;
+            box-shadow: 0 0 1.5rem rgba($color-black, .5);
+        }
+    }
+
+    &__heading {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        color: $color-white;
+        font-size: 2.2rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        overflow: hidden;
+        cursor: help;
+
+        // This trick adds padding to the right side of a heading
+        // only if the text doesn't overflow
+        &::after {
+            content: '';
+            width: 1rem;
+            display: inline-block;
+        }
+    }
+
+    &__body {
+        padding: 1rem 2rem 0rem 2rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__details {
+        flex-grow: 1;
+        margin-bottom: 2rem;
+    }
+
+    &__quantity {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    &__footer {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-left-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        @include bg-gradient-primary;
+        padding: 1rem 2rem;
+    }
+
+    &__button {
+        position: absolute;
+        top: -1.5rem;
+        right: -1.5rem;
+        z-index: 1;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        box-shadow: 0 0 .5rem rgba($color-black, .5);
+        @include bg-gradient-primary;
+        @include flex-center;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-white;
+        filter: drop-shadow(0 0 .3rem rgba($color-black, .35));
+    }
+}

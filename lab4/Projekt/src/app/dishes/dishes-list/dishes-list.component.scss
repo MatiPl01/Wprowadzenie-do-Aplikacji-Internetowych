@@ -1,0 +1,26 @@
+@use '../../../styles.scss' as *;
+
+.dishes {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-column-gap: 3%;
+        grid-row-gap: 5rem;
+
+        @include respond(tab-land) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 5%;
+        }
+
+        @include respond(tab-port) {
+            grid-template-columns: 1fr;
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        list-style: none;
+    }
+}

@@ -1,0 +1,116 @@
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+@use '../helpers/mixins' as *;
+
+.added-images {
+    width: 100%;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    &__item {
+        background-color: c.$white;
+        border-radius: .5rem;
+        box-shadow: 0 0 .5rem rgba(c.$black, .3);
+        display: flex;
+        align-items: stretch;
+
+        & > * {
+            @include flex-center;
+        }
+
+        &.separated {
+            margin-top: 2rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -1.5rem;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background-color: c.$gray-light-4;
+            }
+        }
+    }
+
+    &__path {
+        justify-content: flex-start;
+    }
+
+    &__path,
+    &__group,
+    &__width-value {
+        font-size: 1.6rem;
+        color: c.$gray-dark-1;
+    }
+
+    &__width,
+    &__path,
+    &__group {
+        padding: 1rem;
+    }
+
+    &__path {
+        width: 80%;
+        word-break: break-all;
+    }
+
+    &__group {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            transform: skewX(-10deg);
+            z-index: -1;
+            background: g.$primary;
+        }
+    }
+
+    &__width {
+        flex-grow: 1;
+        text-align: end;
+
+        &-unit {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: c.$gray-dark-3;
+        }
+    }
+
+    &__button {
+        font-size: 1.6rem;
+        background-color: transparent;
+        margin-right: 1rem;
+
+        &-icon {
+            fill: c.$gray-dark-2;
+            width: 1em;
+            height: 1em;
+        }
+    }
+
+    &__no-images {
+        font-size: 1.6rem;
+        color: c.$gray-dark-1;
+        width: max-content;
+        padding: .5rem;
+        text-align: left;
+        margin: 2rem auto 0 auto;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        background: g.$primary;
+    }
+}

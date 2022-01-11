@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 8</title>
+</head>
+<body>
+  <section class="section-balloon">
+    <header class="header">
+      <h1 class="header__heading">Pompowanie balonika</h1>
+    </header>
+
+    <article class="balloon">
+      <p class="balloon__emojis">
+        &nbsp;
+        <span class="balloon__emoji balloon__emoji--balloon">🎈</span>
+        <span class="balloon__emoji balloon__emoji--explosion">💥</span>
+      </p>
+
+      <article class="menu hidden">
+        <header class="menu__header">
+          <h2 class="menu__heading">Stan balonika</h2>
+        </header>
+        <menu class="menu__menu">
+          <li class="menu__item menu__item--progress">
+            <p class="menu__wrapper">
+              <span class="menu__text">Stan napompowania balonika</span>
+              <span class="menu__value menu__value--current">&nbsp;</span>
+            </p>
+            <span class="menu__progress">
+              <span></span>
+            </span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__text">Minimalna pojemność balonika</span>
+            <span class="menu__value menu__value--min">&nbsp;</span>
+          </li>
+          <li class="menu__item">
+            <span class="menu__text">Maksymalna pojemność balonika</span>
+            <span class="menu__value menu__value--max">&nbsp;</span>
+          </li>
+        </menu>
+      </article>
+    </article>
+
+    <article class="info">
+      <input type="checkbox" name="show-info" id="show-info" class="info__checkbox hidden">
+
+      <button class="info__button" title="Instrukcja obsługi balonika 😀">
+        <label for="show-info" class="info__label">
+          <span>?</span>
+          <span>x</span>
+        </label>
+      </button>
+
+      <article class="info-popup">
+        <header class="info-popup__header">
+          <h2 class="info-popup__heading">Instrukcja</h2>
+        </header>
+
+        <section class="info-popup__instructions">
+          <p class="info-popup__description">
+            Poniżej znajduje się lista dostępnych funkcjonalności. Każdej funkcjonalności 
+            jest przyporządkowany odpowiedni klawisz lub skrót klawiaturowy.
+          </p>
+
+          <ul class="info-popup__list">
+            <li class="info-popup__item">
+              <span class="info-popup__key">
+                <span>&uarr;</span>
+              </span>
+              <span class="info-popup__explanation">
+                Naciśnij klawisz <b>strzałka w górę</b>, aby napompować balonika.
+                Każde naciśnięcie tego klawisza <b>zwiększa</b> pojemność balonika o&nbsp;<b>10%</b>.
+                Balonik ma limitowaną pojemność i,&nbsp;jeżeli zostanie zbyt mocno napompowany,
+                pęknie.
+              </span>
+            </li>
+            <li class="info-popup__item">
+              <span class="info-popup__key">
+                <span>&darr;</span>
+              </span>
+              <span class="info-popup__explanation">
+                Naciśnij klawisz <b>strzałka w&nbsp;dół</b>, aby wypompować powietrze balonika.
+                Każde naciśnięcie tego klawisza <b>zmniejsza</b> pojemność balonika o&nbsp;<b>10%</b>.
+                Balonik po całkowitym wypompowaniu nie zniknie z&nbsp;ekranu.
+              </span>
+            </li>
+            <li class="info-popup__item">
+              <span class="info-popup__key">
+                <span>Ctrl + PPM</span>
+              </span>
+              <span class="info-popup__explanation">
+                Naciśnij równocześnie klawisze <b>Ctrl</b> oraz <b>prawy przycisk myszy</b>
+                na baloniku, aby zobaczyć informacje o&nbsp;bieżącym stanie napompowania balonika.
+              </span>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </article>
+
+  </section>
+</body>
+</html>

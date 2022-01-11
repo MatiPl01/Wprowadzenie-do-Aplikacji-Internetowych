@@ -1,0 +1,58 @@
+<nav class="nav-bar" [ngClass]="{'nav-bar--header': isHeaderVisible, 'nav-bar--normal': !isHeaderVisible}">
+  <div class="nav-bar__content">
+    <a routerLink="/" class="nav-bar__logo">
+      <svg class="nav-bar__icon">
+        <use href="assets/svg/logo.svg#logo"></use>
+      </svg>
+      <div class="nav-bar__headings">
+        <h2 class="nav-bar__heading nav-bar__heading--primary">
+          YummyFood
+        </h2>
+        <h3 class="nav-bar__heading nav-bar__heading--secondary">
+          Blisko, szybko, smacznie
+        </h3>
+      </div>
+    </a>
+    
+    <ul class="nav-bar__list">
+      <li class="nav-bar__item">
+        <a class="nav-bar__link" 
+          routerLink="/dishes"
+          [queryParams]="defaultPaginationQueryParams">Menu</a>
+      </li>
+
+      <li class="nav-bar__item">
+        <a routerLink="/about" class="nav-bar__link">O restauracji</a>
+      </li>
+
+      <li class="nav-bar__item nav-bar__item--cart">
+        <a routerLink="/cart" class="nav-bar__button nav-bar__button--cart" title="Pokaż potrawy dodane do koszyka"
+          [attr.data-items-count]="this.orderService.totalQuantity"
+          [ngClass]="{'big-quantity': orderService.totalQuantity >= 10}">
+          <svg class="nav-bar__button-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
+            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path
+              d="M576 216v16c0 13.255-10.745 24-24 24h-8l-26.113 182.788C514.509 462.435 494.257 480 470.37 480H105.63c-23.887 0-44.139-17.565-47.518-41.212L32 256h-8c-13.255 0-24-10.745-24-24v-16c0-13.255 10.745-24 24-24h67.341l106.78-146.821c10.395-14.292 30.407-17.453 44.701-7.058 14.293 10.395 17.453 30.408 7.058 44.701L170.477 192h235.046L326.12 82.821c-10.395-14.292-7.234-34.306 7.059-44.701 14.291-10.395 34.306-7.235 44.701 7.058L484.659 192H552c13.255 0 24 10.745 24 24zM312 392V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm112 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm-224 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24z">
+            </path>
+          </svg>
+          <span class="nav-bar__button-text">Koszyk</span>
+        </a>
+      </li>
+
+      <li class="nav-bar__item nav-bar__item--add">
+        <a routerLink="/add-dish" class="nav-bar__button nav-bar__button--add" title="Dodaj nowe danie">
+          <svg class="nav-bar__button-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+            </path>
+          </svg>
+        </a>
+      </li>
+      
+      <li class="nav-bar__item nav-bar__item--currency">
+        <app-choose-currency title="Wybierz walutę"></app-choose-currency>
+      </li>
+    </ul>
+  </div>
+</nav>

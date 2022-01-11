@@ -1,0 +1,50 @@
+<article class="dish" [ngClass]="classObj">
+  <button class="dish__button dish__button--remove" (click)="onRemoveClick()">
+    <svg class="dish__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z">
+      </path>
+    </svg>
+  </button>
+
+  <figure class="dish__figure"
+    [routerLink]="[dish._id]">
+    <app-responsive-image class="dish__image"
+      [breakpoints]="dish.images.gallery[dish.images.coverIdx].breakpoints"
+      [paths]="dish.images.gallery[dish.images.coverIdx].paths"
+      [sizes]="'(max-width: 28em) calc(100vw - 1.875em), (max-width: 56.25em) 25em, (max-width: 75em) calc((100vw - 14.625em) / 2), (min-width: 135em) 37em, (min-width: 112.5em) calc((100vw - 24em) / 3), calc((100vw - 20em) / 3)'"
+      [alt]="dish.name">
+    </app-responsive-image>
+    <figcaption class="dish__caption">
+      <h3 class="dish__heading"    
+          [title]="dish.name">
+        {{ dish.name | uppercase }}
+      </h3>
+    </figcaption>
+  </figure>
+
+  <section class="dish__body">
+    <app-dish-details class="dish__details" [dish]="dish">
+      <div class="dish__rating">
+        <div class="dish__rating-row">
+          <app-rating class="dish__rating-component" [(value)]="dish.rating"></app-rating>
+        </div>
+        <div class="dish__rating-row">
+          <p class="dish__rating-text">Liczba ocen</p>
+          <p class="dish__rating-count">{{ dish?.ratesCount || 0 }}</p>
+        </div>
+      </div>
+    </app-dish-details>
+    <app-dish-quantity class="dish__quantity" [dish]="dish"></app-dish-quantity>
+  </section>
+
+  <footer class="dish__footer">
+    <app-price 
+      [amount]="currencyService.calcDishCurrentPrice(dish)"
+      [currency]="currencyService.getCurrentCurrencySymbol()"
+    ></app-price>
+    <app-dish-order class="order--white"
+      [dish]="dish"
+      (changeQuantity)="onQuantityChange($event)"
+    ></app-dish-order>
+  </footer>
+</article>

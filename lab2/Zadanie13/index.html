@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 13</title>
+</head>
+<body id="body">
+  <a href="#body" class="to-top-btn">
+    <span></span>
+  </a>
+
+  <div class="main-wrapper">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__headings u-margin-bottom-medium">
+          <h1 class="header__heading heading-primary">
+            JavaScript tutorial
+          </h1>
+          <h2 class="header__heading heading-secondary">
+            From <strong>zero</strong> to <strong>hero</strong>
+          </h2>
+        </div>
+        <a class="header__scroll" href="#main"></a>
+      </div>
+      <div class="header__images">
+        <ul class="header__slider">
+          <li class="header__image-item">
+            <img class="header__image" 
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/code-1.jpg"
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-3840/tutorial/covers/code-1.jpg 3840w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-2560/tutorial/covers/code-1.jpg 2560w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-2048/tutorial/covers/code-1.jpg 2048w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/code-1.jpg 1920w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1280/tutorial/covers/code-1.jpg 1280w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-640/tutorial/covers/code-1.jpg 640w"
+                 sizes="(min-width: 112.5em) max(3/2 * calc(100vh - 3em),   min(112.5em, 90vw)),
+                        (min-width: 75em)    max(3/2 * calc(100vh - 2.5em), min(93.75em, 90vw)),
+                        (min-width: 56.25em) max(3/2 * calc(100vh - 1.6875em), 95vw),
+                        max(100vw, 3/2 * 100vh)"
+                 alt="JavaScript code">
+                 <!-- Every image is has 3:2 ratio so we can calculate width based on height -->
+          </li>
+          <li class="header__image-item">
+            <img class="header__image" 
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/code-2.jpg"
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-3840/tutorial/covers/code-2.jpg 3840w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-2560/tutorial/covers/code-2.jpg 2560w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-2048/tutorial/covers/code-2.jpg 2048w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/code-2.jpg 1920w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1280/tutorial/covers/code-2.jpg 1280w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-640/tutorial/covers/code-2.jpg 640w"
+                 sizes="(min-width: 112.5em) max(3/2 * calc(100vh - 3em),   min(112.5em, 90vw)),
+                        (min-width: 75em)    max(3/2 * calc(100vh - 2.5em), min(93.75em, 90vw)),
+                        (min-width: 56.25em) max(3/2 * calc(100vh - 1.6875em), 95vw),
+                        max(100vw, 3/2 * 100vh)"
+                 alt="JavaScript code">
+          </li>
+          <li class="header__image-item">
+            <img class="header__image" 
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/code-3.jpg"
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-3840/tutorial/covers/code-3.jpg 3840w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-2560/tutorial/covers/code-3.jpg 2560w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-2048/tutorial/covers/code-3.jpg 2048w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/code-3.jpg 1920w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1280/tutorial/covers/code-3.jpg 1280w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-640/tutorial/covers/code-3.jpg 640w"
+                 sizes="(min-width: 112.5em) max(3/2 * calc(100vh - 3em),   min(112.5em, 90vw)),
+                        (min-width: 75em)    max(3/2 * calc(100vh - 2.5em), min(93.75em, 90vw)),
+                        (min-width: 56.25em) max(3/2 * calc(100vh - 1.6875em), 95vw),
+                        max(100vw, 3/2 * 100vh)"
+                 alt="JavaScript code">
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+      <input type="checkbox" class="navbar__checkbox" id="nav-toggle">
+      
+      <nav class="navbar">
+        <label for="nav-toggle" class="navbar__toggle">
+          <div class="navbar__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      
+        <div class="navbar__logo">
+          <div class="logo">
+            <div class="logo__part">
+              <svg viewBox="0 0 110 26">
+                <g>
+                  <text>
+                    <tspan y="23" x="0">
+                      <tspan>E</tspan>
+                      <tspan>A</tspan>
+                      <tspan>S</tspan>
+                      <tspan>Y</tspan>
+                    </tspan>
+                  </text>
+                </g>
+              </svg>
+            </div>
+            <div class="logo__part">
+              <svg viewBox="0 0 110 26">
+                <g>
+                  <text>
+                    <tspan y="23" x="0">
+                      <tspan>D</tspan>
+                      <tspan>E</tspan>
+                      <tspan>V</tspan>
+                    </tspan>
+                  </text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      
+        <div class="navbar__content">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">
+                <span class="navbar__text">
+                  About
+                </span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">
+                <span class="navbar__text">
+                  Courses
+                </span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">
+                <span class="navbar__text">
+                  Career
+                </span>
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">
+                <span class="navbar__text">
+                  Contact
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="nav-helper">
+          <div class="nav-helper__bg"></div>
+          <nav class="nav-helper__overlay"></nav>
+        </div>
+
+        <section class="section-description u-margin-top-large" id="main">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="section__heading heading-secondary heading-secondary--gradient">
+              What you will learn
+            </h2>
+          </div>
+
+          <article class="description">
+            <p class="description__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, repudiandae! Cum possimus reprehenderit recusandae accusamus eum velit asperiores. Delectus incidunt necessitatibus in possimus earum? Cumque quidem omnis recusandae magni, eum reprehenderit excepturi at dolores inventore quae molestiae culpa voluptates labore aspernatur? Odio eos alias maiores asperiores ullam error libero porro officia, dicta excepturi tenetur ut culpa ipsa voluptatem beatae ex amet! Deserunt natus accusantium debitis sed deleniti quo. Accusantium temporibus culpa itaque maxime voluptatibus incidunt atque eligendi molestiae. Suscipit non eligendi maxime corporis placeat enim, harum quod consequatur, ab ipsa molestias ex laudantium sint dicta pariatur unde minus vero, alias veritatis sunt. Eum mollitia reiciendis in veniam deleniti quisquam ab soluta fuga aperiam facilis! Laboriosam porro tempora a, cumque veniam ab earum alias expedita ducimus maxime similique vitae tenetur harum consectetur minus unde obcaecati quibusdam, eaque voluptatibus at? Ullam cumque esse, eligendi assumenda numquam, illo dicta alias delectus deleniti ut debitis incidunt architecto consequuntur explicabo excepturi quam natus libero rem velit, quas rerum veniam nobis? Vel illo molestias totam? Rerum obcaecati ad quam odio nisi maxime amet magni in blanditiis earum itaque eius, voluptatum sed magnam accusantium repudiandae fugit placeat? Neque, veniam officiis? Fugit dolore similique facilis modi. Necessitatibus, suscipit.
+            </p>
+          </article>
+        </section>
+
+        <section class="section-stories">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="section__heading heading-secondary heading-secondary--gradient">
+              User reviews
+            </h2>
+          </div>
+
+          <div class="story">
+            <figure class="story__shape">
+              <img class="story__img" 
+                  src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-1.jpg"
+                  srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/people/person-1.jpg 1000w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-1.jpg 500w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/people/person-1.jpg 250w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-125/tutorial/people/person-1.jpg 125w"
+                  sizes="(max-width: 56.25em) 7.5em,
+                         (max-width: 75em)    8.4375em,
+                         (min-width: 112.5em) 11.25em,
+                         9.375em"
+                  alt="Person">
+              <figcaption class="story__caption">Adam Abshire</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="story__heading heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur
+                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+          
+          <div class="story">
+            <figure class="story__shape">
+              <img class="story__img" 
+                  src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-2.jpg"
+                  srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/people/person-2.jpg 1000w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-2.jpg 500w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/people/person-2.jpg 250w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-125/tutorial/people/person-2.jpg 125w"
+                  sizes="(max-width: 56.25em) 7.5em,
+                         (max-width: 75em)    8.4375em,
+                         (min-width: 112.5em) 11.25em,
+                         9.375em"
+                  alt="Person">
+              <figcaption class="story__caption">Jeremy Shanahan</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="story__heading heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur
+                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+          
+          <div class="story">
+            <figure class="story__shape">
+              <img class="story__img" 
+                  src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-3.jpg"
+                  srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/people/person-3.jpg 1000w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-3.jpg 500w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/people/person-3.jpg 250w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-125/tutorial/people/person-3.jpg 125w"
+                  sizes="(max-width: 56.25em) 7.5em,
+                         (max-width: 75em)    8.4375em,
+                         (min-width: 112.5em) 11.25em,
+                         9.375em"
+                  alt="Person">
+              <figcaption class="story__caption">Hector Murazik</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="story__heading heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur
+                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+
+          <div class="story">
+            <figure class="story__shape">
+              <img class="story__img" 
+                  src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-4.jpg"
+                  srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/people/person-4.jpg 1000w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-4.jpg 500w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/people/person-4.jpg 250w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-125/tutorial/people/person-4.jpg 125w"
+                  sizes="(max-width: 56.25em) 7.5em,
+                         (max-width: 75em)    8.4375em,
+                         (min-width: 112.5em) 11.25em,
+                         9.375em"
+                  alt="Person">
+              <figcaption class="story__caption">Patty Grimes</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="story__heading heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur
+                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+
+          <div class="story">
+            <figure class="story__shape">
+              <img class="story__img" 
+                  src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-5.jpg"
+                  srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/people/person-5.jpg 1000w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/people/person-5.jpg 500w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/people/person-5.jpg 250w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-125/tutorial/people/person-5.jpg 125w"
+                  sizes="(max-width: 56.25em) 7.5em,
+                         (max-width: 75em)    8.4375em,
+                         (min-width: 112.5em) 11.25em,
+                         9.375em"
+                  alt="Person">
+              <figcaption class="story__caption">Elaine Ziemann</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="story__heading heading-tertiary u-margin-bottom-small">Lorem ipsum dolor sit amet.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur
+                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-book">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="section__heading heading-secondary heading-secondary--gradient">
+              Start learning now
+            </h2>
+          </div>
+
+          <div class="book">
+            <figure class="book__figure">
+              <img class="book__image" 
+                  src="https://ik.imagekit.io/MatiPl01/tr:w-1280/tutorial/covers/man-coding.jpg" 
+                  srcset="https://ik.imagekit.io/MatiPl01/tr:w-2048/tutorial/covers/man-coding.jpg 2048w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-1920/tutorial/covers/man-coding.jpg 1920w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-1280/tutorial/covers/man-coding.jpg 1280w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-640/tutorial/covers/man-coding.jpg 640w,
+                          https://ik.imagekit.io/MatiPl01/tr:w-360/tutorial/covers/man-coding.jpg 360w"
+                  sizes="(max-width: 37.5em)  85vw,
+                         (max-width: 56.25em) calc(.85 * 3/4 * 100vw),
+                         (max-width: 75em)    calc(.85 * 3/4 * 95vw),
+                         (min-width: 125em)   57.375em,
+                         (min-width: 112.5em) calc(.85 * 3/5 * 90vw),
+                         (min-width: 105em)   47.8125em,
+                         calc(.85 * 3/5 * 90vw)"
+                  alt="A man writing code">
+            </figure>
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="book__heading heading-secondary">
+                    Enroll now
+                  </h2>
+                </div>
+      
+                <div class="form__group">
+                  <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+      
+                <div class="form__group">
+                  <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+      
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="disable-notifications" name="notifications">
+                    <label for="disable-notifications" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Don't send the me latest updates
+                    </label>
+                  </div>
+      
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="enable-notifications" name="notifications">
+                    <label for="enable-notifications" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Send the me latest updates
+                    </label>
+                  </div>
+                </div>
+      
+                <div class="form__group">
+                  <button class="btn btn--primary">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <article class="showcase">
+          <header class="showcase__header header-gradient">
+            <h3 class="showcase__heading showcase__heading--header header-gradient__heading">
+              About the author
+            </h3>
+          </header>
+          <figure class="showcase__figure">
+            <img class="showcase__img" 
+                src="https://ik.imagekit.io/MatiPl01/tr:w-400/tutorial/author/author.jpg" 
+                srcset="https://ik.imagekit.io/MatiPl01/tr:w-640/tutorial/author/author.jpg 640w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-400/tutorial/author/author.jpg 400w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-200/tutorial/author/author.jpg 200w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-100/tutorial/author/author.jpg 100w"
+                sizes="(max-width: 37.5em)  calc(.45 * (87vw - 4em)),
+                       (max-width: 45em)    7em,
+                       (max-width: 56.25em) calc(1/4 * 100vw - 4.5em),
+                       (max-width: 75em)    calc(1/4 * 95vw - 5em),
+                       (min-width: 125em)   15.75em,
+                       (min-width: 112.5em) calc(1/5 * 90vw - 6.75em),
+                       (min-width: 105em)   13.125em,
+                       calc(1/5 * 90vw - 5.625em)"
+                alt="Author photo">
+          </figure>
+          <section class="showcase__details">
+            <ul class="showcase__list showcase__list--details">
+              <li class="showcase__field">
+                <p class="showcase__field-name">Full name</p>
+                <p class="showcase__field-value">Stewart Hamill</p>
+              </li>
+              <li class="showcase__field">
+                <p class="showcase__field-name">Job title</p>
+                <p class="showcase__field-value">Full stack developer</p>
+              </li>
+              <li class="showcase__field">
+                <p class="showcase__field-name">Phone number</p>
+                <p class="showcase__field-value">226-864-3263</p>
+              </li>
+            </ul>
+          </section>
+          <footer class="showcase__footer">
+            <h4 class="showcase__heading showcase__heading--footer">
+              Find me on
+            </h4>
+            <ul class="showcase__list showcase__list--social">
+              <li class="showcase__icon icon icon--github">
+                <a href="#" class="showcase__Link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="showcase__icon icon icon--linkedin">
+                <a href="#" class="showcase__Link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="showcase__icon icon icon--facebook">
+                <a href="#" class="showcase__Link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="showcase__icon icon icon--twitter">
+                <a href="#" class="showcase__Link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="showcase__icon icon icon--instagram">
+                <a href="#" class="showcase__Link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </aside>
+
+      <aside class="ads">
+        <ul class="ads__list">
+          <li class="ads__ad">
+            <h4 class="ads__heading">
+              Advertisment
+            </h4>
+            <figure class="ads__figure">
+              <img class="ads__image"
+                    src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/ads/ad-1.jpg" 
+                    srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/ads/ad-1.jpg 1000w,
+                            https://ik.imagekit.io/MatiPl01/tr:w-750/tutorial/ads/ad-1.jpg 750w,
+                            https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/ads/ad-1.jpg 500w,
+                            https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/ads/ad-1.jpg 250w"
+                    sizes="(max-width: 37.5em)  calc(1/2 * (100vw - 4em)),
+                           (max-width: 45em)    10.4375em,
+                           (max-width: 56.25em) calc(1/4 * 100vw - 2em),
+                           (max-width: 75em)    calc(1/4 * 95vw - 2em),
+                           (min-width: 125em)   19.5em,
+                           (min-width: 112.5em) calc(1/5 * 90vw - 3em),
+                           (min-width: 105em)   16.25em,
+                           calc(1/5 * 90vw - 2.5em)"
+                    alt="Advertisment">
+            </figure>
+          </li>
+          <li class="ads__ad">
+            <h4 class="ads__heading">
+              Advertisment
+            </h4>
+            <figure class="ads__figure">
+              <img class="ads__image"
+                    src="https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/ads/ad-2.jpg" 
+                    srcset="https://ik.imagekit.io/MatiPl01/tr:w-1000/tutorial/ads/ad-2.jpg 1000w,
+                            https://ik.imagekit.io/MatiPl01/tr:w-750/tutorial/ads/ad-2.jpg 750w,
+                            https://ik.imagekit.io/MatiPl01/tr:w-500/tutorial/ads/ad-2.jpg 500w,
+                            https://ik.imagekit.io/MatiPl01/tr:w-250/tutorial/ads/ad-2.jpg 250w"
+                    sizes="(max-width: 37.5em)  calc(1/2 * (100vw - 4em)),
+                           (max-width: 45em)    10.4375em,
+                           (max-width: 56.25em) calc(1/4 * 100vw - 2em),
+                           (max-width: 75em)    calc(1/4 * 95vw - 2em),
+                           (min-width: 125em)   19.5em,
+                           (min-width: 112.5em) calc(1/5 * 90vw - 3em),
+                           (min-width: 105em)   16.25em,
+                           calc(1/5 * 90vw - 2.5em)"
+                    alt="Advertisment">
+            </figure>
+          </li>
+        </ul>
+      </aside>
+
+      <footer class="footer">
+        <div class="footer__logo-wrapper">
+          <div class="footer__logo">
+            <div class="logo">
+              <div class="logo__part">
+                <svg viewBox="0 0 110 26">
+                  <g>
+                    <text>
+                      <tspan y="23" x="0">
+                        <tspan>E</tspan>
+                        <tspan>A</tspan>
+                        <tspan>S</tspan>
+                        <tspan>Y</tspan>
+                      </tspan>
+                    </text>
+                  </g>
+                </svg>
+              </div>
+              <div class="logo__part">
+                <svg viewBox="0 0 110 26">
+                  <g>
+                    <text>
+                      <tspan y="23" x="0">
+                        <tspan>D</tspan>
+                        <tspan>E</tspan>
+                        <tspan>V</tspan>
+                      </tspan>
+                    </text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article class="footer__info">
+          <section class="footer__info-box">
+            <h3 class="footer__heading footer__heading--info heading-tertiary">Useful information 1</h3>
+            <p class="footer__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ab nam corrupti. Nemo, facilis quia eius perferendis dolore officia obcaecati.
+            </p>
+          </section>
+          <section class="footer__info-box">
+            <h3 class="footer__heading footer__heading--info heading-tertiary">Useful information 2</h3>
+            <p class="footer__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ab nam corrupti. Nemo, facilis quia eius perferendis dolore officia obcaecati.
+            </p>
+          </section>
+        </article>
+
+        <article class="footer__contact">
+          <header class="footer__header header-gradient">
+            <h3 class="footer__heading footer__heading--social header-gradient__heading">
+              Contact me
+            </h3>
+          </header>
+          <figure class="footer__figure">
+            <img class="footer__img" 
+                src="https://ik.imagekit.io/MatiPl01/tr:w-400/tutorial/author/author.jpg" 
+                srcset="https://ik.imagekit.io/MatiPl01/tr:w-640/tutorial/author/author.jpg 640w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-400/tutorial/author/author.jpg 400w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-200/tutorial/author/author.jpg 200w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-100/tutorial/author/author.jpg 100w"
+                sizes="(max-width: 37.5em)  calc(100vw - 6em),
+                       (max-width: 56.25em) calc(2/5 * (3/4 * 100vw - 7.5em)),
+                       (max-width: 75em)    calc(1/4 * (3/4 * 95vw - 6.1875em)),
+                       (min-width: 125em)   27em,
+                       (min-width: 112.5em) calc(2/7 * (90vw - 18em)),
+                       (min-width: 105em)   22.5em,
+                       calc(2/7 * (90vw - 15em))"
+                alt="Author photo">
+          </figure>
+          <footer class="footer__social">
+            <h4 class="footer__heading footer__heading--social">
+              You cand find me on
+            </h4>
+            <ul class="footer__list footer__list--social">
+              <li class="footer__icon icon icon--github">
+                <a href="#" class="footer__link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon icon icon--linkedin">
+                <a href="#" class="footer__link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon icon icon--facebook">
+                <a href="#" class="footer__link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon icon icon--twitter">
+                <a href="#" class="footer__link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon icon icon--instagram">
+                <a href="#" class="footer__link">
+                  <svg class="icon">
+                    <use href="svg/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <div class="footer__buttons">
+          <ul class="footer__list footer__list--buttons">
+            <li class="footer__item">
+              <a href="#" class="footer__button">link 1</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__button">link 2</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__button">link 3</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__button">link 4</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__button">link 5</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__policy">
+          <ul class="footer__list footer__list--policy">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Copyright 2021 Easy Dev. All rights reserved.</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms of Use</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="hidden">
+    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="0" y1="100%" x2="100%" y2="0" id="gradient1">
+        <stop class="stop-color stop-color--1" offset="0" />
+        <stop class="stop-color stop-color--2" offset="100%" />
+      </linearGradient>
+      <linearGradient x1="0" y1="100%" x2="100%" y2="0" id="gradient2">
+        <stop class="stop-color stop-color--1" offset="0" />
+        <stop class="stop-color stop-color--2" offset="100%" />
+      </linearGradient>
+      <linearGradient x1="0" y1="100%" x2="100%" y2="0" id="gradient3">
+        <stop class="stop-color stop-color--1" offset="0" />
+        <stop class="stop-color stop-color--2" offset="100%" />
+      </linearGradient>
+      <linearGradient x1="0" y1="100%" x2="100%" y2="0" id="gradient4">
+        <stop class="stop-color stop-color--1" offset="0" />
+        <stop class="stop-color stop-color--2" offset="100%" />
+      </linearGradient>
+      <linearGradient x1="0" y1="100%" x2="100%" y2="0" id="gradient5">
+        <stop class="stop-color stop-color--1" offset="0" />
+        <stop class="stop-color stop-color--2" offset="100%" />
+      </linearGradient>
+    </svg>
+  </div>
+</body>
+</html>

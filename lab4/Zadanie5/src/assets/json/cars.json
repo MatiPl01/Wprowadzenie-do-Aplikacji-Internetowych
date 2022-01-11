@@ -1,0 +1,200 @@
+[
+    {
+        "brand": "BMW",
+        "model": "i4 M50",
+        "colors": [
+            {
+                "name": "white",
+                "value": "#f0f0f0"
+            },
+            {
+                "name": "black",
+                "value": "#151515"
+            },
+            {
+                "name": "orange",
+                "value": "#993314"
+            },
+            {
+                "name": "blue",
+                "value": "#1a2e68"
+            },
+            {
+                "name": "red",
+                "value": "#9d1827"
+            }
+        ]
+    },
+    {
+        "brand": "BMW",
+        "model": "840i Gran Coupé",
+        "colors": [
+            {
+                "name": "white",
+                "value": "#f0f0f0"
+            },
+            {
+                "name": "black",
+                "value": "#151515"
+            },
+            {
+                "name": "blue",
+                "value": "#1a2e68"
+            }
+        ]
+    },
+    {
+        "brand": "BMW",
+        "model": "iX xDrive40",
+        "colors": [
+            {
+                "name": "white",
+                "value": "#f0f0f0"
+            },
+            {
+                "name": "black",
+                "value": "#151515"
+            },
+            {
+                "name": "blue",
+                "value": "#1a2e68"
+            },
+            {
+                "name": "gray",
+                "value": "#363634"
+            }
+        ]
+    },
+    {
+        "brand": "BMW",
+        "model": "X6 M50i",
+        "colors": [
+            {
+                "name": "white",
+                "value": "#f0f0f0"
+            },
+            {
+                "name": "black",
+                "value": "#151515"
+            },
+            {
+                "name": "blue",
+                "value": "#1a2e68"
+            },
+            {
+                "name": "gray",
+                "value": "#363634"
+            },
+            {
+                "name": "red",
+                "value": "#711d1c"
+            },
+            {
+                "name": "bronze",
+                "value": "#666251"
+            }
+        ]
+    },
+    {
+        "brand": "Lamborghini",
+        "model": "AVENTADOR LP 780-4 ULTIMAE",
+        "colors": [
+            {
+                "name": "blue",
+                "value": "#1764be"
+            },
+            {
+                "name": "gray",
+                "value": "#949396"
+            }
+        ]
+    },
+    {
+        "brand": "Lamborghini",
+        "model": "URUS",
+        "colors": [
+            {
+                "name": "black",
+                "value": "#070606"
+            },
+            {
+                "name": "green",
+                "value": "#56832c"
+            },
+            {
+                "name": "yellow",
+                "value": "#cd963c"
+            }
+        ]
+    },
+    {
+        "brand": "Lamborghini",
+        "model": "HURACÁN EVO RWD SPYDER",
+        "colors": [
+            {
+                "name": "blue",
+                "value": "#38a4b8"
+            },
+            {
+                "name": "red",
+                "value": "#8f2026"
+            },
+            {
+                "name": "yellow",
+                "value": "#e2d03a"
+            },
+            {
+                "name": "green",
+                "value": "#a5c415"
+            },
+            {
+                "name": "purple",
+                "value": "#1d112d"
+            }
+        ]
+    },
+    {
+        "brand": "Bugatti",
+        "model": "CHIRON",
+        "colors": [
+            {
+                "name": "blue",
+                "value": "#04476f"
+            },
+            {
+                "name": "red",
+                "value": "#940414"
+            },
+            {
+                "name": "yellow",
+                "value": "#e7be05"
+            },
+            {
+                "name": "bronze",
+                "value": "#9E896F"
+            }
+        ]
+    },
+    {
+        "brand": "Bugatti",
+        "model": "VEYRON 16.4",
+        "colors": [
+            {
+                "name": "blue",
+                "value": "#162b58"
+            },
+            {
+                "name": "violet",
+                "value": "#532034"
+            },
+            {
+                "name": "black",
+                "value": "#0f0b08"
+            },
+            {
+                "name": "gray",
+                "value": "#babcc5"
+            }
+        ]
+    }
+]

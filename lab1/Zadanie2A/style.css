@@ -1,0 +1,71 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* Styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: .5rem;
+
+    width: 50rem;
+    height: 30rem;
+    max-width: 90%;
+    margin: 5rem auto;
+}
+
+.item {
+    color: #7a310f;
+    background-color: #e4ba80;
+    border: 1px solid #bd894a;
+    border-radius: .5rem;
+    font-size: 2rem;
+    opacity: .85;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.item--1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / span 2;
+}
+
+.item--2 {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    z-index: 1;
+}
+
+.item--3 {
+    grid-row: 2 / span 3;
+}
+
+.item--4 {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.item--5 {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.item--6 {
+    grid-row: 4;
+    grid-column: 3;
+}

@@ -1,0 +1,106 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+
+.cart-item {
+    display: flex;
+    padding: 2rem 0;
+    border-bottom: 1px solid c.$gray-light-4;
+
+    &__figure {
+        width: 12.5rem;
+        height: 12.5rem;
+        position: relative;
+    }
+
+    &__image {
+        @include img-cover;
+    }
+
+    &__details {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__heading {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        color: c.$gray-dark-1;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+    }
+
+    &__details-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__detail {
+        font-size: 1.4rem;
+    }
+
+    &__detail-name {
+        display: inline-block;
+        min-width: 7.5rem;
+    }
+
+    &__detail-value {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: c.$gray-dark-2;
+    }
+
+    &__order {
+        @include flex-center;
+    }
+
+    &__item__order-button {
+        background-color: black;
+    }
+
+    &__order-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    &__order-item {
+        
+    }
+
+    &__order-button {
+        text-transform: uppercase;
+        padding: .75rem 1rem;
+        border-radius: 10rem;
+        background: c.$gray-light-1;
+        box-shadow: 0 0 .2rem rgba(c.$black, .3);
+    }
+
+    &__price {
+        font-size: 2rem;
+        @include flex-center;
+
+        &--unit {
+
+        }
+
+        &--total {
+
+        }
+    }
+
+    &__order,
+    &__price {
+        width: 10rem;
+    }
+}

@@ -1,0 +1,67 @@
+@use '../helpers/sizes' as s;
+@use '../helpers/colors' as c;
+
+.add-dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: s.$nav-bar-height + 2rem;
+    padding-bottom: 4rem;
+    margin: 0 auto;
+    
+    &,
+    .form,
+    .added-images {
+        width: 80rem;
+    }
+
+    &__info {
+        margin-bottom: 6rem;
+
+        &-heading {
+            font-size: 2.4rem;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            text-indent: 1.5em;
+            line-height: 1.5;
+        }
+    }
+
+    &__tips {
+        margin-top: 2rem;
+        list-style: square;
+    }
+
+    &__tip {
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__table {
+        list-style: none;
+        display: flex;
+        margin-top: 8rem;
+        width: 100%;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid c.$gray-light-4;
+    }
+
+    &__column {
+        &-text {
+            font-size: 1.6rem;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+        }
+    }
+}

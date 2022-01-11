@@ -1,0 +1,350 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    
+    background-color: black;
+    color: white;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* 
+ * Exercises a - f (not all, they are too easy) 
+ */
+.paragraphs p {
+    margin: 3rem 6rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+
+.paragraphs p:first-child {
+    background-color: #222;
+    font-size: 3rem;
+}
+
+.paragraphs p:nth-child(2) {
+    background-color: #444;
+}
+
+.paragraphs p:last-child {
+    background-color: #666;
+}
+
+section {
+    padding: 5rem;
+}
+
+/* 
+ * Exercise g 
+ */ 
+.table-wrapper {
+    width: 100%;
+}
+
+.table {
+    width: 80rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.col {
+    border: none;
+    width: 25%;
+}
+
+.row {
+    height: 4rem;
+}
+
+.table-1 .row:first-child {
+    background-color: #4F6375;
+}
+
+.table-1 .row:nth-child(2n+2) {
+    background-color: #242526;
+}
+
+.table-1 .row:nth-child(2n+3) {
+    background-color: #121313;
+}
+
+.table-2 {
+    border-collapse: collapse; /* IMPORTANT */
+}
+
+.table-2 .col {
+    border: 1px solid white;
+}
+
+/* 
+ * Exercise h 
+ */
+.story {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.story__text {
+    font-size: 1.5rem;
+}
+
+.picture__img {
+    height: 20rem;
+}
+
+.story__wrapper:first-child .story__picture {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0;
+}
+
+/* IMPORTANT - this trick is described here: https://css-tricks.com/float-an-element-to-the-bottom-corner/ */
+.story--1 .story__wrapper:last-child {
+    display: flex;
+    margin-bottom: 20rem;
+    margin-top: 2rem;
+}
+
+.story--1 .story__wrapper:last-child .story__figure {
+    text-align: justify;
+}
+
+.story--1 .story__wrapper:last-child .story__picture {
+    float: right;
+    height: 100%;
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    shape-outside: inset(calc(100% - 20rem) 0 0);
+}
+
+/* 
+ * Exercise h (my modification - the same with single paragraph)
+ */
+/* All styles before IMPORTANT in the example above are the same*/
+.story--2 .story__wrapper {
+    display: flex;
+    margin-bottom: 20rem;
+}
+
+.story--2 .story__content {
+    text-align: justify;
+    padding-bottom: 21.5rem;
+}
+
+.story--2 .story__picture:first-of-type {
+    float: left;
+}
+
+.story--2 .story__picture:last-of-type {
+    float: right;
+    height: 100%;
+    margin: 0 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    shape-outside: inset(calc(100% - 21.5rem) 0 0);
+}
+
+/*
+ * Exercise i
+ */
+.section-images {
+    margin-top: 20rem;
+    width: 100%;
+}
+
+.images-wrapper {
+    width: 100rem;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-wrapper img {
+    margin: 0 auto;
+    height: 60rem;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 4rem;
+}
+
+.images-wrapper img:nth-child(2) { order: 3; }
+.images-wrapper img:nth-child(3) { order: 2; }
+
+/*
+ * Exercise j
+ */
+.section__countries {
+    margin: 10rem 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.section__countries > div {
+    width: 80rem;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.section__countries > div:not(:first-child) {
+    margin-top: 5rem;
+}
+
+.section__countries > div p:not(:first-child) {
+    margin-top: 5rem;
+}
+
+.section__countries--europe {
+    background-image: url(img/eu-flag.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section__countries--asia {
+    background-image: url(img/china-flag.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+ * Exercise k
+ */
+.section__form {
+    width: 100%;
+    padding: 0;
+    margin: 10rem 0;
+}
+
+.form {
+    margin: 0 auto;
+    width: 45rem;
+    max-width: 90%;
+    background-color: white;
+}
+
+.form__heading,
+.form__entry--text {
+    color: #0037C0;
+    font-family: serif;
+}
+
+.form__heading {
+    font-size: 3rem;
+}
+
+.form__heading,
+.form__nav {
+    background-color: #008FE0;
+    padding: 1.5rem 1rem;
+}
+
+.form__entry {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form__entry {
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.form__entry:last-child {
+    margin-bottom: 1rem;
+}
+
+.form__entry--text {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 45%;
+    text-align: end;
+    margin-right: 5%;
+}
+
+.form__entry > input {
+    width: 45%;
+}
+
+.form__radio .form__entry--text {
+    width: unset;
+    display: inline;
+}
+
+.form__entry--agree .form__entry--text {
+    font-size: 1.5rem;
+    width: unset;
+    display: inline;
+    text-align: left;
+}
+
+.form__checkbox--wrapper {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.form__checkbox {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.form__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form .form__button {
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form__button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.form__button--submit {
+    background-color: #7C4DC0;
+}
+
+.form__button--reset {
+    background-color: #0BBE7F;
+}
+
+.form input,
+.form select {
+    border: 1px solid rgb(139, 137, 137);
+    border-radius: 0;
+    outline: none;
+    padding: .5rem;
+}
+
+.form__radio input,
+.form__radio label,
+.form__entry--agree input,
+.form__entry--agree label {
+    cursor: pointer;
+}

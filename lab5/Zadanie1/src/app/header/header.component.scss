@@ -1,0 +1,32 @@
+@use '../../styles.scss' as *;
+
+.header {
+    height: 20rem;
+    @include flex-center();
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background: $gradient-primary;
+    overflow: hidden;
+    
+    &__heading {
+        font-size: 8rem;
+
+        div {
+            position: relative;
+
+            span {           
+                white-space: nowrap; 
+                color: $color-white;
+                text-shadow: 0 0 2rem rgba($color-black, .5);
+                
+                &:last-child {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(2.5);
+                    mix-blend-mode: soft-light;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

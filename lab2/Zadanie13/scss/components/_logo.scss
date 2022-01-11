@@ -1,0 +1,70 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/others' as o;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/times' as t;
+@use '../abstracts/mixins' as *;
+
+
+.logo {
+    height: 100%;
+    position: relative;
+    font-size: 3rem;
+
+    &__part {
+        height: 100%;
+
+        &:last-child {
+            font-size: 2.5rem;
+            position: absolute;
+            top: 80%;
+            left: 60%;
+            transform: rotate(-5deg);
+            filter: drop-shadow(0 0 1rem rgba(c.$black, .4));
+        }
+
+        @include respond(l-tab-land) {
+            font-size: 1.11 * 3rem;
+        }
+
+        @include respond(l-phone) {
+            font-size: 1.25 * 3rem;
+        }
+
+        @include respond(g-big-desktop) {
+            font-size: .83 * 3rem;
+        }
+        
+        svg {
+            height: 100%;
+            fill: none;
+            stroke: c.$white;
+            stroke-width: .1em;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: inherit;
+            transition: stroke .5s;
+
+            g {
+                fill-opacity: 0;
+                stroke-linecap: round;
+                font-size: inherit;
+
+                text {
+                    font-family: f.$default-font;
+                    font-size: 1em;
+                }
+            }
+            
+            tspan > tspan {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: -1000;	
+
+                @for $i from 1 through o.$nav-logo-letters-count {
+                    &:nth-of-type(#{$i}) {
+                        animation: draw t.$logo-letter-draw-duration #{$i * 250}ms forwards cubic-bezier(0,1.02,.7,.99);
+                    }
+                }
+            }
+        }
+    }
+}

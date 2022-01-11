@@ -1,0 +1,35 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/sizes' as sz;
+@use '../abstracts/shadows' as sh;
+
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        display: inline-block;
+        font-size: sz.$font-small;
+        color: c.$white;
+        font-weight: 600;
+        border-radius: 3px;
+
+        transition: all .2s ease;
+    }
+
+    &:hover {
+        transform: scale(1.02) translateY(-1px);
+    }
+    &:active {
+        transform: scale(.99) translateY(2px);
+    }
+
+    &--primary {
+        background-color: c.$primary;
+
+        &:hover {
+            background-color: c.$primary-dark;
+        }
+    }
+}

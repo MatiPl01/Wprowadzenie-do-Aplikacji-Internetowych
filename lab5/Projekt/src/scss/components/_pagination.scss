@@ -1,0 +1,89 @@
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+
+.pagination {
+    background-color: c.$white;
+    border-radius: 10rem;
+    box-shadow: 0 0 1rem rgba(c.$black, .2);
+    padding: .5rem;
+    gap: .5rem;
+    display: flex;
+    user-select: none;
+
+    &__icon {
+        width: 1em;
+        height: 1em;
+        margin-bottom: -.25rem;
+    }
+
+    &__text {
+
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: .5rem;
+    }
+
+    &__button,
+    &__item {
+        line-height: 3.5rem;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        transition: background .3s ease;
+    }
+    
+    &__button {
+        background-color: transparent;
+        padding: 0 1rem;
+        
+        &--prev {
+            border-radius: 2.5rem .5rem .5rem 2.5rem;
+        }
+
+        &--next {
+            border-radius: .5rem 2.5rem 2.5rem .5rem;
+        }
+    }
+
+    &__number {
+        display: inline-block;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+    }
+
+    &__dots {
+        font-size: 1.25em;
+        cursor: default;
+    }
+
+    &__item {
+        &--dots {
+            &-1 { order: 1; }
+            &-2 { order: 3; }
+        }
+
+        &--number {
+            order: 2;
+            &-1 { order: 0; }
+            &:last-child { order: 4; }
+        }
+    }
+
+    &__number:hover,
+    &__button:hover,
+    &__number.active {
+        color: c.$white;
+        text-shadow: 0 0 .2rem rgba(c.$black, .15);
+        background: g.$primary;
+    }
+
+    &__button:hover &__icon {
+        fill: c.$white;
+    }
+}

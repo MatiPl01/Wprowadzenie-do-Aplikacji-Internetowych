@@ -1,0 +1,153 @@
+$color-gray-light-1: #4f5153;
+$color-gray-light-2: #a5a5a5;
+
+$color-gray-dark-1: #1f1f1f;
+$color-gray-dark-2: #131313;
+$color-gray-dark-3: #060606;
+
+$color-accent-dark: #573d13;
+$color-accent-light: #9c6303;
+
+$color-black: #000;
+$color-white: #fff;
+
+.calculator {
+    background-color: $color-gray-dark-1;
+    width: 30rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 1.5rem $color-black;
+
+    &__header {
+        padding: 2rem;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: $color-white;
+    }
+
+    &__display {
+        padding: 0 2rem 1rem 2rem;
+        text-align: right;
+    }
+
+    &__calculation {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        margin-right: -2rem;
+        color: $color-gray-light-2;
+    }
+
+    &__result {
+        color: $color-white;
+        font-size: 5rem;
+        margin-right: -5rem;
+    }
+
+    &__calculation,
+    &__result {
+        white-space: nowrap;
+        &::after {
+            content: '0';
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__keyboard {
+        display: grid;
+        grid-template-areas: 
+            "opt op"
+            "num op";
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: .5rem;
+    }
+
+    &__options,
+    &__numpad,
+    &__operations {
+        list-style: none;
+        user-select: none;
+    }
+
+    &__options {
+        grid-area: opt;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .5rem;
+    }
+
+    &__numpad {
+        grid-area: num;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 5rem);
+        grid-gap: .5rem;
+    }
+
+    &__number {
+        &[data-number="0"] {
+            grid-column: 1 / 3;
+        }
+    }
+
+    &__operations {
+        grid-area: op;
+        display: grid;
+        grid-template-rows: 1fr repeat(4, 5rem);
+        grid-gap: .5rem;
+    }
+
+    &__button {
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+        border-radius: .5rem;
+
+        &--option {
+            background-color: $color-gray-dark-2;
+            font-size: 1.8rem;
+            color: $color-white;
+            font-weight: bold;
+        }
+
+        &--dot,
+        &--number {
+            background-color: $color-gray-dark-3;
+            padding: 1.75rem;
+            font-size: 1.8rem;
+            color: $color-white;
+        }
+
+        &--dot {
+            font-size: 3rem;
+            line-height: .5;
+        }
+
+        &--operation {
+            background-color: $color-gray-dark-2;
+        }
+
+        &--equals {
+            background-color: $color-accent-dark;
+        }
+
+        &:hover {
+            background-color: $color-gray-light-1;
+        }
+
+        &--equals:hover {
+            background-color: $color-accent-light;
+        }
+    }
+    
+    svg  {
+        width: 1.8rem;
+        height: 1.8rem;
+        color: $color-white;
+    }
+}

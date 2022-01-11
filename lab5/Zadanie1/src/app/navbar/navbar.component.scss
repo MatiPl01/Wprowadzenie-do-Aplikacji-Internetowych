@@ -1,0 +1,51 @@
+@use '../../styles.scss' as *;
+
+.nav-bar {
+    background-color: $color-primary-dark;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+
+    &__wrapper {
+        width: 90rem;
+        max-width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+
+        @include respond(phone) {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+    }
+
+    &__logo {
+        font-size: 2.4rem;
+        color: $color-white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__items {
+        display: flex;
+        list-style: none;
+        gap: 5rem;
+        font-size: 1.8rem;
+    }
+
+    &__link {
+        &:link,
+        &:active,
+        &:visited {
+            text-decoration: none;
+            color: $color-white;
+            transition: all .2s;
+        }
+
+        &.active,
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+}

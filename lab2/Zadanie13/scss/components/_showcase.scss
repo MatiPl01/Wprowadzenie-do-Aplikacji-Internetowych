@@ -1,0 +1,124 @@
+@use '../abstracts/fonts' as f;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as *;
+
+
+.showcase {
+    position: sticky;
+    top: s.$nav-height;
+    padding: 1.5rem 2.5rem;
+    background-color: c.$gray-light-1;
+    box-shadow: 0 .5rem 1rem rgba(c.$black, .2);
+
+    @include respond(l-tab-land) {
+        top: 2rem + s.$nav-height;
+    }
+
+    &__header {
+        position: absolute;
+        width: max-content;
+        left: 5%;
+        transform: rotate(-3deg);
+        z-index: 1;
+    }
+
+    &__heading {
+        &--footer {
+            font-size: f.$default-size;
+        }
+    }
+
+    &__figure {
+        margin-top: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__img {
+        border-radius: 50%;
+        @include img-cover;
+    }
+
+    &__details {
+        margin-top: 1rem;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        &--details {
+            flex-direction: column;
+        }
+
+        &--social {
+            margin: 0 auto;
+            margin-top: 1rem;
+            justify-content: space-between;
+            max-width: 18rem;
+        }
+    }
+
+    &__field {
+        border-bottom: 1px solid c.$gray-light-3;
+        padding: .5rem 0;
+        white-space: nowrap;
+        
+        &-name {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: c.$gray-dark-1;
+            letter-spacing: .5px;
+        }
+
+        &-value {
+            font-size: f.$default-size;
+            color: c.$gray-dark-3;
+        }
+    }
+
+    &__footer {
+        margin-top: 2rem;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+    }
+
+    @include respond(l-phone) {
+        width: 87%;
+        margin: 0 auto;
+        padding: 3rem 4rem;
+
+        &__figure {
+            float: left;
+            width: 45%;
+            margin-right: 5%;
+        }
+
+        &__list--social {
+            margin: 0;
+            margin-left: 3rem;
+            margin-top: 2rem;
+        }
+
+        &__footer {
+            clear: both;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        &__header {
+            top: -2rem;
+            left: 50%;
+            transform: translateX(-50%) rotate(0);
+        }
+
+        margin: 6rem auto;
+    }
+}
+

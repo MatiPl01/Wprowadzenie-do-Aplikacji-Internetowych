@@ -1,0 +1,64 @@
+<li class="cart-item">
+  <a [routerLink]="['/dishes', dish._id]" class="cart-item__link">
+  <figure class="cart-item__figure">
+    <app-responsive-image
+    class="dish__image" 
+    [breakpoints]="dish.images.gallery[dish.images.coverIdx].breakpoints"
+    [paths]="dish.images.gallery[dish.images.coverIdx].paths"
+      [sizes]="'30px'"
+      [alt]="dish.name">
+    </app-responsive-image>
+  </figure>
+  </a>
+
+  <section class="cart-item__details">
+    <a [routerLink]="['/dishes', dish._id]" class="cart-item__link">
+      <h3 class="cart-item__heading">
+          {{ dish.name }}
+      </h3>
+    </a>
+    <ul class="cart-item__details-list">
+      <li class="cart-item__detail">
+        <span class="cart-item__detail-name">Kuchnia</span>
+        <span class="cart-item__detail-value">{{ dish.cuisine }}</span>
+      </li>
+      <li class="cart-item__detail">
+        <span class="cart-item__detail-name">Typ</span>
+        <span class="cart-item__detail-value">{{ dish.type }}</span>
+      </li>
+      <li class="cart-item__detail">
+        <span class="cart-item__detail-name">Kategoria</span>
+        <span class="cart-item__detail-value">{{ dish.category }}</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="cart-item__order">
+    <ul class="cart-item__order-list">
+      <li class="cart-item__order-item">
+        <app-dish-order class="cart-item__order-component"
+          [dish]="dish"
+        ></app-dish-order>
+      </li>
+      <li class="cart-item__order-item">
+        <button class="cart-item__order-button"
+          (click)="onRemoveClick()"  
+        >Usuń</button>
+      </li>
+    </ul>
+  </section>
+
+  <section class="cart-item__price cart-item__price--unit">
+    <app-price 
+      [currency]="currencyService.getCurrentCurrencySymbol()" 
+      [amount]="currencyService.calcDishCurrentPrice(dish)"
+    ></app-price>
+  </section>
+
+  <section class="cart-item__price cart-item__price--total">
+    <app-price 
+      [currency]="currencyService.getCurrentCurrencySymbol()" 
+      [amount]="quantity * currencyService.calcDishCurrentPrice(dish)"
+    ></app-price>
+  </section>
+</li>

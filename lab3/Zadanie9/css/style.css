@@ -1,0 +1,246 @@
+/* Global reset */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Mixins */
+/* Variables */
+/* Animations */
+@keyframes hide-card {
+  0% {
+    z-index: 10;
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    z-index: 10;
+    margin-right: 67.5rem;
+  }
+  51% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+    transform: scale(0.9);
+  }
+}
+@keyframes show-card {
+  0%, 30% {
+    transform: scale(0.9);
+  }
+  50% {
+    z-index: 9;
+  }
+  100% {
+    z-index: 10;
+  }
+}
+/* Styles */
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-cards {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f1f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.cards__header {
+  margin-bottom: 5rem;
+  font-size: 2.4rem;
+  max-width: 90vw;
+}
+.cards__heading {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #102a42;
+  position: relative;
+  padding-bottom: 1.25rem;
+  text-align: center;
+}
+.cards__heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #49a6e9;
+}
+.cards__list {
+  list-style: none;
+}
+
+.card {
+  width: 67.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  gap: 1rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  max-width: 90vw;
+}
+.card.show {
+  visibility: visible;
+  animation: show-card 1.75s both;
+}
+.card.hide {
+  visibility: visible;
+  position: relative;
+  animation: hide-card 1.75s both;
+  z-index: 10;
+}
+.card__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.card__img-wrapper {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  z-index: 1;
+}
+.card__img-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #49a6e9;
+  position: absolute;
+  border-radius: 50%;
+  left: 0.85rem;
+  bottom: 0.35rem;
+  z-index: -1;
+}
+.card__quote {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 1rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #49a6e9;
+  border-radius: 50%;
+}
+.card__icon {
+  color: #fff;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card__name {
+  letter-spacing: 1.5px;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+}
+.card__job {
+  text-align: center;
+  text-transform: uppercase;
+  color: #49a6e9;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.card__description {
+  font-size: 1.6rem;
+  color: #617d9b;
+  text-align: center;
+}
+.card__slider-buttons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.card__button {
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  background-color: transparent;
+  color: #49a6e9;
+  cursor: pointer;
+}
+.card__button--random {
+  font-size: 1.4rem;
+  border: 2px solid #49a6e9;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s;
+}
+.card__button--random:hover {
+  color: #102a42;
+  background-color: #49a6e9;
+}
+
+.cards__list.no-anim .card.show, .cards__list.no-anim .card.hide {
+  animation: none;
+}
+
+/*# sourceMappingURL=style.css.map */

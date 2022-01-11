@@ -1,0 +1,98 @@
+@use '/src/scss/helpers/colors' as c;
+@use '/src/scss/helpers/gradients' as g;
+
+::ng-deep {
+    .multiselect-dropdown {
+        user-select: none !important;
+        
+        .dropdown-btn {
+            border-radius: 10rem !important;
+            background-color: c.$white !important;
+            box-shadow: 0 0 1rem rgba(c.$black, .15) !important;
+        }
+
+        .filter-textbox {
+            input::placeholder {
+                font-size: 1.6rem !important;
+            }
+        }
+        
+        .item2 {
+            &::-webkit-scrollbar {
+                width: 1rem;
+
+                &-track {
+                    background-color: transparent !important;
+                }
+
+                &-thumb {
+                    border-radius: 5rem;
+                    background: c.$gray-dark-3 !important;
+                }
+            }
+        }
+
+        .dropdown {
+            &-btn {
+                font-size: 1.6rem !important;
+                background-color: c.$white !important;
+                height: 5rem !important;
+                overflow: hidden !important;
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                align-items: center;
+            }
+
+            &-multiselect__caret {
+                transform-origin: center !important;
+            }
+        }
+
+        .multiselect-item-checkbox {
+            div {
+                font-size: 1.6rem !important;
+
+                &::before {
+                    border-radius: 50% !important;
+                    border-color: c.$primary !important;
+                }
+            }
+
+            input:checked + div::before {
+                background: g.$primary !important;
+            }
+        }
+
+        .selected-item {
+            background: g.$primary !important;
+            border: none !important;
+            border-top-right-radius: 1rem !important;
+            border-bottom-left-radius: 1rem !important;
+            padding: 3px 1.5rem !important;
+            text-shadow: 0 0 .5rem rgba(c.$black, .3) !important;
+            outline: none !important;
+            text-overflow: ellipsis !important;
+            overflow: hidden !important;
+            white-space: nowrap !important;
+            margin: 2px !important;
+            box-shadow: 0 0 .2rem rgba(c.$black, .2) !important;
+            position: relative;
+
+            span {
+                padding-left: 1rem !important;
+            }
+
+            a {
+                position: absolute;
+                left: .75rem;
+            }
+        }
+
+        .filter-textbox {
+            input {
+                padding: 1rem !important;
+            }
+        }
+    }
+}

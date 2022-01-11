@@ -1,0 +1,42 @@
+<article class="product">
+  <button class="product__button product__button--remove" (click)="onRemoveClick()">
+    <svg class="product__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
+      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+      <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+      </path>
+    </svg>
+  </button>
+
+  <div class="product__content">
+    <figure class="product__figure">
+      <div class="product__image">
+        <app-img-responsive 
+          [breakpoints]="dish.images.breakpoints" 
+          [paths]="dish.images.cover"
+          [sizes]="'8.75em'"
+          [alt]="dish.name"
+        ></app-img-responsive>
+      </div>
+    </figure>
+    <section class="product__details">
+      <header class="product__header">
+        <h3 class="product__heading">{{ dish.name | uppercase }}</h3>
+      </header>
+    
+      <section class="product__info">
+        <div class="product__price">
+          <p class="product__price-text">Cena</p>
+          <app-price [amount]="this.currencyService.calcAmount(dish.unitPrice, dish.currency)" [currency]="this.currencyService.getCurrentCurrencySymbol()"></app-price>
+        </div>
+      </section>
+    </section>
+  </div>
+  
+  <footer class="product__footer">
+    <div class="product__summary">
+      <p class="product__summary-text">Łącznie</p>
+      <app-price [amount]="this.quantity * this.currencyService.calcAmount(this.dish.unitPrice, this.dish.currency)" [currency]="this.currencyService.getCurrentCurrencySymbol()"></app-price>
+    </div>
+    <app-dish-order [dish]="dish"></app-dish-order>
+  </footer>
+</article>

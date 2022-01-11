@@ -1,0 +1,143 @@
+<div class="home">
+  <app-header></app-header>
+  <main>
+    <section class="section-welcome">
+      <article class="welcome">
+        <h3 class="heading-primary u-margin-bottom-medium">Zapraszamy</h3>
+        <h4 class="welcome__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Asperiores atque porro explicabo quidem aliquam quis.</h4>
+        <ul class="welcome__links">
+          <li class="welcome__item">
+            <a href="#" class="welcome__link">
+              <figure class="welcome__figure">
+                <img src="https://ik.imagekit.io/MatiPl01/tr:w-200/restaurant/menu.jpg" alt="Zdjęcie menu" class="welcome__image">
+                <figcaption class="welcome__caption">
+                  <h5 class="welcome__caption-heading">Menu</h5>
+                  <p class="welcome__caption-text">Poznaj nasze menu</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+  
+          <li class="welcome__item">
+            <a href="#" class="welcome__link">
+              <figure class="welcome__figure">
+                <img src="https://ik.imagekit.io/MatiPl01/tr:w-200/restaurant/restaurant.jpg" alt="Zdjęcie restauracji" class="welcome__image">
+                <figcaption class="welcome__caption">
+                  <h5 class="welcome__caption-heading">O nas</h5>
+                  <p class="welcome__caption-text">Dowiedz się więcej o nas</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+  
+          <li class="welcome__item">
+            <a href="#" class="welcome__link">
+              <figure class="welcome__figure">
+                <img src="https://ik.imagekit.io/MatiPl01/tr:w-200/restaurant/location.jpg" alt="Zdjęcie mapy" class="welcome__image">
+                <figcaption class="welcome__caption">
+                  <h5 class="welcome__caption-heading">Lokalizacja</h5>
+                  <p class="welcome__caption-text">Sprawdź, jak do nas dotrzeć</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  
+    <section class="section-cards">
+      <div class="parallax cards__background">
+        <img class="parallax__photo" parallax [ratio]="-.25" [ease]='.05'
+          src="https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/pexels-ella-olsson-3026808.jpg" alt="Zdjęcie potrawy w tle">
+      </div>
+      <ul class="cards">
+        <li class="card">
+          <svg class="card__icon">
+            <use href="assets/svg/icons.svg#coins"></use>
+          </svg>
+          <h5 class="card__heading">
+            Niskie ceny
+          </h5>
+          <p class="card__text">
+            Oferujemy potrawy w bardzo konkurencyjnych cenach
+          </p>
+        </li>
+  
+        <li class="card">
+          <svg class="card__icon">
+            <use href="assets/svg/icons.svg#clock"></use>
+          </svg>
+          <h5 class="card__heading">
+            Szybka realizacja
+          </h5>
+          <p class="card__text">
+            Wykwalifikowany zespół kucharzy dba o jak najszybszą realizację zamówień
+          </p>
+        </li>
+  
+        <li class="card">
+          <svg class="card__icon">
+            <use href="assets/svg/icons.svg#lorry"></use>
+          </svg>
+          <h5 class="card__heading">
+            Możliwa dostawa
+          </h5>
+          <p class="card__text">
+            Możliwa dostawa zamówienia pod wskazany adres
+          </p>
+        </li>
+      </ul>
+    </section>
+  
+    <section class="section-chef">
+      <div class="chef">
+        <figure class="chef__figure">
+          <img parallax [ratio]=".05" class="chef__image" src="https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/chef.jpg" alt="Zdjęcie szefa kuchni">
+        </figure>
+  
+        <div class="chef__description-wrapper">
+          <article parallax [ratio]="-.05" class="chef__description">
+            <h5 class="chef__heading">Szef kuchni</h5>
+            <div class="chef__text">
+              <p class="chef__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quaerat sint dolore magnam quidem vero
+                officia non sapiente tempore. Laboriosam.
+              </p>
+              <p class="chef__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere rem enim natus iusto repellat consequatur
+                quibusdam laborum est molestiae blanditiis asperiores obcaecati repudiandae veritatis, atque corporis
+                vero. Soluta, quod inventore.
+              </p>
+            </div>
+            <p class="chef__signature">
+              Jamie Fritsch
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section-slider">
+      <app-parallax-slider>
+        <h3 class="heading-primary u-text-center u-margin-top-large">
+          Co nas wyróżnia
+        </h3>
+      </app-parallax-slider>
+    </section>
+  
+    <div class="section-location">
+      <div class="location">
+        <h3 class="heading-primary u-text-center u-margin-top-large u-margin-bottom-medium">Znajdź nas</h3>
+        <div class="location__map">
+          <iframe class="location__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9740717160735!2d19.910409515901133!3d50.06804722272537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba4e83edb79%3A0x12ec23c8f9c73c78!2sCentrum%20Informatyki%2C%20AGH%2C%20D-17!5e0!3m2!1spl!2spl!4v1641045939428!5m2!1spl!2spl"
+            width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <app-footer></app-footer>
+</div>

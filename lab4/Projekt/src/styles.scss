@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
+
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Variables */
+$max-content-width: 180rem;
+$nav-bar-height: 8rem;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-gray-light-1: #fafafa;
+$color-gray-light-2: #dfdfdf;
+$color-gray-light-3: #ccc;
+
+$color-gray-dark-1: #111;
+$color-gray-dark-2: #333;
+$color-gray-dark-3: #555;
+
+$color-primary-light: #f9f5f3;
+$color-primary: #f59483;
+$color-secondary: #fad188;
+
+$color-red: #e70d68;
+
+$gradient-primary: linear-gradient(65deg, $color-primary, $color-secondary) $color-primary;
+
+/* Mixins */
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin img-cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin bg-gradient-primary {
+    background: $gradient-primary;
+}
+
+@mixin bg-gradient-red {
+    background: linear-gradient(65deg, #e70d68,#f09595) #e70d68;
+}
+
+@mixin bg-gradient-green {
+    background: linear-gradient(65deg, #098a25, #0de7b8) #098a25;
+}
+
+@mixin bg-gradient-orange {
+    background: linear-gradient(65deg, #f55f08, #f8b706) #f55f08;
+}
+
+@mixin bg-gradient-blue {
+    background: linear-gradient(65deg, #365ee2, #0cc5fd) #365ee2;
+}
+
+@mixin bg-gradient-gray {
+    background: linear-gradient(65deg, #575757, #a3a3a3) #575757;
+}
+
+/* Styles */
+$scale: 1;
+
+html {
+    font-size: $scale * 62.5%;
+
+    @include respond(tab-land) {
+        font-size: $scale * 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: $scale * 50%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: $scale * 75%;
+    }
+}
+
+body {
+    overflow-y: scroll;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	width: 1.5rem;
+
+    &-thumb {
+        @include bg-gradient-primary();
+    }
+
+    &-track {
+        background-color: $color-gray-dark-1;
+
+        &:hover {
+            background-color: $color-gray-dark-2;
+        }
+    }
+}
+
+.gradient {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+
+    &--1 {
+        .stop-color {
+            &--1 { stop-color: $color-primary };
+            &--2 { stop-color: $color-secondary};
+        }
+    }
+
+    &--2 {
+        .stop-color {
+            &--1 { stop-color: $color-secondary };
+            &--2 { stop-color: $color-primary-light};
+        }
+    }
+}

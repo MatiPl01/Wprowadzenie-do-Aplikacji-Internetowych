@@ -1,0 +1,26 @@
+<app-header
+  [heading]="'Posts'"
+></app-header>
+
+<section class="section-posts">
+  <a class="posts__button posts__button--new"
+    [routerLink]="['create']" routerLinkActive="router-link-active" >
+    <svg class="posts__icon">
+      <use href="assets/svg/icons.svg#plus"></use>
+    </svg>
+    <span class="posts__button-text">
+      Create new post
+    </span>
+  </a>
+
+  <div class="posts">
+    <ul class="posts__list">
+      <app-post 
+        *ngFor="let post of posts" 
+        [post]="post"
+      ></app-post>
+    </ul>
+  </div>
+</section>
+
+<router-outlet></router-outlet>

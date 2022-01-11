@@ -1,0 +1,37 @@
+<article class="cart-summary">
+  <header class="cart-summary__header">
+    <h3 class="cart-summary__heading">
+      Podsumowanie zamówienia
+    </h3>
+  </header>
+
+  <ul class="cart-summary__details">
+    <li class="cart-summary__detail">
+      <span class="cart-summary__detail-name">Liczba sztuk</span>
+      <span class="cart-summary__detail-value">{{ totalQuantity }}</span>
+    </li>
+    <li class="cart-summary__detail">
+      <span class="cart-summary__detail-name">Kwota</span>
+      <span class="cart-summary__detail-value">
+        <app-price 
+          [currency]="currencyService.getCurrentCurrencySymbol()" 
+          [amount]="currencyService.fromReferenceToCurrent(totalPrice)"
+        ></app-price>
+      </span>
+    </li>
+  </ul>
+
+  <section class="cart-summary__total">
+    <span class="cart-summary__total-name">Łączna kwota</span>
+    <span class="cart-summary__total-value">
+      <app-price 
+        [currency]="currencyService.getCurrentCurrencySymbol()" 
+        [amount]="currencyService.fromReferenceToCurrent(totalPrice)"
+      ></app-price>
+    </span>
+  </section>
+
+  <button class="cart-summary__button">
+    Do kasy
+  </button>
+</article>

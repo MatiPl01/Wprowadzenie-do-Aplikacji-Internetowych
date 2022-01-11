@@ -1,0 +1,10 @@
+<li class="photo">
+  <a [routerLink]="['/albums', photo.albumId, 'photos', photo.id]" class="photo__link">
+    <figure class="photo__figure">
+      <img [src]="photo.thumbnailUrl" alt="Image" class="photo__image">
+    </figure>
+    <h4 class="photo__title">
+      <span>{{ photo.title }}</span>
+    </h4>
+  </a>
+</li>

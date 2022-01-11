@@ -1,0 +1,301 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Mixins */
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Variables */
+$card-width: 67.5rem;
+$card-change-duration: 1.75s;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-primary: #49a6e9;
+$color-primary-light: #ebf7ff;
+$color-primary-lightest: #f1f5f8;
+$color-primary-dark: #617d9b;
+$color-primary-darkest: #102a42;
+
+/* Animations */
+@keyframes hide-card {
+    0% {
+        z-index: 10;
+    }
+    30% {
+        transform: scale(1);
+    }
+    50% {
+        z-index: 10;
+        margin-right: $card-width;
+    }
+    51% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 1;
+        transform: scale(.9);
+    }
+}
+
+@keyframes show-card {
+    0%, 30% {
+        transform: scale(.9);
+    }
+    50% {
+        z-index: 9;
+    }
+    100% {
+        z-index: 10;
+    }
+}
+
+/* Styles */
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-cards {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $color-primary-lightest;
+    @include flex-center;
+}
+
+.cards {
+    @include flex-center;
+    flex-direction: column;
+    position: relative;
+
+    &__header {
+        margin-bottom: 5rem;
+        font-size: 2.4rem;
+        max-width: 90vw;
+    }
+
+    &__heading {
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: $color-primary-darkest;
+        position: relative;
+        padding-bottom: 1.25rem;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 10rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color-primary;
+        }
+    }
+    
+    &__list {
+        list-style: none;
+    }
+}
+
+.card {
+    width: $card-width;
+    border-radius: .5rem;
+    box-shadow: 0 2px 1rem rgba($color-black, .05);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    gap: 1rem;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    max-width: 90vw;
+
+    &.show {
+        visibility: visible;
+        animation: show-card $card-change-duration both;
+    }
+
+    &.hide {
+        visibility: visible;
+        position: relative;
+        animation: hide-card $card-change-duration both;
+        z-index: 10;
+    }
+
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__img-wrapper {
+        width: 15rem;
+        height: 15rem;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary;
+            position: absolute;
+            border-radius: 50%;
+            left: .85rem;
+            bottom: .35rem;
+            z-index: -1;
+        }
+    }
+
+    &__quote {
+        position: absolute;
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 1rem;
+        top: .5rem;
+        left: .5rem;
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+
+    &__icon {
+        color: $color-white;
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        letter-spacing: 1.5px;
+        font-size: 1.8rem;
+        font-family: 'Poppins';
+    }
+
+    &__job {
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-primary;
+        letter-spacing: 1px;
+        margin-top: .5rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        color: $color-primary-dark;
+        text-align: center;
+    }
+
+    &__slider-buttons {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__button {
+        border: none;
+        outline: none;
+        font-size: 3rem;
+        background-color: transparent;
+        color: $color-primary;
+        cursor: pointer;
+
+        &--random {
+            font-size: 1.4rem;
+            border: 2px solid $color-primary;
+            padding: .5rem 1rem;
+            border-radius: .3rem;
+            transition: all .3s;
+
+            &:hover {
+                color: $color-primary-darkest;
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+.cards__list.no-anim .card {
+    &.show,
+    &.hide {
+        animation: none;
+    }
+}

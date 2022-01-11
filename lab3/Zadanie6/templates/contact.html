@@ -1,0 +1,52 @@
+<div class="phone-book__content">
+  <h2 class="phone-book__name">
+    {{NAME}}
+  </h2>
+  <p class="phone-book__number">
+    {{PHONE}}
+  </p>
+</div>
+
+<div class="phone-book__buttons">
+  <input type="checkbox" name="remove-contact" class="phone-book__checkbox" id="contact-remove-{{ID}}">
+
+  <button class="phone-book__button phone-book__button--cancel visible" title="Anuluj usuwanie kontaktu">
+    <label for="contact-remove-{{ID}}" class="phone-book__label">
+      <span class="phone-book__counter">
+        <svg class="phone-book__svg" viewBox="0 0 32 32">
+          <circle cx='16' cy='16' r='16' />
+        </svg>
+        <span class="phone-book__time">
+          &nbsp;
+          <div class="phone-book__digit-wrapper">
+            <ul class="phone-book__digits">
+              <li class="phone-book__digit">0</li>
+              <li class="phone-book__digit">1</li>
+              <li class="phone-book__digit">2</li>
+              <li class="phone-book__digit">3</li>
+              <li class="phone-book__digit">4</li>
+              <li class="phone-book__digit">5</li>
+            </ul>
+          </div>
+        </span>
+      </span>
+      <span>Anuluj</span>
+    </label>
+  </button>
+
+  <button class="phone-book__button phone-book__button--trash" title="Usuń kontakt">
+    <label for="contact-remove-{{ID}}" class="phone-book__label">
+      <div class="trash">
+        <div class="file">
+          <div class="file__line"></div>
+        </div>
+        <div class="trash__wrapper">
+          <div class="trash__lid"></div>
+          <div class="trash__main">
+            <div class="trash__lines"></div>
+          </div>
+        </div>
+      </div>
+    </label>
+  </button>
+</div>

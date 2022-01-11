@@ -1,0 +1,10 @@
+<!-- Jeżeli stan magazynowy w restauracji dla danej potrawy wynosi 0, nie tylko chowam przycisk +, ale cały poniższy formularz, pozwalający na zwiększanie/zmniejszanie liczby zamawianych sztuk -->
+<form class="order" [ngClass]="{hidden: !dish.stock}">
+  <button class="order__button order__button--minus" (click)="onDecrement($event)"
+    [ngClass]="{hidden: !quantity}">-</button>
+  <input class="order__quantity" type="number" name="price" min="0" [max]="dish.stock" [value]="quantity"
+    (change)="onInput($event)">
+  <button class="order__button order__button--plus" (click)="onIncrement($event)"
+    [ngClass]="{hidden: !dish.stock || dish.stock === quantity}">+</button>
+  <!-- Warunek '!dish.stock' zamieściłem wyżej tylko, ze względu na treść zadania. Ponieważ i tak chowam cały formularz, nie jest konieczne osobne chowanie przycisku + -->
+</form>

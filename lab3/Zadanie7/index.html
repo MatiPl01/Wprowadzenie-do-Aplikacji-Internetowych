@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 7</title>
+</head>
+<body>
+  <section class="section-cities">
+    <article class="cities">
+      <div class="loader">
+        <svg class="loader__svg" viewBox="0 0 32 32">
+          <circle cx='16' cy='16' r='16' />
+        </svg>
+      </div>
+
+      <input class="hidden" type="radio" name="cities-filter" id="filter-a" checked>
+      <input class="hidden" type="radio" name="cities-filter" id="filter-b">
+      <input class="hidden" type="radio" name="cities-filter" id="filter-c">
+      <input class="hidden" type="radio" name="cities-filter" id="filter-d">
+      <input class="hidden" type="radio" name="cities-filter" id="filter-e">
+      <input class="hidden" type="radio" name="cities-filter" id="filter-f">
+
+      <header class="cities__header">
+        <menu class=menu>
+          <li class="menu__item" data-filter="a">
+            <div class="menu__wrapper">
+              <label for="filter-a" class="menu__label">
+                <span>Miasta z województwa małopolskiego</span>
+              </label>
+            </div>
+          </li>
+
+          <li class="menu__item" data-filter="b">
+            <div class="menu__wrapper">
+              <label for="filter-b" class="menu__label">
+                <span>Miasta, które posiadają w swojej nazwie dwa znaki <i>a</i></span>
+              </label>
+            </div>
+          </li>
+
+          <li class="menu__item" data-filter="c">
+            <div class="menu__wrapper">
+              <label for="filter-c" class="menu__label">
+                <span>Piąte pod względem gęstości zaludnienia miasto w Polsce</span>
+              </label>
+            </div>
+          </li>
+
+          <li class="menu__item" data-filter="d">
+            <div class="menu__wrapper">
+              <label for="filter-d" class="menu__label">
+                <span>Wszystkie miasta, które mają powyżej 100000 mieszkańców wraz z dodaniem <i>city</i> do nazwy</span>
+              </label>
+            </div>
+          </li>
+
+          <li class="menu__item" data-filter="e">
+            <div class="menu__wrapper">
+              <label for="filter-e" class="menu__label">
+                <span>Liczba miast, które liczą powyżej 80000 mieszkańców oraz tych, które mają mniej niż 80000 mieszkańców</span>
+              </label>
+            </div>
+          </li>
+
+          <li class="menu__item" data-filter="f">
+            <div class="menu__wrapper">
+              <label for="filter-f" class="menu__label">
+                <span>Średnia powierzchnia miast z powiatów, których nazwa zaczyna się na literę <i>P</i></span>
+              </label>
+            </div>
+          </li>
+        </menu>
+
+        <section class="menu__helper">
+          <ul class="menu__list">
+            <li class="menu__details" data-filter="a">
+              <span>Miasta z województwa małopolskiego</span>
+            </li>
+            <li class="menu__details" data-filter="b">
+              <span>Miasta, które posiadają w swojej nazwie dwa znaki <i>a</i></span>
+            </li>
+            <li class="menu__details" data-filter="c">
+              <span>Piąte pod względem gęstości zaludnienia miasto w Polsce</span>
+            </li>
+            <li class="menu__details" data-filter="d">
+              <span>Wszystkie miasta, które mają powyżej 100000 mieszkańców wraz z dodaniem <i>city</i> do nazwy</span>
+            </li>
+            <li class="menu__details" data-filter="e">
+              <span>Liczba miast, które liczą powyżej 80000 mieszkańców oraz tych, które mają mniej niż 80000 mieszkańców</span>
+            </li>
+            <li class="menu__details visible" data-filter="f">
+              <span>Średnia powierzchnia miast z powiatów, których nazwa zaczyna się na literę <i>P</i></span>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <section class="cities__sections">
+        <ul class="cities__sections-list">
+
+          <li class="cities__section" data-filter="a">
+            <div class="counter">
+              <p class="counter__content">
+                <span class="counter__text">Liczba wyników:</span>
+                <span class="counter__number">0</span>
+              </p>
+            </div>
+            <ol class="cities__results"></ol>
+          </li>
+
+          <li class="cities__section" data-filter="b">
+            <div class="counter">
+              <p class="counter__content">
+                <span class="counter__text">Liczba wyników:</span>
+                <span class="counter__number">0</span>
+              </p>
+            </div>
+            <ol class="cities__results"></ol>
+          </li>
+          
+          <li class="cities__section" data-filter="c">
+            <div class="counter">
+              <p class="counter__content">
+                <span class="counter__text">Liczba wyników:</span>
+                <span class="counter__number">0</span>
+              </p>
+            </div>
+            <ol class="cities__results"></ol>
+          </li>
+          
+          <li class="cities__section" data-filter="d">
+            <div class="counter">
+              <p class="counter__content">
+                <span class="counter__text">Liczba wyników:</span>
+                <span class="counter__number">0</span>
+              </p>
+            </div>
+            <ol class="cities__results"></ol>
+          </li>
+          
+          <li class="cities__section" data-filter="e">
+            <div class="counter">
+              <p class="counter__content">
+                <span class="counter__text">Liczba wyników:</span>
+                <span class="counter__number">0</span>
+              </p>
+            </div>
+            <ol class="cities__results"></ol>
+          </li>
+
+          <li class="cities__section" data-filter="f">
+            <div class="counter">
+              <p class="counter__content">
+                <span class="counter__text">Liczba wyników:</span>
+                <span class="counter__number">0</span>
+              </p>
+            </div>
+            <ol class="cities__results"></ol>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+  </section>
+</body>
+</html>

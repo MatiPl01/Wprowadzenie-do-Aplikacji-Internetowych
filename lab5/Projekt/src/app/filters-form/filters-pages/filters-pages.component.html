@@ -1,0 +1,14 @@
+<form class="btn-select">
+  <select name="pages" 
+    class="btn-select__select" 
+    [(ngModel)]="dishesPerPage"
+    (change)="onCountChange()">
+    <option 
+      class="btn-select__option"
+      *ngFor="let count of possibleDishesPerPage" 
+      [value]="count"
+      [selected]="count === selectedCount">
+      {{ count }}
+    </option>
+  </select>
+</form>

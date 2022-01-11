@@ -1,0 +1,21 @@
+<h3>Dodaj nowego studenta</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group">
+      <label for="name">Imię</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="student.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Liczba lat</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="student.age" name="age">
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!f.valid">Wyślij</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Student został dodany prawidłowo</h4>
+  <button class="btn btn-success" (click)="newStudent()">Dodaj</button>
+</div>

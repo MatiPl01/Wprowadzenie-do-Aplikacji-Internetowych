@@ -1,0 +1,130 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/animations';
+
+
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: f.$default-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(c.$black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(c.$black,.2);
+    }
+    
+    &--white {
+        background-color: c.$white;
+        color: c.$gray-dark-3;
+
+        &::after {
+            background-color: c.$white;
+        }
+    }
+
+    &--primary {
+        background-color: c.$primary;
+        color: c.$white;
+
+        &::after {
+            background-color: c.$primary;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+}
+
+.to-top-btn {
+    position: fixed;
+    z-index: 2000;
+    bottom: 10rem;
+    right: -.5rem;
+    background-color: c.$gray-dark-3;
+    width: 5rem;
+    height: 5rem;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    box-shadow: 0 0 .5rem rgba(c.$black, .5),
+                inset 0 0 1rem rgba(c.$black, .7);
+    border: .5rem solid c.$primary;
+    overflow: hidden;
+
+    @include flex-center;
+
+    span {
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+
+        &::before,
+        &::after {
+            content: '';
+            height: s.$nav-toggle-bar;
+            width: 30%;
+            border-radius: 5rem;
+            background-color: c.$white;
+            z-index: 1;
+            transition: all .2s ease-in-out;
+        }
+
+        &::before {
+            transform: translateX(25%) rotate(-45deg);
+        }
+
+        &::after {
+            transform: translateX(-25%) rotate(45deg);
+        }
+    }
+
+    &:hover {
+        span {
+            animation: to-top-btn 1s;
+
+            &::before {
+                transform: translateX(30%) rotate(-60deg);
+            }
+
+            &::after {
+                transform: translateX(-30%) rotate(60deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<section class="details">
+  <div class="details__wrapper">
+    <ul class="details__list">
+      <li class="details__detail">
+        <p class="details__detail-name">Kuchnia</p>
+        <p class="details__detail-value">{{ dish.cuisine | uppercase }}</p>
+      </li>
+      <li class="details__detail">
+        <p class="details__detail-name">Typ</p>
+        <p class="details__detail-value">{{ dish.type }}</p>
+      </li>
+      <li class="details__detail">
+        <p class="details__detail-name">Kategoria</p>
+        <p class="details__detail-value">{{ dish.category }}</p>
+      </li>
+    </ul>
+    <ng-content></ng-content>
+  </div>
+
+  <div class="details__more">
+    <a [routerLink]="[dish._id]" routerLinkActive="router-link-active"  class="details__button" role="button" title="Zobacz więcej szczegółów">Więcej szczegółów
+      &rarr;</a>
+  </div>
+</section>

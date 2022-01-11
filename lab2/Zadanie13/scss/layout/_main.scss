@@ -1,0 +1,18 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/mixins' as *;
+
+
+.main {
+    background-color: c.$background-color;
+    min-height: 200vh;
+    position: relative;
+
+    @include respond(l-tab-land) {
+        position: static;
+
+        &::before {
+            width: 95%;
+        }
+    }
+}

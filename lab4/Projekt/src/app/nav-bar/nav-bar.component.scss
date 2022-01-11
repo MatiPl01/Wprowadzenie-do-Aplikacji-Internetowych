@@ -1,0 +1,89 @@
+@use '../../styles.scss' as *;
+
+.nav-bar {
+    @include bg-gradient-primary;
+    height: $nav-bar-height;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 1rem rgba($color-black, .3);
+
+    &__content {
+        padding: 0 10rem;
+        max-width: $max-content-width;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+            padding: 0 2rem;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 10rem;
+        background-color: $color-white;
+        box-shadow: 0 0 1rem rgba($color-black, .2);
+        position: relative;
+     
+        &-icon {
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+
+            @include respond(phone) {
+                display: none;
+            }
+        }
+
+        &--cart {
+            &::before {
+                content: attr(data-items-count);
+                position: absolute;
+                right: -1.5rem;
+                bottom: -.5rem;
+                color: $color-white;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-shadow: 0 0 .3rem rgba($color-black, .5);
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 .5rem rgba($color-black, .3);
+                @include bg-gradient-orange;
+            }
+        }
+
+        &--add {
+            .nav-bar__button-icon {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        &.big-quantity::before {
+            @include bg-gradient-blue;
+        }
+    }
+}

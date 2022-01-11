@@ -1,0 +1,3453 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Makaron Carbonara",
+      "cuisine": "włoska",
+      "type": "danie główne",
+      "category": "makarony",
+      "ingredients": [
+        "boczek",
+        "ser pecorino",
+        "ser parmezan",
+        "jaja",
+        "makaron spaghetti",
+        "czosnek",
+        "masło",
+        "sól",
+        "pieprz"
+      ],
+      "stock": 2,
+      "currency": "EUR",
+      "unitPrice": 20,
+      "rating": 4.25,
+      "ratesCount": 4,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/bruna-branco-t8hTmte4O_g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/bruna-branco-t8hTmte4O_g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/bruna-branco-t8hTmte4O_g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/bruna-branco-t8hTmte4O_g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr-w:1920/restaurant/dishes/bruna-branco-t8hTmte4O_g-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/rob-wicks-_slDBXdJCdE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/rob-wicks-_slDBXdJCdE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/rob-wicks-_slDBXdJCdE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/rob-wicks-_slDBXdJCdE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr-w:1920/restaurant/dishes/rob-wicks-_slDBXdJCdE-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/karolina-kolodziejczak-dvgjof0_TP8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/karolina-kolodziejczak-dvgjof0_TP8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/karolina-kolodziejczak-dvgjof0_TP8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/karolina-kolodziejczak-dvgjof0_TP8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr-w:1920/restaurant/dishes/karolina-kolodziejczak-dvgjof0_TP8-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-polina-tankilevitch-4518839.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-polina-tankilevitch-4518839.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-polina-tankilevitch-4518839.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-polina-tankilevitch-4518839.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr-w:1920/restaurant/dishes/pexels-polina-tankilevitch-4518839.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-polina-tankilevitch-4518835.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-polina-tankilevitch-4518835.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-polina-tankilevitch-4518835.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-polina-tankilevitch-4518835.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr-w:1920/restaurant/dishes/pexels-polina-tankilevitch-4518835.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Sapiente Iure",
+          "title": "illo veritatis iusto mollitia perspiciatis animi quibusdam reiciendis,",
+          "body": [
+            "Laudantium similique repellendus, dicta, cupiditate totam harum placeat odit recusandae nulla repellendus quaerat debitis! quaerat",
+            "Labore! sed voluptates obcaecati consequatur exercitationem voluptatum non asperiores consequuntur quisquam delectus architecto",
+            "Porro blanditiis ipsa reiciendis non cupiditate hic hic possimus. aliquid quo consequuntur nostrum dicta facere suscipit",
+            "Ea nihil libero similique quasi ut, quas possimus! esse aliquam"
+          ],
+          "date": "2022-01-08T02:02:19",
+          "rating": 2.5
+        },
+        {
+          "username": "Autem Similique",
+          "title": "quidem tempore distinctio blanditiis! vero ratione et",
+          "body": [
+            "Impedit ducimus asperiores quaerat magnam cumque debitis laudantium voluptatem iure sequi",
+            "Commodi assumenda molestias, nesciunt esse repellendus, dolore numquam, deserunt in quibusdam quasi voluptates cum minima nisi sit ratione ad",
+            "Quos aspernatur! impedit sit vero rem accusantium, saepe iste",
+            "Labore quaerat tenetur numquam at asperiores? corporis, error fugiat totam distinctio cupiditate illo!"
+          ],
+          "date": "2022-01-08T02:05:44",
+          "rating": 5
+        },
+        {
+          "username": "Magni Cum",
+          "title": "veritatis illo vitae vero nobis qui dolores voluptates",
+          "body": [
+            "Culpa, neque officia vero, animi tempore",
+            "Impedit reprehenderit veniam repudiandae quasi non aperiam distinctio quam commodi corrupti inventore dolores. suscipit",
+            "Aliquam ab facilis incidunt, blanditiis ratione magni officiis aspernatur",
+            "Nesciunt eligendi? facilis voluptas a sequi, blanditiis veniam"
+          ],
+          "date": "2022-01-08T02:03:17",
+          "rating": 5
+        },
+        {
+          "username": "Ab Ipsum",
+          "title": "quas velit Nobis repellendus id Est magni, non",
+          "body": [
+            "Illo voluptates amet quis sequi voluptatum dolorum? necessitatibus et harum quaerat beatae qui expedita",
+            "Suscipit accusamus eligendi. quis perferendis ipsa fuga? doloribus, iste in accusamus incidunt reiciendis magni,",
+            "Eius laudantium voluptate, porro cupiditate nobis vero. asperiores vero, modi quas quod similique totam qui eos et quis",
+            "Consequatur obcaecati nam officiis magnam pariatur cumque"
+          ],
+          "date": "2022-01-08T01:59:16",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sushi",
+      "cuisine": "japońska",
+      "type": "danie główne",
+      "category": "owoce morza",
+      "ingredients": [
+        "wędzony łosoś",
+        "awokado",
+        "papryka",
+        "ogórek",
+        "ryż",
+        "pasta wasabi"
+      ],
+      "stock": 43,
+      "currency": "USD",
+      "unitPrice": 39,
+      "rating": 3.27,
+      "ratesCount": 11,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/covers/vinicius-benedit_-_1GEAA8q3wk-unsplash_1_.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/covers/vinicius-benedit_-_1GEAA8q3wk-unsplash_1_.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/covers/vinicius-benedit_-_1GEAA8q3wk-unsplash_1_.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/covers/vinicius-benedit_-_1GEAA8q3wk-unsplash_1_.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/covers/vinicius-benedit_-_1GEAA8q3wk-unsplash_1_.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/derek-duran-Jz4QMhLvGgw-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/derek-duran-Jz4QMhLvGgw-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/derek-duran-Jz4QMhLvGgw-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/derek-duran-Jz4QMhLvGgw-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/derek-duran-Jz4QMhLvGgw-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/riccardo-bergamini-O2yNzXdqOu0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/riccardo-bergamini-O2yNzXdqOu0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/riccardo-bergamini-O2yNzXdqOu0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/riccardo-bergamini-O2yNzXdqOu0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/riccardo-bergamini-O2yNzXdqOu0-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/mahmoud-fawzy-n1DePkKznLY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/mahmoud-fawzy-n1DePkKznLY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/mahmoud-fawzy-n1DePkKznLY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/mahmoud-fawzy-n1DePkKznLY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/mahmoud-fawzy-n1DePkKznLY-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/mahmoud-fawzy-MgvByrhYz24-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/mahmoud-fawzy-MgvByrhYz24-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/mahmoud-fawzy-MgvByrhYz24-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/mahmoud-fawzy-MgvByrhYz24-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/mahmoud-fawzy-MgvByrhYz24-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Enim, Aut",
+          "title": "ducimus aliquid error? quod Impedit Qui error placeat",
+          "body": [
+            "Necessitatibus fugit voluptatibus quo, labore iure id velit dolorem laboriosam facilis. deleniti blanditiis error",
+            "Ipsa voluptate tenetur harum corporis quod deleniti placeat id sit explicabo, tempore suscipit ipsum quasi",
+            "Officia modi assumenda assumenda at ullam quibusdam molestias quo iusto eveniet quisquam",
+            "Impedit odit doloremque vel at error deserunt asperiores illo pariatur, est quaerat modi. facilis nihil quod"
+          ],
+          "date": "2022-01-08T01:48:01",
+          "rating": 2.5
+        },
+        {
+          "username": "Et Provident",
+          "title": "tenetur unde eaque sapiente. nam et, iste eum",
+          "body": [
+            "At est temporibus tenetur ratione ipsum eveniet ad placeat quisquam vitae",
+            "Culpa quia modi repudiandae, consequuntur at saepe facilis facere quae rerum, dignissimos quasi maiores aspernatur placeat quos qui adipisci",
+            "Illo aliquid vero voluptatibus, labore odio impedit accusamus blanditiis unde",
+            "Magni iste! similique fuga odio ut voluptatem vero. vero vel libero harum? iste quo corporis"
+          ],
+          "date": "2022-01-08T02:02:21",
+          "rating": 4.5
+        },
+        {
+          "username": "Sit Iure",
+          "title": "quidem rerum aliquam. minima illum Cum, amet",
+          "body": [
+            "Officia asperiores ullam quos maxime ducimus deserunt",
+            "Voluptates voluptates minus, aperiam exercitationem pariatur qui vel illo pariatur odit doloremque debitis! enim officia",
+            "Quod eligendi tenetur repellendus aperiam deserunt officia veniam, voluptatem accusamus veniam expedita voluptas repellat aspernatur aspernatur neque corporis suscipit"
+          ],
+          "date": "2022-01-08T01:58:48",
+          "rating": 3.5
+        },
+        {
+          "username": "Saepe Dolore",
+          "title": "minima deserunt consectetur perspiciatis Asperiores minus eos Cumque blanditiis! consequatur,",
+          "body": [
+            "Officia eum a veniam consequuntur explicabo veniam",
+            "Consequuntur sit tenetur repellat blanditiis eum modi, deleniti expedita quas optio consequatur est explicabo"
+          ],
+          "date": "2022-01-08T02:00:28",
+          "rating": 2.5
+        },
+        {
+          "username": "Ad Ipsam",
+          "title": "porro ut iste repudiandae odit magnam nulla totam pariatur similique",
+          "body": [
+            "Officia ex vitae laborum ad voluptates asperiores? debitis saepe iure ratione cum, rerum",
+            "Quam ullam quae fuga perspiciatis facere non voluptatem odit cupiditate est cupiditate.",
+            "Cumque placeat sunt saepe tenetur vitae odio? quos quis. iste voluptatem",
+            "Doloremque sit qui. iusto repellendus, officiis consequuntur magni exercitationem pariatur vero et maiores mollitia praesentium! natus, adipisci cum blanditiis"
+          ],
+          "date": "2022-01-08T01:49:05",
+          "rating": 1.5
+        },
+        {
+          "username": "Illum. Blanditiis",
+          "title": "nam Numquam alias minima, quam inventore ducimus",
+          "body": [
+            "Adipisci dolorum id laborum accusantium sapiente corporis ipsa molestiae, sapiente",
+            "Sequi consequuntur alias accusamus placeat atque veritatis repellendus, at in aliquam",
+            "Incidunt optio id ea necessitatibus. dolorum reprehenderit",
+            "Temporibus nesciunt unde iste optio dolores totam voluptatem corporis quisquam corrupti dolore sapiente. consequatur doloremque commodi harum? odio odio"
+          ],
+          "date": "2022-01-08T01:48:52",
+          "rating": 5
+        },
+        {
+          "username": "Deleniti Mollitia.",
+          "title": "quasi est repellendus omnis doloremque quibusdam eveniet labore In dolores",
+          "body": [
+            "Veritatis maxime nisi enim ducimus, eveniet illum. iusto voluptates",
+            "Reprehenderit consequuntur iure officia iure commodi exercitationem! pariatur exercitationem,",
+            "Consectetur vero. ab nesciunt quisquam tempore eveniet mollitia",
+            "Sapiente magni incidunt accusantium, nam vero iusto veritatis consequuntur similique nobis",
+            "Adipisci expedita nobis aspernatur consectetur, omnis eaque mollitia laboriosam molestias minima illo exercitationem, ullam sint, nulla odio possimus"
+          ],
+          "date": "2022-01-08T02:04:17",
+          "rating": 2.5
+        },
+        {
+          "username": "Autem Voluptate",
+          "title": "veritatis eveniet eveniet eius ipsa harum. voluptates autem delectus",
+          "body": [
+            "Corporis vitae necessitatibus eum delectus repudiandae totam quas alias maxime ipsum reprehenderit facilis hic impedit",
+            "Obcaecati minima voluptatibus, tenetur perspiciatis repellendus praesentium",
+            "Harum. esse natus deleniti, corporis culpa, alias totam quos id, distinctio? quae cum",
+            "Hic in illum accusamus non soluta,"
+          ],
+          "date": "2022-01-08T01:59:03",
+          "rating": 4
+        },
+        {
+          "username": "Pariatur Autem",
+          "title": "sit quidem necessitatibus illo cupiditate placeat delectus consectetur reiciendis",
+          "body": [
+            "Accusantium hic itaque quisquam quos reiciendis",
+            "Officia error atque architecto doloremque esse",
+            "Quo, dolore quibusdam, nulla corporis officiis laborum ad delectus molestiae, qui praesentium",
+            "Qui. culpa. saepe minima excepturi inventore minima sapiente ab aperiam nihil officia delectus",
+            "Et laborum odio suscipit illo! cum ipsam ducimus consequatur sit ratione incidunt maxime unde ut qui. consequuntur officiis placeat quis"
+          ],
+          "date": "2022-01-08T01:57:11",
+          "rating": 3
+        },
+        {
+          "username": "Quaerat Odio",
+          "title": "voluptatum dolore fuga eius blanditiis! asperiores qui nobis asperiores? eius",
+          "body": [
+            "Doloremque repudiandae asperiores quas? maiores ut nam magnam voluptas beatae neque maiores nesciunt",
+            "Ad? reprehenderit voluptate quisquam sed corporis, necessitatibus.",
+            "Fugiat iste? optio atque eum earum debitis consectetur ullam, aspernatur quibusdam, repellat dolorem facilis inventore error dolores exercitationem esse, alias",
+            "Sapiente cum architecto voluptate dolorem harum temporibus accusamus nemo at beatae quas fuga? facilis voluptatem? nobis quasi saepe illum. blanditiis"
+          ],
+          "date": "2022-01-08T01:56:05",
+          "rating": 4.5
+        },
+        {
+          "username": "Nisi Voluptatibus",
+          "title": "mollitia sapiente illum. incidunt ipsum ratione ipsam consequuntur Totam temporibus",
+          "body": [
+            "Tenetur aperiam, itaque, praesentium facere deleniti reiciendis at aliquam, facilis. nisi tempora eum dignissimos fugiat ipsa",
+            "Deserunt totam ad doloremque voluptas tenetur cumque quis est autem consequuntur",
+            "Nisi, deleniti natus maiores dolorem, id ut quaerat vero reprehenderit molestias autem minima magni magnam id",
+            "Aspernatur fuga nostrum mollitia. laborum, error eum iure quasi architecto blanditiis dolore",
+            "Blanditiis optio maiores sapiente distinctio aliquid eveniet officiis consequuntur nesciunt modi est? natus incidunt neque"
+          ],
+          "date": "2022-01-08T01:54:59",
+          "rating": 2.5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Makaron Bolognese",
+      "cuisine": "włoska",
+      "type": "danie główne",
+      "category": "makarony",
+      "ingredients": [
+        "mielone wieprzowe",
+        "cebula",
+        "makaron",
+        "pomidory",
+        "bazylia",
+        "przyprawy"
+      ],
+      "stock": 94,
+      "currency": "USD",
+      "unitPrice": 18,
+      "rating": 4.21,
+      "ratesCount": 7,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/homescreenify-sA3wymYqyaI-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/homescreenify-sA3wymYqyaI-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/homescreenify-sA3wymYqyaI-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/homescreenify-sA3wymYqyaI-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/homescreenify-sA3wymYqyaI-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/danijela-prijovic-qits91IZv1o-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/danijela-prijovic-qits91IZv1o-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/danijela-prijovic-qits91IZv1o-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/danijela-prijovic-qits91IZv1o-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/danijela-prijovic-qits91IZv1o-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/karolina-kolodziejczak-OMp3XpMiqGU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/karolina-kolodziejczak-OMp3XpMiqGU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/karolina-kolodziejczak-OMp3XpMiqGU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/karolina-kolodziejczak-OMp3XpMiqGU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/karolina-kolodziejczak-OMp3XpMiqGU-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-klaus-nielsen-6287554.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-klaus-nielsen-6287554.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-klaus-nielsen-6287554.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-klaus-nielsen-6287554.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-klaus-nielsen-6287554.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Officia Enim",
+          "title": "ad vero. non nesciunt nostrum rerum magnam",
+          "body": [
+            "Consequuntur delectus pariatur eligendi itaque nobis expedita repudiandae minima laudantium",
+            "Quo ratione quasi placeat? voluptate doloribus laudantium aliquid facere aliquid repudiandae perferendis in fuga soluta harum",
+            "Suscipit nulla. cumque delectus laboriosam ex molestias eligendi. enim",
+            "Iure tempora, culpa, eum cum, provident similique amet"
+          ],
+          "date": "2022-01-08T01:56:00",
+          "rating": 5
+        },
+        {
+          "username": "Consequatur Nesciunt,",
+          "title": "inventore, suscipit, odit excepturi nihil eveniet aspernatur aperiam cupiditate",
+          "body": [
+            "Id error accusantium iste alias nisi vel ipsum",
+            "Repellendus expedita harum ipsam nobis voluptatem? reiciendis, vitae",
+            "Quisquam? iusto sequi soluta praesentium quo facere explicabo, maxime totam. nisi saepe"
+          ],
+          "date": "2022-01-08T01:50:18",
+          "rating": 3.5
+        },
+        {
+          "username": "Eum Deleniti?",
+          "title": "tempora repellat repellendus, debitis! Nulla consequuntur doloremque aperiam iure",
+          "body": [
+            "Incidunt odio tempore magni officiis dolorum illum nulla nam assumenda tempore commodi, perferendis",
+            "Natus, dolore eligendi officia doloremque dolores autem porro animi exercitationem officia illo, dolor harum laudantium blanditiis necessitatibus aut odio repudiandae",
+            "Consequuntur quod voluptates ducimus delectus facilis at iure eius nobis nisi commodi sit, voluptates quaerat iure minima dolores",
+            "Provident incidunt quaerat quasi blanditiis odio earum quasi architecto assumenda accusantium animi voluptatum quos nemo quis totam placeat! hic",
+            "Quod nihil, perferendis vel expedita"
+          ],
+          "date": "2022-01-08T02:00:31",
+          "rating": 4.5
+        },
+        {
+          "username": "Asperiores Magnam",
+          "title": "fugit placeat nulla facilis porro quas obcaecati",
+          "body": [
+            "Illum incidunt cum, exercitationem, voluptatem? nostrum nulla nesciunt tempora, possimus dolor possimus modi illum",
+            "Accusamus minus beatae ut, minima commodi sequi sint sunt, ratione sequi velit ut mollitia deleniti illo suscipit quae, et",
+            "Neque. quibusdam aperiam sequi magni dolorem, dolores ipsum incidunt sequi corrupti incidunt cumque facere iusto odit alias voluptatem"
+          ],
+          "date": "2022-01-08T01:54:18",
+          "rating": 5
+        },
+        {
+          "username": "Accusantium Qui.",
+          "title": "obcaecati, voluptas vel voluptatem suscipit exercitationem distinctio",
+          "body": [
+            "Molestiae veniam corporis vero harum tempora assumenda",
+            "Molestiae asperiores et sit quasi odit deleniti, voluptas quae nesciunt, hic expedita alias rerum hic",
+            "Iste quod illo repellat at impedit voluptatibus id accusamus debitis assumenda fugit qui tempora ea culpa",
+            "Lorem quo! atque at illum neque",
+            "Rerum impedit nulla asperiores? sit repellendus sapiente consequatur, nemo quis. temporibus"
+          ],
+          "date": "2022-01-08T01:59:23",
+          "rating": 4
+        },
+        {
+          "username": "Commodi Incidunt",
+          "title": "quisquam praesentium voluptas repellendus distinctio eum Quibusdam Earum Aliquid quod",
+          "body": [
+            "Quo accusantium, soluta libero error neque. culpa praesentium ex sapiente facilis aliquam,",
+            "Qui accusamus blanditiis perferendis amet iste similique ratione. facilis? quos fugit aliquid",
+            "Laudantium distinctio architecto accusamus facilis sint. molestiae, animi reiciendis, expedita ut, voluptatum eveniet illo voluptas aliquam. illum quos",
+            "Quidem earum quisquam a soluta expedita nesciunt accusantium id animi nostrum amet deleniti? dolorem maiores quidem"
+          ],
+          "date": "2022-01-08T02:02:36",
+          "rating": 3.5
+        },
+        {
+          "username": "Aut Laboriosam",
+          "title": "sunt nulla Magni ut voluptas voluptas consequatur",
+          "body": [
+            "Perferendis magnam iure natus similique at recusandae a esse placeat, nemo quibusdam, nihil adipisci excepturi neque. alias possimus illo delectus",
+            "Eaque impedit esse, architecto qui"
+          ],
+          "date": "2022-01-08T01:54:52",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Lazania",
+      "cuisine": "włoska",
+      "type": "danie główne",
+      "category": "makarony",
+      "ingredients": [
+        "mielone wieprzowe",
+        "cebula",
+        "makaron",
+        "pomidory",
+        "bazylia",
+        "przyprawy",
+        "ser żółty"
+      ],
+      "stock": 77,
+      "currency": "USD",
+      "unitPrice": 15,
+      "rating": 4.4,
+      "ratesCount": 36,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/karolina-kolodziejczak-OSMAK8b74ls-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/karolina-kolodziejczak-OSMAK8b74ls-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/karolina-kolodziejczak-OSMAK8b74ls-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/karolina-kolodziejczak-OSMAK8b74ls-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/karolina-kolodziejczak-OSMAK8b74ls-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-benjamin-4764588.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-benjamin-4764588.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-benjamin-4764588.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-benjamin-4764588.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-benjamin-4764588.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-anna-guerrero-4078163.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-anna-guerrero-4078163.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-anna-guerrero-4078163.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-anna-guerrero-4078163.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-anna-guerrero-4078163.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "ATempore",
+          "title": "inciduntquamveroexercitationemnisi",
+          "body": [
+            "Atipsamcupiditateperferendisconsectetur",
+            "Illohicidveritatisnihilreprehenderitrepudiandaecumqueasperiores"
+          ],
+          "date": "2021-04-15T12:24:44",
+          "rating": 4.5
+        },
+        {
+          "username": "ImpeditAperiam,",
+          "title": "expeditaAsperioresiustoquaseaquedolorumillumat",
+          "body": [
+            "Architectohicquameaquevelitmaximenullautcupiditateenimoditquibusdamsolutaquam",
+            "Eumnonnihillaborumdelectussapienteanimiomnis,nihilnisirepudiandaebeatae,"
+          ],
+          "date": "2021-11-07T04:36:06",
+          "rating": 4.0
+        },
+        {
+          "username": "NumquamUt",
+          "title": "praesentium,adexpeditateneturofficiaharumquaeQuasiveniamvelit!",
+          "body": [
+            "Similiqueincidunteligendi.porro,quiquod,velit!velitdelenitimolestiae",
+            "Obcaecatiaccusamusanimiofficiadeleniti,adipsaaperiammagnamsuscipit,culpaassumendacupiditateiure,autemhic"
+          ],
+          "date": "2021-06-19T03:07:08",
+          "rating": 5.0
+        },
+        {
+          "username": "DelectusNesciunt",
+          "title": "asperioresquisquamnonatquequaeratrepudiandaePerspiciatislabore",
+          "body": [
+            "Cumquead,autreiciendisearum",
+            "Fugatemporanulla.quisitaccusamusnobisnonnumquam.sequiesse"
+          ],
+          "date": "2021-09-14T10:23:24",
+          "rating": 4.0
+        },
+        {
+          "username": "Officiis.Voluptatibus,",
+          "title": "voluptatibusdolorevoluptatumducimusIdquinatuslabore",
+          "body": [
+            "Distinctiooptiovoluptatibusevenietanimiculpa,minusassumendaeligendivoluptatibusvoluptatemquisquamvelfuga,",
+            "Doloresaliquidtotamadiurenequeiste",
+            "Animiullammodi,accusamusvitaebeatae,reiciendisnonreprehenderittotam"
+          ],
+          "date": "2021-06-22T02:24:51",
+          "rating": 4.0
+        },
+        {
+          "username": "PerspiciatisOfficiis",
+          "title": "ducimussequicupiditateMagnamilloestporrohicaccusamus",
+          "body": [
+            "Iste?quassequi,atfugitasperiores?minus,",
+            "Nihilconsequuntureumcorporisabmagnimaximevoluptatibus",
+            "Sed.corruptiofficia,nisisitpraesentiumreiciendisaccusantiumoptiooditerrorculpa,consecteturtotam",
+            "Temporecupiditate.fugitvoluptatumdoloresperferendisdebitisquasiutestquas,voluptatumdoloredoloresillo?blanditiis!velit"
+          ],
+          "date": "2021-07-29T23:17:15",
+          "rating": 4.5
+        },
+        {
+          "username": "VoluptatumDebitis",
+          "title": "laudantiumeaquequisquamerrorenim.eveniet",
+          "body": [
+            "Abofficiaoptiomaximepraesentium,animiquivelittemporibus.animiodit,",
+            "Placeatdolorperferendisipsumilluminciduntdelectusarchitectoad,adipisciodionullaestatimpeditmagni,eoseumconsequunturmagnam",
+            "Iustoqui.repudiandaesuscipiteosadipisci.corruptiearumautnatussuntsimiliqueculpasolutavelit!facere",
+            "Sintrerumdolorequinobisanimiperspiciatisimpeditnesciuntaliquidsapienteameteumculpareiciendismaximerepudiandae",
+            "Beataedoloreetsuscipitpossimusrepellatearumvoluptatesmolestiaenulla!"
+          ],
+          "date": "2021-04-07T05:25:29",
+          "rating": 4.5
+        },
+        {
+          "username": "Cupiditate.Itaque",
+          "title": "sintnatustemporedebitismaioresassumenda.evenietculpareiciendis,",
+          "body": [
+            "Asperioresratione.temporerepellendusexercitationemassumendarepellatvoluptatesautemducimuspraesentiumeveniet",
+            "Totammollitia,doloresatasperioresquodlaboreinciduntexpeditaimpeditadomnisanimicorruptiatqueodit",
+            "Repellatquasicorruptiminimarationeat.obcaecatidictaexercitationemnemoquidemminusdeseruntofficia,sunt.deserunt?porro",
+            "Liberorepellendusquidematquevoluptatequoducimusiste?"
+          ],
+          "date": "2021-11-09T07:02:00",
+          "rating": 4.0
+        },
+        {
+          "username": "VoluptateConsequatur",
+          "title": "laboreestconsecteturerrorQuisVoluptates",
+          "body": [
+            "Reiciendisodio?culpa,distinctioipsumadipisci.ducimus",
+            "Nesciuntcommodidolorum?numquamaspernaturipsumtemporequisquamquos,vellabore",
+            "Rationecumqueducimuslaborevoluptates",
+            "Veltemporeblanditiissitdelenitiistequia!voluptasatquesaepeab"
+          ],
+          "date": "2021-07-13T09:54:09",
+          "rating": 5.0
+        },
+        {
+          "username": "DoloremqueAt",
+          "title": "autemconsequunturnostrum,voluptatesipsumveritatisquae",
+          "body": [
+            "Exercitationem,culpa,officiaveniamvoluptatesplaceatvoluptatemquipraesentiumrepellatquiaquiilloquoverovitaevoluptatum",
+            "Officiismolestiasverodolorexsedsapienteminuseaqueexercitationemveritatisvitaenisi",
+            "Iureaccusamusametlaboreplaceat",
+            "Quisquampraesentiumaccusamusearumitaqueut,numquam.temporibuseum",
+            "Sintnemoquibusdamveroiste"
+          ],
+          "date": "2021-12-08T02:58:25",
+          "rating": 4.0
+        },
+        {
+          "username": "AnimiInventore",
+          "title": "quiquidemanimiipsalaborumexplicabo,temporeullamquidem",
+          "body": [
+            "Pariaturconsecteturhicvero.quaenatusodit.quiinciduntnemoperferendisrerumdolorum",
+            "Culpainventore,ducimusperferendisrepellatcum,beataefugiterrorpariaturablibero",
+            "Assumendatotamiustoasperioresnam?temporibusfacilis",
+            "Eos?blanditiis!ipsumdelenitialiquidodiomaximeadipisci!aperiamdelectusrationefacilisfugitquodaspernaturveniamest?"
+          ],
+          "date": "2021-01-19T04:26:25",
+          "rating": 4.5
+        },
+        {
+          "username": "Commodi,Maiores",
+          "title": "inciduntmollitiaiustomolestiaeinciduntaliasrerumnemo!",
+          "body": [
+            "Quiipsumquossitnisi,culpa.impeditiustoquidemdelenitifugitvoluptatemnihilsimiliqueconsequuntur",
+            "Doloribusillumsuscipitiuretemporibusmagnamtotamsit,beatae,nemocupiditatevoluptatemanimitotamvoluptate",
+            "Placeatlaborumdoloremveniamsimiliquevoluptateiustonam?officiaeumofficiis,veritatisiureea",
+            "Teneturetvoluptatemquasiautrepellaterrornecessitatibus.commodi,totamilloaperiam,corruptiquaererum,temporavelit!illum,officianon"
+          ],
+          "date": "2021-05-17T11:30:43",
+          "rating": 4.0
+        },
+        {
+          "username": "NisiItaque",
+          "title": "maximerationearchitectosaepeducimusdoloribusneque",
+          "body": [
+            "Pariaturaspernaturfugitblanditiis!porroconsequunturdistinctio?ullamvoluptatemneque!maioresillo",
+            "Totamminimarepudiandaenostrumaliquidnonnullaaodio.ipsumexpossimus.fugablanditiisducimus",
+            "Laboriosameligendiasperioresmollitiaid,facerecupiditate"
+          ],
+          "date": "2021-08-30T09:17:00",
+          "rating": 5.0
+        },
+        {
+          "username": "DistinctioAutem",
+          "title": "eumreiciendisdolorhiclabore",
+          "body": [
+            "Minusaccusantiumnatusmodidebitismaximeautsuscipit,consequaturautemdoloremculpaducimus,quas?veritatisquidem!inventoresuscipitporroeveniet",
+            "Necessitatibusperferendisidmodi.veroautanimidolorumquiiusto,asperioreslaborum,",
+            "Hicullamquiaadcommodiofficia,vitaequisquamnemoexpeditafaciliseius",
+            "Nisiblanditiisreiciendis,sintoptionullaaliquid"
+          ],
+          "date": "2021-10-05T16:02:05",
+          "rating": 4.5
+        },
+        {
+          "username": "MagniTenetur",
+          "title": "suscipitassumendalaudantiummodimodiquisquamsapientecupiditateodit,aliquid",
+          "body": [
+            "Veronatusnatusveritatisanimiimpeditnecessitatibusplaceatnam,corporis,cupiditateutdignissimosadipisci.sapiente.accusantium,",
+            "Ametaspernaturaccusantiumaccusamusquo!sedveritatisundedoloresaspernaturexercitationemullamdelectus",
+            "Ducimustemporibusveritatisnobisasperioresnonofficiisomnisliberoaspernaturcumcupiditate?laborefugiteum,aliquideum",
+            "Est,atcorporislaboredicta,corporisfugiatnisisintmagnamtemporerepellendusdoloremnonculpaquodveritatis"
+          ],
+          "date": "2021-01-08T23:05:51",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Naleśniki z owocami",
+      "cuisine": "polska",
+      "type": "danie główne",
+      "category": "naleśniki",
+      "ingredients": [
+        "mąka",
+        "mleko",
+        "woda",
+        "owoce",
+        "czekolada",
+        "bita śmietana"
+      ],
+      "stock": 112,
+      "currency": "USD",
+      "unitPrice": 18,
+      "rating": 4.04,
+      "ratesCount": 13,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/monika-grabkowska-jsgJtBOR6jY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/monika-grabkowska-jsgJtBOR6jY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/monika-grabkowska-jsgJtBOR6jY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/monika-grabkowska-jsgJtBOR6jY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/monika-grabkowska-jsgJtBOR6jY-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/delaney-van-s_aGnOcfCq0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/delaney-van-s_aGnOcfCq0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/delaney-van-s_aGnOcfCq0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/delaney-van-s_aGnOcfCq0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/delaney-van-s_aGnOcfCq0-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/jacinto-diego-i2LaTOYpc5c-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/jacinto-diego-i2LaTOYpc5c-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/jacinto-diego-i2LaTOYpc5c-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/jacinto-diego-i2LaTOYpc5c-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/jacinto-diego-i2LaTOYpc5c-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/austin-p-1ZTccDpF71k-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/austin-p-1ZTccDpF71k-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/austin-p-1ZTccDpF71k-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/austin-p-1ZTccDpF71k-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/austin-p-1ZTccDpF71k-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Quisquam Consequuntur",
+          "title": "fugiat aspernatur nulla obcaecati porro, vero. cumque quae",
+          "body": [
+            "Architecto dignissimos voluptates natus quos inventore consectetur! unde!",
+            "Iusto at reprehenderit? quisquam ex sequi, impedit"
+          ],
+          "date": "2022-01-08T02:04:14",
+          "rating": 4
+        },
+        {
+          "username": "Eveniet In,",
+          "title": "ipsam recusandae culpa natus minima",
+          "body": [
+            "Qui laborum doloremque explicabo quibusdam et alias corrupti corrupti corrupti aut sequi, corporis atque qui quibusdam maxime quisquam",
+            "Nam obcaecati sit at provident repudiandae earum. ullam, sapiente atque! perspiciatis",
+            "Cupiditate quas similique voluptatum nostrum nisi,",
+            "Totam reiciendis error consequuntur maiores"
+          ],
+          "date": "2022-01-08T02:07:04",
+          "rating": 3.5
+        },
+        {
+          "username": "Aut Aperiam,",
+          "title": "quo quasi iste molestias est? incidunt Nobis",
+          "body": [
+            "Voluptates ex aliquid quae deleniti, accusantium eligendi? ducimus eum nisi ad repellat voluptas fuga officia, reprehenderit facere",
+            "Quis sed pariatur recusandae vel accusamus non",
+            "Quod ab quod voluptates velit deserunt distinctio perspiciatis eos veniam sequi impedit expedita odio doloremque veniam consectetur dolorem ducimus,",
+            "Nesciunt ad tempora dicta sint totam quaerat"
+          ],
+          "date": "2022-01-08T01:53:20",
+          "rating": 3.5
+        },
+        {
+          "username": "Quam. Illo!",
+          "title": "odio unde quae accusamus illo, laborum excepturi",
+          "body": [
+            "Molestiae ipsum deserunt suscipit, suscipit similique",
+            "Officia, omnis iure ipsum laudantium doloremque placeat, est sunt, voluptatem voluptatum",
+            "Nemo odio reiciendis enim dolore optio doloribus illo pariatur facere maiores. corrupti odio deleniti ipsum doloremque atque debitis eos repellat",
+            "Minus animi similique nihil, esse sit molestias quos id beatae architecto accusantium, corporis velit delectus corrupti nobis ex,",
+            "Voluptas quos, consequuntur iusto a doloremque cum laudantium"
+          ],
+          "date": "2022-01-08T01:48:12",
+          "rating": 3
+        },
+        {
+          "username": "Repellat Molestias",
+          "title": "ad quisquam quaerat eos dolorem",
+          "body": [
+            "Exercitationem. neque saepe temporibus cum, delectus vitae",
+            "In. vitae numquam iusto. nostrum architecto ut, provident ex"
+          ],
+          "date": "2022-01-08T01:52:53",
+          "rating": 4
+        },
+        {
+          "username": "Reiciendis, Id",
+          "title": "Nobis commodi ad magnam qui cupiditate laudantium inventore praesentium quisquam",
+          "body": [
+            "Omnis nesciunt deleniti cumque tempora, neque. asperiores dolorem quasi quasi cum odit. ducimus vero nostrum accusamus harum similique tempora",
+            "Non ex, cum impedit necessitatibus distinctio? cumque, excepturi",
+            "Commodi odio ex mollitia esse, quas magni, tenetur",
+            "Impedit et accusantium rerum, ab id rerum optio quis. neque eligendi. veniam sequi vero"
+          ],
+          "date": "2022-01-08T01:59:32",
+          "rating": 3.5
+        },
+        {
+          "username": "Totam Totam",
+          "title": "adipisci veniam eum. sint eius vero mollitia. Perferendis Magnam dicta",
+          "body": [
+            "Animi placeat perferendis praesentium id corporis, iure esse accusantium facere suscipit sapiente facere in explicabo assumenda odit, asperiores sed excepturi!",
+            "Aliquid deserunt? similique. adipisci obcaecati in excepturi placeat quasi nobis at",
+            "A nulla soluta maiores enim. porro, distinctio fugiat error necessitatibus illo eveniet, dolor asperiores dolorem, ea eius. ab",
+            "Repudiandae elit. assumenda officia impedit sequi necessitatibus veniam",
+            "Eius numquam. possimus labore soluta iure"
+          ],
+          "date": "2022-01-08T01:53:43",
+          "rating": 4
+        },
+        {
+          "username": "Molestiae Quasi",
+          "title": "culpa molestiae commodi similique ratione quidem magni rerum exercitationem",
+          "body": [
+            "Temporibus aliquid architecto autem, laborum",
+            "Fugit iusto voluptatum necessitatibus error nulla tenetur rerum, quidem aperiam consectetur, accusamus libero"
+          ],
+          "date": "2022-01-08T01:47:05",
+          "rating": 4
+        },
+        {
+          "username": "Vitae Vel",
+          "title": "fugit qui excepturi! omnis culpa velit nemo",
+          "body": [
+            "Repudiandae quaerat fugiat nihil? temporibus optio aliquid consequuntur nisi id quidem illum",
+            "Et reiciendis illo nostrum saepe deserunt? saepe iusto soluta",
+            "Quas natus corporis fuga, obcaecati mollitia, unde asperiores et vero",
+            "Vel incidunt amet vel pariatur tenetur consectetur distinctio vero cum unde totam"
+          ],
+          "date": "2022-01-08T01:54:46",
+          "rating": 5
+        },
+        {
+          "username": "Eligendi. Fuga",
+          "title": "quam suscipit, ipsum ratione sed",
+          "body": [
+            "Quae id porro dolor facilis dicta,",
+            "Nemo accusantium, voluptate facilis delectus voluptatibus ad? dolorum excepturi at quasi",
+            "Harum quis deserunt beatae, iusto ad voluptates alias",
+            "Doloribus reiciendis, dolore quod, ipsum inventore eaque facere placeat? quae, voluptatum dolor nihil voluptate officiis quos asperiores reprehenderit eum expedita",
+            "Quam aut alias facilis voluptate facere blanditiis eos porro,"
+          ],
+          "date": "2022-01-08T01:55:03",
+          "rating": 5
+        },
+        {
+          "username": "Repudiandae Laudantium",
+          "title": "eius, Numquam at minus, beatae voluptates asperiores? incidunt in, aut",
+          "body": [
+            "Unde modi asperiores officiis accusantium ducimus quo molestiae, optio culpa asperiores corporis nihil aperiam quae officiis aspernatur repellat",
+            "Consequuntur fuga iusto minima aut temporibus a quod nam earum eaque ad inventore, assumenda",
+            "Ipsum debitis sapiente eaque velit tempore! sapiente. reiciendis vel animi, reiciendis est vel nemo accusantium nisi inventore officiis tempora vero",
+            "Labore excepturi! quasi odit quia dolor aspernatur alias rem, quae repudiandae aperiam nobis incidunt"
+          ],
+          "date": "2022-01-08T01:48:41",
+          "rating": 4.5
+        },
+        {
+          "username": "Eligendi. Sequi,",
+          "title": "incidunt rem, eos illo velit odio",
+          "body": [
+            "Atque iusto dolor molestias id temporibus assumenda incidunt dolorum officia eligendi eos, tenetur unde",
+            "Ullam sint cum ea dolore reprehenderit dolores veniam",
+            "Reprehenderit eaque corrupti error animi explicabo nihil alias at, quaerat amet possimus! illum fuga repellat excepturi! odio mollitia ipsum",
+            "Vitae aliquid explicabo, quis. ratione architecto ipsa ab numquam optio non veniam odit culpa sed. facere modi."
+          ],
+          "date": "2022-01-08T01:47:50",
+          "rating": 4
+        },
+        {
+          "username": "Quas Velit",
+          "title": "alias perferendis asperiores esse laudantium delectus odio sit, architecto natus",
+          "body": [
+            "Blanditiis nihil aperiam odio laborum quas eius? quod saepe amet",
+            "Facilis nostrum odio temporibus esse odio enim, iste voluptates vel, hic.",
+            "Mollitia et, perspiciatis molestias voluptates fugiat iste quos aliquam cumque voluptate asperiores",
+            "Culpa soluta alias repellat obcaecati, ad consequatur"
+          ],
+          "date": "2022-01-08T01:57:33",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Pancakes",
+      "cuisine": "amerykańska",
+      "type": "danie główne",
+      "category": "naleśniki",
+      "ingredients": [
+        "mąka",
+        "mleko",
+        "woda",
+        "cukier",
+        "wanilia",
+        "banany",
+        "bita śmietana"
+      ],
+      "stock": 0,
+      "currency": "USD",
+      "unitPrice": 22,
+      "rating": 3.79,
+      "ratesCount": 17,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/mae-mu-TkzdkVn1AyA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/mae-mu-TkzdkVn1AyA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/mae-mu-TkzdkVn1AyA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/mae-mu-TkzdkVn1AyA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/mae-mu-TkzdkVn1AyA-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/chad-montano-gf9777gaYjs-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/chad-montano-gf9777gaYjs-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/chad-montano-gf9777gaYjs-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/chad-montano-gf9777gaYjs-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/chad-montano-gf9777gaYjs-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/tatiana-rodriguez-iuKj0rRRddA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/tatiana-rodriguez-iuKj0rRRddA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/tatiana-rodriguez-iuKj0rRRddA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/tatiana-rodriguez-iuKj0rRRddA-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/tatiana-rodriguez-iuKj0rRRddA-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/jaqueline-pelzer-Zt-0gWKodXk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/jaqueline-pelzer-Zt-0gWKodXk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/jaqueline-pelzer-Zt-0gWKodXk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/jaqueline-pelzer-Zt-0gWKodXk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/jaqueline-pelzer-Zt-0gWKodXk-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/joshua-ryder-y4K7Ydp2z3Y-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/joshua-ryder-y4K7Ydp2z3Y-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/joshua-ryder-y4K7Ydp2z3Y-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/joshua-ryder-y4K7Ydp2z3Y-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/joshua-ryder-y4K7Ydp2z3Y-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/nikldn-qp7WA8AV2x0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/nikldn-qp7WA8AV2x0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/nikldn-qp7WA8AV2x0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/nikldn-qp7WA8AV2x0-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/nikldn-qp7WA8AV2x0-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Voluptate Quos",
+          "title": "inventore a sequi, et, modi officia",
+          "body": [
+            "Harum harum quod quos neque fugiat iure",
+            "Dignissimos nobis asperiores fuga autem voluptates omnis delectus delectus fugit assumenda. nisi placeat quasi repellendus at nobis blanditiis excepturi quasi",
+            "Iure esse et debitis odit quam culpa eveniet, hic architecto quasi placeat nobis quos totam. consectetur asperiores debitis officia iste",
+            "Eaque beatae id non possimus tenetur nulla architecto iste officia dolores",
+            "Dicta, vero placeat placeat perspiciatis voluptatem non magni, culpa, atque vel laboriosam pariatur aut eaque ex est mollitia ducimus"
+          ],
+          "date": "2022-01-08T01:59:10",
+          "rating": 4
+        },
+        {
+          "username": "Animi, Velit",
+          "title": "omnis Reiciendis nemo alias ipsum dolorem voluptatibus",
+          "body": [
+            "Voluptate quo! eos iure iusto quaerat hic consequatur ducimus earum possimus!",
+            "Quaerat possimus inventore quia blanditiis reprehenderit? qui incidunt soluta aliquid? repudiandae, error temporibus aliquam. repellat deleniti",
+            "Eius. sit, laudantium aliquid odit, provident ipsum",
+            "Sapiente omnis cum voluptates commodi quaerat voluptate praesentium! nisi, sint quos quas expedita magnam blanditiis ut",
+            "Maiores ut at magni possimus odio unde nulla magni rem possimus"
+          ],
+          "date": "2022-01-08T02:03:42",
+          "rating": 5
+        },
+        {
+          "username": "Numquam, Totam",
+          "title": "provident facere tempore? illo tempora placeat rerum nesciunt ullam nulla",
+          "body": [
+            "Aliquid cum veniam totam est optio rem aut tempora, consectetur itaque dolore distinctio",
+            "Possimus ea reprehenderit unde! eveniet, odio. et commodi ducimus tenetur incidunt"
+          ],
+          "date": "2022-01-08T02:05:41",
+          "rating": 3.5
+        },
+        {
+          "username": "Eligendi Reprehenderit",
+          "title": "labore in. architecto tenetur pariatur corrupti",
+          "body": [
+            "Non? labore officia distinctio non dicta, iste voluptates. eum optio nesciunt id voluptas provident cum corporis expedita",
+            "Excepturi at nam ratione! et nostrum quibusdam quasi perferendis natus velit magni, voluptate"
+          ],
+          "date": "2022-01-08T01:58:46",
+          "rating": 3.5
+        },
+        {
+          "username": "Autem, Quia!",
+          "title": "beatae aspernatur debitis nam unde ipsa dignissimos iusto",
+          "body": [
+            "Cupiditate blanditiis exercitationem, odio quod saepe",
+            "Atque ullam obcaecati placeat cum corrupti recusandae ratione repellat culpa voluptatum"
+          ],
+          "date": "2022-01-08T01:51:05",
+          "rating": 4
+        },
+        {
+          "username": "Veritatis Veritatis",
+          "title": "reprehenderit porro Fuga ipsum reiciendis",
+          "body": [
+            "Iste perferendis ipsam ipsam repudiandae eos vitae quod rerum assumenda deleniti, consequuntur pariatur eveniet nulla",
+            "Exercitationem quia! ratione obcaecati nemo animi iste illum optio dignissimos nam? sapiente",
+            "Nobis nisi corporis, nihil quia! minima placeat suscipit, voluptate, ex eaque quaerat saepe",
+            "Harum cupiditate placeat quod. aut eius necessitatibus in ullam quasi",
+            "Obcaecati qui pariatur suscipit, reprehenderit cumque officia nostrum ipsa ea consectetur! accusamus, quas possimus. quod quaerat nobis ad,"
+          ],
+          "date": "2022-01-08T02:03:03",
+          "rating": 3.5
+        },
+        {
+          "username": "Sed Et",
+          "title": "eaque tempora iure, modi quaerat nihil",
+          "body": [
+            "Voluptatem est officiis, porro odit sint sed,",
+            "Officia voluptate, eius culpa qui.",
+            "Quam. saepe quidem quas sequi, voluptates omnis cupiditate? vitae ipsam consequuntur esse minima repellendus cum",
+            "Odit velit ab ad explicabo quisquam eos accusantium"
+          ],
+          "date": "2022-01-08T01:54:01",
+          "rating": 4.5
+        },
+        {
+          "username": "Dolorum Assumenda.",
+          "title": "qui libero nisi adipisci quisquam optio amet",
+          "body": [
+            "Doloremque, expedita culpa. facere consequatur eveniet, fugiat accusantium officia esse sequi alias reiciendis,",
+            "Labore ab corporis nesciunt laudantium veniam excepturi eveniet modi temporibus",
+            "Delectus perferendis pariatur quos doloremque asperiores quis qui at quisquam in et consequatur accusantium"
+          ],
+          "date": "2022-01-08T01:52:39",
+          "rating": 4.5
+        },
+        {
+          "username": "Quas Quam",
+          "title": "iure qui, nemo adipisci. ex minus earum ipsam at aliquid",
+          "body": [
+            "Quod ad? molestias blanditiis quas",
+            "Temporibus aspernatur accusantium. vitae eum illum",
+            "Ratione pariatur, nulla doloribus numquam, maxime quaerat molestiae consectetur dolor tempore fugit molestias repellendus, pariatur",
+            "Quos sint illo atque recusandae doloribus, libero!",
+            "Tempore? sed maiores tenetur nemo, quis veniam accusantium illo perferendis maxime praesentium,"
+          ],
+          "date": "2022-01-08T01:53:21",
+          "rating": 3.5
+        },
+        {
+          "username": "Beatae Iste",
+          "title": "error ex ipsum dolores nulla sequi laudantium nam dolorum neque",
+          "body": [
+            "Eius repudiandae maiores qui pariatur enim, iure fugit eos eveniet autem fugit doloribus, odit",
+            "Ut labore iusto tenetur adipisci officia consectetur temporibus quod ipsa officiis. molestias pariatur, mollitia",
+            "Similique blanditiis harum molestiae, eius sit corporis recusandae culpa"
+          ],
+          "date": "2022-01-08T01:50:14",
+          "rating": 4.5
+        },
+        {
+          "username": "Error Exercitationem,",
+          "title": "esse modi Laborum, est repudiandae Animi necessitatibus repellat eum magnam",
+          "body": [
+            "Corrupti doloremque est nihil, nesciunt mollitia voluptatem perferendis",
+            "Facilis quasi quibusdam! illum accusamus neque facilis. alias molestias ullam perferendis quibusdam consequuntur velit quasi repellendus nisi maiores labore cupiditate.",
+            "Nulla recusandae nobis accusantium sequi quam vitae soluta accusamus",
+            "Maiores. unde veniam corporis accusantium, repudiandae maiores",
+            "Rem illum iste sed. qui. possimus! sapiente facere nisi magnam quae illo vel minima, aut"
+          ],
+          "date": "2022-01-08T01:59:58",
+          "rating": 4.5
+        },
+        {
+          "username": "Quaerat, Deserunt",
+          "title": "excepturi illo ex natus possimus illum explicabo? neque Voluptatum facilis",
+          "body": [
+            "Iste itaque, ullam alias officia optio repellat illo molestias id, mollitia illum sunt repudiandae officia maiores eligendi? quidem",
+            "Odit consequuntur repudiandae repudiandae, animi magnam pariatur necessitatibus delectus cumque mollitia facere",
+            "Explicabo quasi vitae. molestiae, hic aperiam voluptatem illum, tempora earum tenetur aperiam, illo repellendus eaque voluptates.",
+            "Totam ipsum dolorem fugit voluptate, aspernatur magnam at beatae, molestias officiis. nobis distinctio minima aliquid laborum, minima"
+          ],
+          "date": "2022-01-08T02:01:55",
+          "rating": 3
+        },
+        {
+          "username": "Unde Quasi",
+          "title": "quod, voluptatem quod officia vero non",
+          "body": [
+            "Fugit repudiandae sint magnam animi illum, doloribus! illum.",
+            "Hic dignissimos consequuntur voluptate doloremque repudiandae accusantium. eligendi voluptas accusamus ut itaque",
+            "Rerum veritatis nemo assumenda. commodi ipsum suscipit, pariatur et vero praesentium ipsa esse,",
+            "Quaerat, deleniti culpa mollitia. ducimus officia nobis nesciunt repudiandae sequi saepe vero. aperiam quae",
+            "Officiis iusto molestiae veniam ipsum facilis voluptas tempora similique id porro voluptatem velit"
+          ],
+          "date": "2022-01-08T01:59:42",
+          "rating": 4
+        },
+        {
+          "username": "Expedita Saepe",
+          "title": "optio nihil explicabo? velit tempora non reprehenderit culpa nemo! saepe",
+          "body": [
+            "Inventore doloribus architecto magni deserunt distinctio quos nisi et molestiae, illo perferendis assumenda vero nemo aspernatur voluptas",
+            "Molestiae maxime fugiat eius eum nam veritatis tenetur et",
+            "Incidunt amet enim. reiciendis optio ducimus repudiandae, fugit"
+          ],
+          "date": "2022-01-08T01:52:04",
+          "rating": 3.5
+        },
+        {
+          "username": "Modi A",
+          "title": "At reiciendis reprehenderit qui eum iste voluptatum eveniet",
+          "body": [
+            "Nesciunt accusamus autem tempora ducimus animi hic. quibusdam labore fugit libero cumque",
+            "Odio molestias ut vitae veniam sit sequi est omnis necessitatibus corrupti voluptatum consectetur asperiores esse autem architecto culpa",
+            "Aliquid quod dolorum est, cum corporis reiciendis, architecto voluptate officiis molestiae maxime dolorem, dolorem",
+            "Blanditiis eum. eum facilis minus minus veniam fugit",
+            "Quos quas mollitia quidem ad iure doloribus voluptate incidunt non quibusdam corrupti quae cum dolorem in aspernatur repudiandae voluptates"
+          ],
+          "date": "2022-01-08T02:02:22",
+          "rating": 4
+        },
+        {
+          "username": "Facilis Laboriosam",
+          "title": "placeat? inventore incidunt quaerat placeat incidunt accusamus dolore",
+          "body": [
+            "Totam iusto sunt, labore voluptatibus commodi ex magnam quaerat",
+            "Assumenda fuga? reiciendis quas esse accusantium non nisi iusto excepturi in sed hic possimus provident illo nihil assumenda. asperiores",
+            "Ipsam voluptas at illum consequuntur molestias repellendus ad",
+            "Molestiae et quos atque iure"
+          ],
+          "date": "2022-01-08T01:50:20",
+          "rating": 4.5
+        },
+        {
+          "username": "Commodi Ut",
+          "title": "consectetur animi, non repellendus, eaque consequatur Nulla",
+          "body": [
+            "Facere incidunt vitae asperiores asperiores quis praesentium, suscipit, quod",
+            "Aut nemo expedita culpa sunt recusandae facilis",
+            "Libero earum illum sit incidunt veniam non accusantium ut omnis voluptatem neque temporibus placeat obcaecati corrupti"
+          ],
+          "date": "2022-01-08T01:55:38",
+          "rating": 0.5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Tiramisu",
+      "cuisine": "włoska",
+      "type": "słodycze",
+      "category": "ciasta",
+      "ingredients": [
+        "biszkopty",
+        "ser mascarpone",
+        "jaja",
+        "cukier puder",
+        "likier",
+        "kawa espresso",
+        "kakao"
+      ],
+      "stock": 298,
+      "currency": "USD",
+      "unitPrice": 16,
+      "rating": 4.17,
+      "ratesCount": 6,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/marianna-ole-4El3DUkQs2g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/marianna-ole-4El3DUkQs2g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/marianna-ole-4El3DUkQs2g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/marianna-ole-4El3DUkQs2g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/marianna-ole-4El3DUkQs2g-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/victoria-alexandrova-XKzfIg-LVcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/victoria-alexandrova-XKzfIg-LVcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/victoria-alexandrova-XKzfIg-LVcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/victoria-alexandrova-XKzfIg-LVcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/victoria-alexandrova-XKzfIg-LVcU-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/victoria-alexandrova-MabMpt0roPE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/victoria-alexandrova-MabMpt0roPE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/victoria-alexandrova-MabMpt0roPE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/victoria-alexandrova-MabMpt0roPE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/victoria-alexandrova-MabMpt0roPE-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Numquam Unde",
+          "title": "reiciendis, debitis! magni pariatur illo consectetur corrupti est possimus",
+          "body": [
+            "Sit accusamus quos inventore facere vero",
+            "Iure laudantium ipsum nulla autem et earum incidunt qui vero",
+            "Laborum perferendis dolorem officiis, veniam expedita inventore,",
+            "Dolorem animi et quisquam velit vel, architecto aperiam accusantium",
+            "Delectus amet voluptatem, eligendi? in culpa culpa quaerat, ipsum ipsum amet error? maiores non"
+          ],
+          "date": "2022-01-08T02:04:10",
+          "rating": 2.5
+        },
+        {
+          "username": "Tempora Illum",
+          "title": "esse facere qui ratione Repellat",
+          "body": [
+            "Minus repudiandae totam ad, voluptatibus, harum nisi quod",
+            "Qui inventore voluptatem? voluptatem voluptate cumque assumenda magni optio quae. nisi",
+            "Quos neque asperiores? incidunt numquam, facere non iste? aut similique atque deleniti, id eveniet qui. dolor soluta voluptate,"
+          ],
+          "date": "2022-01-08T02:02:25",
+          "rating": 3.5
+        },
+        {
+          "username": "Vitae Doloribus",
+          "title": "quidem! Voluptates non illo? Voluptates ab adipisci nostrum",
+          "body": [
+            "Doloremque molestias ex, obcaecati facere est",
+            "Excepturi enim doloremque blanditiis eligendi pariatur, soluta, consectetur doloribus! molestiae expedita",
+            "Quasi eveniet dolor nihil molestias placeat officiis hic"
+          ],
+          "date": "2022-01-08T01:59:27",
+          "rating": 5
+        },
+        {
+          "username": "Obcaecati Culpa",
+          "title": "quas officiis commodi Magnam quidem! rem maiores",
+          "body": [
+            "Sed fuga, mollitia. laboriosam, impedit soluta, quam animi cumque est officia eligendi",
+            "Quasi fugit voluptates neque eaque eos possimus inventore eligendi",
+            "Molestias illo vero vero similique eum blanditiis! eveniet, dolorem, dolores deserunt? possimus doloremque ut sit"
+          ],
+          "date": "2022-01-08T01:48:43",
+          "rating": 4.5
+        },
+        {
+          "username": "Blanditiis Corporis",
+          "title": "reprehenderit magnam facere veritatis repudiandae ducimus tenetur",
+          "body": [
+            "Doloremque alias similique nulla facilis ullam necessitatibus fugiat adipisicing velit alias minima voluptates autem ratione facilis maiores quo",
+            "Possimus atque quod labore! voluptatum corporis architecto excepturi dolores assumenda voluptatum pariatur officia aspernatur fugit sequi laboriosam veritatis eos"
+          ],
+          "date": "2022-01-08T01:47:27",
+          "rating": 4.5
+        },
+        {
+          "username": "Numquam Magnam",
+          "title": "unde voluptatibus ducimus aspernatur iusto sapiente sed facere",
+          "body": [
+            "Nesciunt beatae, eius non veritatis quod quas iure reprehenderit voluptas voluptates perferendis illum consequatur saepe accusamus",
+            "Molestias illum amet id, labore! ex consequatur, tenetur soluta nobis facere obcaecati",
+            "Dolores eos? praesentium quisquam illo maxime maxime tenetur aspernatur iusto commodi quidem! doloremque laborum aut aliquam,",
+            "Sed fugit mollitia deleniti velit blanditiis quibusdam temporibus soluta odio. quisquam voluptate",
+            "Amet cupiditate? delectus esse iusto repellat sapiente. commodi deleniti explicabo"
+          ],
+          "date": "2022-01-08T02:01:51",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Lody włoskie",
+      "cuisine": "włoska",
+      "type": "słodycze",
+      "category": "na zimno",
+      "ingredients": [
+        "tłuste mleko",
+        "żółtka jaj",
+        "cukier",
+        "laska wanilii",
+        "inne w zależności od smaku"
+      ],
+      "stock": 437,
+      "currency": "USD",
+      "unitPrice": 10,
+      "rating": 3.81,
+      "ratesCount": 18,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/dana-devolk-5-RS_ScO3X4-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/dana-devolk-5-RS_ScO3X4-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/dana-devolk-5-RS_ScO3X4-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/dana-devolk-5-RS_ScO3X4-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/dana-devolk-5-RS_ScO3X4-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/slashio-photography-uMYxldWYSZk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/slashio-photography-uMYxldWYSZk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/slashio-photography-uMYxldWYSZk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/slashio-photography-uMYxldWYSZk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/slashio-photography-uMYxldWYSZk-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/mark-cruz-Ov0u44CyGdM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/mark-cruz-Ov0u44CyGdM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/mark-cruz-Ov0u44CyGdM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/mark-cruz-Ov0u44CyGdM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/mark-cruz-Ov0u44CyGdM-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-sittisak-c-1739347.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-sittisak-c-1739347.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-sittisak-c-1739347.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-sittisak-c-1739347.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-sittisak-c-1739347.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Vitae Quis",
+          "title": "Harum ad velit temporibus id molestias",
+          "body": [
+            "Ducimus, repellat tenetur voluptatem cumque nostrum vitae veniam autem odio nisi eius,",
+            "Repellendus esse obcaecati sequi ut, placeat dolorem facere debitis maxime"
+          ],
+          "date": "2022-01-08T01:56:06",
+          "rating": 4.5
+        },
+        {
+          "username": "Asperiores Reprehenderit",
+          "title": "rerum inventore voluptates est cupiditate? nesciunt optio",
+          "body": [
+            "Mollitia praesentium, rem cum perferendis ex earum impedit labore! atque repellendus, id excepturi odio error",
+            "Recusandae atque odio tenetur alias vero iure corporis est ullam ratione! iste eum eius est culpa numquam expedita aut",
+            "Adipisci porro, accusamus quam vero, sed. corrupti et voluptatum esse praesentium exercitationem. quis",
+            "Perspiciatis enim inventore accusamus sit est? iusto maiores quibusdam, veritatis porro, neque",
+            "Officia minus saepe fuga blanditiis"
+          ],
+          "date": "2022-01-08T02:05:55",
+          "rating": 3.5
+        },
+        {
+          "username": "Repudiandae Harum",
+          "title": "porro quis nemo, ducimus ratione obcaecati",
+          "body": [
+            "Molestias accusamus asperiores? eum. excepturi, placeat nulla recusandae voluptatum distinctio ut, quibusdam quibusdam error cupiditate",
+            "Eveniet nobis iste magni, beatae dignissimos",
+            "Sequi eius. tempore accusamus voluptas itaque, repellat mollitia",
+            "Et nisi non enim, reprehenderit cumque fugit est assumenda",
+            "Praesentium, accusantium voluptate unde vitae incidunt suscipit modi. nihil quod omnis iste dolores."
+          ],
+          "date": "2022-01-08T02:01:18",
+          "rating": 4
+        },
+        {
+          "username": "Vero Quisquam",
+          "title": "sunt ea voluptatibus culpa qui",
+          "body": [
+            "Cum necessitatibus accusantium nemo pariatur facere",
+            "Tenetur qui unde illo, magni corrupti veniam possimus molestiae, repellendus vel ratione iste quod ipsa soluta voluptates suscipit molestias",
+            "Ad ducimus vero at, veniam rerum,",
+            "Distinctio voluptate non ad sequi hic. nihil in dolore harum debitis! vitae tempora eius a quibusdam porro fugiat",
+            "Enim a fuga consequatur deserunt est possimus in tempore sapiente officia quae quasi at, dignissimos similique quisquam incidunt incidunt culpa"
+          ],
+          "date": "2022-01-08T01:55:03",
+          "rating": 4
+        },
+        {
+          "username": "Placeat Ullam",
+          "title": "beatae rem odit nesciunt Aliquid",
+          "body": [
+            "Nesciunt dolores. blanditiis tempore id laborum natus officiis tempore consequuntur modi. laudantium",
+            "Iure saepe, facilis id ex corrupti placeat, quaerat nulla"
+          ],
+          "date": "2022-01-08T01:59:51",
+          "rating": 4.5
+        },
+        {
+          "username": "Hic Quasi",
+          "title": "totam consequuntur unde voluptatum. quia! suscipit minus",
+          "body": [
+            "Dicta officiis sequi adipisci praesentium dolorem tempore distinctio voluptas vel voluptates",
+            "Maiores architecto tempora ipsum corporis eaque",
+            "Nihil incidunt cum voluptate fuga, natus fuga, at natus velit corrupti recusandae",
+            "Atque voluptates nisi numquam, eius necessitatibus architecto ea perferendis iste quae beatae"
+          ],
+          "date": "2022-01-08T02:02:20",
+          "rating": 4
+        },
+        {
+          "username": "Ut Autem",
+          "title": "quo minima Temporibus, architecto consequuntur veritatis voluptatum amet obcaecati",
+          "body": [
+            "Maxime totam cum quibusdam ipsa eligendi eaque nisi debitis nam ad ducimus quaerat quidem modi deserunt rerum sapiente. accusantium",
+            "Quasi eaque pariatur reprehenderit consequuntur perferendis cupiditate. beatae nam quidem natus iusto vel odit iste eaque eveniet hic"
+          ],
+          "date": "2022-01-08T02:06:01",
+          "rating": 4
+        },
+        {
+          "username": "Quidem Ipsam",
+          "title": "reiciendis labore delectus obcaecati omnis voluptatem quas sint maiores",
+          "body": [
+            "Doloremque possimus corrupti laborum nihil officiis nam repellendus, consectetur facilis exercitationem,",
+            "Sit, aspernatur explicabo aspernatur ex iure pariatur, odio fuga doloremque ut, debitis nisi, quasi",
+            "Veritatis id, officia modi. necessitatibus. placeat distinctio non accusamus eligendi! ex modi aliquid",
+            "Incidunt vel dicta fugit ad voluptate, pariatur culpa",
+            "Placeat iure tenetur illo, necessitatibus. possimus animi eveniet ullam consequuntur quisquam incidunt labore"
+          ],
+          "date": "2022-01-08T01:55:44",
+          "rating": 4.5
+        },
+        {
+          "username": "Amet Expedita",
+          "title": "vitae libero corporis ullam corrupti qui necessitatibus ipsum quae,",
+          "body": [
+            "Laudantium est nulla eveniet, facilis velit eligendi! debitis neque modi, laudantium officiis odio illum. sequi, reprehenderit dolorem facilis",
+            "Laudantium nam tenetur animi quibusdam, culpa sit reprehenderit vel sapiente vero eligendi quaerat magni odit suscipit quasi qui ullam perferendis"
+          ],
+          "date": "2022-01-08T02:05:47",
+          "rating": 5
+        },
+        {
+          "username": "Perferendis Illo",
+          "title": "inventore necessitatibus quisquam aspernatur quaerat",
+          "body": [
+            "Culpa amet omnis hic porro consectetur vero perferendis quas culpa",
+            "Nulla iste reiciendis, a explicabo debitis eos asperiores accusamus harum aspernatur corporis nobis voluptatem",
+            "Omnis aut impedit tempore facilis. placeat dolores.",
+            "Porro, quia! non mollitia veritatis nulla saepe aperiam"
+          ],
+          "date": "2022-01-08T02:06:52",
+          "rating": 3.5
+        },
+        {
+          "username": "Aspernatur Magnam",
+          "title": "sapiente accusamus Itaque, inventore, autem porro",
+          "body": [
+            "Autem nobis nobis assumenda fugit assumenda hic vero repudiandae, corporis illo sint, ex unde obcaecati magnam nisi",
+            "Tempora eum est placeat nemo odit fugiat culpa laudantium voluptas,"
+          ],
+          "date": "2022-01-08T01:51:07",
+          "rating": 0.5
+        },
+        {
+          "username": "Delectus Hic",
+          "title": "voluptates enim id necessitatibus dolore",
+          "body": [
+            "Magnam minus at ad illum repudiandae",
+            "Nulla distinctio architecto veniam nulla facilis non",
+            "Deleniti, impedit sapiente. laudantium molestiae, officiis natus distinctio eum. assumenda. quos assumenda enim, illum doloribus",
+            "Ad repellat explicabo blanditiis, rem molestiae nostrum at"
+          ],
+          "date": "2022-01-08T01:57:38",
+          "rating": 4.5
+        },
+        {
+          "username": "Ex Minima",
+          "title": "magni Ullam ad rem, culpa",
+          "body": [
+            "Harum ut cumque vitae quis",
+            "Eveniet dolor veritatis quam tempora unde vitae neque blanditiis unde illum consequuntur sunt",
+            "Illum, animi quos accusantium maiores repellat sapiente enim reprehenderit temporibus vero, adipisci quidem! suscipit quas illum. alias alias vero quasi",
+            "Molestiae nam suscipit, alias saepe eos,",
+            "Iure voluptate odio? illum itaque corporis perferendis voluptatum natus vitae quae hic placeat deleniti dolorem, nam quidem ipsam quisquam, animi"
+          ],
+          "date": "2022-01-08T02:01:31",
+          "rating": 5
+        },
+        {
+          "username": "Consequuntur Fuga,",
+          "title": "officia reiciendis exercitationem. modi. quibusdam suscipit quidem optio incidunt",
+          "body": [
+            "Accusamus facilis asperiores ducimus cupiditate repellendus reprehenderit vitae amet blanditiis accusamus illum, id consectetur, alias assumenda aspernatur dolores obcaecati maiores.",
+            "Quae accusantium, rem voluptatem quos"
+          ],
+          "date": "2022-01-08T01:51:59",
+          "rating": 1.5
+        },
+        {
+          "username": "Quasi Ab",
+          "title": "eius nemo Lorem nemo tenetur suscipit consequatur",
+          "body": [
+            "Nulla voluptate, alias perferendis eligendi illo quos voluptatum blanditiis velit corporis, adipisci consectetur, aspernatur!",
+            "Soluta, sequi iste vero molestias, earum ex, quas totam"
+          ],
+          "date": "2022-01-08T01:57:48",
+          "rating": 3.5
+        },
+        {
+          "username": "Non Deserunt",
+          "title": "facere officiis obcaecati qui consectetur, repudiandae dolorem odio?",
+          "body": [
+            "Mollitia, iste aliquam. necessitatibus. ullam totam necessitatibus iure error quo aperiam corporis vel,",
+            "Officia nam vitae quis odit sequi blanditiis commodi at minus enim nihil perferendis esse",
+            "Itaque neque assumenda veniam, molestiae iure minima ab adipisci! et doloremque"
+          ],
+          "date": "2022-01-08T01:47:10",
+          "rating": 4.5
+        },
+        {
+          "username": "Totam Quo",
+          "title": "officia tenetur esse libero Officia illo, maxime neque cum corporis",
+          "body": [
+            "Dicta tenetur voluptates pariatur maiores excepturi esse quae amet facere consequuntur est optio modi",
+            "Animi quam velit! quaerat corporis! facilis recusandae tempora, perspiciatis optio laboriosam voluptatem? sint ut deserunt hic similique amet deleniti,",
+            "Id voluptate nemo placeat sequi, repellat fugit possimus."
+          ],
+          "date": "2022-01-08T01:56:19",
+          "rating": 4
+        },
+        {
+          "username": "Neque Iusto",
+          "title": "sed nulla unde eius? eos Modi temporibus ea",
+          "body": [
+            "Eaque atque velit placeat consectetur labore excepturi quas optio esse voluptate commodi tenetur blanditiis",
+            "Nihil fugit hic doloremque neque odio? dolore eligendi quia! quaerat obcaecati nihil,"
+          ],
+          "date": "2022-01-08T02:00:38",
+          "rating": 3.5
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Krążki z ciasta francuskiego",
+      "cuisine": "francuska",
+      "type": "przystawki",
+      "category": "na zimno",
+      "ingredients": [
+        "ciasto francuskie",
+        "mięso mielone",
+        "ser żółty",
+        "jaja",
+        "ogórek",
+        "cebula"
+      ],
+      "stock": 265,
+      "currency": "USD",
+      "unitPrice": 8,
+      "rating": 3.5,
+      "ratesCount": 3,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/slashio-photography-iMsCe-rlDaY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/slashio-photography-iMsCe-rlDaY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/slashio-photography-iMsCe-rlDaY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/slashio-photography-iMsCe-rlDaY-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/slashio-photography-iMsCe-rlDaY-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/slashio-photography-z3PMynE3SEo-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/slashio-photography-z3PMynE3SEo-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/slashio-photography-z3PMynE3SEo-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/slashio-photography-z3PMynE3SEo-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/slashio-photography-z3PMynE3SEo-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Voluptatem Consequuntur",
+          "title": "veniam, illum perferendis officia consectetur! impedit impedit",
+          "body": [
+            "Quasi molestias necessitatibus cupiditate. delectus sit sit soluta, aliquid asperiores? qui. harum, eos magni",
+            "Id repudiandae aliquam quibusdam tempore nisi iure iusto facilis alias",
+            "Animi rem veniam ratione sed, dolores cum facilis maiores assumenda"
+          ],
+          "date": "2022-01-08T01:49:02",
+          "rating": 3.5
+        },
+        {
+          "username": "Fugiat Eaque",
+          "title": "nemo ipsum molestias Quis iste commodi fuga? beatae,",
+          "body": [
+            "Illo, at enim praesentium placeat quisquam quam. repudiandae voluptatem officiis aspernatur libero! sit possimus praesentium voluptatem molestias esse eos pariatur",
+            "Eligendi odit. praesentium! libero eum. perspiciatis at inventore nam aliquam,"
+          ],
+          "date": "2022-01-08T01:58:50",
+          "rating": 5
+        },
+        {
+          "username": "Enim Explicabo?",
+          "title": "doloribus assumenda excepturi iure laudantium eligendi sed perferendis nesciunt inventore",
+          "body": [
+            "Laborum id asperiores? libero! nam? tenetur dolore expedita reiciendis totam",
+            "Inventore recusandae odio eum a eveniet maiores unde facere in.",
+            "Sequi et blanditiis at tempore aliquid distinctio libero"
+          ],
+          "date": "2022-01-08T02:00:18",
+          "rating": 2
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Barszcz czerwony",
+      "cuisine": "polska",
+      "type": "danie główne",
+      "category": "zupy",
+      "ingredients": [
+        "buraki",
+        "fasola biała",
+        "fasola szparagowa",
+        "ziemniaki",
+        "marchew",
+        "woda",
+        "czosnek"
+      ],
+      "stock": 105,
+      "currency": "USD",
+      "unitPrice": 12,
+      "rating": 4.1,
+      "ratesCount": 5,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/anshu-a-DfOSCJcmvEU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/anshu-a-DfOSCJcmvEU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/anshu-a-DfOSCJcmvEU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/anshu-a-DfOSCJcmvEU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/anshu-a-DfOSCJcmvEU-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/max-nayman-NkGhmwAw7hQ-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/max-nayman-NkGhmwAw7hQ-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/max-nayman-NkGhmwAw7hQ-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/max-nayman-NkGhmwAw7hQ-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/max-nayman-NkGhmwAw7hQ-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/hamide-jafari-kmwtxSOkQPc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/hamide-jafari-kmwtxSOkQPc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/hamide-jafari-kmwtxSOkQPc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/hamide-jafari-kmwtxSOkQPc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/hamide-jafari-kmwtxSOkQPc-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Laudantium Veritatis",
+          "title": "et, maiores. quibusdam! eligendi ratione velit quod praesentium! quaerat hic.",
+          "body": [
+            "Officiis rerum ut sunt impedit",
+            "Incidunt iusto illum, molestiae, architecto non dolores aperiam a voluptatum fugiat. consequatur dolorum soluta delectus perspiciatis unde nobis",
+            "Harum ea tempora voluptatem magni culpa quos",
+            "Facilis molestiae, nisi corrupti incidunt iste est hic similique commodi placeat dolores",
+            "Praesentium, facilis nostrum maxime dolore eos est exercitationem. soluta at laborum, possimus! veniam"
+          ],
+          "date": "2022-01-08T02:02:40",
+          "rating": 4
+        },
+        {
+          "username": "Delectus Ratione",
+          "title": "iusto repellendus, doloribus totam. illum obcaecati placeat",
+          "body": [
+            "Dicta nisi, sunt reprehenderit possimus! necessitatibus cupiditate distinctio inventore",
+            "Nam, repudiandae esse atque quos magnam consequuntur aspernatur tempora,"
+          ],
+          "date": "2022-01-08T01:52:08",
+          "rating": 4
+        },
+        {
+          "username": "Minus Commodi",
+          "title": "ipsum eos nulla quod similique eos",
+          "body": [
+            "Ut nam sit illo, tempora,",
+            "Quae quibusdam explicabo? quaerat rerum, consequuntur similique laudantium repellat facere delectus facere quae suscipit dolorum cumque molestiae totam rerum",
+            "Quis. mollitia, error doloribus itaque corporis! eligendi. dignissimos modi eligendi. culpa",
+            "Odit vel ex, doloribus! officia veniam ipsum sit animi natus facilis quasi blanditiis, nulla! quaerat eligendi",
+            "Voluptas numquam commodi facere accusamus cupiditate exercitationem! at exercitationem at quis nisi aspernatur neque similique"
+          ],
+          "date": "2022-01-08T01:52:04",
+          "rating": 5
+        },
+        {
+          "username": "Ullam Totam",
+          "title": "ex, iste praesentium porro sapiente corporis sit voluptatibus suscipit",
+          "body": [
+            "Non rem qui neque. rerum nam aperiam cumque placeat repellendus, minus unde laboriosam",
+            "Quibusdam repellendus minus ipsam quidem ratione aspernatur aut perferendis voluptates. modi sunt. libero ipsam deserunt eum exercitationem, quaerat",
+            "Repudiandae illo, aliquid vero. minima aut autem quasi",
+            "Aspernatur totam assumenda. nulla harum, nam? odit quas, numquam sed, maiores illo excepturi, odit perferendis sed sed cum iste"
+          ],
+          "date": "2022-01-08T01:56:01",
+          "rating": 2.5
+        },
+        {
+          "username": "Quas Quos,",
+          "title": "repellendus sapiente magnam voluptatem aperiam consequatur in. odio reiciendis nam",
+          "body": [
+            "Eligendi modi, laborum dolores dolorum nisi fuga assumenda magni officiis recusandae maiores est? voluptatem? earum asperiores",
+            "Autem delectus atque culpa, harum. ut eius, ex ut",
+            "Quas veritatis neque perferendis possimus sapiente consectetur! suscipit, ipsam sequi sint animi, repellat eaque iure ratione quidem eligendi",
+            "Aliquid maxime fuga pariatur fugit neque sint blanditiis veniam officiis blanditiis quidem quae? esse,",
+            "Voluptatem veniam soluta obcaecati cum cupiditate commodi nulla."
+          ],
+          "date": "2022-01-08T02:05:26",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Zupa dyniowa",
+      "cuisine": "polska",
+      "type": "danie główne",
+      "category": "zupy",
+      "ingredients": [
+        "dynia gotowana",
+        "ziemniaki",
+        "cebula",
+        "masło",
+        "pestki dyni"
+      ],
+      "stock": 79,
+      "currency": "USD",
+      "unitPrice": 12,
+      "rating": 4.5,
+      "ratesCount": 2,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/cala-w6ftFbPCs9I-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/cala-w6ftFbPCs9I-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/cala-w6ftFbPCs9I-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/cala-w6ftFbPCs9I-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/cala-w6ftFbPCs9I-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/monika-grabkowska-_y6A9bhILkM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/monika-grabkowska-_y6A9bhILkM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/monika-grabkowska-_y6A9bhILkM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/monika-grabkowska-_y6A9bhILkM-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/monika-grabkowska-_y6A9bhILkM-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/tina-vanhove-GrG7QH4utak-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/tina-vanhove-GrG7QH4utak-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/tina-vanhove-GrG7QH4utak-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/tina-vanhove-GrG7QH4utak-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/tina-vanhove-GrG7QH4utak-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/ruth-georgiev-TvEyo2WEzVE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/ruth-georgiev-TvEyo2WEzVE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/ruth-georgiev-TvEyo2WEzVE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/ruth-georgiev-TvEyo2WEzVE-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/ruth-georgiev-TvEyo2WEzVE-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Architecto Vero",
+          "title": "odio reiciendis asperiores? delectus ex",
+          "body": [
+            "Voluptas in accusamus laudantium iusto, deleniti",
+            "Ut at. harum, magnam laudantium accusamus at pariatur, nemo ducimus harum, accusamus molestias! nihil corporis esse velit porro sunt.",
+            "Aliquid non dolores ad pariatur qui voluptatem ut sint, dolorum voluptates porro quasi iusto. accusamus amet eveniet",
+            "Tenetur aut nostrum consequuntur minima, ratione voluptatem consectetur, sit suscipit",
+            "Aut soluta temporibus facilis iusto"
+          ],
+          "date": "2022-01-08T01:49:22",
+          "rating": 4.5
+        },
+        {
+          "username": "Error Accusamus",
+          "title": "eum. fugit officiis laborum aspernatur quia! iure,",
+          "body": [
+            "Repellendus, facilis non consequuntur maxime accusantium, nisi, illo quasi quos nostrum",
+            "Sapiente quo est? ducimus ullam iure culpa tempora necessitatibus odio? doloremque architecto amet mollitia nihil voluptatem?",
+            "Cum, perferendis quod. recusandae consequuntur harum, est corporis quisquam vitae dolorem distinctio ab id maiores vitae tenetur culpa voluptates iusto",
+            "Laboriosam enim neque veritatis placeat, facilis tempora lorem sequi ad corporis cupiditate dolor alias! aliquid"
+          ],
+          "date": "2022-01-08T01:59:37",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Zupa pomidorowa",
+      "cuisine": "polska",
+      "type": "danie główne",
+      "category": "zupy",
+      "ingredients": [
+        "przecier pomidorowy",
+        "świeże pomidory",
+        "marchew",
+        "por",
+        "seler",
+        "pietruszka",
+        "ryż / makaron",
+        "mięso z kurczaka"
+      ],
+      "stock": 212,
+      "currency": "USD",
+      "unitPrice": 12,
+      "rating": 4,
+      "ratesCount": 25,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/jenn-kosar-k5VGs9qQubc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/jenn-kosar-k5VGs9qQubc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/jenn-kosar-k5VGs9qQubc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/jenn-kosar-k5VGs9qQubc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/jenn-kosar-k5VGs9qQubc-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/karolina-kolodziejczak-x7hMzWxZa78-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/karolina-kolodziejczak-x7hMzWxZa78-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/karolina-kolodziejczak-x7hMzWxZa78-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/karolina-kolodziejczak-x7hMzWxZa78-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/karolina-kolodziejczak-x7hMzWxZa78-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/karolina-kolodziejczak-bvLE5xZDj0w-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/karolina-kolodziejczak-bvLE5xZDj0w-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/karolina-kolodziejczak-bvLE5xZDj0w-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/karolina-kolodziejczak-bvLE5xZDj0w-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/karolina-kolodziejczak-bvLE5xZDj0w-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/sara-dubler-M6baxXgSos8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/sara-dubler-M6baxXgSos8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/sara-dubler-M6baxXgSos8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/sara-dubler-M6baxXgSos8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/sara-dubler-M6baxXgSos8-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Id Nihil",
+          "title": "sequi perspiciatis accusamus culpa quisquam debitis repudiandae error",
+          "body": [
+            "Culpa itaque saepe ut cum nostrum nihil illo natus ipsum numquam deleniti totam et, tempora voluptate, quaerat, quidem quasi",
+            "Animi obcaecati nisi quidem odio eius ut, architecto",
+            "Tenetur vero illum in. odio fuga saepe, autem consequuntur voluptatibus, id, nesciunt voluptates",
+            "Minima voluptate, voluptatum. provident earum",
+            "Dolore enim, delectus ipsum omnis, dolorem repudiandae itaque accusamus totam at laudantium fuga sunt dolor"
+          ],
+          "date": "2022-01-08T02:07:14",
+          "rating": 5
+        },
+        {
+          "username": "Reprehenderit Et",
+          "title": "repellat tempora veniam optio odio repudiandae fuga saepe fugit",
+          "body": [
+            "Repellendus quas rem beatae sed sapiente molestiae corporis assumenda. explicabo",
+            "Deleniti impedit vero quisquam placeat non porro explicabo aperiam dolores earum debitis! quidem",
+            "Illo sint itaque aspernatur officia explicabo?"
+          ],
+          "date": "2022-01-08T01:57:51",
+          "rating": 4.5
+        },
+        {
+          "username": "Dolorem Aliquid?",
+          "title": "vero In accusamus. voluptatum officiis exercitationem! ducimus",
+          "body": [
+            "Nemo eaque quae, repudiandae sit dicta saepe soluta quo! nostrum repudiandae perferendis assumenda sequi et",
+            "Quasi eos magnam consequuntur illum, molestiae voluptas ipsum numquam placeat deserunt? suscipit, sunt numquam natus tempora voluptas ipsum"
+          ],
+          "date": "2022-01-08T01:54:35",
+          "rating": 4.5
+        },
+        {
+          "username": "Quidem Beatae",
+          "title": "officiis harum illo laborum voluptate",
+          "body": [
+            "Accusamus expedita, mollitia temporibus quaerat, deleniti blanditiis! natus laboriosam, temporibus velit",
+            "Quo! voluptatibus, delectus consectetur, totam possimus! laboriosam quidem distinctio velit ex nulla quibusdam,"
+          ],
+          "date": "2022-01-08T02:04:49",
+          "rating": 4
+        },
+        {
+          "username": "Ex Reiciendis",
+          "title": "ut, voluptas eaque odio? explicabo?",
+          "body": [
+            "Incidunt culpa fugit at, asperiores unde tempora ad assumenda. soluta nulla temporibus",
+            "Sequi maxime aliquam assumenda mollitia optio earum nostrum, ex qui.",
+            "Minus labore mollitia. molestias odio. harum hic voluptatum nulla veniam asperiores hic maiores",
+            "Minima quos minima, labore in molestias placeat voluptates perferendis perspiciatis assumenda expedita blanditiis ducimus inventore vero",
+            "Dolorem, vero, tempora nesciunt voluptatum error labore impedit molestias"
+          ],
+          "date": "2022-01-08T01:49:59",
+          "rating": 2
+        },
+        {
+          "username": "Asperiores? Ducimus",
+          "title": "accusantium. voluptas perferendis hic quaerat",
+          "body": [
+            "Debitis vero officia, iusto odio? aliquam. inventore rerum quae. enim dolore eaque quaerat vero.",
+            "Ab animi temporibus omnis est voluptate qui officia similique pariatur, harum nemo! aliquid quod. nam,",
+            "Molestiae rerum suscipit, consequuntur illo error quisquam vitae neque natus debitis animi obcaecati doloremque ab exercitationem",
+            "Laborum eum vel illo voluptate molestias error veniam expedita culpa incidunt culpa, alias nostrum,",
+            "Aut eos vitae at incidunt itaque suscipit recusandae quisquam voluptates"
+          ],
+          "date": "2022-01-08T02:01:33",
+          "rating": 4
+        },
+        {
+          "username": "Beatae, Illum",
+          "title": "dolores. soluta corporis, maiores. ipsam accusamus",
+          "body": [
+            "Tenetur aspernatur accusantium id accusamus, ipsam? ipsum iste esse officia voluptatem? nihil tempore non",
+            "Qui possimus. nihil minima ad sequi fuga voluptatum repellendus, ullam,"
+          ],
+          "date": "2022-01-08T02:06:26",
+          "rating": 4.5
+        },
+        {
+          "username": "Voluptatum Doloremque",
+          "title": "accusantium eveniet nisi temporibus molestias, vel mollitia",
+          "body": [
+            "Eveniet consectetur, perspiciatis aspernatur officiis nemo voluptatum. id itaque expedita quos, iusto est,",
+            "Velit quidem ex facilis magni consequuntur exercitationem reprehenderit quia molestias neque autem perferendis vitae rem perspiciatis eius? suscipit cupiditate rerum",
+            "Dolorem sapiente ratione magni nihil at mollitia ad nam blanditiis similique ab animi sit ex perferendis doloremque, odio sed eaque"
+          ],
+          "date": "2022-01-08T01:49:14",
+          "rating": 4.5
+        },
+        {
+          "username": "Illum, Officia",
+          "title": "aperiam autem possimus. voluptates excepturi commodi Consequuntur reiciendis nihil dolores",
+          "body": [
+            "Deserunt velit dolores impedit obcaecati, iure neque molestias unde nemo commodi accusamus repudiandae porro consectetur modi laboriosam, reiciendis",
+            "Et ipsum quidem! commodi atque quisquam? aliquid alias et quae reiciendis et vel, quaerat,"
+          ],
+          "date": "2022-01-08T01:54:24",
+          "rating": 5
+        },
+        {
+          "username": "Aliquid? Rerum",
+          "title": "mollitia ad commodi totam delectus",
+          "body": [
+            "Aut sapiente quod est officia aliquid reprehenderit tenetur magni",
+            "Aspernatur culpa, enim culpa consequatur exercitationem! similique culpa quae soluta, corporis! obcaecati, esse"
+          ],
+          "date": "2022-01-08T01:53:53",
+          "rating": 3.5
+        },
+        {
+          "username": "Repudiandae Iste!",
+          "title": "illo Exercitationem ratione corrupti necessitatibus aut autem eos ut, quas",
+          "body": [
+            "Reprehenderit qui. eaque labore hic accusamus, quod placeat incidunt cum veritatis et facilis.",
+            "Modi voluptatem minima, accusamus quam a explicabo? quidem optio",
+            "Mollitia at cupiditate aliquid repudiandae nisi quibusdam voluptas iure magni, facilis beatae, reiciendis ipsa voluptatum"
+          ],
+          "date": "2022-01-08T02:05:42",
+          "rating": 4.5
+        },
+        {
+          "username": "Libero Excepturi",
+          "title": "harum ipsa Exercitationem adipisci consequuntur possimus quibusdam",
+          "body": [
+            "Cum veniam est, fugit soluta obcaecati nesciunt eius maiores pariatur nisi",
+            "Harum possimus! iusto vitae nisi rem sit incidunt sint corporis tenetur veritatis",
+            "Cumque eius quidem inventore exercitationem libero nemo saepe hic repellat",
+            "Nulla ipsa culpa. facere minima id laboriosam debitis quasi totam labore labore consequuntur dolorum eum libero voluptatibus, voluptatem obcaecati"
+          ],
+          "date": "2022-01-08T01:49:52",
+          "rating": 2
+        },
+        {
+          "username": "Laudantium Itaque",
+          "title": "deleniti hic Fuga itaque tempore dolores nostrum pariatur",
+          "body": [
+            "Optio temporibus voluptates eligendi vero asperiores ipsa praesentium nihil? consequuntur in assumenda iure recusandae",
+            "Neque deserunt ex, qui velit quos officia voluptate ex nobis aperiam eveniet quod quod, distinctio at, voluptates aliquam quidem",
+            "Vero officiis distinctio? ratione ducimus commodi delectus cum rerum corporis, excepturi earum nobis eligendi! ipsam? asperiores?",
+            "Quod, illo itaque consequatur saepe eligendi repudiandae tenetur nam mollitia incidunt obcaecati eligendi. earum. ratione"
+          ],
+          "date": "2022-01-08T01:55:28",
+          "rating": 4.5
+        },
+        {
+          "username": "Rem, Sunt.",
+          "title": "laudantium culpa in sint nam voluptatem excepturi",
+          "body": [
+            "Quo! laboriosam debitis quo, voluptate voluptatem praesentium debitis",
+            "Voluptates quasi consequuntur veniam tempora adipisci id totam cum officiis officiis",
+            "Eveniet tempora quos magnam magni nostrum assumenda obcaecati, rem, eligendi qui voluptatum eaque sunt similique numquam possimus.",
+            "Reprehenderit fugit vero veniam eos? eaque eligendi illo incidunt",
+            "Accusantium accusantium, optio esse, accusamus aliquid repudiandae facilis aut"
+          ],
+          "date": "2022-01-08T02:03:08",
+          "rating": 4
+        },
+        {
+          "username": "Repudiandae Asperiores",
+          "title": "Exercitationem, officiis tempore et sequi sapiente pariatur, sint odit distinctio",
+          "body": [
+            "Doloremque modi inventore consequatur, dolorem consequuntur quae ducimus odio corrupti",
+            "Repudiandae assumenda aspernatur atque iure harum sed ullam, consequuntur odit rem a iusto atque nam magnam",
+            "Animi, quasi cumque repellat magni perspiciatis lorem nemo suscipit culpa similique illo quos, ad corrupti voluptates ipsa",
+            "Tempore neque voluptates totam. saepe, perferendis ratione. sint quidem dolorem",
+            "Maiores. repellat iusto illum asperiores amet officia, officia veritatis in expedita quibusdam dicta"
+          ],
+          "date": "2022-01-08T01:48:46",
+          "rating": 4
+        },
+        {
+          "username": "Dolorum Quaerat",
+          "title": "a totam incidunt unde totam eligendi. iure necessitatibus Sunt,",
+          "body": [
+            "Fuga, laboriosam nobis facilis at id vel sapiente incidunt",
+            "Ut saepe ad rerum officiis sapiente voluptatem maiores itaque inventore eaque officia soluta facilis aspernatur magni,"
+          ],
+          "date": "2022-01-08T02:00:54",
+          "rating": 0.5
+        },
+        {
+          "username": "Odio Corrupti",
+          "title": "obcaecati nihil exercitationem! ullam quaerat dolores nobis deleniti, molestias",
+          "body": [
+            "Iure quam laborum facilis saepe molestiae vero, ut, praesentium! voluptatem ea sint dolore dolorum perferendis neque dolorum",
+            "Quas numquam voluptas inventore saepe eligendi vel reprehenderit nobis"
+          ],
+          "date": "2022-01-08T01:48:19",
+          "rating": 3.5
+        },
+        {
+          "username": "Voluptatibus Maxime",
+          "title": "ab adipisci! facere molestiae, Obcaecati dolor voluptate",
+          "body": [
+            "Harum tempore harum. quod nulla eligendi repellendus corrupti pariatur placeat dolorum similique nobis odit ipsum inventore",
+            "Quasi illum eligendi vel incidunt est, saepe praesentium veritatis cupiditate iste cumque unde ut eius recusandae ipsum",
+            "Esse quibusdam veniam explicabo quaerat saepe debitis nemo! sequi voluptatem",
+            "Illum iusto nam consequuntur reiciendis fugit quos mollitia illo atque",
+            "Aliquid et, tenetur illo natus labore deserunt laboriosam officia est, eaque eveniet odio debitis iusto vitae eveniet alias quo fugit"
+          ],
+          "date": "2022-01-08T01:59:50",
+          "rating": 4.5
+        },
+        {
+          "username": "Laudantium Vitae",
+          "title": "aperiam, cum, accusantium quaerat iusto",
+          "body": [
+            "Inventore voluptatem nisi itaque at nulla. id, quae animi odit, molestiae perspiciatis",
+            "Illum optio voluptate dolorum tempora temporibus culpa, voluptatibus mollitia possimus ratione aliquam. rerum libero! porro sequi dolorum fugiat. fugit sed",
+            "Laborum at magnam obcaecati, doloribus tempora molestiae, rerum assumenda",
+            "Impedit autem molestiae, deleniti, labore quasi facere magnam voluptas magnam corrupti quis repudiandae aut expedita veniam soluta provident ducimus,",
+            "Voluptate dicta deleniti aspernatur! in voluptatum. harum fugiat odit esse, similique quas perferendis et vitae commodi laborum, nam illo! voluptatum"
+          ],
+          "date": "2022-01-08T01:59:12",
+          "rating": 5
+        },
+        {
+          "username": "Earum Maxime",
+          "title": "quas impedit quas a rerum iste?",
+          "body": [
+            "Officia, vero, odio? voluptatem ad, voluptatibus, ullam aspernatur nam natus dolore",
+            "Eius harum sapiente reprehenderit placeat ad",
+            "Perferendis odit quidem mollitia rerum illo quaerat repudiandae quibusdam voluptate",
+            "Vero, eligendi? eveniet modi. nisi, beatae iure quod ea eum totam nesciunt voluptatum aperiam sapiente a et facere animi culpa"
+          ],
+          "date": "2022-01-08T02:05:30",
+          "rating": 4
+        },
+        {
+          "username": "Odio In",
+          "title": "minima voluptas nesciunt consectetur illo nulla quisquam, tenetur",
+          "body": [
+            "Doloremque elit. quaerat fugit corporis suscipit omnis non ratione explicabo minus quasi inventore cum",
+            "Rerum quod praesentium, laborum voluptates impedit ducimus nulla totam voluptatum impedit ipsum quae blanditiis harum suscipit, cum",
+            "Numquam autem suscipit voluptas possimus quibusdam eius. dolorem voluptatem esse id ut, vero accusantium"
+          ],
+          "date": "2022-01-08T01:56:49",
+          "rating": 5
+        },
+        {
+          "username": "Distinctio? Necessitatibus.",
+          "title": "blanditiis culpa at dolore voluptatem temporibus illo",
+          "body": [
+            "Corporis incidunt nihil officiis assumenda tempora in. ad, quod tempora nostrum? illum quo natus quis ut quaerat accusantium assumenda",
+            "Iure nulla. voluptatum nam esse, vitae",
+            "Repellat veniam aliquam. aperiam, itaque voluptatem neque. vero odit enim, architecto sapiente quos nulla non qui soluta delectus hic",
+            "Officia id veniam nulla. ea veritatis alias! modi aspernatur veniam, doloremque facilis veniam"
+          ],
+          "date": "2022-01-08T02:07:12",
+          "rating": 4.5
+        },
+        {
+          "username": "Aliquid Repellat",
+          "title": "rerum Consequuntur nobis quasi tenetur",
+          "body": [
+            "Est ipsa voluptatum consequuntur ullam ipsam voluptatem error necessitatibus aspernatur voluptates",
+            "Ex obcaecati labore odio perferendis facilis tenetur magni veritatis tenetur quibusdam",
+            "Expedita qui. impedit soluta quia! rerum hic aliquid pariatur inventore sequi et officiis eaque libero vero,",
+            "Sapiente perspiciatis vel repellat illo veniam temporibus, architecto tempora, blanditiis, facilis possimus!",
+            "Nesciunt laudantium excepturi, illum. deleniti ipsa id sed culpa dicta assumenda dolorem"
+          ],
+          "date": "2022-01-08T02:00:39",
+          "rating": 4
+        },
+        {
+          "username": "Culpa Laudantium",
+          "title": "quis maiores rem recusandae totam vero totam velit! ut, nesciunt,",
+          "body": [
+            "Ex deleniti, nesciunt placeat? placeat qui corporis! tenetur odit exercitationem, delectus aperiam eius. provident quaerat animi iure veniam necessitatibus error",
+            "Aliquam, tempore expedita fugit repellat"
+          ],
+          "date": "2022-01-08T02:06:53",
+          "rating": 4
+        },
+        {
+          "username": "Molestiae, Cupiditate",
+          "title": "magnam Officia necessitatibus. architecto rerum ullam perferendis",
+          "body": [
+            "Voluptatibus est placeat aliquid cumque,",
+            "Totam eveniet porro aut quo pariatur, similique facere soluta harum natus",
+            "Quod obcaecati facilis molestiae, eaque libero! mollitia, dicta, illo, cum veniam labore voluptates",
+            "Veritatis placeat perferendis et tenetur magni maxime veniam non placeat ratione eaque nisi placeat pariatur numquam tempora, dolorum possimus asperiores"
+          ],
+          "date": "2022-01-08T01:53:38",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Pizza",
+      "cuisine": "włoska",
+      "type": "danie główne",
+      "category": "pozostałe",
+      "ingredients": [
+        "ciasto",
+        "pieczarki",
+        "ser",
+        "szynka",
+        "cebula",
+        "kawałki kurczaka",
+        "sos czosnkowy",
+        "ketchup"
+      ],
+      "stock": 102,
+      "currency": "USD",
+      "unitPrice": 42,
+      "rating": 4.59,
+      "ratesCount": 16,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/chad-montano-MqT0asuoIcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/chad-montano-MqT0asuoIcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/chad-montano-MqT0asuoIcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/chad-montano-MqT0asuoIcU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/chad-montano-MqT0asuoIcU-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/kelvin-t-AcA8moIiD3g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/kelvin-t-AcA8moIiD3g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/kelvin-t-AcA8moIiD3g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/kelvin-t-AcA8moIiD3g-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/kelvin-t-AcA8moIiD3g-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/quin-engle-lHUdfk5WGXc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/quin-engle-lHUdfk5WGXc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/quin-engle-lHUdfk5WGXc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/quin-engle-lHUdfk5WGXc-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/quin-engle-lHUdfk5WGXc-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Voluptatum Doloremque",
+          "title": "id deleniti laudantium laborum consequatur,",
+          "body": [
+            "Cum laudantium ab assumenda autem quis accusantium voluptatem",
+            "Repellat animi porro sed illo! eius vel ratione ab nostrum beatae",
+            "Voluptates voluptatem? nihil consectetur accusantium veniam laudantium rerum veniam sed qui voluptate fuga at placeat assumenda at commodi aut quae?",
+            "Consequatur, soluta quaerat, blanditiis delectus tempore illo similique aut cum repudiandae atque iure nostrum rerum iusto"
+          ],
+          "date": "2021-11-27T17:18:04",
+          "rating": 5
+        },
+        {
+          "username": "Earum Illo",
+          "title": "praesentium quas laudantium totam autem",
+          "body": [
+            "Veniam expedita cumque, dolorum iste? maxime rerum nihil nihil tempora",
+            "Voluptates modi, quisquam aspernatur! officiis ipsum harum porro, illo, laborum accusamus repudiandae culpa, nam eveniet pariatur neque."
+          ],
+          "date": "2021-11-13T22:52:46",
+          "rating": 5
+        },
+        {
+          "username": "Quis Dolorem",
+          "title": "neque velit! laudantium odit Aperiam esse vitae hic",
+          "body": [
+            "Laboriosam nobis vel officiis culpa ullam magnam tenetur",
+            "Repellendus, saepe esse cum culpa ut eligendi. amet expedita nesciunt aut iste qui voluptate architecto",
+            "Rerum vitae consequuntur illum consectetur, voluptatem nostrum incidunt unde autem pariatur id officia totam suscipit dolorum",
+            "Dolor fuga odio expedita culpa necessitatibus neque soluta at. exercitationem quia! blanditiis delectus ut deserunt at odio quaerat"
+          ],
+          "date": "2021-11-17T21:41:54",
+          "rating": 5
+        },
+        {
+          "username": "Quasi Consectetur,",
+          "title": "saepe expedita sed officia beatae, a praesentium Perspiciatis",
+          "body": [
+            "Doloremque consequatur laudantium et, asperiores dicta consequatur earum molestias, magnam veniam velit facilis",
+            "Officia doloremque eveniet nesciunt placeat, nulla"
+          ],
+          "date": "2021-03-14T18:34:02",
+          "rating": 4
+        },
+        {
+          "username": "Aliquid Illo",
+          "title": "consectetur, consectetur, ipsa saepe aperiam",
+          "body": [
+            "Assumenda eligendi quaerat consectetur, quam numquam ad deleniti reiciendis eius iste qui inventore porro velit exercitationem, sapiente distinctio",
+            "A laborum, perspiciatis culpa, aliquid exercitationem, natus ad ipsa assumenda facilis laborum commodi vel",
+            "Rerum voluptatum qui voluptatum culpa placeat! sequi hic at iure porro tempora",
+            "Quasi reiciendis eos provident ullam nihil, illo repellendus neque! a",
+            "Facilis fugit natus reprehenderit exercitationem, repudiandae fugit at ducimus amet nihil nulla totam reprehenderit"
+          ],
+          "date": "2021-12-07T14:52:04",
+          "rating": 4
+        },
+        {
+          "username": "Sit Ducimus,",
+          "title": "perferendis a repellendus, obcaecati, nulla excepturi! officiis, illo libero praesentium",
+          "body": [
+            "Dolore ipsam? consequuntur blanditiis illum quisquam commodi",
+            "Molestiae dolorem tempore sint id illum impedit illo officiis eveniet dolores ipsum harum assumenda dolore culpa, maxime fuga facere dolor",
+            "Fuga? quisquam laudantium est, dolorem, repellendus ut harum,"
+          ],
+          "date": "2021-09-30T19:25:42",
+          "rating": 5
+        },
+        {
+          "username": "Praesentium Nostrum",
+          "title": "voluptates inventore numquam. assumenda nam perferendis magni alias voluptates animi",
+          "body": [
+            "Incidunt animi natus fugiat odio voluptatem? veritatis magni, quae atque nostrum nesciunt deleniti est, rerum, aspernatur",
+            "Quos natus vero harum velit expedita lorem odio repellat"
+          ],
+          "date": "2021-12-23T15:55:54",
+          "rating": 5
+        },
+        {
+          "username": "Repellendus Repellendus",
+          "title": "corrupti quisquam fugit veritatis accusamus aliquid saepe vero",
+          "body": [
+            "Rerum illum quod suscipit, cupiditate deleniti, sit at doloremque",
+            "Blanditiis ut nam quisquam quas ad ratione magnam nisi natus",
+            "Adipisci facere et atque nulla at vero labore officiis. harum corrupti asperiores voluptates suscipit ipsam id ea",
+            "Illo porro quis similique quas nisi odit facere labore quod dolorem, officia eaque maiores cumque ducimus perferendis blanditiis hic rerum,",
+            "Ipsum expedita eveniet officiis quibusdam, voluptatem ipsam? exercitationem, veniam blanditiis voluptates perferendis accusantium temporibus. soluta totam repudiandae corporis"
+          ],
+          "date": "2021-12-01T07:47:12",
+          "rating": 4
+        },
+        {
+          "username": "Facere Veniam",
+          "title": "corporis, voluptas voluptates autem maiores iusto. Non asperiores",
+          "body": [
+            "Adipisicing facilis asperiores veniam ad debitis repellendus tempore beatae minima blanditiis laborum quo velit optio",
+            "Corrupti iusto quas soluta veritatis ratione dolores explicabo,"
+          ],
+          "date": "2021-04-06T01:33:15",
+          "rating": 5
+        },
+        {
+          "username": "Dolorem Dignissimos",
+          "title": "optio odio in possimus similique",
+          "body": [
+            "Molestiae, consequatur obcaecati, dolores. ullam, consequuntur consequuntur explicabo molestiae sequi quos consectetur! aliquid labore officiis totam",
+            "Laudantium suscipit voluptates suscipit sit itaque, voluptatem? sint. magni hic beatae, saepe hic",
+            "Illo minus odit. nobis illo provident qui. incidunt facilis provident consequuntur ipsam id at"
+          ],
+          "date": "2021-05-24T07:47:33",
+          "rating": 4
+        },
+        {
+          "username": "Perferendis Vero",
+          "title": "numquam. quas aspernatur! quo placeat laudantium alias vero",
+          "body": [
+            "Eligendi molestiae explicabo ad ducimus eum ullam, quaerat dolorem esse labore repellendus sequi mollitia. sint quidem! ex odio aspernatur",
+            "Voluptatum doloremque, eveniet ea quae soluta, rerum consequatur similique totam tempora nisi voluptatem rerum accusamus eaque nostrum, culpa necessitatibus",
+            "Iure officiis, vero, dolores cumque quis corrupti impedit impedit"
+          ],
+          "date": "2021-02-20T07:51:20",
+          "rating": 4.5
+        },
+        {
+          "username": "Dolores Est?",
+          "title": "explicabo voluptatem Harum facere quae",
+          "body": [
+            "Doloribus autem, temporibus illo velit quibusdam beatae accusantium similique. officiis accusamus inventore facilis?",
+            "Sapiente. cupiditate ut pariatur expedita blanditiis perspiciatis harum, est, cumque dicta pariatur, a consequuntur illum inventore, obcaecati, nemo vero",
+            "Consequuntur dolores. reiciendis blanditiis esse exercitationem suscipit ullam maiores neque mollitia minima aliquam eligendi",
+            "Rem, quaerat explicabo molestias culpa at maiores blanditiis id quas?",
+            "Eligendi? nam ut odit nihil numquam officiis illum. eius numquam, sequi corporis, nisi totam assumenda facere accusantium cupiditate"
+          ],
+          "date": "2021-06-11T07:04:09",
+          "rating": 4
+        },
+        {
+          "username": "Ipsum Rem",
+          "title": "reiciendis aut a officiis animi eveniet sit",
+          "body": [
+            "Repellendus enim praesentium, dolor cumque quos impedit commodi, lorem cum nostrum, placeat? numquam dolores",
+            "Possimus tempore magni amet deleniti praesentium suscipit nemo ad recusandae quis placeat nisi veniam illum"
+          ],
+          "date": "2021-01-22T06:37:46",
+          "rating": 5
+        },
+        {
+          "username": "Eligendi! Molestias,",
+          "title": "iste nostrum sint deleniti? libero natus corporis",
+          "body": [
+            "Vitae. quidem! animi dolore inventore",
+            "Possimus fugit sit eaque voluptas aspernatur veniam ducimus laborum, qui esse, ab iusto assumenda quisquam nesciunt maxime est",
+            "Quaerat ex dolorem, maiores est odit illum dolorem illo aspernatur"
+          ],
+          "date": "2021-09-09T06:44:42",
+          "rating": 4
+        },
+        {
+          "username": "Nobis Vel",
+          "title": "blanditiis Provident inventore facilis harum ipsum",
+          "body": [
+            "Corporis, nobis aut voluptates placeat eveniet",
+            "Minima pariatur, libero cum debitis a animi assumenda rerum facere nulla est quod porro doloribus, vero, beatae commodi eligendi autem,"
+          ],
+          "date": "2021-04-01T12:30:59",
+          "rating": 5
+        },
+        {
+          "username": "Consequuntur Reiciendis,",
+          "title": "Veniam minima, Repudiandae enim, aut quasi neque Autem",
+          "body": [
+            "Recusandae odio officiis laborum, perspiciatis aperiam asperiores",
+            "Corporis fuga? est blanditiis ut iure necessitatibus fuga, non quaerat eveniet,",
+            "Error modi rem asperiores eum aspernatur molestias delectus eligendi possimus distinctio?",
+            "Vero veritatis qui harum laborum quisquam enim quas veniam similique porro dicta autem libero fuga ex",
+            "Quos minus assumenda rem labore culpa vero accusamus"
+          ],
+          "date": "2021-09-04T20:55:07",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Sałatka warzywna",
+      "cuisine": "międzynarodowa",
+      "type": "przystawka",
+      "category": "wegańskie",
+      "ingredients": [
+        "sałata lodowa",
+        "pomidorki koktajlowe",
+        "ser feta",
+        "jarmuż",
+        "rukola"
+      ],
+      "stock": 178,
+      "currency": "USD",
+      "unitPrice": 13.5,
+      "rating": 4.55,
+      "ratesCount": 11,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-karolina-grabowska-4198015.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-karolina-grabowska-4198015.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-karolina-grabowska-4198015.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-karolina-grabowska-4198015.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-karolina-grabowska-4198015.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-karolina-grabowska-4198023.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-karolina-grabowska-4198023.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-karolina-grabowska-4198023.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-karolina-grabowska-4198023.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-karolina-grabowska-4198023.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/pexels-lisa-4989069.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-lisa-4989069.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/pexels-lisa-4989069.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/pexels-lisa-4989069.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/pexels-lisa-4989069.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "VoluptasSequi",
+          "title": "illumillotemporaevenietaspernaturQuo,doloribus!blanditiis",
+          "body": [
+            "Explicaboquiadistinctiomoditempore!ametmollitiaaliasitaque,voluptateconsequuntur",
+            "Asperioresoptioaperiam,necessitatibusmaxime",
+            "Reprehenderiteiusconsequunturvelitsolutaipsafugiathicperferendisnobisullammolestiaevitaetemporibusdolorem"
+          ],
+          "date": "2021-07-01T09:16:34",
+          "rating": 4.0
+        },
+        {
+          "username": "AdQuos",
+          "title": "veniamidconsecteturcupiditateaut",
+          "body": [
+            "Doloredeserunt?eveniet,eligendiettemporeblanditiisesseinciduntidnumquamconsectetur,eumnisiculpa",
+            "Esseet,autemvelsequitotamfugaofficiafacerepossimusbeatae,nostrum,odiobeataeodio",
+            "Laudantiummagnamharummaximeiureoditnulladeseruntveritatisrationesequiipsamid",
+            "Placeat!repellenduspariaturdignissimosdelectuspossimusquasisolutaexercitationem!nisiistedoloremnobisnullaevenietquisuntnecessitatibusvoluptateesse",
+            "Repellendusoptiovoluptatesrecusandaeperferendisteneturearumducimusatquetotamcorporisvoluptatemreiciendisquisquam"
+          ],
+          "date": "2021-07-17T02:42:56",
+          "rating": 5.0
+        },
+        {
+          "username": "Culpa,At",
+          "title": "minussintomnis,temporavoluptate,",
+          "body": [
+            "Atblanditiis!eumquodelenitiaccusantiumeligendi?",
+            "Officiiserrorrationedoloresvoluptasadolorverotemporacumquequibusdamanimiinciduntatobcaecati"
+          ],
+          "date": "2021-11-27T13:26:49",
+          "rating": 4.0
+        },
+        {
+          "username": "TeneturInventore",
+          "title": "atculpaelit.aliasreiciendiseum",
+          "body": [
+            "Quibusdam!illocommodicorruptinostrum,repudiandaeassumendaut,voluptatumnecessitatibusquaeratnon?delectusnobis",
+            "Suscipitautcommodiveniam,deleniti?exercitationem?ratione",
+            "Illumquiculpaeaquepossimusvitaecumundenumquamvoluptasad",
+            "Officiisquodillo,facilis.doloribusminimaveldistinctiotemporaquae"
+          ],
+          "date": "2022-01-05T11:28:33",
+          "rating": 4.5
+        },
+        {
+          "username": "MolestiasHic",
+          "title": "nesciuntexplicabonesciunt,cupiditate.iustomolestiae,ut",
+          "body": [
+            "Accusamus.dolorescorruptiodioasperiores?obcaecatiearummolestiasrepellendus,eaquead,iureullamcorrupti",
+            "Ataperiamrepellendus,iusto,id,inciduntcupiditate?placeatnonnemoexpeditailloarchitectoconsectetur!",
+            "Sintminusmagnamreiciendisvelitodit,teneturquoveroerrormollitiaitaque,undeoditnullavelitprovidentaspernatur",
+            "Possimusexercitationem.obcaecatiblanditiisquodmaximeofficiisneque.itaquesequiassumendafugiatmodisequitemporeveleiusvitaeveniam"
+          ],
+          "date": "2021-02-22T14:16:28",
+          "rating": 4.5
+        },
+        {
+          "username": "FugaNon",
+          "title": "oditodiononullamblanditiis",
+          "body": [
+            "Delenitioditaperiamverosequiobcaecatieos,sitnam,isteveroducimusearumipsam",
+            "Mollitiaquibusdam,pariaturfugiatfacilisutataliquidreiciendisquasquod,beatae,voluptatumnihilexpeditaut,",
+            "Inventoreculpanostrum,veritatisperspiciatispraesentiumexercitationem,abundecorruptisitvoluptateexcepturidoloremculpaquidemsolutatenetur",
+            "Rerumilloquodtemporibusrecusandaeharum,maximeexercitationem?autemrem,quae?",
+            "Officiisducimus,laborumvitae.voluptatemmagnideleniti"
+          ],
+          "date": "2021-06-06T00:40:57",
+          "rating": 5.0
+        },
+        {
+          "username": "DictaVoluptatem",
+          "title": "quasiquibusdam,quisquamoditconsequunturquasi",
+          "body": [
+            "Deseruntminimamolestiaecorporis,nemoconsequunturminimaquisquamenimtotam",
+            "Animi,eaquevitaeipsuminaliquamexplicabobeatae,namdictaprovidentadipisciid,beatae"
+          ],
+          "date": "2021-05-01T02:36:24",
+          "rating": 4.0
+        },
+        {
+          "username": "NullaLaudantium",
+          "title": "quivoluptatemquaeratperferendisquasipsumamet",
+          "body": [
+            "Autemveritatisutmodi.veroillum.corporisfugaconsectetursaepevoluptates.labore",
+            "Autaliquidblanditiis!voluptateperferendisvelveroporropraesentium",
+            "Commodinisiprovidentexercitationem,teneturesseconsequunturaccusantium"
+          ],
+          "date": "2021-08-01T14:55:21",
+          "rating": 5.0
+        },
+        {
+          "username": "VeritatisPerferendis",
+          "title": "earumquibusdamTotamvoluptates.culpaFugiat,Necessitatibuscupiditatedebitis!placeat",
+          "body": [
+            "Totamexpedita,perferendisnostrumtemporefacerelaborummollitiaquaeeosdebitissuscipitofficiasuscipit,asperiores?assumendaliberoest?",
+            "Commodiiustotemporedelenitivoluptatequaeratquoeiusex,earumut,non?nonmagnam",
+            "Architectoiustoquidemquiaccusamus,similique.",
+            "Molestiassequi,officiaconsequunturquasitotammagniomnisest?rationetotamconsequunturlaborevoluptateslibero"
+          ],
+          "date": "2021-11-22T16:22:57",
+          "rating": 5.0
+        },
+        {
+          "username": "DelectusEligendi",
+          "title": "placeatexcepturialiasrepellendus,rerumsunt?illumpariaturutmolestiae",
+          "body": [
+            "Magni,nobisquasidolorfaceredoloresvoluptatesdelectusfacilisexcupiditate",
+            "Expeditatempora,adestlaboriosamnisidolorespariaturtotamdoloremquia!perspiciatisverotemporaipsum"
+          ],
+          "date": "2021-03-16T18:26:43",
+          "rating": 4.5
+        },
+        {
+          "username": "QuasAperiam",
+          "title": "voluptatibusnihilnisi,quasivoluptas,utadipisciquisquamneque",
+          "body": [
+            "Aliquidabdoloremeligendi!magni,cumquisquamofficiis,culpa,nonquasenim.",
+            "Quasiveniamnihilsuscipit,idadipisicingoptiomolestias",
+            "Providentipsalabore!laboriosamdignissimosexnisianullaperferendisvoluptasteneturtemporibuseaqueearumvoluptatum.eumfacereeos"
+          ],
+          "date": "2021-12-14T20:09:06",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Risotto grzybowe",
+      "cuisine": "włoska",
+      "type": "danie główne",
+      "category": "wegańskie",
+      "ingredients": [
+        "ryż",
+        "pieczarki",
+        "borowiki",
+        "kurki",
+        "masło",
+        "ser żółty",
+        "marchew"
+      ],
+      "stock": 124,
+      "currency": "USD",
+      "unitPrice": 24,
+      "rating": 4.25,
+      "ratesCount": 8,
+      "description": [
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magni iste impedit maiores a praesentium ad ab eveniet. Nisi aliquid commodi quos recusandae. Sequi accusantium, nesciunt amet, tempore molestias nobis minus earum excepturi voluptate corporis eligendi fugit dignissimos officia impedit?",
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia velit aspernatur alias voluptas non, odio corporis asperiores beatae numquam, quidem facilis ea sunt dignissimos cumque."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/lucas-lobak-neves-Gdb1BOuIwbk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/lucas-lobak-neves-Gdb1BOuIwbk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/lucas-lobak-neves-Gdb1BOuIwbk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/lucas-lobak-neves-Gdb1BOuIwbk-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/lucas-lobak-neves-Gdb1BOuIwbk-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/max-griss-D9fAmtjC284-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/max-griss-D9fAmtjC284-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/max-griss-D9fAmtjC284-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/max-griss-D9fAmtjC284-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/max-griss-D9fAmtjC284-unsplash.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              400,
+              600,
+              1000,
+              1400,
+              1920
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-400/restaurant/dishes/yalamber-limbu-708OpfCW4H8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/yalamber-limbu-708OpfCW4H8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1000/restaurant/dishes/yalamber-limbu-708OpfCW4H8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1400/restaurant/dishes/yalamber-limbu-708OpfCW4H8-unsplash.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1920/restaurant/dishes/yalamber-limbu-708OpfCW4H8-unsplash.jpg"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Earum Vero",
+          "title": "inventore consequuntur amet voluptate iste Autem iusto consequatur",
+          "body": [
+            "Facere facere ratione officia exercitationem eligendi perferendis sit quam eum voluptatibus vero",
+            "Fugiat iure voluptatum. veniam quaerat, adipisci quasi explicabo? reprehenderit ipsum sed tenetur reiciendis iusto voluptatem porro, tempora sequi consequatur perferendis",
+            "Doloribus eum recusandae quo laudantium at commodi praesentium, voluptate, sed eum pariatur quas doloremque unde aspernatur vero, impedit",
+            "Aut quaerat obcaecati laborum, illo, doloribus asperiores perferendis deleniti? fugit facilis aspernatur eum veniam rerum atque iusto ducimus repudiandae"
+          ],
+          "date": "2021-07-02T04:33:11",
+          "rating": 4
+        },
+        {
+          "username": "At Odio?",
+          "title": "libero voluptatem? repellat ex, nemo Cumque autem eveniet",
+          "body": [
+            "Vero eos facilis quos harum? optio cupiditate aspernatur unde quas itaque quos facere eveniet qui. in a",
+            "Expedita tempore? necessitatibus. reprehenderit rem fugiat. quisquam dicta fuga rerum excepturi illum, ex necessitatibus itaque eius? dolorem",
+            "Quia sequi id sapiente. obcaecati reprehenderit? maiores qui cum nobis quaerat asperiores debitis deserunt",
+            "Placeat quisquam molestiae, praesentium accusamus iure beatae voluptas ducimus quia ducimus vitae et odit magnam iste"
+          ],
+          "date": "2021-05-21T11:32:15",
+          "rating": 5
+        },
+        {
+          "username": "Nulla Quaerat",
+          "title": "quibusdam deleniti Quis ipsum quidem! beatae",
+          "body": [
+            "Ipsum iure qui repudiandae asperiores aspernatur hic non sequi tempore eveniet, minus ipsum incidunt repellendus",
+            "Molestiae amet vitae debitis officia ab ut",
+            "Eos nam, dicta sint, adipisci cumque ducimus culpa, cupiditate molestias, eum totam provident et deleniti?",
+            "Minus quisquam, esse, officiis cupiditate et fugit excepturi! nulla aperiam ea facere aspernatur tempora pariatur"
+          ],
+          "date": "2021-12-04T22:28:10",
+          "rating": 4
+        },
+        {
+          "username": "Adipisci Inventore",
+          "title": "deleniti, sequi, numquam architecto quos tempore! commodi",
+          "body": [
+            "Illo vitae unde ex vero, culpa et neque vitae et eius quisquam voluptas nihil at ullam, sed",
+            "Ratione veniam perferendis et porro provident sint recusandae",
+            "Voluptates. officiis fuga omnis modi. quos ratione neque tempora autem quibusdam culpa",
+            "Facilis quam nam magnam repudiandae voluptatem laudantium voluptatem incidunt pariatur ab molestias, eaque in"
+          ],
+          "date": "2021-04-19T07:15:54",
+          "rating": 4
+        },
+        {
+          "username": "Delectus Repudiandae",
+          "title": "voluptas nam, in quam exercitationem! impedit repellat explicabo deleniti nulla",
+          "body": [
+            "Assumenda tempore quos voluptates inventore sed quisquam molestias culpa,",
+            "Magni, id similique reiciendis pariatur earum",
+            "Perspiciatis corporis rerum iure quidem amet placeat nam error iste vitae quod",
+            "Nam saepe eos? et ut, laudantium voluptatem reiciendis excepturi, nemo delectus placeat nesciunt reiciendis delectus molestias cupiditate magnam odio pariatur",
+            "Vero nisi quidem assumenda eaque laborum autem eius dolorem nemo sit asperiores voluptatem? repellat molestiae quo"
+          ],
+          "date": "2021-03-24T23:00:54",
+          "rating": 4
+        },
+        {
+          "username": "Necessitatibus. Iusto",
+          "title": "illum voluptates repudiandae, quia! magni perferendis quas dolorum porro",
+          "body": [
+            "Natus minus cum facere quaerat possimus tempore! nisi magnam beatae totam officia repudiandae sed. ratione aliquid eligendi quis. voluptate eligendi",
+            "Labore nam voluptate est, pariatur repudiandae repellat officia mollitia.",
+            "Iste? voluptate vitae itaque iste! tempora impedit nesciunt nulla! asperiores? aliquid ut fugiat consequatur,",
+            "Incidunt ut perferendis voluptates vitae a exercitationem commodi incidunt reprehenderit",
+            "Et, dolores reiciendis, quibusdam quibusdam"
+          ],
+          "date": "2021-11-26T04:56:56",
+          "rating": 4.5
+        },
+        {
+          "username": "Laudantium Beatae",
+          "title": "molestiae, aperiam et iusto libero voluptas, minima iste! fuga",
+          "body": [
+            "Cum recusandae modi praesentium! autem consequatur id in. veniam accusamus officia repudiandae quisquam sint aspernatur blanditiis! nesciunt molestias, ratione! unde",
+            "Est earum voluptatibus, accusamus labore odit odio. repudiandae aut dolores doloribus, illum perferendis nobis facilis. culpa laborum esse,",
+            "Beatae, aliquam obcaecati quas? culpa, minima nemo, ad",
+            "Minima pariatur iure tenetur unde sequi, autem voluptatibus nisi accusantium voluptatibus",
+            "Obcaecati quibusdam delectus amet voluptates commodi voluptas nemo maxime eum ut unde quasi quibusdam sit, dolore distinctio"
+          ],
+          "date": "2021-01-28T22:12:47",
+          "rating": 4
+        },
+        {
+          "username": "Placeat Nostrum",
+          "title": "At cum cupiditate alias provident quas libero! voluptatem, totam",
+          "body": [
+            "Quos vel pariatur amet similique quisquam doloremque qui quas atque officia exercitationem! at tempore? quod facere illum.",
+            "Qui. dolorem, esse doloribus eligendi sequi repellendus magnam illo",
+            "Esse, ullam unde obcaecati sequi nesciunt consequatur doloremque minima vel, praesentium, maxime perferendis"
+          ],
+          "date": "2021-12-02T05:39:07",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Muffiny czekolafowe",
+      "cuisine": "międzynarodowa",
+      "type": "słodycze",
+      "category": "ciasta",
+      "ingredients": [
+        "mąka",
+        "kakao",
+        "czekolada",
+        "cukier",
+        "mleko",
+        "jaja",
+        "olej",
+        "śmietana"
+      ],
+      "stock": 68,
+      "currency": "EUR",
+      "unitPrice": 7,
+      "rating": 4.72,
+      "ratesCount": 9,
+      "description": [
+        "Lorem ipsum.",
+        "Lorem ipsum.",
+        "Lorem.ipsum."
+      ],
+      "images": {
+        "coverIdx": 0,
+        "gallery": [
+          {
+            "breakpoints": [
+              300,
+              600,
+              1200,
+              1800
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-300/restaurant/dishes/pexels-darko-trajkovic-10563880.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-600/restaurant/dishes/pexels-darko-trajkovic-10563880.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1200/restaurant/dishes/pexels-darko-trajkovic-10563880.jpg",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1800/restaurant/dishes/pexels-darko-trajkovic-10563880.jpg"
+            ]
+          },
+          {
+            "breakpoints": [
+              350,
+              800,
+              1200,
+              1200
+            ],
+            "paths": [
+              "https://ik.imagekit.io/MatiPl01/tr:w-350/restaurant/dishes/pexels-darko-trajkovic-10538803.jpg?updatedAt=1641592595352",
+              "https://ik.imagekit.io/MatiPl01/tr:w-800/restaurant/dishes/pexels-darko-trajkovic-10538803.jpg?updatedAt=1641592595352",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1200/restaurant/dishes/pexels-darko-trajkovic-10538803.jpg?updatedAt=1641592595352",
+              "https://ik.imagekit.io/MatiPl01/tr:w-1600/restaurant/dishes/pexels-darko-trajkovic-10538803.jpg?updatedAt=1641592595352"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "username": "Debitis Ullam,",
+          "title": "consequuntur error omnis nihil deleniti, aperiam, porro asperiores eum modi",
+          "body": [
+            "Explicabo consequuntur nostrum dolore voluptatibus",
+            "Doloremque optio nobis tenetur fugiat. alias quidem eveniet commodi porro veniam voluptatem? commodi dolor unde ratione! atque culpa neque",
+            "Officiis aperiam fugit nulla tempora vitae a facilis? vero, qui voluptatibus,"
+          ],
+          "date": "2021-11-01T22:57:07",
+          "rating": 5
+        },
+        {
+          "username": "Corporis Animi",
+          "title": "nisi magnam alias sint error necessitatibus delectus",
+          "body": [
+            "Pariatur esse vitae. pariatur totam quaerat,",
+            "Totam ut perferendis ea a cum vel aspernatur tenetur suscipit, aperiam, atque repellat aut animi consequuntur itaque,",
+            "Doloremque delectus maiores consequuntur corrupti itaque",
+            "Officiis provident iusto exercitationem nam iste eius, exercitationem labore aspernatur debitis! quod expedita corrupti voluptates perferendis vero, sunt odio.",
+            "Eligendi nobis possimus natus quibusdam amet dolor cupiditate. possimus"
+          ],
+          "date": "2021-02-06T04:07:51",
+          "rating": 4.5
+        },
+        {
+          "username": "Qui Minima",
+          "title": "expedita rerum nostrum placeat Exercitationem, sed officiis earum",
+          "body": [
+            "Molestias, ullam laudantium ipsum veritatis fuga exercitationem possimus illum, porro, unde eaque illo",
+            "Voluptas consequuntur eaque maiores veritatis consequuntur quos rerum asperiores? expedita quaerat consectetur distinctio est earum. nisi amet temporibus ad, repellat"
+          ],
+          "date": "2021-11-28T23:30:48",
+          "rating": 4.5
+        },
+        {
+          "username": "Eius Sequi",
+          "title": "non? facere voluptas nihil odit",
+          "body": [
+            "Praesentium, quibusdam, ut architecto reiciendis modi magni porro fuga earum dolorum placeat, omnis, qui consequuntur quo quis commodi accusantium.",
+            "Nemo est? quibusdam non cupiditate asperiores cum"
+          ],
+          "date": "2021-11-11T13:24:37",
+          "rating": 5
+        },
+        {
+          "username": "Alias Odit",
+          "title": "sapiente est? facilis. beatae perferendis sequi porro Reprehenderit quam",
+          "body": [
+            "Corrupti neque fuga veniam sint accusamus. architecto ipsum suscipit, voluptatem aspernatur perferendis",
+            "Adipisci aut cum sapiente. aut neque non",
+            "Harum, nisi ipsa minus minus, voluptatem in, quod alias expedita corporis animi molestiae, facere enim ratione",
+            "Fuga ut nulla exercitationem! illo facilis voluptatum earum sint corporis fugiat ex eum, nam, cum iste culpa quibusdam nesciunt praesentium"
+          ],
+          "date": "2021-11-20T09:01:48",
+          "rating": 4.5
+        },
+        {
+          "username": "Ducimus Officiis",
+          "title": "tempore? nesciunt quasi accusantium, corporis vel, cum quaerat",
+          "body": [
+            "Hic saepe non quasi impedit pariatur, ex ipsa porro iusto recusandae",
+            "Officia incidunt est consequatur consectetur sapiente dolores culpa dicta accusamus ea"
+          ],
+          "date": "2021-04-28T01:22:57",
+          "rating": 4.5
+        },
+        {
+          "username": "Omnis Consequuntur",
+          "title": "optio at debitis! Tempora eos vitae quasi beatae provident non",
+          "body": [
+            "Magni, minus tempora quis ab quibusdam asperiores",
+            "In eveniet ad rem iure natus possimus. facere obcaecati, perferendis blanditiis! repellendus, quas voluptatem impedit",
+            "Odit. iste odio veniam quae, qui, in doloremque id similique corrupti voluptate obcaecati",
+            "Magnam cumque cum optio nobis veniam fugit totam nam deserunt? nulla"
+          ],
+          "date": "2021-03-13T22:58:58",
+          "rating": 5
+        },
+        {
+          "username": "Deserunt Non",
+          "title": "quasi beatae, sed vitae Maiores laudantium animi, est quisquam,",
+          "body": [
+            "Facilis odit tempora ipsum amet deserunt perferendis nesciunt delectus exercitationem, laboriosam",
+            "Molestiae, quasi id itaque consectetur eos nostrum illum, officia",
+            "Laboriosam ratione magni non impedit eos a eveniet odit facilis"
+          ],
+          "date": "2021-07-25T14:20:27",
+          "rating": 5
+        },
+        {
+          "username": "Nam Placeat",
+          "title": "fuga voluptas Accusamus, voluptate perferendis amet odit,",
+          "body": [
+            "Sequi facere fuga doloremque eum fugiat.",
+            "Sit blanditiis nostrum molestias deleniti consectetur ullam corrupti",
+            "Porro eius est iste accusantium. impedit est voluptates accusantium similique animi necessitatibus",
+            "Magni quo, amet atque blanditiis illo in quis. quae expedita corporis, praesentium,"
+          ],
+          "date": "2021-06-22T20:05:46",
+          "rating": 4.5
+        }
+      ]
+    }
+  ]
+}

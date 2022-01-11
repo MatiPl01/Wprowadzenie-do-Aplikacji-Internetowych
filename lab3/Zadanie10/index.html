@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 10</title>
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="header">
+      <div class="logo">
+        <svg class="logo__icon">
+          <use href="svg/icons.svg#icon-shop-basket"></use>
+        </svg>
+        <div class="logo__headings">
+          <h1 class="logo__heading logo__heading--main">FoodShop</h1>
+          <h2 class="logo__heading logo__heading--sub">Tanio, szybko, smacznie</h2>
+        </div>
+      </div>
+
+      <button class="button button--primary header__button header__button--cart">
+        <svg class="header__icon">
+          <use href="svg/icons.svg#icon-cart"></use>
+        </svg>
+        <span>Pokaż koszyk</span>
+      </button>
+    </header>
+
+    <input type="checkbox" name="open-aside" id="open-aside" class="aside__checkbox hidden">
+    <aside class="aside">
+      <label for="open-aside" class="aside__toggle-label">
+        <button class="button button--primary aside__toggle" title="Open sidebar navigation">
+          <span></span>
+        </button>
+      </label>
+      <menu class="menu"></menu>
+    </aside>
+
+    <main class="main">
+      <section class="main__content">
+        <article class="popup visible">
+          <div class="popup__content">
+            <header class="popup__header">
+              <h3 class="popup__heading">Dodaj coś do koszyka</h3>
+            </header>
+            <svg class="popup__icon">
+              <use href="svg/icons.svg#icon-cart-arrow"></use>
+            </svg>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <article class="summary">
+          <h3 class="summary__heading">Podsumowanie</h3>
+          <ul class="summary__list">
+            <li class="summary__item">
+              <span class="summary__text summary__text--part">
+                Kwota zamówienia
+              </span>
+              <div class="summary__price summary__price--part">
+                <span class="summary__amount summary__amount--initial">0</span>
+                <span class="summary__currency">zł</span>
+              </div>
+            </li>
+            <li class="summary__item">
+              <span class="summary__text summary__text--part">
+                Koszt dostawy
+              </span>
+              <div class="summary__price summary__price--part">
+                <span class="summary__sign">+</span>
+                <span class="summary__amount summary__amount--delivery">0</span>
+                <span class="summary__currency">zł</span>
+              </div>
+            </li>
+            <li class="summary__item">
+              <span class="summary__text summary__text--part">
+                Przyznane rabaty
+              </span>
+              <div class="summary__price summary__price--part">
+                <span class="summary__sign">-</span>
+                <span class="summary__amount summary__amount--discounts">0</span>
+                <span class="summary__currency">zł</span>
+              </div>
+            </li>
+          </ul>
+          <div class="summary__item summary__total">
+            <span class="summary__text summary__text--total">
+              Razem
+            </span>
+            <div class="summary__price summary__price--total">
+              <span class="summary__amount summary__amount--total">0</span>
+              <span class="summary__currency">zł</span>
+            </div>
+          </div>
+        </article>
+      
+        <button class="button button--primary footer__button">
+          <svg class="footer__icon">
+            <use href="svg/icons.svg#icon-credit-card"></use>
+          </svg>
+          <span>Do kasy</span>
+        </button>
+      </footer>
+    </main>
+  </div>
+
+  <div class="hidden">
+    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="0" y1="100%" x2="100%" y2="0" id="gradient1">
+        <stop class="stop-color stop-color--1" offset="0" />
+        <stop class="stop-color stop-color--2" offset="100%" />
+      </linearGradient>
+    </svg>
+  </div>
+</body>
+</html>

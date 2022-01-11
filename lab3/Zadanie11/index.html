@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 11</title>
+</head>
+<body>
+  <main class="main overlay">
+    <article class="counter">
+      <header class="counter__header">
+        <h2 class="counter__heading">Wynik</h2>
+      </header>
+  
+      <section class="counter__number">
+        <span class="counter__sign">
+          <span></span>
+        </span>
+        <ul class="counter__digits">
+          <li class="counter__digit-box">
+            <ul class="counter__digit-slider counter__digit-slider--1" data-digit="0">
+              <li class="counter__digit">9</li>
+              <li class="counter__digit">0</li>
+              <li class="counter__digit">1</li>
+              <li class="counter__digit">2</li>
+              <li class="counter__digit">3</li>
+              <li class="counter__digit">4</li>
+              <li class="counter__digit">5</li>
+              <li class="counter__digit">6</li>
+              <li class="counter__digit">7</li>
+              <li class="counter__digit">8</li>
+              <li class="counter__digit">9</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <div class="crosshair">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <article class="player">
+      <h3 class="player__heading">Bieżący gracz</h3>
+      <h2 class="player__name"></h2>
+    </article>
+
+    <article class="popup">
+      <header class="popup__header">
+        <h2 class="popup__heading">Zombieland</h2>
+      </header>
+      <p class="popup__paragraph">
+        Przed rozpoczęciem gry wprowadź swoją nazwę użytkownika.
+      </p>
+      <form action="#" class="popup__form">
+        <label for="username" class="popup__label">Twoja nazwa</label>
+        <input class="popup__input" type="text" name="username" id="username" minlength="3" maxlength="20" placeholder="Wprowadź swój nick" required>
+        <input class="button popup__button" type="submit" value="Rozpocznij grę">
+      </form>
+    </article>
+
+    <article class="highscores">
+      <header class="highscores__header">
+        <h2 class="highscores__heading">Zombieland</h2>
+      </header>
+      <p class="highscores__paragraph">
+        <span class="highscores__count"></span>
+        <span class="highscores__text">najlepszych wyników</span>
+      </p>
+      <ol class="highscores__list">
+      </ol>
+      <button class="button highscores__button">Zagraj jeszcze raz</button>
+    </article>
+
+    <div class="hp-bar"></div>
+  </main>
+</body>
+</html>

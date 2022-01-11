@@ -1,0 +1,56 @@
+@use '../helpers/colors' as c;
+
+.review {
+    box-shadow: 0 0 1.75em rgba(c.$black, .15);
+    background-color: c.$white;
+    padding: 2rem 2.5rem;
+    border-radius: .3rem;
+
+    &__header {
+        font-size: 1.6rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    &__heading {
+        text-transform: capitalize;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid c.$gray-light-4;
+        margin-bottom: 1rem;
+    }
+    
+    &__paragraph {
+        font-size: 1.4rem;
+        line-height: 1.5;
+
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid c.$gray-light-4;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__user,
+    &__date {
+        font-size: 1.2rem;
+
+        &-text {
+            margin-right: 1rem;
+        }
+
+        &-value {
+            color: c.$gray-dark-3;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Zadanie 3</title>
+</head>
+
+<body>
+  <main class="main">
+
+    <section class="section-gallery">
+      <div class="gallery">
+        <h2 class="gallery__title">Galeria zdjęć zwierząt</h2>
+        <div class="gallery__figures">
+          
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/cat-pet.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <picture class="figure__picture">
+              <source media="(max-width: 37.5em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/cat-in-house.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/cat-in-house.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/cat-in-house.jpg 1080w"
+                      sizes="calc(100vw - 4em)">
+              <source media="(max-width: 56.25em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/cat-pet.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/cat-pet.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/cat-pet.jpg 1080w"
+                      sizes="calc((100vw - 5.625em) / 2)">
+              <source media="(max-width: 75em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-480/animals/cat-eye.jpg 480w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/cat-eye.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/cat-eye.jpg 1080w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/cat-eye.jpg 1620w"
+                      sizes="calc((100vw - 8.75em) / 2)">
+              <source media="(min-width: 140em)"
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/cat-indoors.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/cat-indoors.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/cat-indoors.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/cat-indoors.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/cat-indoors.jpg 1620w"
+                      sizes="41em">
+              <source srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/cat-siamese.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/cat-siamese.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/cat-siamese.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/cat-siamese.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1600/animals/cat-siamese.jpg 1600w"
+                      sizes="calc((100vw - 10em) / 3)">
+              <img class="figure__img" src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/cat-eye.jpg" alt="Kot domowy">
+            </picture>
+            <figcaption class="figure__caption">
+              <p class="figure__text">Kot domowy</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/cute-dog.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <picture class="figure__picture">
+              <source media="(max-width: 37.5em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/clever-dog.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/clever-dog.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/clever-dog.jpg 1080w"
+                      sizes="calc(100vw - 4em)">
+              <source media="(max-width: 56.25em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/close-up-of-cute-dog.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/close-up-of-cute-dog.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/close-up-of-cute-dog.jpg 1080w"
+                      sizes="calc((100vw - 5.625em) / 2)">
+              <source media="(max-width: 75em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-480/animals/sweet-dog.jpg 480w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/sweet-dog.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/sweet-dog.jpg 1080w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/sweet-dog.jpg 1620w"
+                      sizes="calc((100vw - 8.75em) / 2)">
+              <source media="(min-width: 140em)"
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/cute-french-bulldog.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/cute-french-bulldog.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/cute-french-bulldog.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/cute-french-bulldog.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/cute-french-bulldog.jpg 1620w"
+                      sizes="41em">
+              <source srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/cute-dog.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/cute-dog.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/cute-dog.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/cute-dog.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1600/animals/cute-dog.jpg 1600w"
+                      sizes="calc((100vw - 10em) / 3)">
+              <img class="figure__img" src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/clever-dog.jpg" alt="Pies domowy">
+            </picture>
+            <figcaption class="figure__caption">
+              <p class="figure__text">Pies domowy</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/koala.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <picture class="figure__picture">
+              <source media="(max-width: 37.5em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/koala.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/koala.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/koala.jpg 1080w"
+                      sizes="calc(100vw - 4em)">
+              <source media="(max-width: 56.25em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/koala-2.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/koala-2.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/koala-2.jpg 1080w"
+                      sizes="calc((100vw - 5.625em) / 2)">
+              <source media="(max-width: 75em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-480/animals/koala-3.jpg 480w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/koala-3.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/koala-3.jpg 1080w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/koala-3.jpg 1620w"
+                      sizes="calc((100vw - 8.75em) / 2)">
+              <source media="(min-width: 140em)"
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/koala-4.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/koala-4.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/koala-4.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/koala-4.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/koala-4.jpg 1620w"
+                      sizes="41em">
+              <source srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/koala-5.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/koala-5.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/koala-5.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/koala-5.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/koala-5.jpg 1620w"
+                      sizes="calc((100vw - 10em) / 3)">
+              <img class="figure__img" src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/koala.jpg" alt="Koala">
+            </picture>
+            <figcaption class="figure__caption">
+              <p class="figure__text">Koala</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/lemur-looking-up.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <picture class="figure__picture">
+              <source media="(max-width: 37.5em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/lemur-looking-up.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/lemur-looking-up.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/lemur-looking-up.jpg 1080w"
+                      sizes="calc(100vw - 4em)">
+              <source media="(max-width: 56.25em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/lemur-2.jpg 360w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/lemur-2.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/lemur-2.jpg 1080w"
+                      sizes="calc((100vw - 5.625em) / 2)">
+              <source media="(max-width: 75em)" 
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-480/animals/lemur-3.jpg 480w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-720/animals/lemur-3.jpg 720w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/lemur-3.jpg 1080w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/lemur-3.jpg 1620w"
+                      sizes="calc((100vw - 8.75em) / 2)">
+              <source media="(min-width: 140em)"
+                      srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/lemur-5.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/lemur-5.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/lemur-5.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/lemur-5.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/lemur-5.jpg 1620w"
+                      sizes="41em">
+              <source srcset="https://ik.imagekit.io/MatiPl01/tr:w-400/animals/lemur-4.jpg 400w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-600/animals/lemur-4.jpg 600w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-800/animals/lemur-4.jpg 800w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1200/animals/lemur-4.jpg 1200w,
+                              https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/lemur-4.jpg 1620w"
+                      sizes="calc((100vw - 10em) / 3)">
+              <img class="figure__img" src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/lemur-looking-up.jpg" alt="Lemur">
+            </picture>        
+            <figcaption class="figure__caption">
+              <p class="figure__text">Lemur</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/giraffe-africa.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img loading="lazy" class="figure__img"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/giraffe-africa.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/giraffe-africa.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/animals/giraffe-africa.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/animals/giraffe-africa.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/giraffe-africa.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/giraffe-africa.jpg 1620w"
+                 sizes="(max-width: 37.5em)  calc(100vw - 4em), 
+                        (max-width: 56.25em) calc((100vw - 5.625em) / 2), 
+                        (max-width: 75em)    calc((100vw - 8.75em) / 2), 
+                        (min-width: 140em)   41em, 
+                        calc((100vw - 10em) / 3)"
+                 alt="Żyrafa">
+            <figcaption class="figure__caption">
+              <p class="figure__text">Żyrafa</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/husky-dog.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img loading="lazy" class="figure__img"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/husky-dog.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/husky-dog.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/animals/husky-dog.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/animals/husky-dog.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/husky-dog.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/husky-dog.jpg 1620w"
+                 sizes="(max-width: 37.5em)  calc(100vw - 4em), 
+                        (max-width: 56.25em) calc((100vw - 5.625em) / 2), 
+                        (max-width: 75em)    calc((100vw - 8.75em) / 2), 
+                        (min-width: 140em)   41em, 
+                        calc((100vw - 10em) / 3)"
+                 alt="Pies husky">
+            <figcaption class="figure__caption">
+              <p class="figure__text">Pies husky</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/leopard-closeup.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img loading="lazy" class="figure__img"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/leopard-closeup.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/leopard-closeup.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/animals/leopard-closeup.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/animals/leopard-closeup.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/leopard-closeup.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/leopard-closeup.jpg 1620w"
+                 sizes="(max-width: 37.5em)  calc(100vw - 4em), 
+                        (max-width: 56.25em) calc((100vw - 5.625em) / 2), 
+                        (max-width: 75em)    calc((100vw - 8.75em) / 2), 
+                        (min-width: 140em)   41em, 
+                        calc((100vw - 10em) / 3)"
+                 alt="Lampart">
+            <figcaption class="figure__caption">
+              <p class="figure__text">Lampart</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/monkey-portrait-animal.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img loading="lazy" class="figure__img"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/monkey-portrait-animal.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/monkey-portrait-animal.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/animals/monkey-portrait-animal.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/animals/monkey-portrait-animal.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/monkey-portrait-animal.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/monkey-portrait-animal.jpg 1620w"
+                 sizes="(max-width: 37.5em)  calc(100vw - 4em), 
+                        (max-width: 56.25em) calc((100vw - 5.625em) / 2), 
+                        (max-width: 75em)    calc((100vw - 8.75em) / 2), 
+                        (min-width: 140em)   41em, 
+                        calc((100vw - 10em) / 3)"
+                 alt="Małpa">
+            <figcaption class="figure__caption">
+              <p class="figure__text">Małpa</p>
+            </figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure__placeholder">
+              <img class="figure__img figure__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/animals/river-otter.jpg" 
+                   alt="Placeholder">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img loading="lazy" class="figure__img"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/animals/river-otter.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/animals/river-otter.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/animals/river-otter.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/animals/river-otter.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/animals/river-otter.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/animals/river-otter.jpg 1620w"
+                 sizes="(max-width: 37.5em)  calc(100vw - 4em), 
+                        (max-width: 56.25em) calc((100vw - 5.625em) / 2), 
+                        (max-width: 75em)    calc((100vw - 8.75em) / 2), 
+                        (min-width: 140em)   41em, 
+                        calc((100vw - 10em) / 3)"
+                 alt="Wydra rzeczna">
+            <figcaption class="figure__caption">
+              <p class="figure__text">Wydra rzeczna</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+@use '../../../styles.scss' as *;
+
+.photo {    
+    width: 20rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 1.5rem rgba($color-black, .3);
+    height: 100%;
+    flex-direction: column;
+    cursor: pointer;
+
+    &__link {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__figure {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            padding-bottom: 100%;
+        }
+    }
+
+    &__image {
+        @include img-cover;
+    }
+
+    &__title {
+        flex: 1 1 0;
+        color: $color-gray-dark-1;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        padding: .75rem 1rem;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.2rem;
+
+        span::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}

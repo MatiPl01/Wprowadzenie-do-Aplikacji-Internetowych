@@ -1,0 +1,15 @@
+<ul class="dishes__list">
+  <li class="dishes__item" 
+      *ngFor="let dish of dishes
+              | filter:filtersFunctions.category
+              | filter:filtersFunctions.cuisine
+              | filter:filtersFunctions.unitPrice
+              | filter:filtersFunctions.rating
+  ">
+    <app-dish 
+      [dish]="dish"
+      [classObj]="getClassObj(dish)"
+      (removeDish)="onRemoveDish($event)">
+    </app-dish>
+  </li>
+</ul>

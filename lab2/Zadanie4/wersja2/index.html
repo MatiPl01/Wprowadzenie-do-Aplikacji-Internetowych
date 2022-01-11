@@ -1,0 +1,728 @@
+<!-- 
+  Tw wersja rozwiązania zawiera trochę modyfikacji względem poprzedniej, związanej
+  ze zmianą wyglądu karty, po najechaniu na nią kursorem.
+
+  Ponieważ po najechaniu na kartę, zwiększa się obszar, w którym widoczne jest zdjęcie,
+  konieczne jest takie dopasowanie zdjęć, aby wysokość zdjęcia pokrywała się jak najlepiej
+  z wysokością rozsuniętego obszaru. Ponieważ proporcje obrazków wynoszą 3:2, musimy przeliczyć
+  wysokość obrazków na szerokość (w = 3/2 * h)
+-->
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 3</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="section-cities">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Galeria miast
+        </h2>
+      </div>
+
+      <div class="cards">
+        <article class="card card--1">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/amsterdam.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/amsterdam.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/amsterdam.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/amsterdam.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/amsterdam.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/amsterdam.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/amsterdam.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Amsterdam">
+          </figure>
+
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Amsterdam
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 1
+              </h4>
+            </header>
+
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci, corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>16 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>322 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--2">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/bergen.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/bergen.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/bergen.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/bergen.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/bergen.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/bergen.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/bergen.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Bergen">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Bergen
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 2
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>22 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>417 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--3">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/berlin.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/berlin.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/berlin.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/berlin.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/berlin.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/berlin.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/berlin.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Berlin">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Berlin
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 3
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>12 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>308 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--4">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/istanbul.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/istanbul.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/istanbul.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/istanbul.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/istanbul.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/istanbul.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/istanbul.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Istanbul">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Istanbul
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 4
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>35 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>764 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--5">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/madrid.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/madrid.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/madrid.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/madrid.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/madrid.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/madrid.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/madrid.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Madrid">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Madrid
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 5
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>41 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>871 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--6">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/paris.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/paris.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/paris.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/paris.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/paris.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/paris.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/paris.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Paris">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Paris
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                Opis 6
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>38 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>857 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--7">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/porto.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/porto.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/porto.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/porto.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/porto.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/porto.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/porto.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Porto">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Porto
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 7
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>11 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>275 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--8">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/san-francisco.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/san-francisco.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/san-francisco.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/san-francisco.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/san-francisco.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/san-francisco.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/san-francisco.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="San Francisco">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                San Francisco
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 8
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>74 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>1298 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--9">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/venice.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/venice.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/venice.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/venice.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/venice.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/venice.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/venice.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Venice">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Venice
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 9
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>182 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>3097 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+
+        <article class="card card--10">
+          <figure class="card__figure">
+            <div class="card__placeholder">
+              <img class="card__img card__img--placeholder" 
+                   loading="lazy"
+                   src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/city/warsaw.jpg"
+                   alt="Placeholder">
+              <svg class="card__placeholder-icon">
+                <use href="svg/icons.svg#icon-image"></use>
+              </svg>
+            </div>
+            <img class="card__img"
+                 loading="lazy"
+                 src="https://ik.imagekit.io/MatiPl01/tr:w-720/city/warsaw.jpg" 
+                 srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/city/warsaw.jpg 360w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-540/city/warsaw.jpg 540w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-720/city/warsaw.jpg 720w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1080/city/warsaw.jpg 1080w,
+                         https://ik.imagekit.io/MatiPl01/tr:w-1620/city/warsaw.jpg 1620w"
+                 sizes="(max-width: 16.75em) calc(3/2 * 18.375em),
+                        (max-width: 56.25em) calc(3/2 * 21.5em),
+                        (max-width: 75em)    calc(3/2 * 24.25em),
+                        (min-width: 112.5em) calc(3/2 * 35.38em),
+                        calc(3/2 * 27em)"
+                 alt="Warsaw">
+          </figure>
+        
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__heading card__heading--main">
+                Warsaw
+              </h3>
+              <h4 class="card__heading card__heading--sub">
+                opis 10
+              </h4>
+            </header>
+        
+            <section class="card__content">
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur neque impedit aliquid ipsa adipisci,
+                corporis quas placeat a est ratione aperiam pariatur, saepe reprehenderit illum cum natus perspiciatis iusto
+                culpa mollitia earum vero suscipit, iure expedita? Perferendis, sequi mollitia.
+              </p>
+            </section>
+          </div>
+        
+          <footer class="card__footer">
+            <a href="#" class="btn btn--primary">Przeczytaj</a>
+            <ul class="card__feedback">
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--comment">
+                    <use href="svg/icons.svg#icon-comment"></use>
+                  </svg>
+                </span>
+                <span>8 komentarzy</span>
+              </li>
+              <li>
+                <span>
+                  <svg class="card__feedback-icon card__feedback-icon--heart">
+                    <use href="svg/icons.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span>164 polubień</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

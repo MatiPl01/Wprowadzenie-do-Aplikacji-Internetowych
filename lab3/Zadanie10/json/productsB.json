@@ -1,0 +1,380 @@
+{
+  "categories": [
+    {
+      "name": "owoce",
+      "products": [
+        {
+          "name": "winogrona",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍇",
+          "price": "7.49",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "kiwi",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥝",
+          "price": "1.29",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "arbuzy",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍉",
+          "price": "2.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "mandarynki",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍊",
+          "price": "5.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "jabłka",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍎",
+          "price": "1.49",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "ananasy",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍍",
+          "price": "9.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "awokado",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥑",
+          "price": "5.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "cytryny",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍋",
+          "price": "9.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "mango",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥭",
+          "price": "12.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "zielone jabłka",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍏",
+          "price": "1.99",
+          "units": "kg",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "warzywa",
+      "products": [
+        {
+          "name": "pomidory",
+          "description": "Zdania, czy pomidor to owoc, czy warzywo, są podzielone.",
+          "icon": "🍅",
+          "price": "4.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "ziemniaki",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥔",
+          "price": "1.49",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "marchew",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥕",
+          "price": "3.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "bakłażany",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍆",
+          "price": "6.29",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "czosnek",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🧄",
+          "price": "7.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "brokuły",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥦",
+          "price": "4.49",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "sałata",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥬",
+          "price": "3.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "ogórki",
+          "description": "Podobnie do pomidora, nie wiadomo, czy ogórek to owoc, czy warzywo.",
+          "icon": "🥒",
+          "price": "6.99",
+          "units": "kg",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "pieczywo",
+      "products": [
+        {
+          "name": "chleb",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍞",
+          "price": "2.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "rogalik",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥐",
+          "price": "2.19",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "precel",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥨",
+          "price": "0.79",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "bajgiel",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥯",
+          "price": "0.99",
+          "units": "szt",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "mięso",
+      "products": [
+        {
+          "name": "mięso z kością",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍖",
+          "price": "19.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "bekon",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥓",
+          "price": "15.99",
+          "units": "kg",
+          "currency": "zł"
+        },
+        {
+          "name": "pałka z kurczaka",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍗",
+          "price": "9.99",
+          "units": "kg",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "napoje",
+      "products": [
+        {
+          "name": "sok jabłkowy",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥃",
+          "price": "7.49",
+          "units": "1l",
+          "currency": "zł"
+        },
+        {
+          "name": "piwo",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍺",
+          "price": "3.99",
+          "units": "500ml",
+          "currency": "zł"
+        },
+        {
+          "name": "wino",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍷",
+          "price": "47.49",
+          "units": "1l",
+          "currency": "zł"
+        },
+        {
+          "name": "herbata",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍵",
+          "price": "3.99",
+          "units": "op",
+          "currency": "zł"
+        },
+        {
+          "name": "kawa",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "☕",
+          "price": "29.99",
+          "units": "kg",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "zwierzęce",
+      "products": [
+        {
+          "name": "ser żółty",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🧀",
+          "price": "7.99",
+          "units": "200g",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "słodycze",
+      "products": [
+        {
+          "name": "lody owocowe",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍧",
+          "price": "6.99",
+          "units": "400ml",
+          "currency": "zł"
+        },
+        {
+          "name": "lizaki",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍭",
+          "price": "1.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "szarlotka",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥧",
+          "price": "12.99",
+          "units": "500g",
+          "currency": "zł"
+        },
+        {
+          "name": "babeczka",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🧁",
+          "price": "4.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "tort owocowy",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍰",
+          "price": "4.39",
+          "units": "100g",
+          "currency": "zł"
+        },
+        {
+          "name": "tort czekoladowy",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🎂",
+          "price": "25.99",
+          "units": "750g",
+          "currency": "zł"
+        },
+        {
+          "name": "ciasteczka",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍪",
+          "price": "22.99",
+          "units": "kg",
+          "currency": "zł"
+        }
+      ]
+    },
+    {
+      "name": "gotowe dania",
+      "products": [
+        {
+          "name": "pierogi",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🥟",
+          "price": "6.99",
+          "units": "500g",
+          "currency": "zł"
+        },
+        {
+          "name": "burrito",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🌯",
+          "price": "15.39",
+          "units": "500g",
+          "currency": "zł"
+        },
+        {
+          "name": "hot dog",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🌭",
+          "price": "3.99",
+          "units": "szt",
+          "currency": "zł"
+        },
+        {
+          "name": "pizza",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+          "icon": "🍕",
+          "price": "9.99",
+          "units": "500g",
+          "currency": "zł"
+        }
+      ]
+    }
+  ]
+}

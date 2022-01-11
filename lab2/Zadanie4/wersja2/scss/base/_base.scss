@@ -1,0 +1,46 @@
+@use '../abstracts/mixins' as *;
+
+
+/* Global reset */
+html {
+    // This defines what 1rem is depending on the font size set
+    // in the user's browser. For the default font size it will
+    // be 62.5% * 16px = 10px
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Additional styles */
+.main {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;               // 1 rem = 10px
+
+    @include respond(l-tab-land) {    // <= 1200px
+        font-size: 56.25%; // 1 rem = 9px
+    }
+
+    @include respond(l-tab-port) {    // <= 900px
+        font-size: 50%;    // 1 rem = 8px
+    }
+    
+    @include respond(g-big-desktop) { // >= 1800px
+        font-size: 75%;    // 1rem = 12px
+    }
+}

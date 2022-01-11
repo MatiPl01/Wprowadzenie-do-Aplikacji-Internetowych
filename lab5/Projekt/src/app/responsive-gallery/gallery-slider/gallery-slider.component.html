@@ -1,0 +1,8 @@
+<div class="gallery-slider">
+  <ul class="gallery-slider__dots">
+    <li class="gallery-slider__dot" 
+      *ngFor="let i of indexes" 
+      [ngClass]="{active: i === currentIdx}"
+      (click)="photoChanged(i)"></li>
+  </ul>
+</div>

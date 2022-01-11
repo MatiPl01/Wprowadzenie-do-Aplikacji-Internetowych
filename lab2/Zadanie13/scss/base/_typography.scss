@@ -1,0 +1,126 @@
+@use '../abstracts/gradients' as g;
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: c.$gray-dark-1;
+}
+
+// Headings
+.heading-primary {
+    color: c.$white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: f.$big-size;
+}
+
+.heading-secondary {
+    position: relative;
+    text-transform: uppercase;
+    font-size: f.$medium-size;
+    font-weight: 600;
+
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        letter-spacing: .5rem;
+        transform: skewX(-10deg) skewY(-5deg);
+        text-shadow: .3rem .6rem .5rem rgba(c.$black, .2);
+    }
+
+    &--gradient {
+        background: g.$primary;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.heading-tertiary {
+    font-size: f.$default-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-gradient {
+    box-shadow: 0 .5rem 1rem -.5rem rgba(c.$black, .3);
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        bottom: 1rem;
+        left: 50%;
+        box-shadow: 0 .5rem .5rem rgba(c.$black, .5);
+        z-index: -1;
+    }
+
+    &::before {
+        transform: translateX(-50%) rotate(5deg) scale(.97);
+    }
+
+    &::after {
+        transform: translateX(-50%) rotate(-5deg) scale(.97);
+    }
+
+    &__heading {
+        font-size: 2rem;
+        color: c.$white;
+        padding: .5rem 1rem;
+        text-shadow: 2px 3px .5rem rgba(c.$black, .3);
+        white-space: nowrap;
+        @include bg-gradient(c.$primary-light, c.$primary);
+    }
+}
+
+// Paragraph
+p {
+    font-size: f.$default-size;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+// Icons
+.icon {
+    &--github { 
+        fill: url(#gradient1);
+    }
+
+    &--linkedin  { 
+        fill: url(#gradient2);
+        margin-left: .5rem;
+    }
+
+    &--facebook  { 
+        fill: url(#gradient3); 
+        margin-right: .2rem;
+    }
+
+    &--twitter   { 
+        fill: url(#gradient4); 
+        margin-right: .4rem;
+    }
+
+    &--instagram { 
+        fill: url(#gradient5);
+        margin-left: .2rem;
+    }
+}
+
+// Setting colors for icons gradients
+@include set-svg-gradient(1, #400577, #d21dff);
+@include set-svg-gradient(2, #075492, #79bbf1);
+@include set-svg-gradient(3, #0b4086, #4b97fa);
+@include set-svg-gradient(4, #2988b4, #6cafe6);
+@include set-svg-gradient(5, #f6a332, #841bb9);

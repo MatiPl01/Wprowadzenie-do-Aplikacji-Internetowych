@@ -1,0 +1,83 @@
+/* Global reset */
+html {
+    font-size: 62.5%; /* Equivalent of 10px */
+}
+
+body {
+    box-sizing: border-box;
+
+    width: 100vw !important;
+    max-width: 100vw !important;
+    
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* User styles */
+.section-form {
+    padding: 6rem;
+}
+
+.form {
+    width: max-content;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form__heading {
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    background-color: orange;
+}
+
+.form__body {
+    padding: 1.5rem;
+    width: 35rem;
+    position: relative;
+    background-color: #eee;
+}
+
+.form__entry {
+    width: 100%;
+}
+
+.form__entry > label {
+    display: inline-block;
+    width: 30%;
+}
+
+.form__entry > input {
+    display: inline-block;
+    width: 60%;
+}
+
+.form__entry label {
+    text-align: end;
+    margin-right: 7.5%;
+}
+
+.form__entry:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.form__nav {
+    background-color: orange;
+    padding: 1rem;
+}
+
+.form__btn {
+    font-size: 1.25rem;
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/mixins' as *;
+
+
+.ads {
+    padding: 0 2rem;
+    padding-top: 1.75 * s.$nav-height;
+    padding-bottom: 5rem;
+    background-color: c.$background-color;
+
+    @include respond(l-tab-land) {
+        padding: 0 2rem;
+    }
+
+    @include respond(l-tab-port) {
+        padding: 0 1rem;
+    }
+}

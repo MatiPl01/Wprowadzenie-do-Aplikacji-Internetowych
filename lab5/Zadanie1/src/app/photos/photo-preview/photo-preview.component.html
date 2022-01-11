@@ -1,0 +1,19 @@
+<section class="section-preview">
+  <article class="preview">
+    <a class="preview__button preview__button--close"
+      [routerLink]="['/photos']">
+      <svg class="preview__icon">
+        <use href="assets/svg/icons.svg#times"></use>
+      </svg>
+    </a>
+  
+    <figure class="preview__figure">
+      <img [src]="photo?.url" alt="Photo" class="preview__image">
+      <figcaption class="preview__caption">
+        <h2 class="preview__heading">
+          {{ photo?.title || '' }}
+        </h2>
+      </figcaption>
+    </figure>
+  </article>
+</section>

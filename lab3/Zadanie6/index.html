@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <title>Zadanie 6</title>
+</head>
+<body>
+
+  <section class="section-form">
+    <article class="phone-book">
+      <header class="phone-book__header">
+        <h1 class="phone-book__heading">Książka telefoniczna</h1>
+      </header>
+
+      <section class="phone-book__saved">
+        <ul class="phone-book__list">
+          
+          <!-- Uncomment this <li> element below if you want to see the test user -->
+          <!-- <li class="phone-book__item">
+            <div class="phone-book__content">
+              <h2 class="phone-book__name">
+                Użytkownik testowy
+              </h2>
+              <p class="phone-book__number">
+                500 600 700
+              </p>
+            </div>
+          
+            <div class="phone-book__buttons">
+              <input type="checkbox" name="remove-contact" class="phone-book__checkbox" id="contact-remove-0">
+          
+              <button class="phone-book__button phone-book__button--cancel visible" type="button" title="Anuluj usuwanie kontaktu">
+                <label for="contact-remove-0" class="phone-book__label">
+                  <span class="phone-book__counter">
+                    <svg class="phone-book__svg" viewBox="0 0 32 32">
+                      <circle cx='16' cy='16' r='16' />
+                    </svg>
+                    <span class="phone-book__time">
+                      &nbsp;
+                      <div class="phone-book__digit-wrapper">
+                        <ul class="phone-book__digits">
+                          <li class="phone-book__digit">0</li>
+                          <li class="phone-book__digit">1</li>
+                          <li class="phone-book__digit">2</li>
+                          <li class="phone-book__digit">3</li>
+                          <li class="phone-book__digit">4</li>
+                          <li class="phone-book__digit">5</li>
+                        </ul>
+                      </div>
+                    </span>
+                  </span>
+                  <span>Anuluj</span>
+                </label>
+              </button>
+          
+              <button class="phone-book__button phone-book__button--trash" type="button" title="Usuń kontakt">
+                <label for="contact-remove-0" class="phone-book__label">
+                  <div class="trash">
+                    <div class="file">
+                      <div class="file__line"></div>
+                    </div>
+                    <div class="trash__wrapper">
+                      <div class="trash__lid"></div>
+                      <div class="trash__main">
+                        <div class="trash__lines"></div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </button>
+            </div>
+          </li> -->
+
+        </ul>
+      </section>
+
+      <footer class="phone-book__footer">
+        <form action="#" class="form">
+          <ul class="form__entries">
+            <li class="form__entry form__entry--name">
+              <label for="form-name" class="form__label">
+                Imię i nazwisko
+                <div class="form__info">
+                  <span>i</span>
+                  <article class="form__input-details">
+                    <h3 class="form__heading">Akceptowane formaty</h3>
+                    <ol class="form__list">
+                      <li class="form__item">w(.) w(.)</li>
+                      <li class="form__item">w(.) w(.) w(.)</li>
+                    </ol>
+                    <p class="form__explanation">
+                      gdzie <b>w</b> oznacza wyraz, zawierający od 1 do 20 znaków, natomiast <b>(.)</b> oznacza opcjonalną kropkę (w
+                      przypadku skróconych nazw).
+                    </p>
+                  </article>
+                </div>
+              </label>
+              <input type="text" class="form__input form__input--name" id="form-name"       
+                     name="name" 
+                     placeholder="Wprowadź imię i nazwisko" 
+                     pattern="^(\p{L}{1,20}(.)?\s){1,2}(\p{L}{1,20}(.)?)$"
+                     required>
+            </li>
+            <li class="form__entry form__entry--phone">
+              <label for="form-phone" class="form__label">
+                Telefon
+                <div class="form__info">
+                  <span>i</span>
+                  <article class="form__input-details">
+                    <h3 class="form__heading">Akceptowane formaty</h3>
+                    <ol class="form__list">
+                      <li class="form__item">ddd(-/ )ddd(-/ )ddd</li>
+                      <li class="form__item">+dd ddd(-/ )ddd(-/ )ddd</li>
+                      <li class="form__item">+ddddd(-/ )ddd(-/ )ddd</li>
+                    </ol>
+                    <p class="form__explanation">
+                      gdzie <b>d</b> oznacza pojedynczą cyfrę, natomiast <b>(-/ )</b>oznacza możliwość pojawienia się w danym miejscu
+                      myślnika, spacji lub braku odstępu.
+                    </p>
+                  </article>
+                </div>
+              </label>
+              <div class="form__input-wrapper">
+                <input type="text" class="form__input form__input--phone" id="form-phone" 
+                      name="phone" 
+                      placeholder="Wprowadź numer telefonu"
+                      inputmode="numeric" 
+                      pattern="^(([+]\d{2})\s)?\d{3}([\s-]?\d{3}){2}$" 
+                      required>
+                <button class="form__button form__button--clear" type="button" title="Usuń wprowadzony numer" id="btn-clear-phone">
+                  <span>x</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <input type="submit" type="button" class="form__button form__button--add" id="btn-submit" value="Dodaj">
+        </form>
+      </footer>
+    </article>
+  </section>
+
+</body>
+</html>

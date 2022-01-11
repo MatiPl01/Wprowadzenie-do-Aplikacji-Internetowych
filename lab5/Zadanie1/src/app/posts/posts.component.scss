@@ -1,0 +1,62 @@
+@use '../../styles.scss' as *;
+
+.section-posts {
+    margin: 6rem 0;
+}
+
+.posts {
+    width: 90rem;
+    max-width: 90vw;
+    margin: 0 auto;
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 2rem;
+    }
+
+    @include respond(tab-port) {
+        width: 90vw;
+        max-width: 60rem;
+
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        display: block;
+        width: max-content;
+        text-decoration: none;
+        
+        &--new {
+            padding: 1rem 1.5rem;
+            margin: 0 auto 6rem auto;
+            background: $gradient-primary;
+            border-radius: 10rem;
+            box-shadow: 0 0 1rem rgba($color-black, .5);
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+        }
+
+        &-text {
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: $color-white;
+            font-weight: 500;
+        }
+    }
+    
+    &__icon {
+        width: 1em;
+        height: 1em;
+        fill: $color-white;
+    }
+}

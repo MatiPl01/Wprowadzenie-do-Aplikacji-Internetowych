@@ -1,0 +1,66 @@
+@use '../abstracts/gradients' as g;
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as *;
+
+
+.book {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &__heading:hover {
+        transform: unset;
+        letter-spacing: unset;
+    }
+    
+    &__figure {
+        @include abs-overlay;
+
+        &::before {
+            content: '';
+            @include abs-overlay;
+
+            background-image: linear-gradient(105deg, 
+                        rgba(c.$white, .9) 0%,
+                        rgba(c.$white, .9) 65%,
+                        transparent 50%);
+            background-size: 100%;
+            
+            box-shadow: 0 1.5rem 4rem rgba(c.$black, .2);
+
+            @include respond(l-tab-land) {
+                background-image: linear-gradient(105deg, 
+                                rgba(c.$white, .9) 0%,
+                                rgba(c.$white, .9) 65%,
+                                transparent 65%);
+                background-size: cover;
+            }
+
+            @include respond(l-tab-port) {
+                background-image: linear-gradient(to right, 
+                                rgba(c.$white, .9) 0%,
+                                rgba(c.$white, .9) 100%);
+            }
+        }
+    }
+
+    &__image {
+        @include img-cover;
+    }
+
+    &__form {
+        width: 70%;
+        padding: 5rem;
+        position: relative;
+
+        @include respond(l-tab-land) {
+            width: 65%;
+        }
+
+        @include respond(l-tab-port) {
+            width: 100%;
+        }
+    }
+}

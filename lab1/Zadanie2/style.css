@@ -1,0 +1,139 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* Styles */
+.app {
+    background-color: #BFBFBF;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: .8rem;
+
+    width: 70rem;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "aside main main main"
+        "footer footer footer footer";
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 12rem 3rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    position: relative;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.wrapper > *:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+header,
+footer {
+    background-color: #979797;
+}
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem .5rem 2rem .5rem;
+}
+
+header .logo {
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    flex: 1 1 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+nav li:first-child,
+nav li:hover {
+    font-weight: bold;
+    background-color: #ccc;
+}
+
+nav li:hover {
+    cursor: pointer;
+}
+
+nav li:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+aside {
+    border-right: .5px solid black;
+    text-transform: uppercase;
+    background-color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+main {
+    border-left: .5px solid black;
+    background-color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+footer {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1rem;
+}

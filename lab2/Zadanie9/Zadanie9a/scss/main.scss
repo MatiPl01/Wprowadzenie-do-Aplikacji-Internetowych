@@ -1,0 +1,556 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Variables*/
+$nav-bar-height: 6rem;
+
+$nav-bar-height--revealed: 60rem;
+$hamburger-spacing: 1rem;
+
+$anim-duration: 2s;
+
+/* Mixins */
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content }; 
+    }
+    @if $breakpoint == tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };   
+    }
+    @if $breakpoint == big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };    
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin pseudo-bars {
+    &::before,
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+    }
+    
+    &,
+    &::before,
+    &::after {
+        position: absolute;
+        display: inline-block;
+        border-radius: 10rem;
+    }
+}
+
+/* Animations */
+@keyframes hamburger-1 {
+  50% { transform: translate(8rem, -$hamburger-spacing) rotate(-10deg); }
+  51% { transform: translate(8rem, -8rem) rotate(-40deg); }
+  to { 
+      transform: rotate(-45deg); 
+      background-color: white;
+    }
+}
+
+@keyframes hamburger-2 {
+  to { 
+      transform: rotate(180deg) scale(1.15);
+      background-color: transparent;
+    }
+}
+
+@keyframes hamburger-3 {
+  50% { transform: translate(-8rem, $hamburger-spacing) rotate(10deg); }
+  51% { transform: translate(-8rem, -8rem) rotate(40deg); }
+  to { 
+      transform: rotate(45deg); 
+      background-color: white;
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes move-down {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    25% {
+        top: 25%;
+        opacity: 1;
+    }
+    75% {
+        top: 75%;
+        opacity: 1;
+    }
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Styles */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+.section-nav {
+    height: 100vh;
+    position: relative;
+}
+
+.main {
+    background-color: #eee;
+}
+
+.nav-bar {
+    z-index: 9999;
+}
+
+/*
+ * First nav-bar
+ */
+.nav-bar--1 {
+    position: sticky; // Normally it should be fixed, but we have 2 nav-bars
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+    border: 2px solid #d3616a;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .nav-bar {
+        &__list {
+            height: $nav-bar-height;
+            list-style: none;
+
+            display: flex;
+            justify-content: space-between;
+
+            &--left {
+                flex-basis: 40%;
+            }
+        }
+
+        &__item {
+            background-color: #ef0b0c;
+            padding: 1rem;
+            border: 1px solid #5432bc;
+        }
+
+        &__link {
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                height: 100%;
+                @include flex-center;
+            }
+        }
+        
+        &__text {
+            text-transform: capitalize;
+            color: white;
+            font-size: 1.6rem;
+            white-space: nowrap;
+        }
+
+        &__icon {
+            margin-right: 1rem;
+
+            &--exit {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &--trolley {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+                fill: white;
+            }
+        }
+
+        @include respond(phone) {
+            &__list {
+                flex-basis: 100%;
+            }
+            
+            &__item {
+                flex: 1 1 0;
+            }
+        }
+    }
+}
+
+/*
+ * Second nav-bar
+ */
+.nav-bar__checkbox {
+    display: none;
+}
+
+.nav-bar--2 {
+    position: sticky; // Normally it should be fixed, but we have 2 nav-bars
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: $nav-bar-height;
+    background-color: white;
+    box-shadow: .5rem 0 1.5rem rgba(black, .3);
+
+    padding: 2rem 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    transition: height .5s;
+
+    .nav-bar {
+        &__logo {
+            position: relative;
+            font-size: 2rem;
+            
+            &-icon {
+                top: 50%;
+                transform: translateY(-50%) rotate(20deg);
+                width: .4rem;
+                height: 1.4em;
+
+                @include pseudo-bars;
+
+                background-color: #94e4cf;
+
+                &::before {
+                    background-color: #28c498;
+                    transform: translate(-.6rem, .2rem);
+                }
+
+                &::after {
+                    background-color: #dff4ed;
+                    transform: translate(.6rem, -.2rem);
+                }
+            }
+
+            &-text {
+                margin-left: 1.5rem;
+                font-weight: 600;
+                color: #2f2d43;
+            }
+        }
+
+        &__button {
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(30deg, #2fd161, #26badd) #2bc796;
+            text-transform: capitalize;
+            font-weight: 300;
+            font-size: 1.6rem;
+            padding: 1rem 1.4rem;
+            border-radius: 10rem;
+            letter-spacing: -1px;
+            white-space: nowrap;
+            position: relative;
+            transition: transform .2s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 10rem;
+                background: linear-gradient(30deg, #2fd161, #26badd) #2bc796;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                opacity: 1;
+                transition: all .3s;
+            }
+
+            &:hover {
+                transform: translateY(-1px);
+
+                &::before {
+                    transform: scale(1.2, 1.6);
+                    opacity: 0;
+                }
+            }
+
+            &:active {
+                transform: translateY(1px) scale(.99);
+            }
+        }
+
+        &__toggle {
+            position: absolute;
+            top: 0;
+            right: 2rem;
+            width: $nav-bar-height;
+            height: $nav-bar-height;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 50%;
+            transition: all .5s .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 1000;
+
+            @include flex-center;
+            display: none;
+
+            &-icon {
+                @include pseudo-bars;
+
+                height: 2px;
+                width: calc($nav-bar-height - 2rem);
+
+                &,
+                &::before,
+                &::after {
+                    background-color: black;
+                    animation-fill-mode: both !important;
+                }
+
+                &::before,
+                &::after {
+                    transition: all .2s;
+                }
+
+                &::before { transform: translateY(-$hamburger-spacing); }
+                &::after { transform: translateY($hamburger-spacing); }
+            }
+        }
+
+        &__links {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-basis: 60rem;
+        }
+
+        &__link {
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: #b2b1b6;
+                pointer-events: all;
+                position: relative;
+                padding: 1rem 2rem;
+
+                @include respond(tab-port) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    /* Enabling mobile nav-bar */
+    @include respond(phone) {
+        height: $nav-bar-height;
+
+        .nav-bar {
+            &__toggle {
+                display: flex;
+            }
+
+            &__logo {
+                align-self: flex-start;
+                margin-top: -.5rem;
+            }
+
+            &__button {
+                font-size: 2.5rem;
+                margin-top: $nav-bar-height;
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            &__links {
+                opacity: 0;
+                visibility: hidden;
+
+                flex-direction: column;
+                align-items: center;
+
+                height: 60%;
+                max-height: calc($nav-bar-height--revealed - 2 * $nav-bar-height);
+            }
+
+            &__link {
+                &:link,
+                &:visited {
+                    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, black 50%);
+                    background-size: 240%;
+                    transition: all .4s;
+                    background-position: 0%;
+                    color: black;
+                    font-size: 3rem;
+
+                    transition: background-position .5s ease;
+                }
+
+                &:hover {
+                    background-position: 100%;
+                    color: white;
+                }
+            }
+
+            /* Mobile nav-bar styles */
+            &__toggle:hover > .nav-bar__toggle-icon {
+                &::before { transform: translateY(calc($hamburger-spacing * (-.8))); }
+                &::after  { transform: translateY(calc($hamburger-spacing * .8)); }
+            }
+        }
+    }
+}
+/* 
+Animacja otwierania paska nawigacji znajduje się w Zadanie9b. Nie dodawałem jej
+w tyn pliku, ponieważ, w celu umieszczenia dwóch pasków nawigacji, wykorzystuję
+position: sticky;, więc po otwarciu paska, przesuwa się zawartość strony, co daje
+niepożądany efekt
+*/
+
+
+/*
+ * Sections text
+ */ 
+.header-wrapper {
+    height: 100%;
+    width: 100%;
+    @include flex-center;
+}
+
+.header {
+    &__heading {
+        font-size: 6rem;
+        font-family: 'Poppins';
+
+        text-shadow: 0 .3rem .6rem rgba(black, .3);
+        white-space: nowrap;
+
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+    }
+
+    &__link {
+        margin: 0 auto;
+        width: 4rem;
+        height: 6rem;
+        display: block;
+        position: relative;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        
+            &:nth-child(2) { animation-delay: calc(1/3 * $anim-duration); }
+            &:nth-child(3) { animation-delay: calc(2/3 * $anim-duration); }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: black;
+                border-radius: 10rem;
+                height: .5rem;
+                width: 50%;
+                box-shadow: 0 -2px .75rem rgba(black, .5);
+            }
+
+            &::before {
+                left: 3%;
+                transform-origin: right;
+            }
+
+            &::after {
+                right: 3%;
+                transform-origin: left;
+            }
+        }
+
+        @include respond(phone) {
+            width: 2.5rem;
+            height: 4rem;
+
+            span::before,
+            span::after {
+                height: .35rem;
+            }
+        }
+
+        &--down span {
+            &::before { transform: rotate(30deg); }
+            &::after  { transform: rotate(-30deg); }
+            animation: move-down $anim-duration linear infinite both;
+        }
+
+        &--up span {
+            &::before { transform: rotate(-30deg); }
+            &::after  { transform: rotate(30deg); }
+            animation: move-down $anim-duration reverse linear infinite both;
+        }
+    }
+}

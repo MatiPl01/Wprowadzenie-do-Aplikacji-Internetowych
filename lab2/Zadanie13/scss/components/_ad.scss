@@ -1,0 +1,75 @@
+@use '../abstracts/fonts' as f;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as *;
+@use '../components/showcase';
+
+
+.ads {
+    &__list {
+        list-style: none;
+        position: sticky;
+        top: s.$nav-height;
+
+        @include respond(l-tab-port) {
+            top: 2rem + s.$nav-height;
+        }
+
+        @include respond(l-phone) {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__ad {
+        position: relative;
+        background-color: c.$gray-light-1;
+        box-shadow: 0 .5rem 1rem rgba(c.$black, .2);
+        cursor: pointer;
+        transition: all .3s;
+
+        &:not(:first-child) {
+            margin-top: 3rem;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 0 .5rem 1.5rem rgba(c.$black, .2);
+        }
+
+        // Make image square
+        &::before {
+            content: '';
+            display: block;
+            padding-bottom: 100%;
+        }
+
+        @include respond(l-phone) {
+            flex-basis: 50%;
+
+            &:not(:first-child) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__heading {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        color: c.$white;
+        z-index: 1;
+        background-color: rgba(c.$black, .5);
+    }
+
+    &__figure {
+        @include abs-overlay;
+    }
+
+    &__image {
+        @include img-cover;
+    }
+}

@@ -1,0 +1,16 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/mixins' as *;
+
+
+.sidebar {
+    padding: 0 2rem;
+    padding-top: 1.75 * s.$nav-height;
+    padding-bottom: 5rem;
+    background-color: c.$background-color;
+    backface-visibility: hidden;
+
+    @include respond(l-phone) {
+        padding: 1rem;
+    }
+}

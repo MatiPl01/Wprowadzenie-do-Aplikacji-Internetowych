@@ -1,0 +1,149 @@
+@use 'colors' as c;
+
+// Logo
+@keyframes draw {
+	to { stroke-dashoffset: 0; }
+}
+
+// Navbar
+@keyframes fade-out-item {
+    33% {
+        transform: scale(.8);
+    }
+    34%, 67% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fade-out-text {
+    33% {
+        color: transparent;
+        text-shadow: unset;
+    }
+    34%, 66% {
+        color: transparent;
+        text-shadow: unset;
+    }
+    67%, 100% {
+        color: c.$white;
+    }
+}
+
+@keyframes fade-out-bg {
+    33% {
+        background-color: transparent;
+    }
+    34% {
+        background-color: transparent;
+        opacity: 0;
+        transform: scale(1.35) translate(-50%, -50%);
+        box-shadow: unset;
+    }
+    50% {
+        background-color: c.$primary-dark;
+        opacity: 1;
+        box-shadow: 0 .3rem 1.5rem rgba(c.$black, .5);
+    }
+    67% {
+        transform: scale(.83) translate(-50%, -50%);
+    }
+    100% {
+        background-color: c.$primary-dark;
+        box-shadow: 0 .1rem .5rem rgba(c.$black, .5);
+    }
+}
+
+@keyframes zoom-out {
+    from {
+        opacity: 0;
+        transform: scale(1.75);
+        text-shadow: 0 .5rem 1.5rem rgba(c.$black, .5);
+    }
+    to {
+        opacity: 1;
+        text-shadow: 0 .2rem .5rem rgba(c.$black, .5);
+    }
+}
+
+@keyframes fade-in-bottom-item {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+// Header
+@keyframes slide-header-images {
+    0%, 20% {
+        left: 0;
+    }
+    30%, 70% {
+        left: -100%;
+    }
+    80%, 100% {
+        left: -200%;
+    }
+}
+
+@keyframes move-scroll {
+    from { top: 0 }
+    to { top: 2rem }
+}
+
+@keyframes move-scroll-thumb {
+    from { top: 1rem }
+    to { top: 5.5rem }
+}
+
+@keyframes to-top-btn {
+    20% {
+        transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    51% {
+        transform: translateX(-200%);
+    }
+    52% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    from {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,209 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/sizes' as s;
+@use '../abstracts/gradients' as g;
+@use '../abstracts/mixins' as *;
+
+
+.footer {
+    min-height: s.$footer-height;
+    background-color: c.$gray-dark-4;
+    padding: 8rem 6rem;
+    padding-bottom: 4rem;
+    position: relative;
+
+    @include respond(l-tab-land) {
+        padding: 4rem;
+    }
+
+    @include respond(l-tab-port) {
+        padding: 8rem 6rem;
+        padding-bottom: 4rem;
+    }
+
+    @include respond(l-phone) {
+        padding-bottom: 4rem;
+    }
+
+    &__logo-wrapper {
+        @include flex-center;
+    }
+
+    &__logo {
+        display: inline-block;
+
+        .logo__part {
+            font-size: 2.8rem;
+            height: 4.2rem;
+
+            // Disable logo animation
+            svg tspan > tspan {
+                animation: unset;
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @include respond(l-tab-port) {
+            transform: translateY(-120%);
+            margin-left: -2rem;
+
+            .logo__part {
+                font-size: 4rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @include respond(l-tab-port) {
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+    }
+
+    &__heading {
+        &--info {
+            color: c.$gray-light-3;
+            margin-bottom: 1rem;
+        }
+
+        &--social {
+            font-size: f.$default-size;
+            color: c.$gray-light-2;
+            position: absolute;
+            top: -1.5rem;
+            text-shadow: 0 0 .5rem c.$black;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--buttons {
+            height: 100%;
+        }
+
+        &--policy {
+            display: block;
+        }
+    }
+
+    &__contact {
+        position: relative;
+        min-height: 27.5rem;
+
+        @include respond(l-tab-land) {
+            min-height: 17.5rem;
+        }
+    }
+
+    &__header {
+        position: absolute;
+        z-index: 1;
+        left: -5%;
+        top: 0;
+        transform: rotate(-3deg);
+    }
+
+    &__figure {
+        @include abs-overlay;
+    }
+
+    &__img {
+        @include img-cover;
+    }
+
+    &__social {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(c.$black, .5);
+        padding: .5rem 1rem;
+        padding-top: 1.5rem;
+    }
+
+    &__icon > &__link {
+        font-size: 2.5rem;
+    }
+
+    &__buttons {
+        width: s.$max-buttons-width;
+        margin: 0 auto;
+
+        @include respond(l-tab-land) {
+            width: max-content;
+        }
+    }
+
+    &__button {        
+        &,
+        &:link,
+        &:visited {
+            color: c.$gray-light-3;
+            font-size: f.$default-size;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+    }
+
+    &__buttons &__item {
+        padding: 1rem 2rem;
+
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            background-color: c.$gray-dark-3;
+
+            .footer__button {
+                background: g.$primary;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        @include respond(l-tab-land) {
+            padding: .75rem 1.5rem;
+        }
+
+        @include respond(l-phone) {
+            padding: .2rem .75rem;
+            
+            .footer__button {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__policy {
+        align-self: end;
+    }
+
+    &__policy &__item {
+        float: right;
+        
+        &:first-child {
+            float: left;
+        }
+
+        &:last-child {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        font-size: f.$small-size;
+        color: c.$gray-dark-1;
+        text-decoration: none;
+    }
+}

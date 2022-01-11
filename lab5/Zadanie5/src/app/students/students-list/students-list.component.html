@@ -1,0 +1,7 @@
+<h1>Lista studentów</h1>
+<div *ngFor="let student of students" style="width: 300px;">
+  <app-student-details [student]='student'></app-student-details>
+</div>
+<div style="margin-top:20px;">
+  <button type="button" class="button btn-danger" (click)='deleteStudents()'>Usuń wszystkich</button>
+</div>

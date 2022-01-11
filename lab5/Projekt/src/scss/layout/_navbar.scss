@@ -1,0 +1,211 @@
+@use '../helpers/sizes' as s;
+@use '../helpers/colors' as c;
+@use '../helpers/numbers' as n;
+@use '../helpers/gradients' as g;
+@use '../helpers/mixins' as *;
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    height: s.$nav-bar-height;
+    background: g.$primary;
+    z-index: 1000;
+
+    &__content {
+        width: s.$content-width;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 1rem;
+        text-decoration: none;
+    }
+
+    &__icon {
+        fill: c.$black;
+        width: .75 * s.$nav-bar-height;
+        height: .75 * s.$nav-bar-height;
+    }
+
+    &__headings {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-family: Pacifico, Arial, Helvetica, sans-serif;
+
+        &--primary {
+            margin-top: -.05 * s.$nav-bar-height;
+            font-size: .3 * s.$nav-bar-height;
+            font-weight: 700;
+            color: c.$black;
+        }
+
+        &--secondary {
+            margin-top: -.75rem;
+            font-size: .175 * s.$nav-bar-height;
+            color: c.$gray-dark-2;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: .25 * s.$nav-bar-height;
+        color: c.$black;
+    }
+
+    &__button {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 10rem;
+        background-color: c.$white;
+        box-shadow: 0 0 1rem rgba(c.$black, .2);
+        position: relative;
+        color: c.$gray-dark-1;
+     
+        &-icon {
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+
+            @include respond(phone) {
+                display: none;
+            }
+        }
+
+        &--cart {
+            &::before {
+                content: attr(data-items-count);
+                position: absolute;
+                right: -1.5rem;
+                bottom: -.5rem;
+                color: c.$white;
+                font-family: Poppins, Arial, Helvetica, sans-serif;
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-shadow: 0 0 .3rem rgba(c.$black, .5);
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 .5rem rgba(c.$black, .3);
+                background: g.$orange;
+            }
+        }
+
+        &--add {
+            height: .6 * s.$nav-bar-height;
+            width:  .6 * s.$nav-bar-height;
+
+            .nav-bar__button-icon {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        &.big-quantity::before {
+            background: g.$blue;
+        }
+    }
+
+    // Styles for normal nav-bar
+    &--normal {
+        animation: slide-in-bottom 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        .nav-bar {
+            &__item--cart {
+                order: 1;
+            }
+        }
+    }
+
+    // Styles for nav-par displayed in header
+    &--header {
+        position: absolute;
+        background: transparent;
+        height: s.$header-nav-bar-height;
+
+        .nav-bar {
+            &__logo {
+                animation: fade-in-bottom .75s .5s backwards;
+            }
+
+            &__icon {
+                fill: c.$white;
+            }
+
+            &__heading {
+                font-weight: 300;
+                
+                &--primary {
+                    color: c.$white;
+                }
+
+                &--secondary {
+                    color: c.$gray-light-4;
+                }
+            }
+
+            &__link {
+                color: c.$white;
+            }
+
+            &__item {
+                @for $i from 0 through n.$nav-bar-links {
+                    &:nth-child(#{$i}) {
+                        animation: fade-in-bottom .75s (.75 + .1 * $i) * 1s backwards;
+                    }
+                }
+
+                &--currency,
+                &--add {
+                    display: none;
+                }
+            }
+
+            &__button {
+                padding: 0;
+
+                &-icon {
+                    display: none;
+                }
+
+                &--cart {
+                    box-shadow: none;
+                    background-color: transparent;
+                    color: white;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}

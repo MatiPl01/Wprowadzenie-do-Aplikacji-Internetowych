@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Zadanie 8</title>
+</head>
+
+<body>
+    <section class="section-form">
+        <form action="#" class="form">
+            <h1 class="form__heading">New transfer</h1>
+            <div class="form__body">
+                <div class="form__entry">
+                    <label for="account">Account number</label>
+                    <input name="account" id="account" type="text" placeholder="Account number" required>
+                </div>
+                <div class="form__entry">
+                    <label for="first-name">First name</label>
+                    <input name="first-name" id="first-name" type="text" placeholder="First name" required>
+                </div>
+                <div class="form__entry">
+                    <label for="last-name">Last name</label>
+                    <input name="last-name" id="last-name" type="text" placeholder="Last name" required>
+                </div>
+                <div class="form__entry">
+                    <label for="email">E-mail</label>
+                    <input name="email" id="email" type="email" placeholder="e-mail">
+                </div>
+                <div class="form__entry">
+                    <label for="street">Street, number</label>
+                    <input name="street" id="street" type="text" placeholder="Street">
+                </div>
+                <div class="form__entry">
+                    <label for="postal-code">Postal code</label>
+                    <input name="postal-code" id="postal-code" type="text" pattern="\d{2}-\d{3}"
+                        placeholder="Postal code">
+                </div>
+                <div class="form__entry">
+                    <label for="city">City</label>
+                    <input name="city" id="city" type="text" placeholder="City">
+                </div>
+                <div class="form__entry">
+                    <label for="amount">Amount</label>
+                    <input name="amount" id="amount" type="text" value="0,00" required>
+                </div>
+                <div class="form__entry">
+                    <label for="date">Transfer date</label>
+                    <input name="date" id="date" type="date" required>
+                </div>
+            </div>
+            <div class="form__nav">
+                <input class="form__btn form__btn--reset" type="reset" value="Reset">
+                <button class="form__btn form__btn--cancel">Cancel</button>
+                <input class="form__btn form__btn--submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+
+    <script>
+        const accNumDOM = document.getElementById('account')
+        const firstNameDOM = document.getElementById('first-name')
+        const lastNameDOM = document.getElementById('last-name')
+        const emailDOM = document.getElementById('email')
+        const streetDOM = document.getElementById('street')
+        const cityDOM = document.getElementById('city')
+        const amountDOM = document.getElementById('amount')
+        const postalDOM = document.getElementById('postal-code')
+        const dateDOM = document.getElementById('date')
+
+        // INITIALISATION
+        dateDOM.valueAsDate = new Date()
+        dateDOM.setAttribute('min', dateDOM.value)
+
+        // HELPERS
+        const isValidInt = num => {
+            return num.match(/^\d+$/)
+        }
+
+        const formatAccNum = num => {
+            const numArr = [[num.slice(0, 2)]]
+
+            for (let i = 2; i < 26; i++) {
+                const idx = Math.trunc((i - 2) / 4) + 1
+                if (numArr[idx] === undefined) numArr[idx] = []
+                numArr[idx].push(num[i])
+            }
+
+            return numArr.map(arr => arr.join('')).join(' ').trim()
+        }
+
+        const formatPostalCode = num => {
+            const numArr = [num.slice(0, 2), num.slice(2, 5)]
+            return numArr[1] !== '' ? `${numArr[0]}-${numArr[1]}` : numArr[0]
+        }
+
+        const capitalize = str => {
+            return str[0].toUpperCase() + str.slice(1)
+        }
+
+        const capitalizeValue = function () {
+            this.value = capitalize(this.value)
+        }
+
+        const isStreetNumber = num => {
+            return num.match(/^\d+[A-Za-z]?(\/\d+)?$/g)
+        }
+
+        // ACCOUNT NUMBER
+        let accNum = ''
+        accNumDOM.addEventListener('input', function () {
+            let value = this.value.trim().split(' ').join('')
+            const nonDigit = value.match(/[^0-9]/)
+            if (nonDigit) {
+                value = value.replace(nonDigit, '')
+                if (value.match(/[^0-9]/)) value = ''
+            }
+            value = formatAccNum(value)
+            this.value = value
+            accNum = value
+        })
+
+        accNumDOM.addEventListener('focusout', function () {
+            if (this.length === 26) this.value = formatAccNum(accNum)
+            this.style.backgroundColor = '#fff'  // TODO - add styles
+            if (this.value.length !== 32) this.style.backgroundColor = '#ff5555'  // TODO - add styles
+        })
+
+        // FIRST NAME
+        firstNameDOM.addEventListener('focusout', capitalizeValue)
+
+        // LAST NAME
+        lastNameDOM.addEventListener('focusout', capitalizeValue)
+
+        // E-MAIL
+        emailDOM.addEventListener('focusout', function () {
+            this.value = this.value.toLowerCase()
+        })
+
+        // STREET
+        streetDOM.addEventListener('focusout', function () {
+            const arr = this.value.trim().split(/,[ ]+|,|[ ]+/g)
+            console.log(arr)
+            if (arr.length >= 2 && isStreetNumber(arr[arr.length - 1])) {
+                const number = arr.pop()
+                const street = arr.map(capitalize).join(' ')
+                this.value = `${street}, ${capitalize(number)}`
+            }
+        })
+
+        // CITY
+        cityDOM.addEventListener('focusout', capitalizeValue)
+
+        // POSTAL CODE
+        postalDOM.addEventListener('input', function () {
+            let value = this.value.split('-').join('')
+            const nonDigit = value.match(/[^0-9]/)
+            if (nonDigit) {
+                value = value.replace(nonDigit, '')
+                if (value.match(/[^0-9]/)) value = ''
+            }
+            value = formatPostalCode(value)
+            this.value = value
+        })
+
+        // AMOUNT
+        let prevAmount = amountDOM.value
+        amountDOM.addEventListener('input', function () {
+            let [mainPart, decimalPart] = this.value.replace('.', ',').split(',')
+
+            console.log(mainPart, decimalPart, prevAmount)
+
+            // If an input field is empty
+            if (!mainPart) {
+                prevAmount = ''
+                return
+            }
+
+            // Check if decimal part has correct number of digits
+            if (decimalPart) {
+                if (decimalPart.length > 2) return this.value = prevAmount
+                else decimalPart = decimalPart.padEnd(2, '0')
+            }
+
+            // Check if we have a correct number
+            if (isValidInt(mainPart)) {
+                if (decimalPart === undefined) {
+                    prevAmount = mainPart
+                    return
+                } else if (decimalPart === '') return
+                else if (isValidInt(decimalPart)) {
+                    prevAmount = `${mainPart},${decimalPart}`
+                    return
+                }
+            }
+            this.value = prevAmount
+        })
+
+        amountDOM.addEventListener('focusout', function () {
+            let [mainPart, decimalPart] = prevAmount.split(',')
+            if (!mainPart) mainPart = '0'
+            decimalPart = decimalPart?.padStart(2, '0') || '00'
+            this.value = `${mainPart},${decimalPart}`
+        })
+    </script>
+</body>
+
+</html>

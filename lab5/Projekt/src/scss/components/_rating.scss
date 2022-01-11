@@ -1,0 +1,73 @@
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+@use '../helpers/mixins' as *;
+
+.rating {
+    font-size: inherit; // Use this to control the size of stars and text
+
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+    &__form {
+        list-style: none;
+        @include flex-center;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+
+    &__radio {
+        font-size: inherit;
+        width: .75em;
+        height: 1.5em;
+        position: relative;
+        display: block;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+
+         &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: c.$gray-light-2;
+            width: 200%;
+            pointer-events: none;
+        }
+
+        &:nth-child(2n + 1)::after {
+            right: 0;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%);
+        }
+
+        &:nth-child(2n)::after {
+            left: 0;
+            clip-path: polygon(50% 0%, 50% 70%, 21% 91%, 32% 57%, 2% 34%, 39% 35%);
+        }
+
+        &:checked::after, &:checked ~ .rating__radio::after {
+            background: g.$primary;
+        }
+
+        &:hover::after, &:hover ~ .rating__radio::after {
+            background: g.$primary !important;
+        }
+    }
+
+    &__form:hover &__radio::after {
+        background: c.$gray-light-2;
+    }
+
+    &__value {
+        font-weight: 600;
+        color: c.$gray-dark-2;
+    }
+
+    // When rating is disabled
+    &.disabled {
+        pointer-events: none;
+    }
+
+}

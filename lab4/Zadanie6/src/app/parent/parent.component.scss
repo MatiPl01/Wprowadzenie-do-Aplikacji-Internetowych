@@ -1,0 +1,29 @@
+.counter {
+    background-color: #eee;
+    box-shadow: 0 0 .5rem rgba(black, .3);
+    padding: 2rem;
+
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+    }
+
+    &__counter {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10rem;
+        background-color: #333;
+        border: 1rem solid #777;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__number {
+        font-size: 4rem;
+        color: #fff;
+    }
+}

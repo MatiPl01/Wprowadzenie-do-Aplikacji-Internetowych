@@ -1,0 +1,100 @@
+@use '../abstracts/sizes' as s;
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as *;
+
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%;               // 1 rem = 10px
+    scroll-behavior: smooth;
+    
+    @include respond(l-tab-land) {    // <= 1200px
+        font-size: 56.25%; // 1 rem = 9px
+    }
+    
+    @include respond(l-tab-port) {    // <= 900px
+        font-size: 50%;    // 1 rem = 8px
+    }
+    
+    @include respond(g-big-desktop) { // >= 1800px
+        font-size: 75%;    // 1rem = 12px
+    }
+}
+
+.hidden {
+    position: fixed !important;
+    visibility: hidden !important;
+}
+
+body {
+    @include flex-center;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    max-width: s.$max-content-width;
+    width: 90%;
+    padding: 4rem 0;
+
+    // Fix for gaps rendered by browser between elements
+    // placed next to each other (there was a tiny slit
+    // visible between layout elements)
+    & > *:not(.navbar) {
+        position: relative;
+        outline: 2px solid c.$background-color;
+    }
+
+    @include respond(l-tab-land) {
+        width: 95%;
+        padding: 3rem 0;
+    }
+
+    @include respond(l-tab-port) {
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+.content-wrapper {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        pointer-events: none;
+        z-index: 1;
+        left: 50;
+        right: 0;
+        height: 40vh;
+        top: -40vh;
+
+        background-image: linear-gradient(
+            to bottom, 
+            transparent, 
+            rgba(c.$black, .75));
+    }
+}
+
+svg.icon { // Align icons to text (make the scale with font-size)
+    height: 1em;
+    width: 1em;
+}

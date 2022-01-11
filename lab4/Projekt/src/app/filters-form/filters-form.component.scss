@@ -1,0 +1,25 @@
+@use '../../styles.scss' as *;
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    
+    & > * {
+        max-width: 25%;
+        width: 25%;
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        max-width: 50rem;
+        gap: 4rem;
+
+        & > * {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

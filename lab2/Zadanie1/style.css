@@ -1,0 +1,129 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    background-color: #C0C0C0;
+    border: 1px solid black;
+    width: 60rem;
+    max-width: 90%;
+    padding: 1rem;
+    margin: 3rem auto;
+}
+
+.content-wrapper {
+    border: 1px solid black;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
+
+.content-wrapper > *:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.header {
+    background-color: #979797;
+    padding: 1rem;
+}
+
+.header__logo {
+    width: max-content;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+    background-color: white;
+}
+
+.header__text {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-bar,
+.main-wrapper > * {
+    background-color: white;
+    padding: 1rem;
+}
+
+.main-wrapper > * {
+    text-transform: uppercase;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-areas: "col-left main col-right";
+    grid-template-columns: 3fr 7fr 2fr;
+    min-height: 20rem;
+}
+
+.column--left {
+    grid-area: col-left;
+    border-right: 1px solid black;
+}
+
+.main {
+    grid-area: main;
+}
+
+.column--right {
+    grid-area: col-right;
+    border: 2px solid black;
+}
+
+.footer {
+    background-color: #979797;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 37.5em) { /* 37.5 * 16px = 600px */
+    html {
+        font-size: 50%;
+    }
+
+    .main-wrapper {
+        grid-template-areas: 
+            "col-left main"
+            "col-left col-right";
+        grid-template-columns: 3fr 7fr;
+    }
+}
+
+@media only screen and (max-width: 25em) { /* 25 * 16px = 400px */
+    .main-wrapper {
+        grid-template-areas: 
+            "col-left"
+            "main"
+            "col-right";
+        grid-template-columns: 1fr;
+        border-bottom: none !important;
+    }
+
+    .column--left {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .header__logo {
+        display: none;
+    }
+}

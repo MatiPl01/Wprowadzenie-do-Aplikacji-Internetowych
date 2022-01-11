@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 9a</title>
+</head>
+<body>
+
+  <main class="main">
+    <section class="section-nav" id="nav-1">
+      <nav class="nav-bar nav-bar--1">
+        <ul class="nav-bar__list nav-bar__list--left">
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">
+              <span class="nav-bar__text">
+                Home
+              </span>
+            </a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">
+              <span class="nav-bar__text">
+                About us
+              </span>
+            </a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">
+              <span class="nav-bar__text">
+                Services
+              </span>
+            </a>
+          </li>
+        </ul>
+      
+        <ul class="nav-bar__list nav-bar__list--right">
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">
+              <span class="nav-bar__icon nav-bar__icon--exit">
+                <svg>
+                  <use href="svg/icons.svg#icon-exit"></use>
+                </svg>
+              </span>
+              <span class="nav-bar__text">
+                Sign up
+              </span>
+            </a>
+          </li>
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">
+              <span class="nav-bar__icon nav-bar__icon--trolley">
+                <svg>
+                  <use href="svg/icons.svg#icon-trolley"></use>
+                </svg>
+              </span>
+              <span class="nav-bar__text">
+                Login
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-wrapper">
+        <header class="header">
+          <h2 class="header__heading">Scroll down</h2>
+          <a class="header__link header__link--down" href="#nav-2">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </header>
+      </div>
+    </section>
+
+    <section class="section-nav" id="nav-2">
+      <input type="checkbox" class="nav-bar__checkbox" id="nav-toggle">
+
+      <nav class="nav-bar nav-bar--2">
+        <label for="nav-toggle" class="nav-bar__toggle">
+          <span class="nav-bar__toggle-icon"></span>
+        </label>
+
+        <div class="nav-bar__logo">
+          <span class="nav-bar__logo-icon"></span>
+          <span class="nav-bar__logo-text">easybank</span>
+        </div>
+
+        <ul class="nav-bar__links">
+          <li>
+            <a href="#" class="nav-bar__link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-bar__link">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-bar__link">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="nav-bar__link">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="nav-bar__link">Careers</a>
+          </li>
+        </ul>
+
+        <a href="#" class="nav-bar__button">
+          Request invite
+        </a>
+      </nav>
+
+      <div class="header-wrapper">
+        <header class="header">
+          <h2 class="header__heading">Scroll up</h2>
+          <a class="header__link header__link--up" href="#nav-1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </header>
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>

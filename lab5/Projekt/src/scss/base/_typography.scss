@@ -1,0 +1,11 @@
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+@use '../helpers/mixins' as *;
+
+.heading-primary {
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: c.$gray-dark-1;
+    @include emphasize-first-letter(g.$primary, 1.5em);
+}

@@ -1,0 +1,16 @@
+
+<article class="counter">
+  <header class="counter__header">
+    <h2 class="counter__heading">Counter</h2>
+  </header>
+
+  <section class="counter__counter">
+    <div class="counter__number">{{ counter }}</div>
+  </section>
+
+  <app-child 
+    (incrementCounter)="incrementCounter()"
+    (resetCounter)="resetCounter()"
+    [isDisabled]="isDisabled">
+  </app-child>
+</article>

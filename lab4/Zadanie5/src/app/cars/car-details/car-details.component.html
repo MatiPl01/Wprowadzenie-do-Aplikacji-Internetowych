@@ -1,0 +1,20 @@
+<div class="details">
+  <ul class="details__list">
+    <li class="detail details__item">
+      <h4 class="detail__name">Brand</h4>
+      <p class="detail__value">{{ brand || '-' }}</p>
+    </li>
+
+    <li class="detail details__item">
+      <h4 class="detail__name">Model</h4>
+      <p class="detail__value">{{ model || '-' }}</p>
+    </li>
+
+    <li class="detail details__item">
+      <h4 class="detail__name">Color</h4>
+      <p class="detail__value">
+        <span class="detail__color" [ngStyle]="{ backgroundColor: colorValue }" *ngIf="colorValue !== 'transparent'"></span>{{ colorName || '-' }}
+      </p>
+    </li>
+  </ul>
+</div>

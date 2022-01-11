@@ -1,0 +1,20 @@
+@use '../abstracts/colors' as c;
+
+
+$primary: linear-gradient(
+        45deg, 
+        c.$primary, 
+        c.$primary-light)
+        mix(c.$primary-light, c.$primary);
+
+$primary-dark: linear-gradient(
+        45deg, 
+        c.$primary-dark, 
+        c.$primary-light)
+        mix(c.$primary-light, c.$primary-dark);
+
+$primary-darker: linear-gradient(
+        45deg, 
+        c.$primary-dark, 
+        c.$primary)
+        mix(c.$primary, c.$primary-dark);

@@ -1,0 +1,23 @@
+<article class="added-images">
+  <ul class="added-images__list" *ngIf="images.length; else noImages">
+    <li class="added-images__item" 
+      *ngFor="let image of images; let i = index"
+      [ngClass]="{separated: i > 0 && images[i - 1].group != image.group}">
+      <p class="added-images__width">
+        <span class="added-images__width-value">{{ image.width }}</span>
+        <span class="added-images__width-unit">px</span>
+      </p>
+      <p class="added-images__group">{{ image.group }}</p>
+      <p class="added-images__path">{{ image.path }}</p>
+      <button class="added-images__button" (click)="onRemoveClick(i)">
+        <svg class="added-images__button-icon">
+          <use href="assets/svg/icons.svg#times"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+
+  <ng-template #noImages>
+    <p class="added-images__no-images">Brak dodanych zdjęć</p>
+  </ng-template>
+</article>

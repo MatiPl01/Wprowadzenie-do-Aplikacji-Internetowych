@@ -1,0 +1,100 @@
+<!-- 
+  Wersja 1 wykorzystuje radio buttony. Jako przyciski w menu umieszczone zostały znaczniki label
+  z odpowiednimi wartościami atrybutu for.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 11</title>
+</head>
+<body>
+  <main class="main">
+    <menu class="menu">
+      <input class="hidden" type="radio" name="menu-reveal" id="menu-account"></input>
+      <input class="hidden" type="radio" name="menu-reveal" id="menu-about"></input>
+      <input class="hidden" type="radio" name="menu-reveal" id="menu-support"></input>
+      <input class="hidden" type="radio" name="menu-reveal" id="menu-logout" checked></input>
+
+      <li class="menu__item">
+        <label for="menu-account" class="menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-user-circle"></use>
+          </svg>
+          <span class="menu__text">My account</span>
+        </label>
+        <ul class="sub-menu">
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-1</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-2</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-3</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__item">
+        <label for="menu-about" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-address-card"></use>
+          </svg>
+          <span class="menu__text">About</span>
+        </label>
+        <ul class="sub-menu">
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-1</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-2</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu__item">
+        <label for="menu-support" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-info"></use>
+          </svg>
+          <span class="menu__text">Support</span>
+        </label>
+        <ul class="sub-menu">
+          <li class="sub-menu__item">
+            <a href="#" class="button sub-menu__button">item-1</a>
+            <span class="sub-menu__bg sub-menu__bg--1"></span>
+            <span class="sub-menu__bg sub-menu__bg--2"></span>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="menu__item">
+        <label for="menu-logout" class="button menu__button">
+          <svg class="menu__icon">
+            <use href="svg/icons.svg#icon-log-out"></use>
+          </svg>
+          <span class="menu__text">Log out</span>
+        </label>
+      </li>
+
+    </menu>
+  </main>
+</body>
+</html>

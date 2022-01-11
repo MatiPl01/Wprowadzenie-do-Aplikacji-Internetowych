@@ -1,0 +1,99 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+
+	color: black;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/* Exercise styles (modified) */
+body {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+p, ul, ol {
+	font-size: 1.2em;
+	line-height: 130%;
+}
+
+/* My styles */
+.main {
+	width: 60rem;
+	max-width: 90%;
+	background-color: #F8FAF1;
+	margin: 2rem auto;
+	padding-top: 1rem;
+	padding-bottom: 5rem;
+}
+
+.header {
+	background-color: #294E56;
+	border-top: 2px solid #FBEF99;
+	border-bottom: 2px solid #FBEF99;
+	padding: .5rem 2rem;
+}
+
+.header__heading {
+	color: white;
+}
+
+.sidebar {
+	float: right;
+	shape-margin: 100rem;
+	width: 30%;
+	background-color: #FBEF99;
+	border: 1px solid #FDD041;
+	border-top: 4px solid #FDD041;
+	padding: 1rem 1.5rem;
+	margin: 1rem .75rem;
+}
+
+.sidebar__heading {
+	text-align: center;
+}
+
+.sidebar__list {
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+
+.article {
+	margin: 1rem 2rem;
+}
+
+/* .article__heading { FIXME
+	border-bottom: 1px solid black;
+	width: 100%;
+} */
+
+.article:last-child {
+	border-bottom: .75px solid black;
+}
+
+.article__paragraph {
+	margin-bottom: 1rem;
+}

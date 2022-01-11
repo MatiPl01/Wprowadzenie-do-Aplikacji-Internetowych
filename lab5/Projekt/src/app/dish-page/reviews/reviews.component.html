@@ -1,0 +1,23 @@
+<div class="reviews">
+  <menu class="reviews__menu">
+    <li class="reviews__menu-item">
+      <button class="reviews__button reviews__button--menu" routerLink="review">
+        <svg class="reviews__button-icon">
+          <use href="assets/svg/icons.svg#plus"></use>
+        </svg>
+        <span class="reviews__button-text">Dodaj recenzję</span>
+      </button>
+    </li>
+    <li class="reviews__menu-item">
+      <span class="reviews__menu-text">Liczba recenzji</span>
+      <span class="reviews__menu-count">{{ reviews?.length || 0 }}</span>
+    </li>
+  </menu>
+
+  <ul class="reviews__list">
+    <li class="reviews__item" 
+      *ngFor="let review of reviews">
+      <app-review [review]="review"></app-review>
+    </li>
+  </ul>
+</div>

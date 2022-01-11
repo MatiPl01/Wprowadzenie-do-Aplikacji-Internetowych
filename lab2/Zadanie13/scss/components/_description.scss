@@ -1,0 +1,26 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as *;
+
+
+.description {
+    width: 85%;
+    margin: 0 auto;
+
+    column-count: 2;
+    column-gap: 4rem;
+    text-align: justify;
+    column-rule: 1px solid c.$gray-light-3;
+
+    &__text {
+        hyphens: auto;
+    }
+
+    @include respond(g-big-desktop) {
+        column-count: 3;
+    }
+
+    @include respond(l-tab-port) {
+        column-count: 1;
+        max-width: 60rem;
+    }
+}

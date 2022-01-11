@@ -1,0 +1,52 @@
+@use '../helpers/colors' as c;
+@use '../helpers/gradients' as g;
+
+.reviews {
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+
+        &-text {
+            font-size: 1.4rem;
+            color: c.$gray-dark-1;
+        }
+
+        &-count {
+            font-size: 1.4rem;
+            color: c.$gray-dark-3;
+            margin-left: .5rem;
+        }
+    }
+
+    &__button {
+        &--menu {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.4rem;
+            padding: .75rem 1.25rem;
+            border-radius: 5rem;
+            background: g.$primary;
+            color: c.$white;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            text-shadow: 0 0 .5rem rgba(c.$black, .3);
+        }
+
+        &-icon {
+            fill: c.$white;
+            height: 1em;
+            width: 1em;
+            filter: drop-shadow(0 0 .5rem rgba(c.$black, .3));
+        }
+    }
+    
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,340 @@
+{
+    "owoce": [
+        {
+            "name": "winogrona",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍇"
+        },
+        {
+            "name": "melony",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍈"
+        },
+        {
+            "name": "arbuzy",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍉",
+                "price": "2.99",
+                "units": "kg"
+        },
+        {
+            "name": "mandarynki",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍊"
+        },
+        {
+            "name": "cytryny",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍋"
+        },
+        {
+            "name": "banany",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍌"
+        },
+        {
+            "name": "ananasy",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍍"
+        },
+        {
+            "name": "mango",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥭"
+        },
+        {
+            "name": "jabłka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍎"
+        },
+        {
+            "name": "zielone jabłka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍏"
+        },
+        {
+            "name": "gruszki",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍐"
+        },
+        {
+            "name": "brzoskwinie",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍑"
+        },
+        {
+            "name": "wiśnie",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍒"
+        },
+        {
+            "name": "truskawki",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍓"
+        },
+        {
+            "name": "kiwi",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥝"
+        },
+        {
+            "name": "awokado",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥑"
+        }
+    ],
+    "warzywa": [
+        {
+            "name": "pomidory",
+            "description": "Zdania, czy pomidor to owoc, czy warzywo, są podzielone.",
+            "icon": "🍅"
+        },
+        {
+            "name": "ziemniaki",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥔"
+        },
+        {
+            "name": "marchew",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥕"
+        },
+        {
+            "name": "bakłażany",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍆"
+        },
+        {
+            "name": "cebule",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🧅"
+        },
+        {
+            "name": "czosnek",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🧄"
+        },
+        {
+            "name": "brokuły",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥦"
+        },
+        {
+            "name": "sałata",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥬"
+        },
+        {
+            "name": "ogórki",
+            "description": "Podobnie do pomidora, nie wiadomo, czy ogórek to owoc, czy warzywo.",
+            "icon": "🥒"
+        },
+        {
+            "name": "papryka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🌶️"
+        }
+    ],
+    "pieczywo": [
+        {
+            "name": "chleb",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍞"
+        },
+        {
+            "name": "rogalik",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥐"
+        },
+        {
+            "name": "bagietka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥖"
+        },
+        {
+            "name": "precel",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥨"
+        },
+        {
+            "name": "bajgiel",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥯"
+        }
+    ],
+    "mięso": [
+        {
+            "name": "mięso z kością",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍖"
+        },
+        {
+            "name": "bekon",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥓"
+        },
+        {
+            "name": "stek",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥩"
+        },
+        {
+            "name": "pałka z kurczaka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍗"
+        }
+    ],
+    "napoje": [
+        {
+            "name": "coca cola",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥤"
+        },
+        {
+            "name": "sok jabłkowy",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥃"
+        },
+        {
+            "name": "piwo",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍺"
+        },
+        {
+            "name": "tropikalny drink",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍹"
+        },
+        {
+            "name": "koktajl owocowy",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍸"
+        },
+        {
+            "name": "wino",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍷"
+        },
+        {
+            "name": "herbata",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍵"
+        },
+        {
+            "name": "kawa",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "☕"
+        }
+    ],
+    "zwierzęce": [
+        {
+            "name": "masło",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🧈"
+        },
+        {
+            "name": "ser żółty",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🧀"
+        },
+        {
+            "name": "jaja kurze",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥚"
+        }
+    ],
+    "słodycze": [
+        {
+            "name": "lody włoskie",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍦"
+        },
+        {
+            "name": "lody owocowe",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍧"
+        },
+        {
+            "name": "cukierki",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍬"
+        },
+        {
+            "name": "lizaki",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍭"
+        },
+        {
+            "name": "czekolada",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍫"
+        },
+        {
+            "name": "szarlotka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥧"
+        },
+        {
+            "name": "babeczka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🧁"
+        },
+        {
+            "name": "tort owocowy",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍰"
+        },
+        {
+            "name": "tort czekoladowy",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🎂"
+        },
+        {
+            "name": "ciasteczka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍪"
+        }
+    ],
+    "gotowe dania": [
+        {
+            "name": "pierogi",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥟"
+        },
+        {
+            "name": "spaghetti",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍝"
+        },
+        {
+            "name": "burrito",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🌯"
+        },
+        {
+            "name": "taco",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🌮"
+        },
+        {
+            "name": "hot dog",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🌭"
+        },
+        {
+            "name": "kanapka",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🥪"
+        },
+        {
+            "name": "pizza",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍕"
+        },
+        {
+            "name": "hamburger",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, totam.",
+            "icon": "🍔"
+        }
+    ]
+}

@@ -1,0 +1,232 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Variables */
+$color-page-pb: #2afc3b;
+$color-menu-bg: #ff6e61;
+$color-sub-menu-bg-main: #253157;
+$color-sub-menu-bg-sub:  #384c81;
+$color-white: #fff;
+$color-black: #000;
+
+$menu-width: 25rem;
+$sub-menu-item-height: 5rem;
+$max-sub-menu-items: 3;
+$default-font-size: 1.6rem;
+
+$reveal-duration: .5s;
+$hover-duration: .3s;
+
+/* Mixins */
+@mixin border-bottom($height, $width, $color) {
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: $height;
+        width: $width;
+        left: 50%;
+        z-index: 2;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        background-color: $color;
+    }
+}
+
+/* Styles */
+.main {
+    background-color: $color-page-pb;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    list-style: none;
+    width: $menu-width;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    color: $color-white;
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            @include border-bottom(1px, 90%, rgba($color-black, .2));
+        }
+    }
+
+    &__button,
+    .sub-menu__button {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__button {
+        padding: 1.5rem 2rem;
+        background-color: $color-menu-bg;
+        z-index: 1;
+    }
+
+    &__icon {
+        height: 1.75em;
+        width: 1.75em;
+        margin-right: 1rem;
+    }
+
+    &__text {
+        color: $color-white;
+        text-transform: capitalize;
+        font-size: $default-font-size;
+    }
+
+    // SUB-MENU
+    .sub-menu {
+        list-style: none;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-top: .8rem solid $color-menu-bg;
+            border-left: .8rem solid transparent;
+            border-right: .8rem solid transparent;
+            right: 1.6rem;
+            top: 0;
+            z-index: 2;
+        }
+
+        &__item {
+            position: relative;
+            height: 0;
+            margin: -1px;  // This removes gaps rendered by browser between elements (which shouldn't be visible)
+            overflow: hidden;
+
+            @include border-bottom(1px, 100%, rgba($color-white, .1));
+
+            @for $i from 1 through $max-sub-menu-items {
+                &:nth-child(#{$i}) {
+                    transition: height $reveal-duration ($i - 1) * $reveal-duration;
+
+                    .sub-menu__bg::before {
+                        transition: transform $reveal-duration ($i - 1) * $reveal-duration,
+                                    background-color 2 * $reveal-duration $i * $reveal-duration;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            padding: 1.5rem 3rem;
+            z-index: 1;
+        }
+
+        &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            perspective: 10rem;
+
+            transition: transform $hover-duration ease-in-out;
+
+            &--1 {
+                // This part has height slightly greater than half of an item to prevent
+                // browser from adding gap between elements placed next to each other
+                // (this is a rendering issue)
+                clip-path: polygon(0 0, 100% 0, 100% 52%, 0 52%);
+            }
+
+            &--2 {
+                clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+            }
+
+            &--1::before,
+            &--2::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 200%;
+                left: 0;
+                z-index: -1;
+            }
+
+            &--1::before {
+                background-color: $color-sub-menu-bg-main;
+                top: 0;
+                transform-origin: top;
+                transform: rotateX(-85deg);
+            }
+
+            &--2::before {
+                background-color: $color-sub-menu-bg-sub;
+                bottom: 0;
+                transform-origin: bottom;
+                transform: rotateX(85deg);
+            }
+        }
+    }
+
+    // Revealing sub-menu
+    &__item:target .sub-menu {
+        &__item {
+            height: $sub-menu-item-height;
+
+            &:hover .sub-menu__bg {
+                &--1 {
+                    transform: skewX(30deg) translateX(6%);
+                    background-color: $color-sub-menu-bg-main;
+                }
+
+                &--2 {
+                    transform: skewX(-30deg) translateX(6%);
+                    background-color: $color-sub-menu-bg-sub;
+
+                    &::before {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        &__bg {
+            &--1::before,
+            &--2::before {
+                transform: rotateX(0);
+            }
+
+            &--2:before {
+                background-color: $color-sub-menu-bg-main;
+            }
+        }
+    }
+}

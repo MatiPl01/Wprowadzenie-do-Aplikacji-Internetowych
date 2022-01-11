@@ -1,0 +1,96 @@
+@use 'colors' as c;
+@use 'shadows' as sh;
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   is where normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1rem = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == l-phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == g-phone {       // >= 600px
+        @media only screen and (min-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == l-tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content }; 
+    }
+    @if $breakpoint == l-tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };   
+    }
+    @if $breakpoint == g-big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };    
+    }
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin abs-fit-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin img-cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin card-transition-styles {
+    .card {
+        &__figure {
+            flex-grow: 1;
+        }
+
+        &__body {
+            flex-grow: 0;
+            padding: 0 2rem;
+            height: 0;
+        }
+
+        &__text {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &__footer {
+            background-color: c.$white;
+            z-index: 1;
+        }
+
+        &__header {
+            transform: scale(1.4) translateX(15%);
+            top: 20%;
+            z-index: 1;
+        }
+
+        &__heading {
+            text-shadow: sh.$text-strong;
+            &--main { color: c.$white; }
+            &--sub  { color: c.$primary-light; }
+        }
+    }
+}

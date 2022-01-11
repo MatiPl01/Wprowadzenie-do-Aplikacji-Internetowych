@@ -1,0 +1,12 @@
+<form class="btn-select">
+  <select name="currency" 
+    class="btn-select__select" 
+    [(ngModel)]="currencyService.currentCurrency"
+    (change)="onCurrencyChange()">
+    <option class="btn-select__option"
+      *ngFor="let currency of currencyService.getAvailableCurrencies()" 
+      [value]="currency">
+        {{ currencyService.getCurrencySymbol(currency) }} ({{ currency }})
+    </option>
+  </select>
+</form>

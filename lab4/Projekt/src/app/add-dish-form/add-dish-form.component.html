@@ -1,0 +1,89 @@
+<div class="wrapper" [ngClass]="{open: isOpen}">
+  <article class="popup">
+    <h3 class="popup__heading">Dodaj potrawę</h3>
+
+    <form class="form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <button class="from__button form__button--close" title="Zamknij okno" (click)="onClose()">
+        <svg class="form__button-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times"
+          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+          <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+          </path>
+        </svg>
+      </button>
+
+      <ul class="form__list">
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="name">Nazwa</label></div>
+          <div class="form__column form__column--right">
+            <input class="form__input" type="text" name="name" id="name" maxlength="30" placeholder="np. Schabowy z ziemniakami" required ngModel #name="ngModel">
+            <div class="form__help" *ngIf="!name.valid && name.touched">Proszę wprowadź nazwę dania nie dłuższą niż 30 znaków</div>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="cuisine">Kuchnia</label></div>
+          <div class="form__column form__column--right">
+            <input class="form__input" type="text" name="cuisine" id="cuisine" maxlength="15" placeholder="np. polska / włoska / francuska / etc." ngModel>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="type">Typ</label></div>
+          <div class="form__column form__column--right">
+            <input class="form__input" type="text" name="type" id="type" maxlength="15" placeholder="np. danie główne / przystawka / etc." ngModel>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="category">Kategoria</label></div>
+          <div class="form__column form__column--right">
+            <input class="form__input" type="text" name="category" id="category" maxlength="15" placeholder="np. na słodko / zupy / dania mięsne / etc." ngModel>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="ingredients">Składniki</label></div>
+          <div class="form__column form__column--right">
+            <input class="form__input" type="text" name="ingredients" id="ingredients" maxlength="200" placeholder="lista składników oddzielonych przecinkami" required ngModel #ingredients="ngModel">
+            <div class="form__help" *ngIf="!ingredients.valid && ingredients.touched">Proszę wprowadź listę składników oddzielonych przecinkami</div>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="stock">Dzienny stan magazynowy</label></div>
+          <div class="form__column form__column--right">
+            <input class="form__input" type="number" name="stock" id="stock" min="0" max="999" placeholder="dzienna liczba wydawanych potraw" required ngModel #stock="ngModel">
+            <div class="form__help" *ngIf="!stock.valid && stock.touched">Proszę wprowadź dzienną liczbę wydawanych porcji</div>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="price">Cena ({{
+              this.currencyService.currentCurrency }})</label></div>
+          <div div class="form__column form__column--right">
+            <div class="form__wrapper">
+              <input class="form__input" type="text" name="price" id="price" placeholder="cena pojedynczej porcji"
+                pattern="\d+((,|.)\d{0,2})?" maxlength="6" required ngModel #price="ngModel">
+              <div class="form__help" *ngIf="!price.valid && price.touched">Proszę wprowadź cenę porcji</div>
+              <app-choose-currency></app-choose-currency>
+            </div>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="description">Opis potrawy</label></div>
+          <div div class="form__column form__column--right">
+            <textarea class="form__textarea" type="text" name="description" id="description" placeholder="opis potrawy"
+              maxlength="200" required ngModel #description="ngModel"></textarea>
+            <div class="form__help" *ngIf="!description.valid && description.touched">Proszę wprowadź opis pozycji</div>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__column form__column--left"><label class="form__label" for="images">Zdjęcia</label></div>
+          <div div class="form__column form__column--right">
+            <input class="form__input" type="text" name="images" id="images" placeholder="url do zdjęć, rozdzielone przecinkami" required ngModel #images="ngModel">
+            <div class="form__help" *ngIf="!images.valid && images.touched">Proszę wprowadź listę linków do zdjęć, oddzielonych przecinkami</div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="form__buttons">
+        <input type="submit" class="form__button form__button--save" value="Zapisz" [disabled]="!f.valid">
+        <input type="reset" class="form__button form__button--reset" value="Wyczyść">
+      </div>
+    </form>
+  </article>
+</div>

@@ -1,0 +1,19 @@
+@use '../../styles.scss' as *;
+
+.section-photos {
+    margin: 6rem 0;
+}
+
+.photos {
+    width: 90rem;
+    max-width: 90vw;
+    margin: 0 auto;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        gap: 2rem;
+    }
+}

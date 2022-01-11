@@ -1,0 +1,119 @@
+<article class="dish-form">
+  <form class="form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <ul class="form__list">
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="name">Nazwa</label></div>
+        <div class="form__column form__column--right">
+          <input class="form__input" type="text" name="name" id="name" maxlength="40"
+            placeholder="np. Schabowy z ziemniakami" required ngModel #name="ngModel">
+          <p class="form__help" *ngIf="!name.valid && name.touched">Proszę wprowadź nazwę dania nie dłuższą niż 40 znaków</p>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="cuisine">Kuchnia</label></div>
+        <div class="form__column form__column--right">
+          <input class="form__input" type="text" name="cuisine" id="cuisine" maxlength="15"
+            placeholder="np. polska / włoska / francuska / etc." ngModel>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="type">Typ</label></div>
+        <div class="form__column form__column--right">
+          <input class="form__input" type="text" name="type" id="type" maxlength="15"
+            placeholder="np. danie główne / przystawka / etc." ngModel>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="category">Kategoria</label></div>
+        <div class="form__column form__column--right">
+          <input class="form__input" type="text" name="category" id="category" maxlength="15"
+            placeholder="np. zupy / dania mięsne / ciasta / etc." ngModel>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="ingredients">Składniki</label>
+        </div>
+        <div class="form__column form__column--right">
+          <input class="form__input" type="text" name="ingredients" id="ingredients" maxlength="200"
+            placeholder="lista składników oddzielonych przecinkami" required ngModel #ingredients="ngModel">
+          <div class="form__help" *ngIf="!ingredients.valid && ingredients.touched">Proszę wprowadź listę składników
+            oddzielonych przecinkami</div>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="stock">Dzienny stan
+            magazynowy</label></div>
+        <div class="form__column form__column--right">
+          <input class="form__input" type="number" name="stock" id="stock" min="0" max="999"
+            placeholder="dzienna liczba wydawanych porcji" required ngModel #stock="ngModel">
+          <div class="form__help" *ngIf="!stock.valid && stock.touched">Proszę wprowadź dzienną liczbę wydawanych porcji
+          </div>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="price">Cena ({{
+            currencyService.getCurrentCurrencySymbol() }})</label></div>
+        <div div class="form__column form__column--right">
+          <div class="form__group">
+            <div class="form__input-wrapper form__input-wrapper--price">
+              <input class="form__input" type="text" name="price" id="price" placeholder="cena pojedynczej porcji"
+                pattern="\d+((,|.)\d{0,2})?" maxlength="8" required ngModel #price="ngModel">
+              <div class="form__help" *ngIf="!price.valid && price.touched">Proszę wprowadź cenę porcji (max 2 cyfry po przecinku)</div>
+            </div>
+            <div class="form__input-wrapper form__input-wrapper--currency">
+              <app-choose-currency></app-choose-currency>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form__item">
+        <div class="form__column form__column--left"><label class="form__label" for="description">Opis potrawy</label>
+        </div>
+        <div div class="form__column form__column--right">
+          <textarea class="form__textarea" type="text" name="description" id="description" placeholder="opis potrawy"
+            maxlength="4000" required ngModel #description="ngModel"></textarea>
+          <div class="form__help" *ngIf="!description.valid && description.touched">Proszę wprowadź opis pozycji (max. 4000 znaków)</div>
+        </div>
+      </li>
+      <li class="form__item">
+        <form class="form__image-form" #g="ngForm">
+          <div class="form__column form__column--left"><label class="form__label" for="images">Zdjęcia</label></div>
+          <div div class="form__column form__column--right">
+            <div class="form__group">
+              <div class="form__input-wrapper form__input-wrapper--image">
+                <input class="form__input form__input--sub" type="text" name="image" id="image"
+                  placeholder="url do zdjęcia" required ngModel #image="ngModel"
+                  [ngClass]="{invalid: !isImageValid}">
+                <div class="form__help" *ngIf="!isImageValid">Proszę wprowadź url do zdjęcia</div>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--width">
+                <input class="form__input form__input--sub" type="text" name="width" id="width"
+                  placeholder="szerokość zdjęcia (px)" minlength="2" maxlength="4" pattern="\d{2, 4}" required ngModel
+                  #width="ngModel" [ngClass]="{invalid: !isWidthValid}">
+                <div class="form__help" *ngIf="!isWidthValid">Szerokość 20 - 4000</div>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--group">
+                <input class="form__input form__input--sub" type="text" name="group" id="group" placeholder="nr grupy"
+                  minlength="1" maxlength="2" pattern="\d{1, 2}" required ngModel #group="ngModel"
+                  [ngClass]="{invalid: !isGroupValid}">
+                <div class="form__help" *ngIf="!isGroupValid">ID grupy 0 - 99</div>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--add">
+                <button class="form__button form__button--add" (click)="onImageAdd(g)">
+                  <svg class="form__button-icon">
+                    <use href="assets/svg/icons.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </li>
+    </ul>
+  
+    <div class="form__buttons">
+      <input type="submit" class="form__button form__button--save" value="Zapisz" [disabled]="!f.valid || !images.length">
+      <input type="reset" class="form__button form__button--reset" value="Wyczyść">
+    </div>
+  </form>
+</article>

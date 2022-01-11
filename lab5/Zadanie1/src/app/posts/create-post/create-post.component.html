@@ -1,0 +1,45 @@
+<div class="wrapper open">
+  <div class="popup">
+    <article class="create">
+      <button class="create__button create__button--close" title="Close post form" (click)="onClose()">
+        <svg class="create__button-icon">
+          <use href="assets/svg/icons.svg#times"></use>
+        </svg>
+      </button>
+    
+      <header class="create__header">
+        <h2 class="create__heading">Create new post</h2>
+      </header>
+    
+      <form class="from" (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <ul class="form__list">
+          <li class="form__item">
+            <label for="title" class="form__label">Title</label>
+            <div class="form__group">
+              <input class="form__input" type="text" name="title" id="title" minlength="10" maxlength="100"
+                placeholder="Post title" required ngModel #title="ngModel">
+              <p class="form__help" *ngIf="!title.valid && title.touched">
+                Please provide a title which has from 10 to 100 characters
+              </p>
+            </div>
+          </li>
+          <li class="form__item">
+            <label for="body" class="form__label">Content</label>
+            <div class="form__group">
+              <textarea class="form__textarea" type="text" name="body" id="body" placeholder="Post body" maxlength="500"
+                required ngModel #body="ngModel"></textarea>
+              <p class="form__help" *ngIf="!body.valid && body.touched">
+                Please provide a post body which has at most 500 characters
+              </p>
+            </div>
+          </li>
+        </ul>
+    
+        <div class="form__buttons">
+          <input type="submit" class="form__button form__button--save" value="Save post" [disabled]="!f.valid">
+          <input type="reset" class="form__button form__button--reset" value="Clear input">
+        </div>
+      </form>
+    </article>
+  </div>
+</div>

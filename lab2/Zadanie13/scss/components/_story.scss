@@ -1,0 +1,128 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/fonts' as f;
+@use '../abstracts/mixins' as *;
+
+
+.story {
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(c.$black, .1);
+    background-color: rgba(c.$white, .6);
+    border-radius: 3px;
+    padding: 4rem 6rem;
+    font-size: f.$default-size;
+    transform: skewX(-6deg);
+    background-color: c.$gray-light-1;
+
+    &__heading {
+        text-transform: lowercase;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        transform: translateX(-3rem) skewX(6deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        float: left;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+    }
+
+    &__img {
+        @include img-cover;
+        border-radius: 50%;
+        transform: scale(1.2);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__text {
+        transform: skewX(6deg);
+        text-align: justify;
+
+        @include respond(l-phone) {
+            text-align: unset;
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: c.$white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:nth-child(odd) .story {
+        &__shape {
+            transform: translateX(3rem) skewX(6deg);
+            float: right;
+        }
+
+        &__heading {
+            text-align: right;
+        }
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 6rem;
+    }
+    
+    @include respond(l-tab-port) {
+        padding: 3rem 5rem;
+        &__shape {
+            transform: translateX(-1.5rem) skewX(6deg);
+        }
+
+        &:nth-child(odd) &__shape {
+            transform: translateX(1.5rem) skewX(6deg);
+            float: right;
+        }
+    }
+
+    @include respond(l-phone) {
+        transform: unset;
+
+        & > * {
+            transform: unset;
+        }
+
+        &__shape {
+            transform: translateX(-3rem);
+            border: 1.2rem solid transparent;
+        }
+
+        &:nth-child(odd) &__shape {
+            transform: translateX(3rem);
+            float: right;
+        }
+    }
+}

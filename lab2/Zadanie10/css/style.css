@@ -1,0 +1,314 @@
+/* Global reset */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Variables */
+/* Mixins */
+/* Styles */
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #777;
+  padding: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: #55c57a;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+  background: linear-gradient(45deg, #f0ffed, #91fdd9);
+  box-shadow: inset 0 0 0.1rem #000;
+  border: 0.1rem solid #fff;
+  z-index: 1;
+}
+::-webkit-scrollbar:hover {
+  box-shadow: inset 0 0 0.25rem #000;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(75deg, #7ed56f, #28b485);
+  box-shadow: inset 0 0 0.2rem #000;
+  border-radius: 1rem 0 0 1rem/1rem 0 0 1rem;
+}
+::-webkit-scrollbar-thumb:active {
+  box-shadow: inset 0 0 0.4rem #000;
+}
+
+.row {
+  display: flex;
+  gap: 8rem;
+  width: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row .col {
+  flex: 1 1 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .row {
+    flex-direction: column;
+    width: 50rem;
+    max-width: 100%;
+  }
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 10rem 10%;
+}
+@media only screen and (max-width: 75em) {
+  .section-tours {
+    padding: 10rem 5%;
+  }
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+.btn--white::after {
+  background-color: #fff;
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 47rem;
+}
+.card__side {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all 0.8s ease;
+}
+.card__side--front {
+  background-color: #fff;
+}
+.card__side--back {
+  transform: rotateY(180deg);
+}
+.card__side--back-1, .card__picture--1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card__side--back-2, .card__picture--2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.card__side--back-3, .card__picture--3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card__picture {
+  height: 23rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.card__img {
+  mix-blend-mode: luminosity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
+  position: absolute;
+  top: 12rem;
+  right: 5%;
+  width: 25rem;
+  color: #fff;
+}
+.card__heading-span {
+  padding: 3% 5%;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+.card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
+.card__details {
+  padding: 0.7rem;
+}
+.card__details ul {
+  list-style: none;
+  height: 80%;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    box-shadow: 1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  .card:not(:first-child) {
+    margin: -3rem auto;
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: none;
+  }
+  .card__side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  .card:hover .card__side--back {
+    transform: translateY(5%);
+  }
+  .card__cta {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 2rem;
+    padding-top: 4rem;
+  }
+  .card__price-box {
+    margin-bottom: 3rem;
+  }
+  .card__price-only {
+    font-size: 1.4rem;
+  }
+  .card__price-value {
+    font-size: 6rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

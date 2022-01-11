@@ -1,0 +1,15 @@
+<article class="cart-list">
+  <ul class="cart-list__column-names">
+    <li class="cart-list__column-name">Szczegóły</li>
+    <li class="cart-list__column-name">Liczba</li>
+    <li class="cart-list__column-name">Cena</li>
+    <li class="cart-list__column-name">Łącznie</li>
+  </ul>
+
+  <ul class="cart-list__items">
+    <app-cart-item
+      *ngFor="let dish of cartDishes"
+      [dish]="dish"
+    ></app-cart-item>
+  </ul>
+</article>

@@ -1,0 +1,53 @@
+@use 'colors' as c;
+
+// CSS gradients
+$primary: linear-gradient(
+    65deg, 
+    c.$primary, 
+    c.$secondary) 
+    mix(c.$primary, c.$secondary);
+
+$red: linear-gradient(
+    65deg, 
+    c.$red, 
+    c.$red-light) 
+    mix(c.$red, c.$red-light);
+    
+$blue: linear-gradient(
+    65deg, 
+    c.$blue, 
+    c.$blue-light) 
+    mix(c.$blue, c.$blue-light);
+
+$green: linear-gradient(
+    65deg, 
+    c.$green, 
+    c.$green-light) 
+    mix(c.$green, c.$green-light);
+
+$orange: linear-gradient(
+    65deg, 
+    c.$orange, 
+    c.$orange-light) 
+    mix(c.$orange, c.$orange-light);
+
+$gray: linear-gradient(
+    65deg, 
+    c.$gray-dark-3, 
+    c.$gray-light-4) 
+    mix(c.$gray-dark-3, c.$gray-light-4);
+
+// HTML gradients (for SVG icons)
+.gradient {
+    height: 0;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+
+    &--1 {
+        .stop-color {
+            &--1 { stop-color: c.$primary };
+            &--2 { stop-color: c.$secondary};
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use '../helpers/colors' as c;
+
+.price {
+    margin-left: .5em;
+    font-size: inherit;
+    position: relative;
+    font-weight: 700;
+    font-family: Poppins, Lato, Arial, Helvetica, sans-serif;
+    color: c.$gray-dark-2;
+
+    &__currency {
+        font-size: .75em;
+        position: absolute;
+        left: -.75em;
+        bottom: 0;
+        line-height: 1.1;
+    }
+
+    &__amount {
+        line-height: 1;
+    }
+}

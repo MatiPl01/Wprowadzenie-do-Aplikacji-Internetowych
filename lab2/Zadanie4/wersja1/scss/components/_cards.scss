@@ -1,0 +1,124 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/sizes' as sz;
+@use '../abstracts/shadows' as sh;
+
+
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 140rem;
+
+    @include respond(tab-land) {
+        width: 90%;
+    }
+
+    @include respond(tab-port) {
+        width: 85%;
+    }
+}
+
+.card {
+    width: calc((100% - 2 * #{sz.$flex-gap}) / 3);
+    background-color: c.$white;
+    box-shadow: sh.$box-small;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: calc((100% - 1 * #{sz.$flex-gap}) / 2);
+    }
+
+    @include respond(phone) {
+        max-width: 45rem;
+        width: 100%;
+    }
+
+    &__figure {
+        position: relative;
+        
+        // Use a trick with ::before pseudo element to ensure that all
+        // images keep the same aspect ratio
+        &::before {
+            content: '';
+            display: block;
+            padding-bottom: 50%; // Aspect ratio: 2 / 1
+            
+            @include respond(big-desktop) {
+                padding-bottom: 60%; // Aspect ratio: 5 / 3
+            }
+
+            @include respond(tab-port) {
+                padding-bottom: 50%; // Aspect ratio: 2 / 1
+            }
+        }
+    }
+
+    &__placeholder {
+        @include abs-fit-parent;
+        background-color: c.$gray-light-1;
+
+        &-icon {
+            @include abs-center;
+            width: 40%;
+            height: 40%;
+            fill: c.$primary-dark;
+            filter: drop-shadow(sh.$box-small);
+        }
+    }
+
+    &__img {
+        @include abs-center;
+        @include img-cover;
+    }
+
+    &__body {
+        padding: 2rem;
+    }
+
+    &__header {
+        padding-bottom: 2rem;
+    }
+
+    &__heading {
+        line-height: 1.5;
+        text-transform: capitalize;
+
+        &--main {
+            color: c.$gray-dark-3;
+            font-size: sz.$font-medium;
+        }
+
+        &--sub {
+            color: c.$primary;
+        }
+    }
+
+    &__text {
+        text-align: justify;
+        font-size: sz.$font-smallest;
+    }
+
+    &__footer {
+        padding: 2rem;
+        border-top: 1px solid c.$gray-light-1;
+        background-color: c.$white;
+    }
+
+    &__feedback {
+        color: c.$gray-dark-2;
+        list-style: none;
+        font-size: sz.$font-small;
+
+        &-icon {
+            fill: c.$gray-dark-2;
+            position: relative;
+            max-width: 1.2rem;
+            max-height: 1.2em;
+            bottom: -.4rem;
+            margin-right: .5rem;
+        }
+    }
+}

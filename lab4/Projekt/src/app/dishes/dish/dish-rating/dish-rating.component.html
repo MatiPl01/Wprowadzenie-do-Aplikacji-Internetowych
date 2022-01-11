@@ -1,0 +1,29 @@
+<article class="rating">
+  <div class="rating__row">
+    <p class="rating__text">Oceń</p>
+    <form class="rating__form">
+      <input class="rating__radio" type="radio" name="rate" value="10" (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="9"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="8"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="7"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="6"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="5"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="4"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="3"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="2"  (change)="onRateChange($event)">
+      <input class="rating__radio" type="radio" name="rate" value="1"  (change)="onRateChange($event)">
+    </form>
+  </div>
+  <div class="rating__row">
+    <p class="rating__text">Średnia ocena</p>
+    <p class="rating__average">
+      <span class="rating__average-value">{{ dish?.rating?.toFixed(2) || 0 }}</span>
+      <span class="rating__slash">/</span>
+      <span class="rating__average-max">5</span>
+    </p>
+  </div>
+  <div class="rating__row">
+    <p class="rating__text">Liczba ocen</p>
+    <p class="rating__count">{{ dish?.ratesCount || 0 }}</p>
+  </div>
+</article>

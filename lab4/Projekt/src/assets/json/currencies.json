@@ -1,0 +1,11 @@
+{
+    "symbols": {
+        "USD": "$",
+        "EUR": "€"
+    },
+    "exchangeRates": {
+        "USD": {
+            "EUR": 0.88
+        }
+    }
+}

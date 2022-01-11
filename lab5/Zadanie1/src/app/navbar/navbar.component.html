@@ -1,0 +1,26 @@
+<nav class="nav-bar">
+  <div class="nav-bar__wrapper">
+    <div class="nav-bar__logo">
+      Logo
+    </div>
+    
+    <div class="nav-bar__content">
+      <ul class="nav-bar__items">
+        <li class="nav-bar__item">
+          <a routerLink="/" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact: true}"
+            class="nav-bar__link">Home</a>
+        </li>
+        <li class="nav-bar__item">
+          <a routerLink="/photos" routerLinkActive="active" 
+          [routerLinkActiveOptions]="{exact: true}"class="nav-bar__link">Photos</a>
+        </li>
+        <li class="nav-bar__item">
+          <a routerLink="/posts" routerLinkActive="active" 
+          [routerLinkActiveOptions]="{exact: true}"class="nav-bar__link">Posts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

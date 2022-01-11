@@ -1,0 +1,43 @@
+@use '../../../../styles.scss' as *;
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__stock {
+        margin: -.5rem 0;
+        padding: .5rem 1rem;
+        position: relative;
+
+        div {
+            display: flex;
+            align-items: flex-end;
+            gap: .5rem;
+        }
+
+        &-text {
+            font-size: 1.4rem;
+        }
+
+        &-units {
+            font-size: 1.6rem;
+        }
+
+        &.sold-out,
+        &.low-quantity {
+            color: $color-white;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        &.sold-out { 
+            text-shadow: 0 0 .5rem rgba($color-black, .3);
+            @include bg-gradient-red;
+        }
+        &.low-quantity { 
+            text-shadow: 0 0 .3rem rgba($color-black, .5);
+            @include bg-gradient-primary;
+        }
+    }
+}

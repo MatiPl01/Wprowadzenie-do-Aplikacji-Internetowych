@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 5</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="section-images">
+      <div class="figures">
+        <figure class="figure figure--1">
+          <img class="figure__img figure__img--placeholder" 
+               loading="lazy"
+               src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/hover/stones.jpg" 
+               alt="Placeholder">
+          <img class="figure__img"
+                loading="lazy"
+                src="https://ik.imagekit.io/MatiPl01/tr:w-720/hover/stones.jpg" 
+                srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/hover/stones.jpg 360w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-540/hover/stones.jpg 540w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-720/hover/stones.jpg 720w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-1080/hover/stones.jpg 1080w"
+                sizes="(max-width: 37.52em) 80vw,
+                       (max-width: 56.25em) 60vw, 
+                       (min-width: 68.75em) 28.125em,
+                       calc((90vw - 3.125em) / 2)"
+                alt="Kamienie jeden na drugim">
+          <figcaption class="figure__caption">
+            <p class="figure__text">
+              Kamienie ułożone jeden na drugim
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="figure figure--2">
+          <img class="figure__img figure__img--placeholder" 
+               loading="lazy"
+               src="https://ik.imagekit.io/MatiPl01/tr:w-360,bl-30,q-30/hover/beach.jpg" 
+               alt="Placeholder">
+          <img class="figure__img"
+                loading="lazy"
+                src="https://ik.imagekit.io/MatiPl01/tr:w-720/hover/beach.jpg" 
+                srcset="https://ik.imagekit.io/MatiPl01/tr:w-360/hover/beach.jpg 360w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-540/hover/beach.jpg 540w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-720/hover/beach.jpg 720w,
+                        https://ik.imagekit.io/MatiPl01/tr:w-1080/hover/beach.jpg 1080w"
+                sizes="(max-width: 37.52em) 80vw,
+                       (max-width: 56.25em) 60vw, 
+                       (min-width: 68.75em) 28.125em,
+                       calc((90vw - 3.125em) / 2)"
+                alt="Słoneczna plaża">
+          <div class="figure__overlay">
+            <div class="figure__wrapper">
+              <svg class="figure__icon">
+                <use href="svg/icons.svg#icon-magnifier"></use>
+              </svg>
+              <p class="figure__text">
+                Zobacz album
+              </p>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

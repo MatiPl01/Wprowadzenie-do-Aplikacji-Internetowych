@@ -1,0 +1,89 @@
+@use '../abstracts/sizes' as s;
+@use '../abstracts/mixins' as *;
+
+
+// Main wrapper grid
+.content-wrapper {
+    display: grid;
+
+    grid-template-areas: 
+        'sidebar nav    ads'
+        'sidebar main   ads'
+        'footer  footer footer';
+    grid-template-columns: 1fr 3fr 1fr;
+
+    @include respond(l-tab-land) {
+        grid-template-areas: 
+            'nav     nav'
+            'sidebar main'
+            'ads     footer';
+        grid-template-columns: 1fr 3fr;
+    }
+
+    @include respond(l-phone) {
+        grid-template-areas: 
+            'nav'
+            'main'
+            'sidebar'
+            'ads'
+            'footer';
+        grid-template-columns: 1fr;
+    }
+
+    .navbar { grid-area: nav; }
+    .main    { grid-area: main; }
+    .sidebar { grid-area: sidebar; }
+    .ads     { grid-area: ads; }
+    .footer  { grid-area: footer; }
+}
+
+
+// Footer grid
+.footer {
+    display: grid;
+    grid-template-areas: 
+        "logo    info    contact"
+        "buttons buttons buttons"
+        "policy  policy  policy";
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 1fr repeat(2, s.$footer-list-height);
+    grid-column-gap: 6rem;
+    grid-row-gap: 2rem;
+
+    @include respond(l-tab-land) {
+        grid-template-areas: 
+            "contact info"
+            "logo    buttons"
+            "policy  policy";
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 3rem;
+        grid-template-rows: 1fr repeat(2, s.$footer-list-height);
+    }
+
+    @include respond(l-tab-port) {
+        grid-template-areas: 
+            "contact info"
+            "logo    info"
+            "buttons buttons"
+            "policy  policy";
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr s.$footer-list-height repeat(2, s.$footer-list-height);
+    }
+
+    @include respond(l-phone) {
+        grid-template-areas: 
+            "logo"
+            "contact"
+            "info"
+            "buttons"
+            "policy";
+        grid-template-columns: 1fr;
+        grid-template-rows: s.$footer-list-height 2fr 3fr repeat(2, s.$footer-list-height);
+    }
+
+    &__logo-wrapper { grid-area: logo; }
+    &__info         { grid-area: info; }
+    &__contact      { grid-area: contact; }
+    &__buttons      { grid-area: buttons; }
+    &__policy       { grid-area: policy; }
+}

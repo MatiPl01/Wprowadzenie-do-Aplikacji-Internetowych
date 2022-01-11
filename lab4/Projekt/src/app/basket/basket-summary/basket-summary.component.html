@@ -1,0 +1,17 @@
+<article class="summary">
+  <ul class="summary__list">
+    <li class="summary__item">
+      <p class="summary__text">Łączna liczba sztuk</p>
+      <p class="summary__value">{{ totalQuantity }}</p>
+    </li>
+    <li class="summary__item">
+      <p class="summary__text">Łączna kwota do zapłaty</p>
+      <p class="summary__value">
+        <app-price
+          [amount]="this.currencyService.calcAmount(totalPrice, this.dishesService.getReferenceCurrency())"
+          [currency]="this.currencyService.getCurrentCurrencySymbol()"
+        ></app-price>
+      </p>
+    </li>
+  </ul>
+</article>
