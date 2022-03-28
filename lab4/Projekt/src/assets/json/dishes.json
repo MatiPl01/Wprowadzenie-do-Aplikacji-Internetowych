@@ -678,8 +678,8 @@
       "stock": 79,
       "currency": "USD",
       "unitPrice": 12,
-      "rating": 4.63,
-      "ratesCount": 23,
+      "rating": 4.60375,
+      "ratesCount": 24,
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
       "images": {
         "breakpoints": [
@@ -882,8 +882,8 @@
       "stock": 178,
       "currency": "USD",
       "unitPrice": 13.5,
-      "rating": 4.260000000000001,
-      "ratesCount": 9,
+      "rating": 4.184,
+      "ratesCount": 10,
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sunt laborum saepe debitis deserunt illo atque magnam quasi exercitationem aspernatur mollitia necessitatibus sit sed laudantium corrupti quam, error assumenda ex!",
       "images": {
         "breakpoints": [
