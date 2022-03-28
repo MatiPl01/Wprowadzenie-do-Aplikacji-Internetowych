@@ -20,4 +20,8 @@ Run `npm run watch` to start a server in a development mode.
 
 ## Deployment server
 
+<<<<<<< HEAD
 Run `npm start` command to start a server in a deployment mode.
+=======
+Run `npm start` command to start a server in a deployment mode.
+>>>>>>> 11d659bac6e9b00b379f156da3a15a505054c338
