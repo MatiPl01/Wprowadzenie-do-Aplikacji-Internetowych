@@ -1,13 +1,13 @@
-# Angular
+# Angular - wprowadzenie
 
-## Exercise 1
-![ex1 Solution](/documentation/Lab4/gifs/ex1.gif)
+## Zadanie 1
+![Zadanie1 - rozwiązanie](/documentation/Lab4/gifs/zad5.gif)
 
-## Exercise 2
-![ex2 Solution](/documentation/Lab4/gifs/ex2.gif)
+## Zadanie 2
+![Zadanie2 - rozwiązanie](/documentation/Lab4/gifs/zad6.gif)
 
-## Exercise 3
-![ex3 Solution](/documentation/Lab4/gifs/ex3.gif)
+## Zadanie 3
+![Zadanie3 - rozwiązanie](/documentation/Lab4/gifs/zad7.gif)
 
-## Restaurant - Project (v1)
-![Restaurant Project](/documentation/Lab4/gifs/yummyfood.gif)
+## Projekt Restauracja (cz. 1)
+![Projekt Restauracja](/documentation/Lab4/gifs/Projekt.gif)

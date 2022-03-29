@@ -1,23 +1,25 @@
-# Angular, Node.js, Express.js & MongoDB
+# Angular, Node.js & MongoDB
 
-## Exercise 1
-![ex1 Solution](/documentation/Lab5/gifs/ex1.gif)
+## Zadanie 1
 
-## Exercise 2
-![ex2 Solution](/documentation/Lab5/gifs/ex2.gif)
+![Zadanie1 - rozwiązanie](/documentation/Lab5/gifs/zad1.gif)
 
-## Restaurant - project (v2)
-### Home Page
-![Restaurant Home Page](/documentation/Lab5/gifs/yummyfood-1.gif)
+## Zadanie 2
 
-### Menu Page
-![Restaurant Menu Page](/documentation/Lab5/gifs/yummyfood-2.gif)
+![Zadanie2 - rozwiązanie](/documentation/Lab5/gifs/zad2.gif)
 
-### Dish Page
-![Restaurant Dish Page](/documentation/Lab5/gifs/yummyfood-3.gif)
+## Projekt Restauracja (cz. 2)
+### Strona główna
+![Projekt Restauracja - Strona główna](/documentation/Lab5/gifs/yummyfood-1.gif)
 
-### Cart
-![Restaurant Cart](/documentation/Lab5/gifs/yummyfood-4.gif)
+### Menu
+![Projekt Restauracja - Menu](/documentation/Lab5/gifs/yummyfood-2.gif)
 
-### Adding New Dish
-![Restaurant Adding New Dish](/documentation/Lab5/gifs/yummyfood-5.gif)
+### Strona dania
+![Projekt Restauracja - Strona dania](/documentation/Lab5/gifs/yummyfood-3.gif)
+
+### Koszyk
+![Projekt Restauracja - Koszyk](/documentation/Lab5/gifs/yummyfood-4.gif)
+
+### Dodawanie nowego dania
+![Projekt Restauracja - Dodawanie nowego dania](/documentation/Lab5/gifs/yummyfood-5.gif)

@@ -1,0 +1,628 @@
+/* Global reset */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Variables */
+$color-white: #fff;
+$color-black: #000;
+$color-gray-light-1: #f7f7f7;
+$color-gray-light-2: #eee;
+$color-gray-dark-1: #3b3b3b;
+$color-gray-dark-2: #676767;
+
+$color-blue-light: #2a96d4;
+$color-blue-dark: #043291;
+
+$color-red-light: #d45654;
+$color-red-dark: #bb2421;
+
+$color-green-light: #1acc5d;
+$color-green-dark: #0f857b;
+
+$color-orange-light: #dba22e;
+$color-orange-dark: #dc4117;
+
+$color-gray-light: #5a5a5a;
+$color-gray-dark: #0f0f0f;
+
+$shoe-shadow: drop-shadow(-1rem 1rem .5rem rgba($color-black, .3));
+
+$card-width-horizontal: 90rem;
+$card-width-vertical: 70rem;
+
+/* Mixins */
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {       // <= 600px
+        @media only screen and (max-width: 37.5em) { @content }; 
+    }
+    @if $breakpoint == tab-port {    // <= 900px
+        @media only screen and (max-width: 56.25em) { @content }; 
+    }
+    @if $breakpoint == tab-land {    // <= 1200px
+        @media only screen and (max-width: 75em) { @content };   
+    }
+    @if $breakpoint == big-desktop { // >= 1800px
+        @media only screen and (min-width: 112.5em) { @content };    
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fit-svg {
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+@mixin bg-gradient($color-light, $color-dark) {
+    background: linear-gradient(
+        45deg, 
+        $color-dark, 
+        $color-light)
+        mix($color-light, $color-dark); // Fallback when linear-gradient doesn't work
+}
+
+@mixin bg-gradient-laptop($color-light, $color-dark) {
+    background: linear-gradient(
+        45deg, 
+        $color-dark, 
+        $color-light 65%)
+        mix($color-light, $color-dark);
+}
+
+@mixin bg-gradient-tablet($color-light, $color-dark) {
+    background: linear-gradient(
+        45deg, 
+        $color-dark 33%, 
+        $color-light)
+        mix($color-light, $color-dark);
+}
+
+@mixin set-colors($color-id, $color-light, $color-dark, $filter) {
+    /* Shoe and background colors */
+    .card {
+        &__color-input--#{$color-id}:checked,
+        &__colors &__color-input--#{$color-id}:hover {
+            &  ~ .card__container {
+                @include bg-gradient-laptop($color-light, $color-dark);
+
+                .card__shoe {
+                    filter: $filter $shoe-shadow;
+                }
+
+                @include respond(tab-port) {
+                    background: bg-gradient-tablet($color-light, $color-dark);
+                }
+            }
+        }
+    }
+}
+
+/* Animations */
+@keyframes animate-shoe {
+    from {
+        top: 80%;
+        left: 60%;
+        transform: translate(-50%, -50%) rotate(0) scale(.8);
+    }
+}
+
+/* Styles */
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-gray-dark-2;
+}
+
+.section-card {
+    background-color: $color-gray-light-1;
+    height: 100vh;
+    width: 100vw;
+
+    @include flex-center;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    width: $card-width-horizontal;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 2.5rem 0;
+
+    & > * {
+        flex: 1 1 50%;
+    }
+
+    // Shoe container styles
+    &__presentation{
+        position: relative;
+        box-shadow: 2rem .5rem 3rem rgba($color-black, .35);
+        z-index: -1;
+    }
+
+    &__logo {
+        position: absolute;
+        fill: $color-white;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 25%;
+        height: 12.5%;
+        z-index: 1;
+
+        @include fit-svg;
+    }
+
+    &__share {
+        display: block;
+        position: absolute;
+        background-color: $color-white;
+        color: $color-black;
+        width: 6rem;
+        height: 6rem;
+        padding: 1.5rem;
+        top: 5rem;
+        right: -1rem;
+        border-radius: 50%;
+        mix-blend-mode: screen;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        transition: all .3s;
+
+        @include fit-svg;
+
+        &:hover {
+            transform: scale(1.03) translate(-50%, -50%);
+            box-shadow: 0 0 .5rem rgba($color-white, .5);
+        }
+    }
+
+    &__icon--share {
+        padding-right: 2px;
+    }
+
+    &__bg-text {
+        position: absolute;
+        z-index: 1;
+        font-size: 18rem;
+        font-weight: 900;
+        color: $color-white;
+        top: 35%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: soft-light;
+        pointer-events: none;
+        text-transform: uppercase;
+    }
+
+    // Information block styles
+    &__body {
+        margin: -4rem 0;
+        background-color: $color-white;
+        box-shadow: .2rem .5rem 3rem rgba($color-black, .35);
+        padding: 4rem;
+
+        & > *:not(:last-child) {
+            border-bottom: 2px solid $color-gray-light-2;
+        }
+    }
+
+    &__header {
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+    &__heading {
+        &--primary {
+            color: $color-black;
+            font-size: 3.5rem;
+            display: flex;
+            align-items: center;
+            line-height: 1.2;
+        }
+
+        &--secondary {
+            color: $color-gray-dark-1;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        &--tertiary {
+            color: $color-gray-dark-2;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+    }
+
+    &__status {
+        font-weight: 300;
+        color: $color-white;
+        font-size: 2rem;
+        padding: .4rem 1rem;
+        border-radius: .5rem;
+        margin-left: 1.5rem;
+    }
+
+    &__section {
+        padding: 1.5rem 0;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+
+    &__colors,
+    &__sizes {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__colors {
+        max-width: 25rem;
+        padding: 1rem;
+    }
+
+    &__btn {
+        display: block;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        &--color,
+        &--size {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--color {
+            width: 3rem;
+            height: 3rem;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            transition: all .3s;
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                pointer-events: none;
+
+                transition: all .3s;
+            }
+
+            &-1::before { @include bg-gradient($color-blue-light,   $color-blue-dark) }
+            &-2::before { @include bg-gradient($color-red-light,    $color-red-dark) }
+            &-3::before { @include bg-gradient($color-green-light,  $color-green-dark) }
+            &-4::before { @include bg-gradient($color-orange-light, $color-orange-dark) }
+            &-5::before { @include bg-gradient($color-gray-light,   $color-gray-dark) }
+        }
+
+        &--size {
+            border-radius: .5rem;
+            background-color: $color-gray-light-2;
+            font-weight: 500;
+            font-size: 2rem;
+            @include flex-center;
+        }
+
+        &--order {
+            color: $color-white;
+            font-size: 2rem;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            font-weight: 500;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 2px .5rem rgba($color-black, .35);
+            }
+
+            &:active {
+                transform: scale(.99);
+                box-shadow: 0 1px 1rem rgba($color-black, .5);
+            }
+        }
+    }
+
+    &__sizes {
+        max-width: 27.5rem;
+
+        &:hover .card__btn:not(:hover) {
+            color: $color-black;
+            background: $color-gray-light-2 ;
+        }
+    }
+
+    &__size {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__footer {
+        padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon--cart {
+        height: 2.2rem;
+        width: 2.2rem;
+        margin-right: 1rem;
+    }
+
+    &__price {
+        font-weight: bold;
+        color: $color-gray-dark-1;
+        position: relative;
+        margin-left: 1.5rem;
+    }
+
+    &__currency {
+        font-size: 2.75rem;
+        position: absolute;
+        top: .5rem;
+        left: -2rem;
+    }
+
+    &__value {
+        font-size: 4rem;
+    }
+
+    // Shoe and background styles
+    &__container {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    &__shoe {
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        transform: translate(-50%, -50%) rotate(-20deg);
+        width: .7 * $card-width-horizontal;
+        z-index: 2;
+        filter: drop-shadow(-1rem 1rem .5rem rgba($color-black, .3));
+        animation: animate-shoe .5s ease-in-out both;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    // Default colors
+    &__container {
+        @include bg-gradient-laptop($color-blue-light, $color-blue-dark);
+
+        @include respond(tab-port) {
+            @include bg-gradient-tablet($color-blue-light, $color-blue-dark);
+        }
+    }
+    &__status,
+    &__btn--order {
+        @include bg-gradient($color-blue-light, $color-blue-dark);
+    }
+
+    &__size-input:checked + &__btn,
+    &__btn--size:hover {
+        color: $color-white;
+        @include bg-gradient($color-blue-light, $color-blue-dark);
+    }
+
+    // Colors buttons checked/hovered state styles
+    &__btn--color:hover,
+    &__color-input:checked + &__btn--color {
+        border: 1px solid $color-gray-light-2;
+        box-shadow: 0 0 .5rem rgba($color-black, .5);
+
+        &::before { transform: scale(.6); }
+    }
+
+    &__colors:hover &__btn--color:not(:hover) {
+        border: 1px solid transparent;
+        box-shadow: unset;
+        
+        &::before { transform: unset; }
+    }
+    
+    // Styles for mobile devices
+    @include respond(tab-port) {
+        width: 90%;
+        max-width: $card-width-vertical;
+        flex-direction: column;
+        box-shadow: .2rem .5rem 3rem rgba($color-black, .35);
+        margin: 0;
+
+        &__body {
+            margin: 0;
+            box-shadow: unset;
+        }
+
+        &__presentation {
+            box-shadow: unset;
+            flex-basis: .35 * $card-width-vertical;
+        }
+
+        &__shoe {
+            top: 19%;
+            left: 75%;
+            width: 60%;
+            transform: translate(-50%, -50%) rotate(-2deg);
+        }
+
+        &__logo {
+            width: 10rem;
+        }
+
+        &__share {
+            width: 5rem;
+            height: 5rem;
+            padding: 1rem;
+            top: 4rem;
+        }
+
+        &__bg-text {
+            top: 15%;
+            left: 4rem;
+            transform: translateY(-50%);
+        }
+    }
+
+    @include respond(phone) {
+        max-width: 50rem;
+
+        &__heading--primary {
+            font-size: 2.5rem;
+        }
+
+        &__presentation {
+            flex-basis: .3 * $card-width-vertical;
+        }
+
+        &__shoe {
+            top: 20%;
+            left: 50%;
+            width: 35rem;
+            transform: translate(-50%, -50%) rotate(-2deg);
+        }
+
+        &__bg-text {
+            top: 12.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__body {
+            padding: 2rem;
+        }
+
+        &__share {
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+            top: 3rem;
+        }
+
+        &__bg-text {
+            font-size: 12rem;
+        }
+
+        &__footer {
+            padding-top: 1rem;
+        }
+
+        &__section {
+            padding: 1rem 0;
+        }
+
+        &__status {
+            position: absolute;
+            bottom: .5rem;
+            right: -.5rem;
+            font-size: 1.5rem;
+        }
+
+        &__section &__heading {
+            margin-top: -2.5rem;
+            width: max-content;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: scaleX(1.2);
+                background-color: $color-white;
+                z-index: -1;
+            }
+        }
+
+        &__heading--secondary {
+            font-size: 1.4rem;
+        }
+
+        &__header {
+            padding-bottom: 2rem;
+        }
+
+        &__btn--order {
+            font-size: 1.6rem;
+        }
+
+        &__value {
+            font-size: 3rem;
+        }
+
+        &__currency {
+            font-size: 2rem;
+            left: -1.5rem;
+        }
+    }
+}
+
+// Styles for different colors
+@include set-colors(1, $color-blue-light,   $color-blue-dark,   hue-rotate(0));
+@include set-colors(2, $color-red-light,    $color-red-dark,    hue-rotate(110deg));
+@include set-colors(3, $color-green-light,  $color-green-dark,  hue-rotate(280deg));
+@include set-colors(4, $color-orange-light, $color-orange-dark, hue-rotate(160deg));
+@include set-colors(5, $color-gray-light,   $color-gray-dark,   grayscale(1));

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 12 (v2)</title>
+</head>
+
+<body>
+  <section class="section-card">
+    <article class="card">
+        <div class="card__presentation">
+          <div class="card__logo">
+            <svg class="card__icon card__icon--logo">
+              <use href="svg/logo.svg#logo"></use>
+            </svg>
+          </div>
+          <a href="#" class="card__share">
+            <svg class="card__icon card__icon--share">
+              <use href="svg/icons.svg#icon-share"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="card__body">
+          <header class="card__header">
+            <h3 class="card__heading card__heading--primary">
+              Nike Zoom KD 12
+              <span class="card__status">NEW</span>
+            </h3>
+            <h4 class="card__heading card__heading--secondary">
+              Men's Running Shoes
+            </h4>
+          </header>
+
+          <section class="card__section card__section--description">
+            <h4 class="card__heading card__heading--tertiary">
+              Product info
+            </h4>
+            <p class="card__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni labore ad nihil pariatur atque aliquam hic
+              cum natus.
+            </p>
+          </section>
+
+          <section class="card__section card__section--colors">
+            <h4 class="card__heading card__heading--tertiary">
+              Color
+            </h4>
+            <ul class="card__colors">
+              <li class="card__color card__color--1">
+                <button class="card__btn card__btn--color"></button>
+              </li>
+              <li class="card__color card__color--2">
+                <button class="card__btn card__btn--color"></button>
+              </li>
+              <li class="card__color card__color--3">
+                <button class="card__btn card__btn--color"></button>
+              </li>
+              <li class="card__color card__color--4">
+                <button class="card__btn card__btn--color"></button>
+              </li>
+              <li class="card__color card__color--5">
+                <button class="card__btn card__btn--color"></button>
+              </li>
+              <li class="card__container">
+                <figure class="card__shoe">
+                  <img class="card__image" 
+                       src="img/nike-1000w.png" 
+                       srcset="img/nike-400w.png 400w,
+                               img/nike-750w.png 750w,
+                               img/nike-1000w.png 1000w,
+                               img/nike-1400w.png 1400w,
+                               img/nike-1716w.png 1716w" 
+                       sizes="(min-width: 112.5em) 882px,
+                              (max-width: 37.5em) 328px,
+                              (max-width: 56.25em) 355px,
+                              (max-width: 75em) 662px,
+                              735px" 
+                       alt="Nike shoe">
+                </figure>
+                <p class="card__bg-text">Nike</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="card__section card__section--sizes">
+            <h4 class="card__heading card__heading--tertiary">
+              Size
+            </h4>
+            <ul class="card__sizes">
+              <li class="card__size">
+                <button class="card__btn card__btn--size">7</button>
+              </li>
+              <li class="card__size">
+                <button class="card__btn card__btn--size">8</button>
+              </li>
+              <li class="card__size">
+                <button class="card__btn card__btn--size active">9</button>
+              </li>
+              <li class="card__size">
+                <button class="card__btn card__btn--size">10</button>
+              </li>
+              <li class="card__size">
+                <button class="card__btn card__btn--size">11</button>
+              </li>
+            </ul>
+          </section>
+
+          <footer class="card__footer">
+            <a href="#" class="card__btn card__btn--order">
+              <svg class="card__icon card__icon--cart">
+                <use href="svg/icons.svg#icon-cart"></use>
+              </svg>
+              Add to cart
+            </a>
+            <p class="card__price">
+              <span class="card__currency">$</span>
+              <span class="card__value">189.99</span>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!-- 
+  Wersja nieco ulepszona względem wersji 1.
+  Tutaj również zmieniane są kolory pozostałych gradientów (przycisków, itp.)
+  (po naciśnięciu odpowiedniego koloru), a także zmieniana jest wielkość buta 
+  po kliknięciu na przycisk z wielkością. Poza tym, zmiana koloru tła za butem
+  jest animowana.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Zadanie 12 (v2)</title>
+</head>
+
+<body>
+  <section class="section-card">
+    <article class="card">
+      <!-- Colors inputs -->
+      <input type="radio" name="color" class="card__color-input card__color-input--1 hidden" id="c-1" checked>
+      <input type="radio" name="color" class="card__color-input card__color-input--2 hidden" id="c-2">
+      <input type="radio" name="color" class="card__color-input card__color-input--3 hidden" id="c-3">
+      <input type="radio" name="color" class="card__color-input card__color-input--4 hidden" id="c-4">
+      <input type="radio" name="color" class="card__color-input card__color-input--5 hidden" id="c-5">
+
+      <!-- Sizes inputs -->
+      <input type="radio" name="size" class="card__size-input card__size-input--7 hidden" id="s-7">
+      <input type="radio" name="size" class="card__size-input card__size-input--8 hidden" id="s-8">
+      <input type="radio" name="size" class="card__size-input card__size-input--9 hidden" id="s-9" checked>
+      <input type="radio" name="size" class="card__size-input card__size-input--10 hidden" id="s-10">
+      <input type="radio" name="size" class="card__size-input card__size-input--11 hidden" id="s-11">
+
+      <div class="card__presentation">
+        <div class="card__logo">
+          <svg class="card__icon card__icon--logo">
+            <use href="svg/logo.svg#logo"></use>
+          </svg>
+        </div>
+        <a href="#" class="card__share">
+          <svg class="card__icon card__icon--share">
+            <use href="svg/icons.svg#icon-share"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="card__body">
+        <header class="card__header">
+          <h3 class="card__heading card__heading--primary">
+            Nike Zoom KD 12
+            <span class="card__status">NEW</span>
+          </h3>
+          <h4 class="card__heading card__heading--secondary">
+            Men's Running Shoes
+          </h4>
+        </header>
+
+        <section class="card__section card__section--description">
+          <h4 class="card__heading card__heading--tertiary">
+            Product info
+          </h4>
+          <p class="card__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni labore ad nihil pariatur atque aliquam hic
+            cum natus.
+          </p>
+        </section>
+
+        <section class="card__section card__section--colors">
+          <h4 class="card__heading card__heading--tertiary">
+            Color
+          </h4>
+
+          <ul class="card__colors">
+            <li class="card__color card__color--1" id="btn-c-1">
+              <label class="card__btn card__btn--color card__btn--color-1" for="c-1"></label>
+            </li>
+            <li class="card__color card__color--2" id="btn-c-2">
+              <label class="card__btn card__btn--color card__btn--color-2" for="c-2"></label>
+            </li>
+            <li class="card__color card__color--3" id="btn-c-3">
+              <label class="card__btn card__btn--color card__btn--color-3" for="c-3"></label>
+            </li>
+            <li class="card__color card__color--4" id="btn-c-4">
+              <label class="card__btn card__btn--color card__btn--color-4" for="c-4"></label>
+            </li>
+            <li class="card__color card__color--5" id="btn-c-5">
+              <label class="card__btn card__btn--color card__btn--color-5" for="c-5"></label>
+            </li>
+
+            <li class="card__container">
+              <div class="card__background card__background--1"></div>
+              <div class="card__background card__background--2"></div>
+              <div class="card__background card__background--3"></div>
+              <div class="card__background card__background--4"></div>
+              <div class="card__background card__background--5"></div>
+              <figure class="card__shoe">
+                <img class="card__image" 
+                     src="https://ik.imagekit.io/MatiPl01/tr:w-1000/shoe/nike.png" 
+                     srcset="https://ik.imagekit.io/MatiPl01/tr:w-300/shoe/nike.png 300w,
+                             https://ik.imagekit.io/MatiPl01/tr:w-400/shoe/nike.png 400w,
+                             https://ik.imagekit.io/MatiPl01/tr:w-600/shoe/nike.png 600w,
+                             https://ik.imagekit.io/MatiPl01/tr:w-1000/shoe/nike.png 1000w,
+                             https://ik.imagekit.io/MatiPl01/tr:w-1400/shoe/nike.png 1400w,
+                             https://ik.imagekit.io/MatiPl01/tr:w-1716/shoe/nike.png 1716w"
+                     sizes="(max-width: 37.5em)  18em,
+                            (max-width: 56.25em) 21.5em,
+                            (max-width: 75em)    35.5em,
+                            (min-width: 112.5em) 47.25em,
+                            40em" 
+                     alt="Nike shoe">
+              </figure>
+              <p class="card__bg-text">Nike</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card__section card__section--sizes">
+          <h4 class="card__heading card__heading--tertiary">
+            Size
+          </h4>
+          <ul class="card__sizes">
+            <li class="card__size">
+              <label class="card__btn card__btn--size card__btn--size-7" for="s-7">7</label>
+            </li>
+            <li class="card__size">
+              <label class="card__btn card__btn--size card__btn--size-8" for="s-8">8</label>
+            </li>
+            <li class="card__size">
+              <label class="card__btn card__btn--size card__btn--size-9" for="s-9">9</label>
+            </li>
+            <li class="card__size">
+              <label class="card__btn card__btn--size card__btn--size-10" for="s-10">10</label>
+            </li>
+            <li class="card__size">
+              <label class="card__btn card__btn--size card__btn--size-11" for="s-11">11</label>
+            </li>
+          </ul>
+        </section>
+
+        <footer class="card__footer">
+          <a href="#" class="card__btn card__btn--order">
+            <svg class="card__icon card__icon--cart">
+              <use href="svg/icons.svg#icon-cart"></use>
+            </svg>
+            Add to cart
+          </a>
+          <p class="card__price">
+            <span class="card__currency">$</span>
+            <span class="card__value">189.99</span>
+          </p>
+        </footer>
+      </div>
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ Po naciśnięciu na przycisk wyświetl okno dialogowe typu prompt pozwalające m
 wprowadzenie swojego imienia. Podane imię ma być wstawione do przygotowanej sekcji.
 
 ### Moje rozwiązanie
-![ex1 Solution](/documentation/Lab3/gifs/zad1.gif)
+![Zadanie1 - rozwiązanie](/documentation/Lab3/gifs/zad1.gif)
 
 <br>
 
@@ -15,7 +15,7 @@ z gór w czerwonym obramowaniu. Po naciśnięci przycisku zdjęcie zamieni się 
 w niebieskim obramowaniu. Kolejne naciśniecie to ponowny powrót do wersji z górami itp.
 
 ### Moje rozwiązanie
-![ex2 Solution](/documentation/Lab3/gifs/zad2.gif)
+![Zadanie2 - rozwiązanie](/documentation/Lab3/gifs/zad2.gif)
 
 <br>
 
@@ -25,7 +25,7 @@ elementów. Jeden przycisk dodaje a drugi usuwa elementy z listy. Niech usuwane 
 zawsze pierwszy element listy.
 
 ### Moje rozwiązanie
-![ex3 Solution](/documentation/Lab3/gifs/zad3.gif)
+![Zadanie3 - rozwiązanie](/documentation/Lab3/gifs/zad3.gif)
 
 <br>
 
@@ -34,10 +34,10 @@ Napisz skrypt, który dodaje lub usuwa obsługę przycisku testowego. Naciśniec
 przycisku inkrementuje licznik przyciśnięć. Odpięcie zdarzenia resetuje licznik.
 
 ### Moje rozwiązanie 1
-![ex4 Solution 1](/documentation/Lab3/gifs/zad4-1.gif)
+![Zadanie4 - rozwiązanie 1](/documentation/Lab3/gifs/zad4-1.gif)
 
 ### Moje rozwiązanie 2
-![ex4 Solution 2](/documentation/Lab3/gifs/zad4-2.gif)
+![Zadanie4 - rozwiązanie 2](/documentation/Lab3/gifs/zad4-2.gif)
 
 <br>
 
@@ -45,7 +45,7 @@ przycisku inkrementuje licznik przyciśnięć. Odpięcie zdarzenia resetuje licz
 Stwórz stronę zawierającą 3 elementy np. divy/zdjęcia wypozycjonowane tak jak na 
 rysunku poniżej. 
 
-![ex5 Example](/documentation/Lab3/images/zad5.jpg)
+![Zadanie5 - przykład](/documentation/Lab3/images/zad5.jpg)
 
 Niech naciśnięcie któregokolwiek z nich wyświetla odpowiedni komunikat w odpowiedniej 
 sekcji na stronie. 
@@ -63,10 +63,10 @@ Reset – wraca do stanu początkowego – rest licznika punktów oraz możliwo�
 zdarzeń typu click.
 
 ### Moje rozwiązanie 1
-![ex5 Solution 1](/documentation/Lab3/gifs/zad5-1.gif)
+![Zadanie5 - rozwiązanie 1](/documentation/Lab3/gifs/zad5-1.gif)
 
 ### Moje rozwiązanie 2
-![ex5 Solution 2](/documentation/Lab3/gifs/zad5-2.gif)
+![Zadanie5 - rozwiązanie 2](/documentation/Lab3/gifs/zad5-2.gif)
 
 <br>
 
@@ -78,10 +78,10 @@ z książki adresowej. Wymagana jest walidacja wprowadzanych wartości tak aby n
 telefonu to były tylko cyfry w formacie 9 cyfr. Imię musi rozpoczynać się od dużej litery i 
 zawierać tylko litery (cyfry i inne znaki wykluczone). Przykład poniżej.
 
-![ex6 Example](/documentation/Lab3/images/zad5.jpg)
+![Zadanie6 - przykład](/documentation/Lab3/images/zad5.jpg)
 
 ### Moje rozwiązanie
-![ex6 Solution](/documentation/Lab3/gifs/zad6.gif)
+![Zadanie6 - rozwiązanie](/documentation/Lab3/gifs/zad6.gif)
 
 <br>
 
@@ -119,7 +119,7 @@ f). jaka jest średnia powierzchnia miast z powiatów zaczynających się na lit
 Wyniki wyświetlić na dedykowanych sekcjach na stronie. 
 
 ### Moje rozwiązanie
-![ex7 Solution](/documentation/Lab3/gifs/zad7.gif)
+![Zadanie7 - rozwiązanie](/documentation/Lab3/gifs/zad7.gif)
 
 <br>
 
@@ -139,7 +139,7 @@ przez Ciebie menu kontekstowe, które powinno wyświetlić informacje na temat a
 wielkości balonika.
 
 ### Moje rozwiązanie
-![ex8 Solution](/documentation/Lab3/gifs/zad8.gif)
+![Zadanie8 - rozwiązanie](/documentation/Lab3/gifs/zad8.gif)
 
 <br>
 
@@ -148,10 +148,10 @@ Napisz slider wizytówek. Wizytówka składa się ze zdjęcia, stanowiska i
 przykładowego opisu. Przyciski `<` i `>` pozwalają na przeglądanie naszych pracowników. 
 Dodatkowo istnieje przycisk do losowego wyboru wizytówki do wyświetlenia.
 
-![ex9 Example](/documentation/Lab3/images/zad9.jpg)
+![Zadanie9 - przykład](/documentation/Lab3/images/zad9.jpg)
 
 ### Moje rozwiązanie
-![ex9 Solution](/documentation/Lab3/gifs/zad9.gif)
+![Zadanie9 - rozwiązanie](/documentation/Lab3/gifs/zad9.gif)
 
 <br>
 
@@ -163,7 +163,7 @@ plikach mogą pojawić się te same kategorie jak również produkty czyli dane 
 jest wymagań aby każda kategoria miała przypisany produkt. Niech lista kategorii liczy przynajmniej 8 
 pozycji. 
 
-![ex10 Example 1](/documentation/Lab3/images/zad10-1.jpg)
+![Zadanie10 - przykład 1](/documentation/Lab3/images/zad10-1.jpg)
 
 Napisz aplikacyjne która odczyta dane z plików i na ich podstawie wyświetli dane w postaci rozwijalnej 
 listy. Elementy na poszczególnych gałęziach nie mogą się powtarzać. 
@@ -172,14 +172,14 @@ mają być wyświetlane). Drugi poziom to lista produktów (wartości produktów
 Przykładowo wyglądałby to tak jak na zdjęciu poniżej ( podane wartości są tylko przykładowe i w żaden 
 sposób nie dotyczą treści zadania)
 
-![ex10 Example 2](/documentation/Lab3/images/zad10-2.jpg)
+![Zadanie10 - przykład 2](/documentation/Lab3/images/zad10-2.jpg)
 
 Wybrane elementy listy niech wyświetlają się w sekcji głównej na stronie. W przypadku odznaczenia 
 pozycji z listy rozwijalnej dana pozycja znika oczywiście natychmiast z sekcji głównej. Analogicznie jest 
 przy zaznaczaniu – dołącza do pozycji w sekcji głównej.
 
 ### Moje rozwiązanie
-![ex10 Solution](/documentation/Lab3/gifs/zad10.gif)
+![Zadanie10 - rozwiązanie](/documentation/Lab3/gifs/zad10.gif)
 
 <br>
 
@@ -188,7 +188,7 @@ przy zaznaczaniu – dołącza do pozycji w sekcji głównej.
 Twoim zadaniem jest implementacja gry widocznej na filmie (dołączonym w materiałach) i 
 zrzucie ekranu poniżej.
 
-![ex11 Example](/documentation/Lab3/images/zad11.jpg)
+![Zadanie11 - przykład](/documentation/Lab3/images/zad11.jpg)
 
 Poniżej znajdziesz założenia gry i punktację.
 
@@ -216,4 +216,4 @@ gry,
 - pojawia się guzik umożliwiający powrót do nowej rozgrywki.
 
 ### Moje rozwiązanie
-![ex11 Solution](/documentation/Lab3/gifs/zad11.gif)
+![Zadanie11 - rozwiązanie](/documentation/Lab3/gifs/zad11.gif)

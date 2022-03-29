@@ -1,20 +1,16 @@
 ![Developer](/documentation/images/developer.jpg)
 
-# Introduction to Web Applications
+# Wprowadzenie do Aplikacji Internetowych
 
-The repository solutions for exercises from the Introduction to Web Applications course at AGH UST.
+To repozytorium zwiera moje rozwiązania zadań z przedmiotu Wprowadzenie do Aplikacji Internetowych na 3. semestrze studiów informatycznych na AGH.
 
 ## Lab 1
 ### HTML, CSS
-
-*TODO - add README*
 
 [https://github.com/MatiPl01/Wprowadzenie-do-Aplikacji-Internetowych/tree/main/lab1](https://github.com/MatiPl01/Wprowadzenie-do-Aplikacji-Internetowych/tree/main/lab1)
 
 ## Lab 2
 ### HTML, CSS
-
-*TODO - add README*
 
 [https://github.com/MatiPl01/Wprowadzenie-do-Aplikacji-Internetowych/tree/main/lab2](https://github.com/MatiPl01/Wprowadzenie-do-Aplikacji-Internetowych/tree/main/lab2)
 
@@ -36,4 +32,4 @@ The repository solutions for exercises from the Introduction to Web Applications
 ## Lab 6
 ### Angular, Node.js & Express.js, MongoDB
 
-*TODO - upload to this repo*
+*TODO - dodaj do repozytorium*
