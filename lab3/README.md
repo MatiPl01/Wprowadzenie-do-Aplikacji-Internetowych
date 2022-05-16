@@ -78,7 +78,7 @@ z książki adresowej. Wymagana jest walidacja wprowadzanych wartości tak aby n
 telefonu to były tylko cyfry w formacie 9 cyfr. Imię musi rozpoczynać się od dużej litery i 
 zawierać tylko litery (cyfry i inne znaki wykluczone). Przykład poniżej.
 
-![Zadanie6 - przykład](/documentation/Lab3/images/zad5.jpg)
+![Zadanie6 - przykład](/documentation/Lab3/images/zad6.jpg)
 
 ### Moje rozwiązanie
 ![Zadanie6 - rozwiązanie](/documentation/Lab3/gifs/zad6.gif)
