@@ -7,6 +7,8 @@ To repozytorium zwiera moje rozwiązania zadań z przedmiotu Wprowadzenie do Apl
 ## Lab 1
 ### HTML, CSS
 
+*TODO - dodaj README*
+
 [https://github.com/MatiPl01/Wprowadzenie-do-Aplikacji-Internetowych/tree/main/lab1](https://github.com/MatiPl01/Wprowadzenie-do-Aplikacji-Internetowych/tree/main/lab1)
 
 ## Lab 2

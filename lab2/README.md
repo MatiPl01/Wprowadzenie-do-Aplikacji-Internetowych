@@ -165,19 +165,6 @@ Dodatkowy punkt można zdobyć za efekt animacji przejęcia miedzy ikoną hambur
 ## Zadanie 8
 Stwórz stronę, na której umieścisz trzy zdjęcia oraz przykładowe teksty, dokładnie tak jak na rysunku wzorcowym poniżej: 
 
-### Przykład
-![Zadanie8 - przykład](/documentation/Lab2/images/zad8.jpg)
-
-<br>
-
-### Moje rozwiązanie
-![Zadanie8 - rozwiązanie](/documentation/Lab2/gifs/zad8.gif)
-
-<br><br>
-
-## Zadanie 8
-Stwórz stronę, na której umieścisz trzy zdjęcia oraz przykładowe teksty, dokładnie tak jak na rysunku wzorcowym poniżej: 
-
 ![Zadanie8 - przykład 1](/documentation/Lab2/images/zad8-1.jpg)
 
 Po najechaniu myszką na dowolne zdjęcie, ma ono znaleźć się na pierwszym tle oraz mieć dodatkową obwolutę – tak jak na rysunkach poniżej: 
